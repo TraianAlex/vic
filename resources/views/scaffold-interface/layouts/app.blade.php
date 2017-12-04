@@ -118,6 +118,8 @@
 						<li class="treeview"><a href="{{url('/scaffold-permissions')}}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
 						<li class="header">Scaffold Interface</li>
 						<li class="treeview"><a href="{{url('/scaffold')}}"><i class="fa fa-desktop"></i> <span>Scaffold Interface</span></a></li>
+						<li class="header">Divers</li>
+						<li class="glyphicon glyphicon-globe"><a href="{{url('/adm/site-map')}}">Generate site map</a></li>
 					</ul>
 				</section>
 				<!-- /.sidebar -->

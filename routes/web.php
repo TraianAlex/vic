@@ -17,6 +17,7 @@ Route::group(['prefix' => '/adm'], function(){
         'uses' => 'AdminController@postLogin',
         'as' => 'login.admin'
     ]);
+    Route::get('/site-map', 'AdminController@siteMap');
 });
 
 Route::group(['middleware' => 'admin'], function(){

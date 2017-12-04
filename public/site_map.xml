@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://vic.com.ro/</loc>
+    
+    
+        <lastmod>2017-12-04T18:56:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/about</loc>
+    
+    
+        <lastmod>2017-12-04T18:56:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/cdn-cgi/l/email-protection</loc>
+    
+    
+        <lastmod>2017-12-04T18:56:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/contact</loc>
+    
+    
+        <lastmod>2017-12-04T18:56:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/services</loc>
+    
+    
+        <lastmod>2017-12-04T18:56:28+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+</urlset>

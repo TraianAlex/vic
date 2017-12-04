@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Admin;
-use Amranidev\Ajaxis\Ajaxis;
 use URL;
+use App\Admin;
 use App\Http\Requests;
-use App\Http\Requests\LoginAdminRequest;
+use Amranidev\Ajaxis\Ajaxis;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Sitemap\SitemapGenerator;
+use App\Http\Requests\LoginAdminRequest;
 
 /**
  * Class AdminController.
@@ -37,6 +38,15 @@ class AdminController extends Controller
     {
         admins()->logout();
         return redirect('/adm/login');
+    }
+
+    protected function siteMap()
+    {
+        $path = public_path('site_map.xml');
+        SitemapGenerator::create('https://vic.com.ro')->writeToFile($path);
+        $xml = file_get_contents($path);
+        $links = simplexml_load_file($path);
+        return view('admin.site-map', compact('xml', 'links'));
     }
     /**
      * Display a listing of the resource.
