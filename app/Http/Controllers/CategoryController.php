@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use URL;
 use App\Category;
 use Amranidev\Ajaxis\Ajaxis;
-use URL;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 
 /**
  * Class CategoryController.
@@ -25,7 +27,7 @@ class CategoryController extends Controller
     public function index()
     {
         $title = 'Index - category';
-        $categories = Category::paginate(6);
+        $categories = Category::paginate(15);
         return view('category.index',compact('categories','title'));
     }
 
@@ -46,7 +48,7 @@ class CategoryController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateCategoryRequest $request)
     {
         $category = new Category();
         $category->name = $request->name;
@@ -71,7 +73,7 @@ class CategoryController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function show($id,Request $request)
+    public function show($id, Request $request)
     {
         $title = 'Show - category';
 
@@ -90,7 +92,7 @@ class CategoryController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function edit($id,Request $request)
+    public function edit($id, Request $request)
     {
         $title = 'Edit - category';
         if($request->ajax())
@@ -108,7 +110,7 @@ class CategoryController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function update($id,Request $request)
+    public function update($id, UpdateCategoryRequest $request)
     {
         $category = Category::findOrfail($id);
         $category->name = $request->name;
@@ -124,7 +126,7 @@ class CategoryController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  String
      */
-    public function DeleteMsg($id,Request $request)
+    public function DeleteMsg($id, Request $request)
     {
         $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/category/'. $id . '/delete');
         if($request->ajax())

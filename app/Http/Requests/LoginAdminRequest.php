@@ -24,8 +24,8 @@ class LoginAdminRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'password' => 'required'
+            'name' => 'required|max:100',
+            'password' => 'required|max:100'
         ];
     }
 }

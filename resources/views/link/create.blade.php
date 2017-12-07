@@ -18,7 +18,18 @@
             <label for="description">description</label>
             <input id="description" name = "description" type="text" class="form-control">
         </div>
+        <div class="form-group">
+            {!! Form::label('cat_list', 'Categories', ['class' => "control-label"]) !!}
+            {!! Form::select('cat_list[]', $categories, null, ['id' => 'cat_list', 'class' => 'form-control', 'multiple']) !!}
+        </div>
         <button class = 'btn btn-success' type ='submit'> <i class="fa fa-floppy-o"></i> Save</button>
     </form>
 </section>
+@endsection
+@section('js')
+<script type="text/javascript">
+    $('#cat_list').select2({
+        placeholder: 'Choose a category',
+    });
+</script>
 @endsection

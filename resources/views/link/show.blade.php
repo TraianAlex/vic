@@ -23,6 +23,17 @@
                 <td> <b>description</b> </td>
                 <td>{!!$link->description!!}</td>
             </tr>
+            @unless($link->categories->isEmpty())
+                <tr>
+                    <td> <b>categories</b> </td>
+                    <td><?php $i = 0; ?>
+                        @foreach($link->categories as $cat)
+                            <?php $i++ ?>
+                            {!!$cat->name!!} @if(count($link->categories) > 1 && count($link->categories) > $i) / @endif
+                        @endforeach
+                    </td>
+                </tr>
+            @endunless
         </tbody>
     </table>
 </section>

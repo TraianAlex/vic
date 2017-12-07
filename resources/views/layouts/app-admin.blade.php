@@ -5,12 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
-
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -37,7 +34,7 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					{{-- @if(auth()->guest())
+					@if(auth()->guest())
 						@if(!Request::is('auth/login'))
 							<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						@endif
@@ -51,7 +48,7 @@
 								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
 							</ul>
 						</li>
-					@endif --}}
+					@endif
 
                         {{-- <li><a href="{{ route('login.admin') }}">Admin</a></li> --}}
 

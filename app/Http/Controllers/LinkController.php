@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use URL;
 use App\Link;
 use Amranidev\Ajaxis\Ajaxis;
-use URL;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateLinkRequest;
 
 /**
  * Class LinkController.
@@ -25,7 +26,7 @@ class LinkController extends Controller
     public function index()
     {
         $title = 'Index - link';
-        $links = Link::paginate(6);
+        $links = Link::paginate(15);
         return view('link.index',compact('links','title'));
     }
 
@@ -37,7 +38,10 @@ class LinkController extends Controller
     public function create()
     {
         $title = 'Create - link';
-        return view('link.create');
+
+        $categories = \App\Category::pluck('name', 'id');
+
+        return view('link.create', compact('categories'));
     }
 
     /**
@@ -46,13 +50,14 @@ class LinkController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateLinkRequest $request)
     {
         $link = new Link();
         $link->address = $request->address;
         $link->description = $request->description;
-
         $link->save();
+
+        $link->assignCategory(!$request->input('cat_list') ? [] : $request->input('cat_list'));
 
         $pusher = App::make('pusher');
         //default pusher notification.
@@ -72,7 +77,7 @@ class LinkController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function show($id,Request $request)
+    public function show($id, Request $request)
     {
         $title = 'Show - link';
         if($request->ajax())
@@ -89,7 +94,7 @@ class LinkController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function edit($id,Request $request)
+    public function edit($id, Request $request)
     {
         $title = 'Edit - link';
         if($request->ajax())
@@ -97,7 +102,10 @@ class LinkController extends Controller
             return URL::to('link/'. $id . '/edit');
         }
         $link = Link::findOrfail($id);
-        return view('link.edit',compact('title','link'  ));
+
+        $categories = \App\Category::pluck('name', 'id');
+
+        return view('link.edit',compact('title','link', 'categories'));
     }
 
     /**
@@ -107,12 +115,15 @@ class LinkController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function update($id,Request $request)
+    public function update($id, UpdateLinkRequest $request)
     {
         $link = Link::findOrfail($id);
         $link->address = $request->address;
         $link->description = $request->description;
         $link->save();
+
+        $link->categories()->sync(
+            !$request->input('categories_list') ? [] : $request->input('categories_list'));
 
         return redirect('link');
     }
@@ -124,7 +135,7 @@ class LinkController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  String
      */
-    public function DeleteMsg($id,Request $request)
+    public function DeleteMsg($id, Request $request)
     {
         $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/link/'. $id . '/delete');
         if($request->ajax())
@@ -142,6 +153,9 @@ class LinkController extends Controller
     public function destroy($id)
     {
      	$link = Link::findOrfail($id);
+
+        $link->categories()->detach();
+
      	$link->delete();
         return URL::to('link');
     }

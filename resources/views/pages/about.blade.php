@@ -3,8 +3,9 @@
 <meta name="description" content="Traian Alexandru Web Developer Toronto. Build responsive mobile websites. Webdesign and implementation.">
 <meta name="keywords" content="website design, web page design, webdesign, web development, mobile, traian alexandru">
 <title>Mobile Web Development</title>
+@endsection
 @section('content')
-</section><section class="mbr-section content5 cid-qCbSSNQEm5 mbr-parallax-background" id="content5-2c" data-rv-view="781">
+<section class="mbr-section content5 cid-qCbSSNQEm5 mbr-parallax-background" id="content5-2c" data-rv-view="781">
     <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(35, 35, 35);">
     </div>
     <div class="container">

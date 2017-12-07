@@ -45,5 +45,13 @@ class Category extends Model
     {
         return $this->links()->detach($link);
     }
-
+    /**
+     * resolve the route model binding by name instead of id
+     * used in HomeController@tag
+     * @return [string]
+     */
+    public function getRouteKeyName()
+    {
+        return 'name';
+    }
 }

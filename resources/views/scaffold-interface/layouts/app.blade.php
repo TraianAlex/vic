@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 		<!-- Ionicons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/css/select2.min.css" rel="stylesheet" />
 		<!-- Theme style -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.5/css/AdminLTE.min.css">
 		<!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -43,6 +44,7 @@
 					<div class="navbar-custom-menu">
 						<ul class="nav navbar-nav">
 							<!-- Notification Navbar List-->
+							<li><a href="{{url('/admin')}}"><i class="fa fa-lock"></i> <span>Admin</span></a></li>
 							<li class="dropdown notifications-menu">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="fa fa-bell-o"></i>
@@ -119,7 +121,7 @@
 						<li class="header">Scaffold Interface</li>
 						<li class="treeview"><a href="{{url('/scaffold')}}"><i class="fa fa-desktop"></i> <span>Scaffold Interface</span></a></li>
 						<li class="header">Divers</li>
-						<li class="glyphicon glyphicon-globe"><a href="{{url('/adm/site-map')}}">Generate site map</a></li>
+						<li class="treeview"><a href="{{url('/adm/site-map')}}"><i class="glyphicon glyphicon-globe"></i><span>Generate site map</span></a></li>
 					</ul>
 				</section>
 				<!-- /.sidebar -->
@@ -136,6 +138,7 @@
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.5/js/app.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.5/js/demo.js"></script>
 		<script> var baseURL = "{{ URL::to('/') }}"</script>
 		<script src = "{{URL::asset('js/AjaxisBootstrap.js') }}"></script>
@@ -161,5 +164,6 @@
 			);
 		});
 		</script>
+		@yield('js')
 	</body>
 </html>

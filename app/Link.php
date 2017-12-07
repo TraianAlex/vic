@@ -46,4 +46,12 @@ class Link extends Model
         return $this->categories()->detach($category);
     }
 
+    /**
+     * Get a list of categories ids associated with the current link
+     * @return array
+     */
+    public function getCategoriesListAttribute()
+    {
+        return $this->categories->pluck('id');//->all() resolved the problem in form
+    }
 }

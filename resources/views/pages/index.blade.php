@@ -71,21 +71,14 @@
             </div>
         </div>
 </div></section>
-<section class="mbr-section article content9 cid-qBWLPU3XDt" id="content9-1z" data-rv-view="851">
+<section class="mbr-section article content9 cid-qBWLPU3XDt" id="content9-1z" data-rv-view="170">
     <div class="container">
         <div class="inner-container" style="width: 100%;">
             <hr class="line" style="width: 100%;">
-            <div class="section-text align-center mbr-fonts-style display-5"><a href="https://github.com/TraianAlex/minimvc" class="text-black"><strong>-&nbsp;Mini MVC framework&nbsp;basic</strong></a><br><em><a href="about">...repositories</a></em><a href="https://github.com/TraianAlex/minimvc" class="text-black" style="font-weight: bold;"><br></a><br></div>
+            <div class="section-text align-center mbr-fonts-style display-5"><a href="https://github.com/TraianAlex/minimvc" class="text-black"><strong>-&nbsp;Mini MVC framework&nbsp;basic</strong></a><br><em><a href="/about" class="text-black">...repositories</a></em><br></div>
             <hr class="line" style="width: 100%;">
         </div>
         </div>
-</section>
-<section class="mbr-section mbr-section__comments" id="facebook-comments-block-1y" data-rv-view="10" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
-    <div class="mbr-section__container mbr-section__container--isolated addons-container">
-        <div class="addons-row">
-           <div class="addons-container-inner" data-shortname="vic-blog"><div class="disqusPlaceholder" data-numposts=""><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src="assets/images/disqus-comments.jpg"></div></div>
-        </div>
-    </div>
 </section>
 <section class="features1 cid-qBUbpxEYWf" id="features1-1u" data-rv-view="853">
     <div class="container">
@@ -136,7 +129,4 @@
         </div>
     </div>
 </section>
-@endsection
-@section('script')
-<script src="assets/facebook-plugin/facebook-script.js"></script>
 @endsection
