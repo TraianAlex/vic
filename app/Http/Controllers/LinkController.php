@@ -6,6 +6,7 @@ use URL;
 use App\Link;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateLinkRequest;
@@ -115,9 +116,16 @@ class LinkController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function update($id, UpdateLinkRequest $request)
+    public function update($id, Request $request)
     {
         $link = Link::findOrfail($id);
+        $request->validate([
+            'address' => [
+                'required',
+                Rule::unique('links')->ignore($link->id),
+            ],
+            'description' => 'sometimes|max:191'
+        ]);
         $link->address = $request->address;
         $link->description = $request->description;
         $link->save();

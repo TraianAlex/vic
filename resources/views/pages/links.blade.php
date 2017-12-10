@@ -6,6 +6,7 @@
 @endsection
 @section('css')
 <link rel="stylesheet" href="assets/facebook-plugin/style.css">
+<link rel="stylesheet" href="{{asset('assets/datatables/data-tables.bootstrap4.min.css')}}">
 @endsection
 @section('content')
 <section class="tabs3 cid-qChX6HeGZH" id="tabs3-2u" data-rv-view="200">
@@ -283,6 +284,63 @@
         </div>
     </div>
 </section>
+<section class="section-table cid-qCYF3quygR" id="table1-34" data-rv-view="236">
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">Links</h2>
+      <div class="table-wrapper">
+        <div class="container">
+          <div class="row search">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="dataTables_filter">
+                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
+                  <input class="form-control input-sm" disabled="">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="container scroll">
+          <table class="table isSearch" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7">Address</th><th class="head-item mbr-fonts-style display-7">Description</th><th class="head-item mbr-fonts-style display-7">Tag</th></tr>
+            </thead>
+            <tbody>
+              @foreach($links as $link)
+              <tr>
+                <td class="body-item mbr-fonts-style display-7"><a href="{{$link->address}}" target="_blank" class="text-black">{{$link->address}}</a></td>
+                <td class="body-item mbr-fonts-style display-7">{{$link->description}}</td>
+                <td class="body-item mbr-fonts-style display-7"><?php $i = 0; ?>
+                    @foreach($link->categories as $cat)
+                        <?php $i++ ?>
+                        <a href="{{url('/tags/'.$cat->name)}}" class="text-black">{{$cat->name}}</a>
+                        @if(count($link->categories) > 1 && count($link->categories) > $i) / @endif
+                    @endforeach
+                </td>
+              </tr>
+            @endforeach
+           </tbody>
+          </table>
+          {!! $links->render() !!}
+        </div>
+        <div class="container table-info-container">
+          <div class="row info">
+            <div class="col-md-6">
+              <div class="dataTables_info mbr-fonts-style display-7">
+                <span class="infoBefore">Showing</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoAfter">entries</span>
+                <span class="infoFilteredBefore">(filtered from</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoFilteredAfter">total entries)</span>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 <section class="mbr-section mbr-section__comments" id="facebook-comments-block-2v" data-rv-view="206" style="background-color: rgb(255, 255, 255); padding-top: 4.5rem; padding-bottom: 4.5rem;">
     <div class="mbr-section__container mbr-section__container--isolated addons-container">
         <div class="addons-row">
@@ -318,4 +376,6 @@
 @section('script')
 <script src="assets/facebook-plugin/facebook-script.js"></script>
 <script src="assets/sociallikes/social-likes.js"></script>
+<script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}"></script>
+<script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}"></script>
 @endsection

@@ -23,10 +23,10 @@ mix.styles([
     'resources/assets/dropdown/css/style.css',
     'resources/assets/theme/css/style.css',
     'resources/assets/mobirise/css/mbr-additional.css'
-    ], 'public/css/all1.css')
+    ], 'public/css/all.css')
     .options({
       //processCssUrls: false
-   });
+   }).version();
 mix.scripts([
     'resources/assets/web/assets/jquery/jquery.min.js',
     'resources/assets/popper/popper.min.js',
@@ -39,4 +39,4 @@ mix.scripts([
     'resources/assets/as-pie-progress/jquery-as-pie-progress.min.js',
     'resources/assets/touch-swipe/jquery.touch-swipe.min.js',
     'resources/assets/theme/js/script.js'
-], 'public/js/all1.js');
+], 'public/js/all.js').version();

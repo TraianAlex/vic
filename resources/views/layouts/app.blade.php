@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{asset('assets/images/traian-s-640x426.jpg')}}" type="image/x-icon">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
-    <link href="{{ asset('css/all1.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
     @yield('css')
     <!-- Google Analytics -->
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -29,7 +29,7 @@
         @include('partials.footer')
     </div>
 
-  <script src="{{ asset('js/all1.js') }}"></script>
+  <script src="{{ asset('js/all.js') }}"></script>
   @yield('script')
 
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>

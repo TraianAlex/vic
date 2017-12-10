@@ -30,9 +30,9 @@ class HomeController extends Controller
 
     public function link()
     {
-        //$links = Link::paginate(20);
+        $links = Link::paginate(20);
         $categories = Category::all();
-        return view('pages.links', compact('categories'));//,compact('links')
+        return view('pages.links', compact( 'links', 'categories'));//compact('links')
     }
 
     public function result(Category $category)

@@ -5,6 +5,16 @@
 <title>Demos</title>
 @endsection
 @section('content')
+<section class="mbr-section content8 cid-qDhLd7Iq7B" id="content8-45" data-rv-view="294">
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8 offset-10">
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="{{ url('/auth/login') }}">Login</a>
+                    <a class="btn btn-primary display-4" href="{{ url('/auth/register') }}">Register</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="countdown1 cid-qD2j4EI7zO" id="countdown1-3c" data-rv-view="308">
     <div class="container ">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Under Construction</h2>
