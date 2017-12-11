@@ -25,10 +25,10 @@
         </div>
         </div>
 </section>
-<section class="progress-bars3 cid-qwshY2hf5v" id="progress-bars3-11" data-rv-view="786">
+<section class="progress-bars3 cid-qwshY2hf5v" id="progress-bars3-11" data-rv-view="117">
     <div class="container">
-        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
-            I develop my skills by practicing and learning almost every day.</h3>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            My Skills</h2>
         <div class="media-container-row pt-5 mt-2">
             <div class="card p-3 align-center">
                 <div class="wrap">
@@ -37,6 +37,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">HTML</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -46,6 +47,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">CSS</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -55,6 +57,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">JS</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -64,7 +67,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
-
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">PHP</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -74,6 +77,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">Laravel</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -83,8 +87,12 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">Bootstrap</h4>
                 </div>
             </div>
         </div>
 </div></section>
+@endsection
+@section('script')
+<script src="{{asset('assets/as-pie-progress/jquery-as-pie-progress.min.js')}}"></script>
 @endsection

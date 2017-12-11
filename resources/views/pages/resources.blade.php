@@ -47,6 +47,7 @@
             @endforeach
            </tbody>
           </table>
+          {!! $links->render() !!}
         </div>
         <div class="container table-info-container">
           <div class="row info">

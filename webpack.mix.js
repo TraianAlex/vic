@@ -36,7 +36,8 @@ mix.scripts([
     'resources/assets/viewportchecker/jquery.viewportchecker.js',
     'resources/assets/jarallax/jarallax.min.js',
     'resources/assets/dropdown/js/script.min.js',
-    'resources/assets/as-pie-progress/jquery-as-pie-progress.min.js',
     'resources/assets/touch-swipe/jquery.touch-swipe.min.js',
     'resources/assets/theme/js/script.js'
 ], 'public/js/all.js').version();
+
+//'resources/assets/as-pie-progress/jquery-as-pie-progress.min.js',

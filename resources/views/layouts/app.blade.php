@@ -28,7 +28,6 @@
 
         @include('partials.footer')
     </div>
-
   <script src="{{ asset('js/all.js') }}"></script>
   @yield('script')
 

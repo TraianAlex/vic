@@ -1309,7 +1309,6 @@ http://blog.adamnash.com/2012/04/04/user-acquisition-viral-factor-basics/
 https://www.quora.com/When-does-high-user-satisfaction-outweigh-low-virality-and-how-is-that-quantified/answer/Andrew-Chen
 http://andrewchen.co/saas-products-arent-viral/
 http://avc.com/2012/08/feature-friday-whats-the-atomic-unit-of-your-productservice/
-https://www.surveymonkey.com/survey-thanks/?sm=hbL4re9MmukXe9gFMF69CgBV6pYAlyh9QP8rj_2FDZYTwiyFVxEqpNvfV_2FyMhy8YQkxGAqfUM187inaIFUfEkLBw_3D_3D
 http://www.iproacademy.com/FacebookDownload/
 http://www.link-assistant.com/news/reporting-guide.html
 http://www.link-assistant.com/news/5-SEO-myths.html
@@ -1590,7 +1589,7 @@ https://atomic.io/
 https://www.figma.com/
 https://framer.com/
 https://sketchapp.com/
-https://www.xfive.co/xd-to-html/?gclid=EAIaIQobChMI3eTpuYXp1wIV07fACh1wwQr9EAAYASAAEgJ-1_D_BwE
+https://www.xfive.co/xd-to-html/
 http://lipsum.com/
 http://vim-adventures.com/
 http://vim.rtorr.com/

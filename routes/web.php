@@ -8,6 +8,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/links', 'HomeController@link');
+Route::get('/tags/all', 'HomeController@all');
 Route::get('/tags/{category}', 'HomeController@result');
 Route::get('/demos', 'HomeController@demo');
 

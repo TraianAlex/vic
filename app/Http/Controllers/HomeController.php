@@ -37,7 +37,13 @@ class HomeController extends Controller
 
     public function result(Category $category)
     {
-        $links = $category->links()->get();
+        $links = $category->links()->paginate(15);
+        return view('pages.resources', compact('links'));
+    }
+
+    public function all()
+    {
+        $links = Link::paginate(2000);
         return view('pages.resources', compact('links'));
     }
 
