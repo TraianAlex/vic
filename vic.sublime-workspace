@@ -371,6 +371,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "resources/views/link/create.blade.php",
+			"settings":
+			{
+				"buffer_size": 1324,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -499,14 +507,19 @@
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
 		"/Users/victor/MEGA/www/laravel/vic/app",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers",
-		"/Users/victor/MEGA/www/laravel/vic/resources",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages"
+		"/Users/victor/MEGA/www/laravel/vic/resources"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/laravel/vic/public/untitled.php",
+		"/Users/victor/MEGA/www/laravel/vic/public/sitemap2.xml",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
+		"/Users/victor/MEGA/www/vic1/demo.html",
+		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/about.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/vic1/about.html",
 		"/Users/victor/MEGA/www/laravel/vic/routes/web.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/HomeController.php",
 		"/Users/victor/MEGA/www/laravel/vic/links.txt",
@@ -522,8 +535,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/admin/login.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/auth/login.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/auth/register.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
-		"/Users/victor/MEGA/www/vic1/demo.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/auth/reset.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/auth/passwords/reset.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/composer.json",
@@ -534,8 +545,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/auth/password.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/assets/mobirise/css/mbr-additional.css",
-		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/public/mix-manifest.json",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php",
@@ -553,7 +562,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/remb4372_vic copy.sql",
 		"/Users/victor/MEGA/www/laravel/vic/remb4372_vic copy 2.sql",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/admin/create.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
 		"/Users/victor/MEGA/www/vic1/links.html",
 		"/Users/victor/MEGA/www/vic1/resources.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/contact.blade.php",
@@ -564,9 +572,7 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/services.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/index.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Category.php",
-		"/Users/victor/MEGA/www/vic1/about.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/about.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/tag.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/CategoryController.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/link/show.blade.php",
@@ -607,7 +613,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/helpers.php",
 		"/Users/victor/MEGA/www/laravel/vic/todo.txt",
 		"/Users/victor/MEGA/www/laravel/vic/.gitignore",
-		"/Users/victor/MEGA/www/laravel/vic/public/sitemap2.xml",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/footer.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/public/robots.txt",
 		"/Users/victor/MEGA/www/laravel/vic/public/.htaccess",
@@ -633,8 +638,7 @@
 		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Category/CategoryBuyerController.php",
 		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Category/CategoryController.php",
 		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Category/CategorySellerController.php",
-		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Category/CategoryTransactionController.php",
-		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Product/ProductBuyerController.php"
+		"/Users/victor/MEGA/www/laravel/rest/lar55/app/Http/Controllers/Category/CategoryTransactionController.php"
 	],
 	"find":
 	{
@@ -652,6 +656,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"https",
 			"https://www.surveymonkey.com/",
 			"file",
 			"https://www.udemy.com/courses",
@@ -779,6 +784,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"http",
 			"191",
 			"https"
 		],
@@ -791,8 +797,40 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resources/views/link/create.blade.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								398
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1002,9 +1040,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "petr",
+		"last_filter": "lar",
 		"selected_items":
 		[
+			[
+				"lar",
+				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
+			],
+			[
+				"canc",
+				"~/MEGA/www/laravel/canvas/canvas/canvas.sublime-project"
+			],
 			[
 				"petr",
 				"~/MEGA/www/petra/petra.sublime-project"
@@ -1028,10 +1074,6 @@
 			[
 				"route",
 				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"lar",
-				"~/MEGA/www/laravel/laravel.sublime-project"
 			],
 			[
 				"h",

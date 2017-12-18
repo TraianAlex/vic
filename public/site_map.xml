@@ -4,7 +4,7 @@
         <loc>https://vic.com.ro/</loc>
     
     
-        <lastmod>2017-12-05T04:02:51+00:00</lastmod>
+        <lastmod>2017-12-13T02:11:13+00:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -14,7 +14,27 @@
         <loc>https://vic.com.ro/about</loc>
     
     
-        <lastmod>2017-12-05T04:02:52+00:00</lastmod>
+        <lastmod>2017-12-13T02:11:13+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/auth/login</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/auth/register</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -24,7 +44,7 @@
         <loc>https://vic.com.ro/cdn-cgi/l/email-protection</loc>
     
     
-        <lastmod>2017-12-05T04:02:52+00:00</lastmod>
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -34,7 +54,1057 @@
         <loc>https://vic.com.ro/contact</loc>
     
     
-        <lastmod>2017-12-05T04:02:52+00:00</lastmod>
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/contact.html</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/demos</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:14+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:14+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=1</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=10</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=100</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=101</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=11</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=12</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=13</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=14</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:27+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=15</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:27+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=16</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:27+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=17</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=18</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=19</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=2</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=20</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=21</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=22</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=23</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:34+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=24</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=25</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=26</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=27</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=28</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:34+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=29</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=3</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=30</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=31</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=32</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=33</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=34</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=35</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=36</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=37</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=38</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=39</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=4</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=40</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=41</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=42</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=43</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=44</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:40+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=45</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:40+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=46</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:41+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=47</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:41+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=48</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:41+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=49</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:41+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=5</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=50</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=51</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=52</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=53</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=54</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=55</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=56</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:42+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=57</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:40+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=58</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:41+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=59</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:40+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=6</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=60</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=61</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=62</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:40+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=63</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=64</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=65</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:39+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=66</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=67</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:38+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=68</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=69</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:37+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=7</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=70</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=71</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=72</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=73</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=74</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:36+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=75</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=76</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:35+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=77</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:34+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=78</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:34+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=79</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:34+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=8</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=80</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=81</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=82</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:33+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=83</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=84</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=85</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=86</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:32+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=87</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:28+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=88</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:27+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=89</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:27+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=9</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=90</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=91</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=92</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=93</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=94</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=95</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=96</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=97</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=98</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/links?page=99</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:25+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/password/reset</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:20+00:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -44,7 +1114,387 @@
         <loc>https://vic.com.ro/services</loc>
     
     
-        <lastmod>2017-12-05T04:02:51+00:00</lastmod>
+        <lastmod>2017-12-13T02:11:14+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/ajax</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/all</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:23+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/all?page=1</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:30+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/all?page=2</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:26+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/angular</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/assets</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/authentification</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/backend</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/books</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/bootstrap</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/cloud</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/cms</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/codeigniter</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/courses</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/css</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/design</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/framework</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/frontend</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/github</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/growhacking</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:19+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/howto</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/html</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/images</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/jquery</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/js</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/laravel</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/learn</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/library</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:15+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/miscellaneous</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/mobile</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/php</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/seo</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/snippets</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/tools</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/tutorials</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/videos</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:17+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/vue</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:16+00:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://vic.com.ro/tags/webdesign</loc>
+    
+    
+        <lastmod>2017-12-13T02:11:18+00:00</lastmod>
     
         <changefreq>daily</changefreq>
     

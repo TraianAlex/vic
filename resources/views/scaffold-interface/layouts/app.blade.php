@@ -121,7 +121,7 @@
 						<li class="header">Scaffold Interface</li>
 						<li class="treeview"><a href="{{url('/scaffold')}}"><i class="fa fa-desktop"></i> <span>Scaffold Interface</span></a></li>
 						<li class="header">Divers</li>
-						<li class="treeview"><a href="{{url('/adm/site-map')}}"><i class="glyphicon glyphicon-globe"></i><span>Generate site map</span></a></li>
+						<li class="treeview"><a href="{{url('/site-map')}}"><i class="glyphicon glyphicon-globe"></i><span>Generate site map</span></a></li>
 					</ul>
 				</section>
 				<!-- /.sidebar -->

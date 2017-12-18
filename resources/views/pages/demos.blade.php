@@ -15,6 +15,81 @@
         </div>
     </div>
 </section>
+<section class="features17 cid-qDwjWzyA5p" id="features17-47" data-rv-view="653">
+    <div class="container-fluid">
+        <div class="media-container-row">
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://blog.vic.com.ro" target="_blank"><img src="assets/images/blog-s-640x425.jpg" alt="Blog Traian" title="Blog Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Blog</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">A simple blog with control panel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://vic.com.ro"><img src="assets/images/02.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://vic.com.ro"><img src="assets/images/03.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://vic.com.ro"><img src="assets/images/04.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">lorem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://vic.com.ro"><img src="assets/images/01.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p><p>lorem</p><p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6 col-lg-2">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <a href="https://dev.vic.com.ro" target="_blank"><img src="assets/images/02.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Angular</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Shopping List<br>backend Laravel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="countdown1 cid-qD2j4EI7zO" id="countdown1-3c" data-rv-view="308">
     <div class="container ">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Under Construction</h2>
