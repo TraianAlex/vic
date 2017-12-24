@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use URL;
 use App\Link;
+use App\Events\LinkCreated;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -60,6 +61,7 @@ class LinkController extends Controller
 
         $link->assignCategory(!$request->input('cat_list') ? [] : $request->input('cat_list'));
 
+        event(new LinkCreated(admins()->user()));
         $pusher = App::make('pusher');
         //default pusher notification.
         //by default channel=test-channel,event=test-event

@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Link;
-use App\Category;
 use Illuminate\Http\Request;
+use App\Jobs\Tracker;
 
 class HomeController extends Controller
 {
@@ -15,7 +14,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
+        $this->middleware('auth');
+        dispatch(new Tracker);
     }
 
     /**
@@ -26,29 +26,5 @@ class HomeController extends Controller
     public function index()
     {
         return view('pages.home');
-    }
-
-    public function link()
-    {
-        $links = Link::paginate(20);
-        $categories = Category::all();
-        return view('pages.links', compact( 'links', 'categories'));//compact('links')
-    }
-
-    public function result(Category $category)
-    {
-        $links = $category->links()->paginate(15);
-        return view('pages.resources', compact('links'));
-    }
-
-    public function all()
-    {
-        $links = Link::paginate(2000);
-        return view('pages.resources', compact('links'));
-    }
-
-    public function demo()
-    {
-        return view('pages.demos');
     }
 }

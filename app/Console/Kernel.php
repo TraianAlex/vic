@@ -25,7 +25,11 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')
-        //          ->hourly();
+        //          ->hourly();//daily
+        //$schedule->exec("touch foo.txt")->everyFiveMinutes();//dailyAt('17:31');//everyTenMinutes();
+        //$schedule->command("ls")->everyFiveMinutes()->sendOutputTo('/test/test.txt')->emailOutputTo('victor_traian@yahoo.com');//->dailyAt('18:30')
+        //$schedule->command('laracasts:clear-history')->monthly();//->thenPing('url')
+        //$schedule->command('laracasts:daily-report')->dailyAt('23:55');
     }
 
     /**

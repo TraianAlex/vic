@@ -5,7 +5,9 @@
 <title>Demos</title>
 @endsection
 @section('content')
+
 <section class="mbr-section content8 cid-qDhLd7Iq7B" id="content8-45" data-rv-view="294">
+    @if(auth()->guest())
     <div class="container">
         <div class="media-container-row title">
             <div class="col-12 col-md-8 offset-10">
@@ -14,7 +16,9 @@
             </div>
         </div>
     </div>
+    @endif
 </section>
+
 <section class="features17 cid-qDwjWzyA5p" id="features17-47" data-rv-view="653">
     <div class="container-fluid">
         <div class="media-container-row">
