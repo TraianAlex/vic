@@ -31,7 +31,7 @@
             </div>
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
-                    © Copyright 2017 TA - All Rights Reserved
+                    © Copyright {{date('Y')}} TA - All Rights Reserved
                 </p>
             </div>
         </div>

@@ -37,11 +37,11 @@
             <div class="card p-3 col-12 col-md-6 col-lg-2">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <a href="https://vic.com.ro"><img src="assets/images/02.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                        <a href="https://chatty.vic.com.ro" target="_blank"><img src="assets/images/mbr-1626x1080.jpg" alt="Traian" title="Traian" media-simple="true"></a>
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">lorem</p>
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Social</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">friends, likes, comments</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7">Angular</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Shopping List<br>backend Laravel</p>
+                        <p class="mbr-text mbr-fonts-style display-7">Shopping list<br>backend Laravel</p>
                     </div>
                 </div>
             </div>

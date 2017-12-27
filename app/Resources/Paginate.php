@@ -136,3 +136,21 @@ class Pagination{
         }
     }
 }
+
+/*
+//controller $ip_unique array [[ a => [b, c]]]
+$paginate_ip = new Pagination();
+$ip_unique = $paginate_ip->paginate( $ip_unique, 3);
+
+//view
+<?=$paginate_ip->count_page()?>
+<?=$paginate_ip->render()?>
+
+//controller $pages array [[ a => [b, c]]]
+$paginate_pages = new Pagination();
+$pages = $paginate_pages->paginate($pages, 5);
+
+//view
+<?=$paginate_pages->count_page()?>
+<?=$paginate_pages->render()?>
+ */

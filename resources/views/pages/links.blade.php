@@ -11,7 +11,7 @@
 @section('content')
 <section class="tabs3 cid-qChX6HeGZH" id="tabs3-2u" data-rv-view="200">
     <div class="container">
-        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Web Development Links</h2>
+        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Web Development Links</h2>Tagging the links in development - (all tag -> search box)
     </div>
     <div class="container-fluid">
         <div class="row tabcont">

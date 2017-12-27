@@ -8,6 +8,7 @@
         <thead>
             <th>{{$total_unique_ips}} uniques IPs</th>
             <th>views</th>
+            <th>last visit</th>
             <th>info</th>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
                 <tr>
                     <td>{{$ip}}</td>
                     <td>{{$sum[0]}}</td>
+                    <td>{{$sum[1]}}</td>
                     <td>
                         <a href = '/stat/ip/{{ $ip }}' class = 'viewShow btn btn-warning btn-xs' data-link = '/stat/ip/{{ $ip }}'><i class = 'fa fa-eye'> info</i></a>
                     </td>
