@@ -60,6 +60,7 @@
         <thead>
             <th>page</th>
             <th>ip</th>
+            <th>when</th>
             <th>actions</th>
         </thead>
         <tbody>
@@ -67,6 +68,7 @@
             <tr>
                 <td>{!!$stat->page!!}</td>
                 <td>{!!$stat->ip!!}</td>
+                <td>{!!$stat->created_at->diffForHumans()!!}</td>
                 <td>
                     <a data-toggle="modal" data-target="#myModal" class = 'delete btn btn-danger btn-xs' data-link = "/stat/{!!$stat->id!!}/deleteMsg" ><i class = 'fa fa-trash'> delete</i></a>
                     <a href = '#' class = 'viewEdit btn btn-primary btn-xs' data-link = '/stat/{!!$stat->id!!}/edit'><i class = 'fa fa-edit'> edit</i></a>

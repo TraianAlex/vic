@@ -25,14 +25,16 @@ class Tracker implements ShouldQueue
 
     /**
      * Execute the job.
-     *
+     * '/^162.158.126.(66|84)$/'
      * @return void
      */
     public function handle()
     {
-        $stat = new Stat;
-        $stat->page = $_SERVER['REQUEST_URI'];
-        $stat->ip = $_SERVER['REMOTE_ADDR'];
-        $stat->save();
+        if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
+            $stat = new Stat;
+            $stat->page = $_SERVER['REQUEST_URI'];
+            $stat->ip = $_SERVER['REMOTE_ADDR'];
+            $stat->save();
+        }
     }
 }

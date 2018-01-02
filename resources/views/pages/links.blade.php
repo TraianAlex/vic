@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('meta')
-<meta name="description" content="Traian Alexandru Web Developer Toronto. Build responsive mobile websites. Webdesign and implementation.">
+<meta name="description" content="Traian Alexandru Web Developer Toronto. Build responsive mobile websites. Web development links.">
 <meta name="keywords" content="website design, web page design, webdesign, web development, mobile, traian alexandru">
 <title>Links Web Development</title>
 @endsection

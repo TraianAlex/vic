@@ -71,10 +71,12 @@ class StatController extends Controller
      */
     public function store(Request $request)
     {
-        $stat = new Stat();
-        $stat->page = $request->page;
-        $stat->ip = $request->ip;
-        $stat->save();
+        if (!preg_match('/^127.0.0.(1|2|3|4|5)$/', $request->ip, $match)) {
+            $stat = new Stat();
+            $stat->page = $request->page;
+            $stat->ip = $request->ip;
+            $stat->save();
+        }
 
         $pusher = App::make('pusher');
 

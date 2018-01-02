@@ -1,5 +1,5 @@
 <?php
-
+//dd($_SERVER['REMOTE_ADDR']);
 Route::get('/', 'Frontend\PagesController@landing');
 Route::get('/about', 'Frontend\PagesController@about');
 Route::get('/contact', 'Frontend\PagesController@contact');

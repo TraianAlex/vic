@@ -12,8 +12,8 @@ class LinkTest extends TestCase
     /** @test */
     public function link()
     {
-        $link = Link::first();
-        $this->visit('links')->see($link->address);
+        $link = Link::all();
+        $this->visit('/link')->see($link->address);
         $this->assertResponseOk();
     }
 }
