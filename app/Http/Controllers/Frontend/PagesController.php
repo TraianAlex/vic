@@ -43,6 +43,15 @@ class PagesController extends Controller
         return view('pages.links', compact( 'links', 'categories'));//compact('links')
     }
 
+    public function countLink(Request $request, $id)
+    {
+        $links = Link::findOrFail((int)$request->id);
+        $visits = $links->visits;
+        $links->visits = $visits + 1;
+        $links->save();
+        return redirect($links->address);
+    }
+
     public function demo()
     {
         return view('pages.demos');

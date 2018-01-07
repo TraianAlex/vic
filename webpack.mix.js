@@ -1,5 +1,4 @@
 let mix = require('laravel-mix');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -39,5 +38,3 @@ mix.scripts([
     'resources/assets/touch-swipe/jquery.touch-swipe.min.js',
     'resources/assets/theme/js/script.js'
 ], 'public/js/all.js').version();
-
-//'resources/assets/as-pie-progress/jquery-as-pie-progress.min.js',

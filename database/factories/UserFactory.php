@@ -25,9 +25,24 @@ $factory->define(App\User::class, function (Faker $faker) {
 });
 
 $factory->define(App\Admin::class, function (Faker $faker) {
+    static $password;
     return [
-        'name' => 'admin',
-        'email' => 'victor_traian@yahoo.com',
-        'password' => bcrypt('111111'),
+        'name' => $faker->word,
+        'email' => $faker->email,
+        'password' => $password ?: $password = bcrypt('secret'),
+        'remember_token' => str_random(10),
     ];
+});
+
+$factory->define(App\Link::class, function (Faker $faker) {
+    return [
+        'address' => $faker->url,
+        'description' => $faker->sentence
+    ];
+});
+
+$factory->define(App\Category::class, function (Faker $faker) {
+        return [
+            'name' => $faker->word
+        ];
 });

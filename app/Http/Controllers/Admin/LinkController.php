@@ -40,9 +40,7 @@ class LinkController extends Controller
     public function create()
     {
         $title = 'Create - link';
-
         $categories = \App\Category::pluck('name', 'id');
-
         return view('link.create', compact('categories'));
     }
 

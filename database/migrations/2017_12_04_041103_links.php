@@ -21,19 +21,19 @@ class Links extends Migration
         Schema::create('links',function (Blueprint $table){
 
         $table->increments('id');
-        
+
         $table->String('address');
-        
-        $table->String('description');
-        
+
+        $table->String('description')->nullable();
+
         /**
          * Foreignkeys section
          */
-        
-        
+
+
         $table->timestamps();
-        
-        
+
+
         // type your addition here
 
         });

@@ -5,7 +5,7 @@
 <title>Links Web Development</title>
 @endsection
 @section('css')
-<link rel="stylesheet" href="assets/facebook-plugin/style.css">
+<link rel="stylesheet" href="{{asset('assets/facebook-plugin/style.css')}}">
 <link rel="stylesheet" href="{{asset('assets/datatables/data-tables.bootstrap4.min.css')}}">
 @endsection
 @section('content')
@@ -308,8 +308,8 @@
             <tbody>
               @foreach($links as $link)
               <tr>
-                <td class="body-item mbr-fonts-style display-7"><a href="{{$link->address}}" target="_blank" class="text-black">{{$link->address}}</a></td>
-                <td class="body-item mbr-fonts-style display-7">{{$link->description}}</td>
+                <td class="body-item mbr-fonts-style display-7"><a href="{{url('/links/'.$link->id)}}" target="_blank" class="text-black">{{$link->address}}</a> <span style="font-size:14px">(views {{$link->visits}})</td>
+                <td class="body-item mbr-fonts-style display-7">{{$link->description}}</span></td>
                 <td class="body-item mbr-fonts-style display-7"><?php $i = 0; ?>
                     @foreach($link->categories as $cat)
                         <?php $i++ ?>
@@ -348,7 +348,7 @@
         </div>
     </div>
 </section>
-<section class="cid-qChVjylxlB" id="social-buttons3-2r" data-rv-view="208">
+<section class="cid-qChVjylxlB" id="social-buttons3-2r" data-rv-view="607">
     <div class="container">
         <div class="media-container-row">
             <div class="col-md-8 align-center">
@@ -357,13 +357,13 @@
                 </h2>
                 <div>
                     <div class="mbr-social-likes">
-                        <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
+                        <span id="ck_facebook" class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
                             <i class="socicon socicon-facebook"></i>
                         </span>
-                        <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
+                        <span id="ck_twitter" class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
                             <i class="socicon socicon-twitter"></i>
                         </span>
-                        <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
+                        <span id="ck_sharethis" class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
                             <i class="socicon socicon-googleplus"></i>
                         </span>
                     </div>
@@ -374,8 +374,17 @@
 </section>
 @endsection
 @section('script')
-<script src="assets/facebook-plugin/facebook-script.js"></script>
-<script src="assets/sociallikes/social-likes.js"></script>
+<script src="http://w.sharethis.com/button/sharethis.js#publisher=1bd5e691-454c-4f90-8a6b-12d6923db08e&type=website&post_services=twitter%2Cfacebook%2Cemail%2Cgbuzz%2Cmyspace&button=false"></script>
+<script>
+    var shared_object = SHARETHIS.addEntry({
+        title: document.title,
+        url: document.location.href
+    });
+    shared_object.attachButton(document.getElementById("ck_sharethis"));
+    shared_object.attachChicklet("facebook", document.getElementById("ck_facebook"));
+    shared_object.attachChicklet("twitter", document.getElementById("ck_twitter"));
+    shared_object.attachChick;
+</script>
 <script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}"></script>
 <script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}"></script>
 @endsection

@@ -14,6 +14,7 @@
             <th>address</th>
             <th>description</th>
             <th>categories</th>
+            <th>visits</th>
             <th>actions</th>
         </thead>
         <tbody>
@@ -28,6 +29,7 @@
 
                     @endforeach
                 </td>
+                <td>{!!$link->visits!!}</td>
                 <td width="15%">
                     <a data-toggle="modal" data-target="#myModal" class = 'delete btn btn-danger btn-xs' data-link = "/link/{!!$link->id!!}/deleteMsg" ><i class = 'fa fa-trash'> delete</i></a>
                     <a href = '#' class = 'viewEdit btn btn-primary btn-xs' data-link = '/link/{!!$link->id!!}/edit'><i class = 'fa fa-edit'> edit</i></a>

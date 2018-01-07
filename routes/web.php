@@ -5,6 +5,7 @@ Route::get('/about', 'Frontend\PagesController@about');
 Route::get('/contact', 'Frontend\PagesController@contact');
 Route::get('/services', 'Frontend\PagesController@services');
 Route::get('/links', 'Frontend\PagesController@link');
+Route::get('/links/{id}', 'Frontend\PagesController@countLink');
 Route::get('/tags/all', 'Frontend\PagesController@all');
 Route::get('/tags/{category}', 'Frontend\PagesController@result');
 Route::get('/demos', 'Frontend\PagesController@demo');

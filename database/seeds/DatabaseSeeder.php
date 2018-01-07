@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use App\Admin;
+use App\Link;
 use App\User;
+use App\Admin;
+use App\Category;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +16,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        factory(User::class, 5)->create();
+        User::truncate();
+        Admin::truncate();
+        factory(User::class, 2)->create();
         factory(Admin::class, 1)->create();
+        //factory(Link::class, 10)->create();
+        //factory(Category::class, 2)->create();
     }
 }
