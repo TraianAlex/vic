@@ -2,13 +2,13 @@
 
 namespace App\Listeners;
 
-use App\Mail\AdminLoggedin as Adm;
-use App\Events\AdminLoggedin;
+use App\Mail\UserRegistered;
+use App\Events\UserHasRegistered;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class EmailAdminNotification implements ShouldQueue
+class SendWelcomeEmail implements ShouldQueue
 {
     /**
      * Create the event listener.
@@ -23,11 +23,11 @@ class EmailAdminNotification implements ShouldQueue
     /**
      * Handle the event.
      *
-     * @param  AdminLoggedin  $event
+     * @param  UserHasRegistered  $event
      * @return void
      */
-    public function handle(AdminLoggedin $event)
+    public function handle(UserHasRegistered $event)
     {
-        Mail::to('victor_traian@yahoo.com')->send(new Adm($event->admin));//App\Mail\AdminLoggedin as Adm;
+        Mail::to($event->user->email)->send(new UserRegistered($event->user));
     }
 }

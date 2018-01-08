@@ -34,7 +34,7 @@
             <tbody>
               @foreach($links as $link)
               <tr>
-                <td class="body-item mbr-fonts-style display-7"><a href="{{url('/links/'.$link->id)}}" target="_blank" class="text-black">{{$link->address}}</a> <span style="font-size:14px">(views {{$link->visits}})</td>
+                <td class="body-item mbr-fonts-style display-7"><a href="{{url('/links/'.$link->id)}}" target="_blank" class="text-black">{{$link->address}}</a> <span style="font-size:14px">(v:{{$link->visits}})</td>
                 <td class="body-item mbr-fonts-style display-7">{{$link->description}}</td>
                 <td class="body-item mbr-fonts-style display-7"><?php $i = 0; ?>
                     @foreach($link->categories as $cat)

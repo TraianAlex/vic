@@ -19,6 +19,10 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\AdminLoggedin' => [
             'App\Listeners\EmailAdminNotification',
         ],
+        'App\Events\UserHasRegistered' => [
+            'App\Listeners\SendWelcomeEmail',
+            'App\Listeners\TrackWelcomeEmail',
+        ],
     ];
 
     /**
