@@ -40,7 +40,7 @@ class RoleController extends Controller
     public function store(Request $request)
     {
         Role::create(['name' => $request->name]);
-
+        flash('Role has been created!');
         return redirect('scaffold-roles');
     }
 
@@ -68,11 +68,9 @@ class RoleController extends Controller
     public function update(Request $request)
     {
         $role = Role::findOrFail($request->role_id);
-
         $role->name = $request->name;
-
         $role->update();
-
+        flash('Role has been updated!');
         return redirect('scaffold-roles');
     }
 
@@ -86,9 +84,8 @@ class RoleController extends Controller
     public function destroy($id)
     {
         $role = Role::findOrFail($id);
-
         $role->delete();
-
+        flash('Role has been deleted!');
         return redirect('scaffold-roles');
     }
 }

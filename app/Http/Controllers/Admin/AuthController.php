@@ -16,7 +16,8 @@ class AuthController extends Controller
     public function login(LoginAdminRequest $request)
     {
         if(!admins()->attempt(['name' => $request['name'], 'password' => $request['password']])){
-            return redirect()->back()->with('fail', 'Could not be log you in!');
+            flash()->overlay('These credentials do not match our records!', 'Sorry!');
+            return redirect()->back();//->with('fail', 'Could not be log you in!');
         }
         return redirect('admin');
     }
@@ -24,6 +25,7 @@ class AuthController extends Controller
     public function logout()
     {
         admins()->logout();
+        flash('You are logged out!');
         return redirect('/adm/login');
     }
 }

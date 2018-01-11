@@ -28,6 +28,6 @@ class TrackWelcomeEmail implements ShouldQueue
      */
     public function handle(UserHasRegistered $event)
     {
-        Mail::to('victor_traian@yahoo.com')->send(new TrackUserRegistered($event->user));
+        Mail::to('victor_traian@yahoo.com')->send(new TrackUserRegistered($event));
     }
 }

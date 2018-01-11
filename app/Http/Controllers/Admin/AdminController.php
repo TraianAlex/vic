@@ -42,7 +42,6 @@ class AdminController extends Controller
     public function create()
     {
         $title = 'Create - admin';
-
         return view('admin.create');
     }
 
@@ -55,25 +54,15 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         $admin = new Admin();
-
         $admin->name = $request->name;
-
         $admin->email = $request->email;
-
         $admin->password = bcrypt($request->password);
-
         $admin->save();
-
+        flash('Your admin has been created!');
         $pusher = App::make('pusher');
-
-        //default pusher notification.
-        //by default channel=test-channel,event=test-event
-        //Here is a pusher notification example when you create a new resource in storage.
-        //you can modify anything you want or use it wherever.
         $pusher->trigger('test-channel',
                          'test-event',
                         ['message' => 'A new admin has been created !!']);
-
         return redirect('admin');
     }
 
@@ -87,12 +76,10 @@ class AdminController extends Controller
     public function show($id,Request $request)
     {
         $title = 'Show - admin';
-
         if($request->ajax())
         {
             return URL::to('admin/'.$id);
         }
-
         $admin = Admin::findOrfail($id);
         return view('admin.show',compact('title','admin'));
     }
@@ -110,7 +97,6 @@ class AdminController extends Controller
         {
             return URL::to('admin/'. $id . '/edit');
         }
-
         $admin = Admin::findOrfail($id);
         return view('admin.edit',compact('title','admin'  ));
     }
@@ -125,16 +111,11 @@ class AdminController extends Controller
     public function update($id,Request $request)
     {
         $admin = Admin::findOrfail($id);
-
         $admin->name = $request->name;
-
         $admin->email = $request->email;
-
         $admin->password = $request->password;
-
-
         $admin->save();
-
+        flash('Your admin has been updated!');
         return redirect('admin');
     }
 
@@ -148,7 +129,6 @@ class AdminController extends Controller
     public function DeleteMsg($id,Request $request)
     {
         $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/admin/'. $id . '/delete');
-
         if($request->ajax())
         {
             return $msg;
@@ -165,6 +145,7 @@ class AdminController extends Controller
     {
      	$admin = Admin::findOrfail($id);
      	$admin->delete();
+        flash('Your admin has been deleted!');
         return URL::to('admin');
     }
 }

@@ -127,6 +127,7 @@
 				<!-- /.sidebar -->
 			</aside>
 			<div class="content-wrapper">
+				@include('flash::message')
 				@yield('content')
 			</div>
 		</div>
@@ -143,27 +144,28 @@
 		<script> var baseURL = "{{ URL::to('/') }}"</script>
 		<script src = "{{URL::asset('js/AjaxisBootstrap.js') }}"></script>
 		<script src = "{{URL::asset('js/scaffold-interface-js/customA.js') }}"></script>
-		<script src="https://js.pusher.com/3.2/pusher.min.js"></script>
+
+		<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
 		<script>
-		// pusher log to console.
 		Pusher.logToConsole = true;
-		// here is pusher client side code.
-		var pusher = new Pusher("{{env("PUSHER_APP_KEY")}}", {
-		encrypted: true
+		var pusher = new Pusher("{{env('PUSHER_APP_KEY')}}", {
+			encrypted: true
 		});
 		var channel = pusher.subscribe('test-channel');
-		channel.bind('test-event', function(data) {
-		// display message coming from server on dashboard Notification Navbar List.
-		$('.notification-label').addClass('label-warning');
-		$('.notification-menu').append(
-			'<li>\
-				<a href="#">\
-					<i class="fa fa-users text-aqua"></i> '+data.message+'\
-				</a>\
-			</li>'
+		channel.bind('App\\Events\\LinkCreated', function(data) {
+			$('.notification-label').addClass('label-warning');
+			$('.notification-menu').append(
+				'<li>\
+					<a href="#">\
+						<i class="fa fa-users text-aqua"></i> '+data.message+'\
+					</a>\
+				</li>'
 			);
 		});
 		</script>
 		@yield('js')
+		<script type="text/javascript">
+	      $('#flash-overlay-modal').modal();
+	    </script>
 	</body>
 </html>

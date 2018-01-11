@@ -40,7 +40,7 @@ class PermissionController extends Controller
     public function store(Request $request)
     {
         Permission::create(['name' => $request->name]);
-
+        flash('Permission has been created!');
         return redirect('scaffold-permissions');
     }
 
@@ -68,11 +68,9 @@ class PermissionController extends Controller
     public function update(Request $request)
     {
         $permission = Permission::findOrFail($request->permission_id);
-
         $permission->name = $request->name;
-
         $permission->update();
-
+        flash('Permission has been updated!');
         return redirect('scaffold-permissions');
     }
 
@@ -86,9 +84,8 @@ class PermissionController extends Controller
     public function destroy($id)
     {
         $permission = Permission::findOrFail($id);
-
         $permission->delete();
-
+        flash('Permission has been deleted!');
         return redirect('scaffold-permissions');
     }
 }

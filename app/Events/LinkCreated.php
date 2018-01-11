@@ -11,7 +11,7 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use App\Admin;
 
-class LinkCreated
+class LinkCreated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -21,7 +21,7 @@ class LinkCreated
      *
      * @return void
      */
-    public function __construct(Admin $admin)
+    public function __construct(Admin $admin)//Admin $admin
     {
         $this->admin = $admin;
     }
@@ -33,6 +33,7 @@ class LinkCreated
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('test-channel');
+        //return ['test-channel'];
     }
 }

@@ -5,7 +5,7 @@
 <title>Web Development Traian Alexandru{{-- config('app.name', 'Vic') --}}</title>
 @endsection
 @section('content')
-</section><section class="header5 cid-qBPIQBdLjY mbr-fullscreen mbr-parallax-background" id="header5-1n" data-rv-view="845">
+<section class="header5 cid-qBPIQBdLjY mbr-fullscreen mbr-parallax-background" id="header5-1n" data-rv-view="845">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);">
     </div>
     <div class="container">

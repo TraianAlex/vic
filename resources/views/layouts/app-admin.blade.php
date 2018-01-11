@@ -25,13 +25,17 @@
 		@include('partials.vicnav')
 
 		@yield('content')
-
+    @include('flash::message')
 		@include('partials.footer')
 	</div>
+  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
+    <input name="animation" type="hidden">
+
 	<script src="{{ asset('js/all.js') }}"></script>
   	@yield('script')
-  	<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
-  	<input name="animation" type="hidden">
     <!--script src="{{-- asset('js/app.js') --}}"></script-->
+    <script type="text/javascript">
+      $('#flash-overlay-modal').modal();
+    </script>
 </body>
 </html>

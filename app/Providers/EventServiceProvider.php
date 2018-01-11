@@ -14,7 +14,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         'App\Events\LinkCreated' => [
-            'App\Listeners\EmailLinkCreation',
+            'App\Listeners\EmailLinkCreation@newLink',
         ],
         'App\Events\AdminLoggedin' => [
             'App\Listeners\EmailAdminNotification',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use URL;
 use App\Category;
+use Pusher\Pusher;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -53,16 +54,11 @@ class CategoryController extends Controller
         $category = new Category();
         $category->name = $request->name;
         $category->save();
-
-        $pusher = App::make('pusher');
-        //default pusher notification.
-        //by default channel=test-channel,event=test-event
-        //Here is a pusher notification example when you create a new resource in storage.
-        //you can modify anything you want or use it wherever.
-        $pusher->trigger('test-channel',
-                         'test-event',
+        flash('Your category has been created!');
+        //$pusher = App::make('pusher');
+        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
+        $pusher->trigger('test-channel', 'App\Events\LinkCreated',
                         ['message' => 'A new category has been created !!']);
-
         return redirect('category');
     }
 
@@ -76,12 +72,10 @@ class CategoryController extends Controller
     public function show($id, Request $request)
     {
         $title = 'Show - category';
-
         if($request->ajax())
         {
             return URL::to('category/'.$id);
         }
-
         $category = Category::findOrfail($id);
         return view('category.show',compact('title','category'));
     }
@@ -115,7 +109,7 @@ class CategoryController extends Controller
         $category = Category::findOrfail($id);
         $category->name = $request->name;
         $category->save();
-
+        flash('Your category has been updated!');
         return redirect('category');
     }
 
@@ -145,6 +139,7 @@ class CategoryController extends Controller
     {
      	$category = Category::findOrfail($id);
      	$category->delete();
+        flash('Your category has been deleted!');
         return URL::to('category');
     }
 }

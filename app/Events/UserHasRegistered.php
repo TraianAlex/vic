@@ -15,15 +15,17 @@ class UserHasRegistered
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $user;
+    public $name;
+    public $email;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct($name, $email)
     {
-        $this->user = $user;
+        $this->name = $name;
+        $this->email = $email;
     }
 
     /**

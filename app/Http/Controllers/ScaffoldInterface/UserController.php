@@ -48,6 +48,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
 
         $user->save();
+        flash('User has been created!');
 
         return redirect('scaffold-users');
     }
@@ -84,9 +85,8 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->name = $request->name;
         $user->password = Hash::make($request->password);
-
         $user->save();
-
+        flash('Data has been updated!');
         return redirect('scaffold-users');
     }
 
@@ -100,9 +100,8 @@ class UserController extends Controller
     public function destroy($id)
     {
         $user = \App\User::findOrfail($id);
-
         $user->delete();
-
+        flash('User has been deleted!');
         return redirect('scaffold-users');
     }
 
@@ -117,7 +116,7 @@ class UserController extends Controller
     {
         $user = \App\User::findOrfail($request->user_id);
         $user->assignRole($request->role_name);
-
+        flash('Role has been added!');
         return redirect('scaffold-users/edit/'.$request->user_id);
     }
 
@@ -132,7 +131,7 @@ class UserController extends Controller
     {
         $user = \App\User::findorfail($request->user_id);
         $user->givePermissionTo($request->permission_name);
-
+        flash('Permission has been added!');
         return redirect('scaffold-users/edit/'.$request->user_id);
     }
 
@@ -148,7 +147,7 @@ class UserController extends Controller
         $user = \App\User::findorfail($user_id);
 
         $user->revokePermissionTo(str_slug($permission, ' '));
-
+        flash('Permission has been revoked!');
         return redirect('scaffold-users/edit/'.$user_id);
     }
 
@@ -164,7 +163,7 @@ class UserController extends Controller
         $user = \App\User::findorfail($user_id);
 
         $user->removeRole(str_slug($role, ' '));
-
+        flash('Role has been revoked!');
         return redirect('scaffold-users/edit/'.$user_id);
     }
 }

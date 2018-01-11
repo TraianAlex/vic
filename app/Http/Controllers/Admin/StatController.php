@@ -39,7 +39,6 @@ class StatController extends Controller
         }
 
         $pages = $this->extract($item, 'page');
-
         $paginate_pages = new Pagination();
         $pages = $paginate_pages->paginate($pages, 5);
 
@@ -76,18 +75,12 @@ class StatController extends Controller
             $stat->page = $request->page;
             $stat->ip = $request->ip;
             $stat->save();
+            flash('Your data has been created!');
         }
-
         $pusher = App::make('pusher');
-
-        //default pusher notification.
-        //by default channel=test-channel,event=test-event
-        //Here is a pusher notification example when you create a new resource in storage.
-        //you can modify anything you want or use it wherever.
         $pusher->trigger('test-channel',
                          'test-event',
                         ['message' => 'A new stat has been created !!']);
-
         return redirect('stat');
     }
 
@@ -101,12 +94,10 @@ class StatController extends Controller
     public function show($id,Request $request)
     {
         $title = 'Show - stat';
-
         if($request->ajax())
         {
             return URL::to('stat/'.$id);
         }
-
         $stat = Stat::findOrfail($id);
         return view('stat.show',compact('title','stat'));
     }
@@ -121,13 +112,10 @@ class StatController extends Controller
     public function update($id,Request $request)
     {
         $stat = Stat::findOrfail($id);
-
         $stat->page = $request->page;
-
         $stat->ip = $request->ip;
-
         $stat->save();
-
+        flash('Your data has been updated!');
         return redirect('stat');
     }
 
@@ -141,7 +129,6 @@ class StatController extends Controller
     public function DeleteMsg($id,Request $request)
     {
         $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/stat/'. $id . '/delete');
-
         if($request->ajax())
         {
             return $msg;
@@ -158,6 +145,7 @@ class StatController extends Controller
     {
      	$stat = Stat::findOrfail($id);
      	$stat->delete();
+        flash('Your data has been deleted!');
         return URL::to('stat');
     }
 

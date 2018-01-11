@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e58c5a49ad45b858009efc923427a36",
+    "content-hash": "5588752532582936a6efdde44a531bf9",
     "packages": [
         {
             "name": "amranidev/ajaxis",

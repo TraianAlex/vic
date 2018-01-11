@@ -26,7 +26,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        event(new UserHasRegistered(auth()->user()));
         return view('pages.home');
     }
 }

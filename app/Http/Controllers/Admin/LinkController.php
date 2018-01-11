@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use URL;
 use App\Link;
+use Pusher\Pusher;
 use App\Events\LinkCreated;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
@@ -56,17 +57,12 @@ class LinkController extends Controller
         $link->address = $request->address;
         $link->description = $request->description;
         $link->save();
-
         $link->assignCategory(!$request->input('cat_list') ? [] : $request->input('cat_list'));
-
-        event(new LinkCreated(admins()->user()));
-        $pusher = App::make('pusher');
-        //default pusher notification.
-        //by default channel=test-channel,event=test-event
-        //Here is a pusher notification example when you create a new resource in storage.
-        //you can modify anything you want or use it wherever.
-        $pusher->trigger('test-channel',
-                         'test-event',
+        flash('Your link has been created!');
+        //event(new LinkCreated(admins()->user()));//admins()->user())
+        //$pusher = App::make('pusher');
+        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
+        $pusher->trigger('test-channel', 'App\Events\LinkCreated',
                         ['message' => 'A new link has been created !!']);
         return redirect('link');
     }
@@ -103,9 +99,7 @@ class LinkController extends Controller
             return URL::to('link/'. $id . '/edit');
         }
         $link = Link::findOrfail($id);
-
         $categories = \App\Category::pluck('name', 'id');
-
         return view('link.edit',compact('title','link', 'categories'));
     }
 
@@ -129,10 +123,9 @@ class LinkController extends Controller
         $link->address = $request->address;
         $link->description = $request->description;
         $link->save();
-
         $link->categories()->sync(
             !$request->input('categories_list') ? [] : $request->input('categories_list'));
-
+        flash('Your link has been updated!');
         return redirect('link');
     }
 
@@ -161,10 +154,9 @@ class LinkController extends Controller
     public function destroy($id)
     {
      	$link = Link::findOrfail($id);
-
         $link->categories()->detach();
-
      	$link->delete();
+        flash('Your link has been deleted!');
         return URL::to('link');
     }
 }

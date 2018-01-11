@@ -14,6 +14,7 @@ class SiteMapController extends Controller
         SitemapGenerator::create('https://vic.com.ro')->writeToFile($path);
         $xml = file_get_contents($path);
         $links = simplexml_load_file($path);
+        flash('Your site map has been created!');
         return view('admin.site-map', compact('xml', 'links'));
     }
 }

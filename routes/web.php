@@ -1,4 +1,6 @@
 <?php
+
+//use App\Events\LinkCreated;
 //dd($_SERVER['REMOTE_ADDR']);
 Route::get('/', 'Frontend\PagesController@landing');
 Route::get('/about', 'Frontend\PagesController@about');
@@ -9,6 +11,12 @@ Route::get('/links/{id}', 'Frontend\PagesController@countLink');
 Route::get('/tags/all', 'Frontend\PagesController@all');
 Route::get('/tags/{category}', 'Frontend\PagesController@result');
 Route::get('/demos', 'Frontend\PagesController@demo');
+
+// Route::get('/broadcast', function(){
+//     $name = Request::input('name');// broadcast/?name=John
+//     event(new LinkCreated($name));
+//     return 'Done!';
+// });
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

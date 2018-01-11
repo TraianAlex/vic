@@ -39,6 +39,7 @@
 </section>
 
 <example-component></example-component>
+<link-component></link-component>
 <div class="panel-body">
     @if (session('status'))
         <div class="alert alert-success">
