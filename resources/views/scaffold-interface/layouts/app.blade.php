@@ -43,8 +43,9 @@
 					</a>
 					<div class="navbar-custom-menu">
 						<ul class="nav navbar-nav">
-							<!-- Notification Navbar List-->
+							<li><a href="{{url('/')}}"><i class="glyphicon glyphicon-globe"></i> <span>View Site</span></a></li>
 							<li><a href="{{url('/admin')}}"><i class="fa fa-lock"></i> <span>Admin</span></a></li>
+							<!-- Notification Navbar List-->
 							<li class="dropdown notifications-menu">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="fa fa-bell-o"></i>
@@ -64,15 +65,14 @@
 							<li class="dropdown user user-menu">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									<img src="http://ahloman.net/wp-content/uploads/2013/06/user.jpg" class="user-image" alt="User Image">
-									<span class="hidden-xs">{{-- {{ admins()->name }} --}}{{-- {{Auth::user()->name}} --}}</span>
+									<span class="hidden-xs"> {{ admins()->user()->name }} {{-- {{Auth::user()->name}} --}}</span>
 								</a>
 								<ul class="dropdown-menu">
 									<!-- User image -->
 									<li class="user-header">
 										<img src="http://ahloman.net/wp-content/uploads/2013/06/user.jpg" class="img-circle" alt="User Image">
 										<p>
-											{{-- {{Auth::user()->name}} --}}
-											{{-- {{ admins()->name }} --}}
+											{{ admins()->user()->name }}{{--{{Auth::user()->name}} --}}
 										</p>
 									</li>
 									<!-- Menu Footer-->

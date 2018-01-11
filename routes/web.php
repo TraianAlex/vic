@@ -21,7 +21,7 @@ Route::get('/demos', 'Frontend\PagesController@demo');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix' => '/adm'], function(){
+Route::group(['prefix' => '/adm', 'middleware' => 'auth'], function(){
     Route::get('/login', ['uses' => 'Admin\AuthController@index', 'as' => 'login.admin']);
     Route::post('/login', ['uses' => 'Admin\AuthController@login', 'as' => 'login.admin']);
 });
