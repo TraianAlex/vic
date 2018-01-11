@@ -29,8 +29,8 @@ Route::group(['prefix' => '/adm', 'middleware' => 'auth'], function(){
 Route::group(['middleware' => 'admin'], function(){
     Route::post('/logout', ['uses' => 'Admin\AuthController@logout', 'as' => 'admin.logout']);
     Route::get('/site-map', 'Admin\SiteMapController@index');
-    Route::get('stat/ip/{ip}', 'Admin\StatController@index');
-    Route::get('stat/page/{page}', 'Admin\StatController@index');
+    Route::get('stat/ips/{ip?}','Admin\StatController@getIps');
+    Route::get('stat/pages', 'Admin\StatController@getPages');
 
     Route::resource('admin','Admin\AdminController');//
     Route::post('admin/{id}/update','Admin\AdminController@update');
@@ -51,4 +51,6 @@ Route::group(['middleware' => 'admin'], function(){
     Route::post('stat/{id}/update','Admin\StatController@update');
     Route::get('stat/{id}/delete','Admin\StatController@destroy');
     Route::get('stat/{id}/deleteMsg','Admin\StatController@DeleteMsg');
+
+    Route::get('stat/{ip}/deleteIp','Admin\StatController@destroyIp');
 });

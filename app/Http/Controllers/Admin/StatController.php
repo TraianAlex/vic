@@ -23,27 +23,47 @@ class StatController extends Controller
      *
      * @return  \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
         $title = 'Index - stat';
-        $item = Stat::get();
+        $stats = Stat::paginate(10);
+        return view('stat.index',compact('stats', 'title'));
+    }
 
+    public function getIps(Request $request)
+    {
+        $title = 'IPs';
+        $item = Stat::get();
         $ip_unique = $this->extract($item, 'ip');
         $total_unique_ips = count($ip_unique);
 
         $paginate_ip = new Pagination();
-        $ip_unique = $paginate_ip->paginate( $ip_unique, 3);
+        $ip_unique = $paginate_ip->paginate( $ip_unique, 12);
 
         if(isset($request->ip)){
             $pagesByIP = $this->extract($item->where('ip', $request->ip), 'page');
         }
+        return view('stat.ips',compact('title', 'total_unique_ips', 'ip_unique', 'pagesByIP', 'paginate_ip', 'request'));
+    }
+
+    public function getPages(Request $request)
+    {
+        $title = 'Pages';
+        $item = Stat::get();
 
         $pages = $this->extract($item, 'page');
         $paginate_pages = new Pagination();
-        $pages = $paginate_pages->paginate($pages, 5);
+        $pages = $paginate_pages->paginate($pages, 14);
 
-        $stats = Stat::paginate(10);
-        return view('stat.index',compact('stats','title', 'total_unique_ips', 'ip_unique', 'pages', 'pagesByIP', 'paginate_ip', 'paginate_pages'));
+        return view('stat.pages',compact('title', 'pages', 'paginate_pages' , 'request'));
+    }
+
+    public function destroyIp($ip)
+    {
+        $stat = Stat::where('ip', $ip);
+        $stat->delete();
+        flash('Your data has been deleted!');
+        return redirect()->back();
     }
 
     protected function extract($collection, $page)

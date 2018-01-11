@@ -23,50 +23,50 @@ class Pagination{
         return array_combine($keys, $values);
     }
 
-    public function render()
+    public function render($request)
     {
         return "<nav>
                     <ul class='pager'>
-                        <li>{$this->back()}</li>
-                        <li>{$this->curent()}</li>
-                        <li>{$this->fwd()}</li>
+                        <li>{$this->back($request)}</li>
+                        <li>{$this->curent($request)}</li>
+                        <li>{$this->fwd($request)}</li>
                     </ul>
                 </nav>";
     }
 
-    private function back()
+    private function back($request)
     {
         if($this->page > 3 && $this->total_pages > 5){
-            return '<a style="text-decoration:none;" href="/stat/?page=' . ($this->page - 1) .'">&lt;</a>
-                    <a style="text-decoration:none;" href="/stat/?page=1">1</a> '
+            return '<a style="text-decoration:none;" href="/stat/'.$request->segment(2).'/?page=' . ($this->page - 1) .'">&lt;</a>
+                    <a style="text-decoration:none;" href="/stat/'.$request->segment(2).'/?page=1">1</a> '
                     .$this->set_dots_left();
         }else{
             return '&nbsp;';
         }
     }
 
-    private function curent()
+    private function curent($request)
     {
         $link = null;
         if($this->total_pages != 1){
             //for($pages = 1; $pages <= $this->total_pages; $pages++){
             foreach($this->set_total_partial_pages() as $pages){
                 if($this->page == $pages){
-                    $link .= " <a href='/stat/?page={$this->page}'><b>{$this->page}</b></a> ";
+                    $link .= " <a href='/stat/{$request->segment(2)}/?page={$this->page}'><b>{$this->page}</b></a> ";
                 }else{
-                    $link .= "<a href='/stat/?page={$pages}'>{$pages}</a>";
+                    $link .= "<a href='/stat/{$request->segment(2)}/?page={$pages}'>{$pages}</a>";
                 }
             }
         }
         return $link;
     }
 
-    private function fwd()
+    private function fwd($request)
     {
         if($this->start_page + $this->per_page < $this->total_rec && $this->total_pages > 5 && $this->page < $this->total_pages - 2){
             return $this->set_dots_right()
-                   .' <a style="text-decoration:none;" href="/stat/?page=' . $this->total_pages . '">'.$this->total_pages.'</a>
-                      <a style="text-decoration:none;" href="/stat/?page=' . ($this->page + 1) . '">&gt;</a>';
+                   .' <a style="text-decoration:none;" href="/stat/'.$request->segment(2).'/?page=' . $this->total_pages . '">'.$this->total_pages.'</a>
+                      <a style="text-decoration:none;" href="/stat/'.$request->segment(2).'/?page=' . ($this->page + 1) . '">&gt;</a>';
         }else{
             return '&nbsp;';
         }
