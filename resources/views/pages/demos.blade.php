@@ -104,7 +104,7 @@
         <div class="hoursCountdown" title="Hours"></div>
         <div class="minutesCountdown" title="Minutes"></div>
         <div class="secondsCountdown" title="Seconds"></div>
-        <div class="countdown pt-5 mt-2" data-due-date="2018/01/15">
+        <div class="countdown pt-5 mt-2" data-due-date="2018/02/28">
         </div>
     </div>
 </section>

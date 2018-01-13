@@ -310,11 +310,10 @@
               <tr>
                 <td class="body-item mbr-fonts-style display-7"><a href="{{url('/links/'.$link->id)}}" target="_blank" class="text-black">{{$link->address}}</a> <span style="font-size:14px">(v:{{$link->visits}})</td>
                 <td class="body-item mbr-fonts-style display-7">{{$link->description}}</span></td>
-                <td class="body-item mbr-fonts-style display-7"><?php $i = 0; ?>
+                <td class="body-item mbr-fonts-style display-7">
                     @foreach($link->categories as $cat)
-                        <?php $i++ ?>
                         <a href="{{url('/tags/'.$cat->name)}}" class="text-black">{{$cat->name}}</a>
-                        @if(count($link->categories) > 1 && count($link->categories) > $i) / @endif
+                        {{$loop->remaining ? ' / ' : ''}}
                     @endforeach
                 </td>
               </tr>
