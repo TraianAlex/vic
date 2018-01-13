@@ -4,12 +4,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 /**
- * Class Stats.
+ * Class Ips.
  *
- * @author  The scaffold-interface created at 2017-12-22 12:30:16am
+ * @author  The scaffold-interface created at 2018-01-11 03:46:21pm
  * @link  https://github.com/amranidev/scaffold-interface
  */
-class Stats extends Migration
+class Ips extends Migration
 {
     /**
      * Run the migrations.
@@ -18,11 +18,9 @@ class Stats extends Migration
      */
     public function up()
     {
-        Schema::create('stats',function (Blueprint $table){
+        Schema::create('ips',function (Blueprint $table){
 
         $table->increments('id');
-
-        $table->String('page');
 
         $table->String('ip');
 
@@ -46,6 +44,6 @@ class Stats extends Migration
      */
     public function down()
     {
-        Schema::drop('stats');
+        Schema::drop('ips');
     }
 }

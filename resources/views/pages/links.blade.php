@@ -385,6 +385,7 @@
     shared_object.attachChicklet("twitter", document.getElementById("ck_twitter"));
     shared_object.attachChick;
 </script>
+<script src="{{asset('assets/facebook-plugin/facebook-script.js')}}"></script>
 <script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}"></script>
 <script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}"></script>
 @endsection

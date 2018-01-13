@@ -31,6 +31,7 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('/site-map', 'Admin\SiteMapController@index');
     Route::get('stat/ips/{ip?}','Admin\StatController@getIps');
     Route::get('stat/pages', 'Admin\StatController@getPages');
+    Route::get('stat/ip/{id?}','Admin\IpController@index');
 
     Route::resource('admin','Admin\AdminController');//
     Route::post('admin/{id}/update','Admin\AdminController@update');
@@ -53,4 +54,14 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('stat/{id}/deleteMsg','Admin\StatController@DeleteMsg');
 
     Route::get('stat/{ip}/deleteIp','Admin\StatController@destroyIp');
+
+    Route::resource('ip','Admin\IpController');
+    Route::post('ip/{id}/update','Admin\IpController@update');
+    Route::get('ip/{id}/delete','Admin\IpController@destroy');
+    Route::get('ip/{id}/deleteMsg','Admin\IpController@DeleteMsg');
+
+    Route::resource('page','Admin\PageController');
+    Route::post('page/{id}/update','Admin\PageController@update');
+    Route::get('page/{id}/delete','Admin\PageController@destroy');
+    Route::get('page/{id}/deleteMsg','Admin\PageController@DeleteMsg');
 });

@@ -21,17 +21,17 @@ class Categories extends Migration
         Schema::create('categories',function (Blueprint $table){
 
         $table->increments('id');
-        
+
         $table->String('name');
-        
+
         /**
          * Foreignkeys section
          */
-        
-        
+
+
         $table->timestamps();
-        
-        
+
+
         // type your addition here
 
         });

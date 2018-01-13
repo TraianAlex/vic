@@ -2,6 +2,8 @@
 
 namespace App\Jobs;
 
+use App\Ip;
+use App\Page;
 use App\Stat;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
@@ -30,6 +32,12 @@ class Tracker implements ShouldQueue
      */
     public function handle()
     {
+        //$_SERVER['REMOTE_ADDR'] = '1.1.1.1';
+        //if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
+            $ip = Ip::firstOrCreate(['ip' => $_SERVER['REMOTE_ADDR']]);
+            $page = Page::firstOrCreate(['page' => $_SERVER['REQUEST_URI']]);
+            $ip->pages()->save($page);
+        //}
         // $ip = isset($_SERVER['REMOTE_ADDR']) ?: '1.1.1.1';
         // if (!preg_match('/^127.0.0.(1|2)$/', $ip)) {
         //     $stat = new Stat;
@@ -37,12 +45,12 @@ class Tracker implements ShouldQueue
         //     $stat->ip = $ip;
         //     $stat->save();
         // }
-        if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
-            $stat = new Stat;
-            $stat->page = $_SERVER['REQUEST_URI'];
-            $stat->ip = $_SERVER['REMOTE_ADDR'];
-            $stat->save();
-        }
+        // if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
+        //     $stat = new Stat;
+        //     $stat->page = $_SERVER['REQUEST_URI'];
+        //     $stat->ip = $_SERVER['REMOTE_ADDR'];
+        //     $stat->save();
+        // }
     }
 }
 /*
