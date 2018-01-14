@@ -22,39 +22,32 @@
                 </td>
             </tr>
             @endforeach
-             @if(isset($pagesByIP))
-                <tr><td><h3>Info Result</h3></td></tr>
-                @foreach ($pagesByIP->pages->unique('page') as $page)
-                    <tr><td>{{ $page->page }}</td>
-                        <td>{{ $page->ips->count() }}</td>
-                        <td>{{ $page->pivot->created_at->diffForHumans() }}</td></tr>
-                @endforeach
-            @endif
         </tbody>
     </table>
-    {{-- {!! $ipss->render() !!} --}}
+    {!! $ipss->render() !!}
 
-    <h1>Pages</h1>
-    <br>
+ @if(isset($pagesByIP))
+ <h2>Info results</h2>
     <table class = "table table-striped table-bordered table-hover" style = 'background:#fff'>
         <thead>
-            <th>pages</th>
+            <th>page</th>
             <th>views</th>
+            <th>last visit</th>
         </thead>
         <tbody>
-            @foreach($pages as $page)
+            @foreach($pagesByIP->pages->unique('page') as $page)
             <tr>
                 <td>{!!$page->page!!}</td>
                 <td>{{$page->ips->count()}}</td>
+                <td>{!!$page->pivot->created_at->diffForHumans()!!}</td>
             </tr>
             @endforeach
         </tbody>
     </table>
-    {{-- {!! $pages->render() !!} --}}
+    {{-- {!! $pagesByIP->render() !!} --}}
+ @endif
 
-    <h1>
-        Ip Index
-    </h1>
+    <h1>Ip Index</h1>
     <a href='{!!url("ip")!!}/create' class = 'btn btn-success'><i class="fa fa-plus"></i> New</a>
     <br>
     <br>

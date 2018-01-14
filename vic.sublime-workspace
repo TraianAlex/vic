@@ -388,10 +388,28 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Admin/AuthController.php",
+			"file": "resources/views/pages/demos.blade.php",
 			"settings":
 			{
-				"buffer_size": 801,
+				"buffer_size": 5684,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/pages/home.blade.php",
+			"settings":
+			{
+				"buffer_size": 1205,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/pages/links.blade.php",
+			"settings":
+			{
+				"buffer_size": 24721,
 				"line_ending": "Unix"
 			}
 		}
@@ -522,15 +540,51 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
-		"/Users/victor/MEGA/www/laravel/vic/app",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Auth",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Requests"
+		"/Users/victor/MEGA/www/laravel/vic/resources",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages",
+		"/Users/victor/MEGA/www/vic1"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/resources.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/IpController.php",
+		"/Users/victor/MEGA/www/laravel/vic/routes/api.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Kernel.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/index.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
+		"/Users/victor/MEGA/www/vic1/links.html",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/ip/index.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Jobs/Tracker.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/StatController.php",
+		"/Users/victor/MEGA/www/laravel/vic/routes/web.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Page.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Ip.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2018_01_11_035735_IpsPages.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/ips.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/PageController.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/IpController.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2015_10_31_162633_scaffoldinterfaces.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2018_01_11_034621_ips.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2018_01_07_105737_add_visits_to_links_table.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_22_123016_stats.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_04_041151_CategoriesLinks.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_04_040959_categories.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_04_041103_links.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_03_230841_create_permission_tables.php",
+		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_03_114234_admins.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/pages.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Resources/Paginate.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/index.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/.env",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/vicnav.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/errors/401.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Admin.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/emails/adminLoggedin.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/AuthController.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Auth/CreatesUserProviders.php",
@@ -539,37 +593,29 @@
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authorize.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/ScaffoldInterface/UserController.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Admin.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/amranidev/scaffold-interface/resources/views/graph.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/StatController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/LinkController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/CategoryController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/AdminController.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/bootstrap.js",
 		"/Users/victor/MEGA/www/laravel/vic/config/broadcasting.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/ScaffoldInterface/PermissionController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/ScaffoldInterface/RoleController.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/AuthController.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/SiteMapController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/LinkCreated.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php",
-		"/Users/victor/MEGA/www/laravel/vic/.env",
 		"/Users/victor/MEGA/www/laravel/vic/config/app.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/EmailLinkCreation.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/flash.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php",
 		"/Users/victor/MEGA/www/laravel/vic/storage/logs/laravel.log",
-		"/Users/victor/MEGA/www/laravel/vic/routes/web.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/EventServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/index.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Frontend/PagesController.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/test.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/footer.blade.php",
@@ -588,19 +634,12 @@
 		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/EmailAdminNotification.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/emails/userRegistered.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/vicnav.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/LoginTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/DatabaseTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Mail/AdminLoggedin.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/resources.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/link/index.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Jobs/Tracker.php",
-		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2018_01_07_105737_add_visits_to_links_table.php",
-		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_22_123016_stats.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Unit/UserTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/database/seeds/DatabaseSeeder.php",
-		"/Users/victor/MEGA/www/laravel/vic/database/migrations/2017_12_04_041103_links.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/LinkTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/.env.dusk.local",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Feature/DbTest.php",
@@ -611,12 +650,10 @@
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Database/Console/Factories/stubs/factory.stub",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Feature/DatabaseTest.php",
-		"/Users/victor/MEGA/www/vic1/links.html",
 		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/User/snippets/test.sublime-snippet",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Unit/PagesTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Feature/ValidationTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Feature/ExampleTest.php",
-		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Feature/LinkTest.php",
 		"/Users/victor/MEGA/www/laravel/vic/remb4372_vic.sql",
 		"/Users/victor/MEGA/www/laravel/vic/database/remb4372_vic.sql",
@@ -627,38 +664,17 @@
 		"/Users/victor/MEGA/www/laravel/vic/readme.md",
 		"/Users/victor/MEGA/www/laravel/vic/composer.json",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/index.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/phpunit/phpunit/src/Framework/TestCase.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/TestCase.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/ScaffoldInterface/AppController.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/dashboard/dashboard.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
 		"/Users/victor/MEGA/www/vic1/demo.html",
-		"/Users/victor/MEGA/www/laravel/vic/app/Resources/Paginate.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Stat.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Jobs/Traker.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Middleware/TrustProxies.php",
 		"/Users/victor/MEGA/www/laravel/vic/vendor/fideloper/proxy/src/TrustProxies.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/composer/installed.json",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/AdminController.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/StatController.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Console/Kernel.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/emails/adminLoggedin.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Events/AdminLoggedin.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/LinkController.php",
-		"/Users/victor/MEGA/www/laravel/vic/routes/console.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php",
-		"/Users/victor/MEGA/www/laravel/vic/test/test.txt",
-		"/Users/victor/MEGA/www/laravel/vic/public/untitled.php",
-		"/Users/victor/MEGA/www/laravel/vic/public/sitemap2.xml",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/about.blade.php",
-		"/Users/victor/MEGA/www/vic1/about.html",
-		"/Users/victor/MEGA/www/laravel/vic/links.txt",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Requests/CreateLinkRequest.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Requests/UpdateLinkRequest.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/vendor/pagination/default0.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/vendor/pagination/default.blade.php"
+		"/Users/victor/MEGA/www/laravel/vic/vendor/composer/installed.json"
 	],
 	"find":
 	{
@@ -676,6 +692,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"icon54-v1-html5",
+			"icon54-v2-java-script",
+			"$request",
 			"laravel-echo",
 			"notification-label",
 			"38",
@@ -800,10 +819,7 @@
 			"simple",
 			"media",
 			"media-simple",
-			"follow",
-			"http",
-			"img",
-			"@import"
+			"follow"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -829,33 +845,95 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Admin/AuthController.php",
+					"file": "resources/views/pages/demos.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 801,
+						"buffer_size": 5684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								358,
-								358
+								5536,
+								5536
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 390.0,
+						"translation.y": 3659.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/pages/home.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1057,
+								1057
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/pages/links.blade.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 24721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 669.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1076,7 +1154,7 @@
 		[
 			[
 				"",
-				"~/MEGA/www/laravel/laravelx1/laravelx1.sublime-project"
+				"~/MEGA/www/laravel/laravel4/laravel4.sublime-project"
 			],
 			[
 				"la",
@@ -1162,7 +1240,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 237.0,
+	"side_bar_width": 378.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
