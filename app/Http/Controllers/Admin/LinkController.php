@@ -63,7 +63,9 @@ class LinkController extends Controller
         //$pusher = App::make('pusher');
         $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
         $pusher->trigger('test-channel', 'App\Events\LinkCreated',
-                        ['message' => 'A new link has been created !!']);
+                        ['message' => "A new link has been created at<br>
+                            <a href=".url('/links/'. $link->id)." target='_blank'>"
+                            .url('/links/'. $link->id)."</a>"]);
         return redirect('link');
     }
 

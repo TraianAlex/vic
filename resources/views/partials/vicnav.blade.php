@@ -19,6 +19,16 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link link text-black" data-toggle="dropdown-submenu" aria-expanded="false">
+                        <span class="label"><i class="fa fa-bell-o"></i></span>
+                    </a>
+                    <div class="dropdown-menu notification-menu">
+                        <a class="text-black dropdown-item display-4"  aria-expanded="false">Your notifications</a>
+                    </div>
+                </li>
+            </ul>
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
                     <a class="nav-link link text-black display-4" href="/">
                         <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>&nbsp;Home</a>
@@ -31,7 +41,17 @@
                 @if(auth()->check())
                     <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-smile-face mbr-iconfont mbr-iconfont-btn"></span>&nbsp;{{ auth()->user()->name }} <span class="caret"></span>&nbsp;</a><div class="dropdown-menu">@if(auth()->user()->hasRole('admin')) @if(admins()->check())<a class="text-black dropdown-item display-4" href="{{ url('/scaffold-dashboard') }}" aria-expanded="false"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Dashboard</a>@else<a class="text-black dropdown-item display-4" href="{{ url('/adm/login') }}" aria-expanded="false"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Admin</a>@endif @endif<a class="text-black dropdown-item display-4" href="{{ url('/auth/logout') }}" aria-expanded="false"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Logout</a></div></li>
                 @endif
-                </ul>
+            </ul>
         </div>
     </nav>
 </section>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light notify-hide" style="margin-top: 64px;">
+    <ul class="nav nav-pills" style="margin: auto;">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i></a>
+        <div class="dropdown-menu notification-menu">
+          <a class="dropdown-item" href="#!">Your notifications</a>
+        </div>
+      </li>
+    </ul>
+</nav>
