@@ -60,7 +60,7 @@
       );
     });
 
-      setInterval(function(){
+      setTimeout(function(){
            var data = { message: 'test notification' };
           $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
           $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');

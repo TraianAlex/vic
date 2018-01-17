@@ -28,7 +28,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        event(new AdminLoggedin(admins()->user()));
+        //event(new AdminLoggedin(admins()->user()));
+
         $title = 'Index - admin';
         $admins = Admin::paginate(6);
         return view('admin.index',compact('admins','title'));
@@ -82,6 +83,26 @@ class AdminController extends Controller
         }
         $admin = Admin::findOrfail($id);
         return view('admin.show',compact('title','admin'));
+    }
+
+    public function getNotifications($id, Request $request)
+    {
+        $title = 'Show - admin';
+        if($request->ajax())
+        {
+            return URL::to('admin/'.$id);
+        }
+        $admin = Admin::findOrfail($id);
+        return view('admin.notifications', compact('title','admin'));
+    }
+
+    public function markNotifications()
+    {
+        // admins()->user()->unreadNotifications->map(function($n){
+        //     $n->markAsRead();
+        // });
+        admins()->user()->unreadNotifications->each->markAsRead();
+        return back();
     }
 
     /**

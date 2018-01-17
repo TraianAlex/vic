@@ -9,6 +9,7 @@ use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
+use App\Notifications\CategoryUpdated;
 use App\Http\Requests\CreateCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 
@@ -110,6 +111,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
         flash('Your category has been updated!');
+        admins()->user()->notify(new CategoryUpdated($category));
         return redirect('category');
     }
 

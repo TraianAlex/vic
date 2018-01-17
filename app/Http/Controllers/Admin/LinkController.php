@@ -11,14 +11,10 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
+use App\Notifications\LinkPublished;
+use App\Notifications\LinkUpdated;
 use App\Http\Requests\CreateLinkRequest;
 
-/**
- * Class LinkController.
- *
- * @author  The scaffold-interface created at 2017-12-04 04:11:03pm
- * @link  https://github.com/amranidev/scaffold-interface
- */
 class LinkController extends Controller
 {
     /**
@@ -59,9 +55,11 @@ class LinkController extends Controller
         $link->save();
         $link->assignCategory(!$request->input('cat_list') ? [] : $request->input('cat_list'));
         flash('Your link has been created!');
-        //event(new LinkCreated(admins()->user()));//admins()->user())
-        //$pusher = App::make('pusher');
-        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
+
+        admins()->user()->notify(new LinkPublished($link));
+        //event(new LinkCreated(admins()->user()));
+
+        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);//$pusher = App::make('pusher');
         $pusher->trigger('test-channel', 'App\Events\LinkCreated',
                         ['message' => "A new link has been created at<br>
                             <a href=".url('/links/'. $link->id)." target='_blank'>"
@@ -128,6 +126,7 @@ class LinkController extends Controller
         $link->categories()->sync(
             !$request->input('categories_list') ? [] : $request->input('categories_list'));
         flash('Your link has been updated!');
+        admins()->user()->notify(new LinkUpdated($link));
         return redirect('link');
     }
 

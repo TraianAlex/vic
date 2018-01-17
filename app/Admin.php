@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Admin.
  *
@@ -14,6 +15,7 @@ use Illuminate\Auth\Authenticatable;
 class Admin extends Model implements \Illuminate\Contracts\Auth\Authenticatable
 {
     use Authenticatable;
+    use Notifiable;
 
     protected $table = 'admins';
 

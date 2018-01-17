@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
 use App\Jobs\Tracker;
 use Illuminate\Http\Request;
 use App\Events\UserHasRegistered;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {

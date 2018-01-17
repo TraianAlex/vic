@@ -32,7 +32,7 @@ class Tracker implements ShouldQueue
      */
     public function handle()
     {
-        //$_SERVER['REMOTE_ADDR'] = '1.1.1.1';
+        //$_SERVER['REMOTE_ADDR'] = '1.1.1.1'; $_SERVER['REQUEST_URI']
         //if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
             $ip = Ip::firstOrCreate(['ip' => $_SERVER['REMOTE_ADDR']]);
             $page = Page::firstOrCreate(['page' => $_SERVER['REQUEST_URI']]);

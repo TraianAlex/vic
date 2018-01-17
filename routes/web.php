@@ -19,7 +19,7 @@ Route::get('/demos', 'Frontend\PagesController@demo');
 // });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'Frontend\HomeController@index')->name('home');
 
 Route::group(['prefix' => '/adm', 'middleware' => 'auth'], function(){
     Route::get('/login', ['uses' => 'Admin\AuthController@index', 'as' => 'login.admin']);
@@ -32,6 +32,8 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('stat/ips/{ip?}','Admin\StatController@getIps');
     Route::get('stat/pages', 'Admin\StatController@getPages');
     Route::get('stat/ip/{id?}','Admin\IpController@index');
+    Route::get('admin/notifications/{id}', 'Admin\AdminController@getNotifications');
+    Route::delete('admin/notifications/{id}', 'Admin\AdminController@markNotifications');
 
     Route::resource('admin','Admin\AdminController');//
     Route::post('admin/{id}/update','Admin\AdminController@update');
@@ -64,4 +66,9 @@ Route::group(['middleware' => 'admin'], function(){
     Route::post('page/{id}/update','Admin\PageController@update');
     Route::get('page/{id}/delete','Admin\PageController@destroy');
     Route::get('page/{id}/deleteMsg','Admin\PageController@DeleteMsg');
+
+    Route::resource('notification','Admin\NotificationController');
+    Route::post('notification/{id}/update','Admin\NotificationController@update');
+    Route::get('notification/{id}/delete','Admin\NotificationController@destroy');
+    Route::get('notification/{id}/deleteMsg','Admin\NotificationController@DeleteMsg');
 });
