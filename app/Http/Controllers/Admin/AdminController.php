@@ -5,13 +5,14 @@ namespace App\Http\Controllers\Admin;
 use URL;
 use App\Admin;
 use App\Http\Requests;
-use App\Mail\AdminLoggedin as Adm;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use App\Events\AdminLoggedin;
+use App\Mail\AdminLoggedin as Adm;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Class AdminController.
@@ -61,8 +62,7 @@ class AdminController extends Controller
         $admin->save();
         flash('Your admin has been created!');
         $pusher = App::make('pusher');
-        $pusher->trigger('test-channel',
-                         'test-event',
+        $pusher->trigger('test-channel', 'test-event',
                         ['message' => 'A new admin has been created !!']);
         return redirect('admin');
     }
@@ -87,10 +87,10 @@ class AdminController extends Controller
 
     public function getNotifications($id, Request $request)
     {
-        $title = 'Show - admin';
+        $title = 'Show - admin notifications';
         if($request->ajax())
         {
-            return URL::to('admin/'.$id);
+            return URL::to('admin/notifications/'.$id);
         }
         $admin = Admin::findOrfail($id);
         return view('admin.notifications', compact('title','admin'));
@@ -129,12 +129,23 @@ class AdminController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function update($id,Request $request)
+    public function update($id, Request $request)
     {
         $admin = Admin::findOrfail($id);
         $admin->name = $request->name;
         $admin->email = $request->email;
         $admin->password = $request->password;
+
+        // $exist = Storage::disk('local')->exists('storage/adm_avatars/'.$admin->id.'.jpeg');dd($exist);
+        if($request->hasFile('avatar'))
+        {
+            $url = Storage::url('adm_avatars/'.$admin->id.'.jpeg');
+            if (file_exists(getcwd().$url)) {
+                Storage::delete(getcwd().$url);
+            }
+            $image = $request->file('avatar');
+            $image->storeAs('adm_avatars', $admin->id.'.'.$image->extension(), 'public');
+        }
         $admin->save();
         flash('Your admin has been updated!');
         return redirect('admin');

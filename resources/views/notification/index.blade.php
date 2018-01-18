@@ -3,9 +3,7 @@
 @section('content')
 
 <section class="content">
-    <h1>
-        Notification Index
-    </h1>
+    <h1>Notification Index</h1>
     <a href='{!!url("notification")!!}/create' class = 'btn btn-success'><i class="fa fa-plus"></i> New</a>
     <br>
     <br>

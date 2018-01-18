@@ -37,7 +37,6 @@ class NotificationController extends Controller
     public function create()
     {
         $title = 'Create - notification';
-
         return view('notification.create');
     }
 
@@ -50,33 +49,20 @@ class NotificationController extends Controller
     public function store(Request $request)
     {
         $notification = new Notification();
-
-
         $notification->type = $request->type;
-
-
         $notification->notifiable_type = $request->notifiable_type;
         $notification->notifiable_id = $request->notifiable_id;
-
         $notification->data = $request->data;
-
-
         $notification->read_at = $request->read_at;
-
-
-
         $notification->save();
 
         $pusher = App::make('pusher');
-
         //default pusher notification.
         //by default channel=test-channel,event=test-event
         //Here is a pusher notification example when you create a new resource in storage.
         //you can modify anything you want or use it wherever.
-        $pusher->trigger('test-channel',
-                         'test-event',
+        $pusher->trigger('test-channel', 'test-event',
                         ['message' => 'A new notification has been created !!']);
-
         return redirect('notification');
     }
 
@@ -90,12 +76,10 @@ class NotificationController extends Controller
     public function show($id,Request $request)
     {
         $title = 'Show - notification';
-
         if($request->ajax())
         {
             return URL::to('notification/'.$id);
         }
-
         $notification = Notification::findOrfail($id);
         return view('notification.show',compact('title','notification'));
     }
@@ -113,8 +97,6 @@ class NotificationController extends Controller
         {
             return URL::to('notification/'. $id . '/edit');
         }
-
-
         $notification = Notification::findOrfail($id);
         return view('notification.edit',compact('title','notification'  ));
     }
@@ -129,19 +111,12 @@ class NotificationController extends Controller
     public function update($id,Request $request)
     {
         $notification = Notification::findOrfail($id);
-
         $notification->type = $request->type;
-
         $notification->notifiable_type = $request->notifiable_type;
         $notification->notifiable_id = $request->notifiable_id;
-
         $notification->data = $request->data;
-
         $notification->read_at = $request->read_at;
-
-
         $notification->save();
-
         return redirect('notification');
     }
 
@@ -155,7 +130,6 @@ class NotificationController extends Controller
     public function DeleteMsg($id,Request $request)
     {
         $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/notification/'. $id . '/delete');
-
         if($request->ajax())
         {
             return $msg;
