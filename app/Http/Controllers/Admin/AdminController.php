@@ -29,7 +29,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //event(new AdminLoggedin(admins()->user()));
+        event(new AdminLoggedin(admins()->user()));
 
         $title = 'Index - admin';
         $admins = Admin::paginate(6);
