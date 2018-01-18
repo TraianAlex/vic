@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\LinkCreated;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -15,6 +16,10 @@ class Link extends Model
 {
 
     protected $table = 'links';
+    //event(new LinkCreated(admins()->user()));//now direct from model 'created'
+    protected $events = [
+        'created' => LinkCreated::class
+    ];
 	/**
      * category.
      *
