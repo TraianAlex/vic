@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/all.css') }}" rel="stylesheet">
     @yield('css')
     <style type="text/css">
     .notify-hide{display: none;}
@@ -36,7 +36,7 @@
   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
     <input name="animation" type="hidden">
 
-	<script src="{{ asset('js/all.js') }}"></script>
+	<script src="{{ mix('js/all.js') }}"></script>
   <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
     <script>
       function blinker() {
