@@ -2,15 +2,17 @@
 
 //use App\Events\LinkCreated;
 //dd($_SERVER['REMOTE_ADDR']);
-Route::get('/', 'Frontend\PagesController@landing');
-Route::get('/about', 'Frontend\PagesController@about');
-Route::get('/contact', 'Frontend\PagesController@contact');
-Route::get('/services', 'Frontend\PagesController@services');
-Route::get('/links', 'Frontend\PagesController@link');
-Route::get('/links/{id}', 'Frontend\PagesController@countLink');
-Route::get('/tags/all', 'Frontend\PagesController@all');
-Route::get('/tags/{category}', 'Frontend\PagesController@result');
-Route::get('/demos', 'Frontend\PagesController@demo');
+Route::namespace('Frontend')->group(function(){
+    Route::get('/', 'PagesController@landing');
+    Route::get('/about', 'PagesController@about');
+    Route::get('/contact', 'PagesController@contact');
+    Route::get('/services', 'PagesController@services');
+    Route::get('/links', 'PagesController@link');
+    Route::get('/links/{id}', 'PagesController@countLink');
+    Route::get('/tags/all', 'PagesController@all');
+    Route::get('/tags/{category}', 'PagesController@result');
+    Route::get('/demos', 'PagesController@demo');
+});
 
 // Route::get('/broadcast', function(){
 //     $name = Request::input('name');// broadcast/?name=John
@@ -19,56 +21,56 @@ Route::get('/demos', 'Frontend\PagesController@demo');
 // });
 
 Auth::routes();
-Route::get('/home', 'Frontend\HomeController@index')->name('home');
+Route::name('home')->get('/home', 'Frontend\HomeController@index');
 
-Route::group(['prefix' => '/adm', 'middleware' => 'auth'], function(){
-    Route::get('/login', ['uses' => 'Admin\AuthController@index', 'as' => 'login.admin']);
-    Route::post('/login', ['uses' => 'Admin\AuthController@login', 'as' => 'login.admin']);
+Route::prefix('adm')->namespace('Admin')->middleware('auth')->group(function(){
+    Route::name('login.admin')->get('/login', 'AuthController@index');
+    Route::name('login.admin')->post('/login', 'AuthController@login');
 });
 
-Route::group(['middleware' => 'admin'], function(){
-    Route::post('/logout', ['uses' => 'Admin\AuthController@logout', 'as' => 'admin.logout']);
-    Route::get('/site-map', 'Admin\SiteMapController@index');
-    Route::get('stat/ips/{ip?}','Admin\StatController@getIps');
-    Route::get('stat/pages', 'Admin\StatController@getPages');
-    Route::get('stat/ip/{id?}','Admin\IpController@index');
-    Route::get('admin/notifications/{id}', 'Admin\AdminController@getNotifications');
-    Route::delete('admin/notifications/{id}', 'Admin\AdminController@markNotifications');
+Route::namespace('Admin')->middleware('admin')->group(function(){
+    Route::name('admin.logout')->post('/logout', 'AuthController@logout');
+    Route::get('/site-map', 'SiteMapController@index');
+    Route::get('stat/ips/{ip?}','StatController@getIps');
+    Route::get('stat/pages', 'StatController@getPages');
+    Route::get('stat/ip/{id?}','IpController@index');
+    Route::get('admin/notifications/{id}', 'AdminController@getNotifications');
+    Route::delete('admin/notifications/{id}', 'AdminController@markNotifications');
 
-    Route::resource('admin','Admin\AdminController');//
-    Route::post('admin/{id}/update','Admin\AdminController@update');
-    Route::get('admin/{id}/delete','Admin\AdminController@destroy');
-    Route::get('admin/{id}/deleteMsg','Admin\AdminController@DeleteMsg');
+    Route::resource('admin','AdminController');//
+    Route::post('admin/{id}/update','AdminController@update');
+    Route::get('admin/{id}/delete','AdminController@destroy');
+    Route::get('admin/{id}/deleteMsg','AdminController@DeleteMsg');
 
-    Route::resource('category','Admin\CategoryController');
-    Route::post('category/{id}/update','Admin\CategoryController@update');
-    Route::get('category/{id}/delete','Admin\CategoryController@destroy');
-    Route::get('category/{id}/deleteMsg','Admin\CategoryController@DeleteMsg');
+    Route::resource('category','CategoryController');
+    Route::post('category/{id}/update','CategoryController@update');
+    Route::get('category/{id}/delete','CategoryController@destroy');
+    Route::get('category/{id}/deleteMsg','CategoryController@DeleteMsg');
 
-    Route::resource('link','Admin\LinkController');
-    Route::post('link/{id}/update','Admin\LinkController@update');
-    Route::get('link/{id}/delete','Admin\LinkController@destroy');
-    Route::get('link/{id}/deleteMsg','Admin\LinkController@DeleteMsg');
+    Route::resource('link','LinkController');
+    Route::post('link/{id}/update','LinkController@update');
+    Route::get('link/{id}/delete','LinkController@destroy');
+    Route::get('link/{id}/deleteMsg','LinkController@DeleteMsg');
 
-    Route::resource('stat','Admin\StatController');
-    Route::post('stat/{id}/update','Admin\StatController@update');
-    Route::get('stat/{id}/delete','Admin\StatController@destroy');
-    Route::get('stat/{id}/deleteMsg','Admin\StatController@DeleteMsg');
+    Route::resource('stat','StatController');
+    Route::post('stat/{id}/update','StatController@update');
+    Route::get('stat/{id}/delete','StatController@destroy');
+    Route::get('stat/{id}/deleteMsg','StatController@DeleteMsg');
 
-    Route::get('stat/{ip}/deleteIp','Admin\StatController@destroyIp');
+    Route::get('stat/{ip}/deleteIp','StatController@destroyIp');
 
-    Route::resource('ip','Admin\IpController');
-    Route::post('ip/{id}/update','Admin\IpController@update');
-    Route::get('ip/{id}/delete','Admin\IpController@destroy');
-    Route::get('ip/{id}/deleteMsg','Admin\IpController@DeleteMsg');
+    Route::resource('ip','IpController');
+    Route::post('ip/{id}/update','IpController@update');
+    Route::get('ip/{id}/delete','IpController@destroy');
+    Route::get('ip/{id}/deleteMsg','IpController@DeleteMsg');
 
-    Route::resource('page','Admin\PageController');
-    Route::post('page/{id}/update','Admin\PageController@update');
-    Route::get('page/{id}/delete','Admin\PageController@destroy');
-    Route::get('page/{id}/deleteMsg','Admin\PageController@DeleteMsg');
+    Route::resource('page','PageController');
+    Route::post('page/{id}/update','PageController@update');
+    Route::get('page/{id}/delete','PageController@destroy');
+    Route::get('page/{id}/deleteMsg','PageController@DeleteMsg');
 
-    Route::resource('notification','Admin\NotificationController');
-    Route::post('notification/{id}/update','Admin\NotificationController@update');
-    Route::get('notification/{id}/delete','Admin\NotificationController@destroy');
-    Route::get('notification/{id}/deleteMsg','Admin\NotificationController@DeleteMsg');
+    Route::resource('notification','NotificationController');
+    Route::post('notification/{id}/update','NotificationController@update');
+    Route::get('notification/{id}/delete','NotificationController@destroy');
+    Route::get('notification/{id}/deleteMsg','NotificationController@DeleteMsg');
 });

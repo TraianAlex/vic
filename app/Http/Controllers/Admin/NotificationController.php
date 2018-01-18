@@ -22,10 +22,10 @@ class NotificationController extends Controller
      *
      * @return  \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Notification $notification)
     {
         $title = 'Index - notification';
-        $notifications = Notification::paginate(6);
+        $notifications = $notification->paginate(6);
         return view('notification.index',compact('notifications','title'));
     }
 
@@ -73,7 +73,7 @@ class NotificationController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function show($id,Request $request)
+    public function show($id, Request $request)
     {
         $title = 'Show - notification';
         if($request->ajax())

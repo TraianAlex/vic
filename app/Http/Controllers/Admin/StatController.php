@@ -23,17 +23,17 @@ class StatController extends Controller
      *
      * @return  \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Stat $stat)
     {
         $title = 'Index - stat';
-        $stats = Stat::paginate(10);
+        $stats = $stat->paginate(10);
         return view('stat.index',compact('stats', 'title'));
     }
 
-    public function getIps(Request $request)
+    public function getIps(Request $request, Stat $stat)
     {
         $title = 'IPs';
-        $item = Stat::get();
+        $item = $stat->get();
         $ip_unique = $this->extract($item, 'ip');
         $total_unique_ips = count($ip_unique);
 
@@ -46,10 +46,10 @@ class StatController extends Controller
         return view('stat.ips',compact('title', 'total_unique_ips', 'ip_unique', 'pagesByIP', 'paginate_ip', 'request'));
     }
 
-    public function getPages(Request $request)
+    public function getPages(Request $request, Stat $stat)
     {
         $title = 'Pages';
-        $item = Stat::get();
+        $item = $stat->get();
 
         $pages = $this->extract($item, 'page');
         $paginate_pages = new Pagination();
@@ -58,9 +58,9 @@ class StatController extends Controller
         return view('stat.pages',compact('title', 'pages', 'paginate_pages' , 'request'));
     }
 
-    public function destroyIp($ip)
+    public function destroyIp($ip, Stat $stat)
     {
-        $stat = Stat::where('ip', $ip);
+        $stat = $stat->where('ip', $ip);
         $stat->delete();
         flash('Your data has been deleted!');
         return redirect()->back();
@@ -88,10 +88,9 @@ class StatController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Stat $stat)
     {
         if (!preg_match('/^127.0.0.(1|2|3|4|5)$/', $request->ip, $match)) {
-            $stat = new Stat();
             $stat->page = $request->page;
             $stat->ip = $request->ip;
             $stat->save();
