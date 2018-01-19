@@ -8,11 +8,12 @@ use App\Http\Requests;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use App\Events\AdminLoggedin;
-use App\Mail\AdminLoggedin as Adm;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\CreateAdminRequest;
 
 /**
  * Class AdminController.
@@ -53,17 +54,12 @@ class AdminController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateAdminRequest $request)
     {
-        $admin = new Admin();
-        $admin->name = $request->name;
-        $admin->email = $request->email;
-        $admin->password = bcrypt($request->password);
-        $admin->save();
+        Admin::create($request->validated());
         flash('Your admin has been created!');
         $pusher = App::make('pusher');
-        $pusher->trigger('test-channel', 'test-event',
-                        ['message' => 'A new admin has been created !!']);
+        $pusher->trigger('test-channel', 'test-event', ['message' => 'A new admin has been created !!']);
         return redirect('admin');
     }
 
@@ -132,10 +128,12 @@ class AdminController extends Controller
     public function update($id, Request $request)
     {
         $admin = Admin::findOrfail($id);
-        $admin->name = $request->name;
-        $admin->email = $request->email;
-        $admin->password = $request->password;
-
+        $data = request()->validate([
+            'name' => ['required','min:3','max:100', Rule::unique('admins','name')->ignore($admin->id)],
+            'email' => ['required','email', Rule::unique('admins', 'email')->ignore($admin->id)],
+            'password' => 'required|min:6|max:100'
+        ]);
+        $admin->update($data);
         // $exist = Storage::disk('local')->exists('storage/adm_avatars/'.$admin->id.'.jpeg');dd($exist);
         if($request->hasFile('avatar'))
         {
@@ -144,9 +142,10 @@ class AdminController extends Controller
                 Storage::delete(getcwd().$url);
             }
             $image = $request->file('avatar');
-            $image->storeAs('adm_avatars', $admin->id.'.'.$image->extension(), 'public');
+            if ($image->isValid()) {
+                $image->storeAs('adm_avatars', $admin->id.'.'.$image->extension(), 'public');
+            }
         }
-        $admin->save();
         flash('Your admin has been updated!');
         return redirect('admin');
     }
@@ -176,7 +175,9 @@ class AdminController extends Controller
     public function destroy($id)
     {
      	$admin = Admin::findOrfail($id);
-     	$admin->delete();
+     	//$admin->delete();
+        $url = Storage::url('adm_avatars/'.$admin->id.'.jpeg');
+        Storage::delete($url);//getcwd().
         flash('Your admin has been deleted!');
         return URL::to('admin');
     }

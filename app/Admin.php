@@ -38,4 +38,9 @@ class Admin extends Model implements \Illuminate\Contracts\Auth\Authenticatable
     ];
 
     protected $guard = "admins";
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
 }

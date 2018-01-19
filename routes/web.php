@@ -1,6 +1,5 @@
 <?php
 
-//use App\Events\LinkCreated;
 //dd($_SERVER['REMOTE_ADDR']);
 Route::namespace('Frontend')->group(function(){
     Route::get('/', 'PagesController@landing');
@@ -14,10 +13,9 @@ Route::namespace('Frontend')->group(function(){
     Route::get('/demos', 'PagesController@demo');
 });
 
-// Route::get('/broadcast', function(){
-//     $name = Request::input('name');// broadcast/?name=John
-//     event(new LinkCreated($name));
-//     return 'Done!';
+// Route::get('/see-email', function(){
+//     $admin = App\Admin::first();
+//     return new App\Mail\LinkCreated($admin);
 // });
 
 Auth::routes();

@@ -13,7 +13,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \Blade::if('member', function(){
+            return auth()->check();
+        });
+        \Blade::if('admin', function(){
+            return auth()->user()->hasRole('admin');
+        });
+        \Blade::if('adminlog', function(){
+            return admins()->check();
+        });
     }
 
     /**
