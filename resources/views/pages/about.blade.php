@@ -94,5 +94,5 @@
 </div></section>
 @endsection
 @section('script')
-<script src="{{asset('assets/as-pie-progress/jquery-as-pie-progress.min.js')}}"></script>
+<script src="{{asset('assets/as-pie-progress/jquery-as-pie-progress.min.js')}}" defer data-turbolinks-track="reload"></script>
 @endsection

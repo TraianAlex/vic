@@ -34,7 +34,7 @@
 
         @include('partials.footer')
     </div>
-    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;" href="#menu2-1m"><i class="mbri-down mbr-iconfont"></i></a></div>
     <input name="animation" type="hidden">
   <script src="{{ asset('js/turbolinks.js') }}" defer></script>
   <script src="{{ mix('js/all.js') }}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
