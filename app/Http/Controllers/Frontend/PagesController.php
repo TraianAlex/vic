@@ -16,24 +16,10 @@ class PagesController extends Controller
         dispatch(new Tracker);
     }
 
-    public function landing()
+    public function __invoke(Request $request)
     {
-        return view('pages/index');
-    }
-
-    public function about()
-    {
-        return view('pages/about');
-    }
-
-    public function contact()
-    {
-        return view('pages/contact');
-    }
-
-    public function services()
-    {
-        return view('pages/services');
+        $page = $request->segment(1) ?? 'index';
+        return view("pages/$page");
     }
 
     public function link()
@@ -50,11 +36,6 @@ class PagesController extends Controller
         $links->visits = $visits + 1;
         $links->save();
         return redirect($links->address);
-    }
-
-    public function demo()
-    {
-        return view('pages.demos');
     }
 
     public function result(Category $category)

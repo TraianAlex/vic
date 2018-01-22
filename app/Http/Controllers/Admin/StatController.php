@@ -30,14 +30,13 @@ class StatController extends Controller
         return view('stat.index',compact('stats', 'title'));
     }
 
-    public function getIps(Request $request, Stat $stat)
+    public function getIps(Request $request, Stat $stat, Pagination $paginate_ip)
     {
         $title = 'IPs';
         $item = $stat->get();
         $ip_unique = $this->extract($item, 'ip');
         $total_unique_ips = count($ip_unique);
 
-        $paginate_ip = new Pagination();
         $ip_unique = $paginate_ip->paginate( $ip_unique, 12);
 
         if(isset($request->ip)){
@@ -46,13 +45,12 @@ class StatController extends Controller
         return view('stat.ips',compact('title', 'total_unique_ips', 'ip_unique', 'pagesByIP', 'paginate_ip', 'request'));
     }
 
-    public function getPages(Request $request, Stat $stat)
+    public function getPages(Request $request, Stat $stat, Pagination $paginate_pages)
     {
         $title = 'Pages';
         $item = $stat->get();
 
         $pages = $this->extract($item, 'page');
-        $paginate_pages = new Pagination();
         $pages = $paginate_pages->paginate($pages, 14);
 
         return view('stat.pages',compact('title', 'pages', 'paginate_pages' , 'request'));

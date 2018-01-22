@@ -2,15 +2,11 @@
 
 //dd($_SERVER['REMOTE_ADDR']);
 Route::namespace('Frontend')->group(function(){
-    Route::get('/', 'PagesController@landing');
-    Route::get('/about', 'PagesController@about');
-    Route::get('/contact', 'PagesController@contact');
-    Route::get('/services', 'PagesController@services');
     Route::get('/links', 'PagesController@link');
     Route::get('/links/{id}', 'PagesController@countLink');
     Route::get('/tags/all', 'PagesController@all');
     Route::get('/tags/{category}', 'PagesController@result');
-    Route::get('/demos', 'PagesController@demo');
+    Route::get('/{page?}', 'PagesController');
 });
 
 // Route::get('/see-email', function(){

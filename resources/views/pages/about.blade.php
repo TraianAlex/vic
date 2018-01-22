@@ -52,8 +52,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="50">
-                        <p class="pie_progress__number mbr-fonts-style display-5">50%</p>
+                    <div class="pie_progress progress3" role="progressbar" data-goal="60">
+                        <p class="pie_progress__number mbr-fonts-style display-5">60%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
@@ -72,8 +72,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress5" role="progressbar" data-goal="70">
-                        <p class="pie_progress__number mbr-fonts-style display-5">70%</p>
+                    <div class="pie_progress progress5" role="progressbar" data-goal="80">
+                        <p class="pie_progress__number mbr-fonts-style display-5">80%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
@@ -82,8 +82,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress6" role="progressbar" data-goal="80">
-                        <p class="pie_progress__number mbr-fonts-style display-5">70%</p>
+                    <div class="pie_progress progress6" role="progressbar" data-goal="90">
+                        <p class="pie_progress__number mbr-fonts-style display-5">90%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">

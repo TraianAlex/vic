@@ -8,7 +8,7 @@
 <section style="margin:150px 0 0 0;">
 <div class="container">
     <div class="row">
-        @if($links)
+        @if(isset($links))
         <table>
             @foreach($links as $link)
                 <tr><td><a href="{{url('/tags/'.$cat->name)}}">{{$cat->name}}</a></td>

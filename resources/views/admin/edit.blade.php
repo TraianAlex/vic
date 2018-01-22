@@ -21,8 +21,7 @@
         </div>
         <div class="form-group">
             <label for="password">password</label>
-            <input id="password" name = "password" type="text" class="form-control" value="{!!$admin->
-            password!!}">
+            <input id="password" name = "password" type="text" class="form-control" value="">
         </div>
         <div class="form-group">
             <label for="avatar">File input</label>
