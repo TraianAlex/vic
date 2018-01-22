@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="{{ mix('css/all.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/all.css') }}" rel="stylesheet" data-turbolinks-track="reload">
     @yield('css')
     <style type="text/css">
     .notify-hide{display: none;}
@@ -35,10 +35,10 @@
 	</div>
   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
     <input name="animation" type="hidden">
-
-	<script src="{{ mix('js/all.js') }}"></script>
+  <script src="{{ asset('js/turbolinks.js') }}" defer></script>
+	<script src="{{ mix('js/all.js') }}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
   <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
-    <script>
+    <script data-turbolinks-eval="false">
       function blinker() {
         $('.blinking').fadeOut(500);
         $('.blinking').fadeIn(500);

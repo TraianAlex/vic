@@ -87,7 +87,7 @@
     <div class="container">
         <div class="media-container-row title">
             <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="contact.html">Request a quote</a></div>
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="contact">Request a quote</a></div>
             </div>
         </div>
     </div>

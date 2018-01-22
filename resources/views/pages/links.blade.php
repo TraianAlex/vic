@@ -2,6 +2,7 @@
 @section('meta')
 <meta name="description" content="Traian Alexandru Web Developer Toronto. Build responsive mobile websites. Web development links.">
 <meta name="keywords" content="website design, web page design, webdesign, web development, mobile, traian alexandru">
+<meta name="turbolinks-visit-control" content="reload">
 <title>Links Web Development</title>
 @endsection
 @section('css')
@@ -385,6 +386,6 @@
     shared_object.attachChick;
 </script>
 <script src="{{asset('assets/facebook-plugin/facebook-script.js')}}"></script>
-<script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}"></script>
-<script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}"></script>
+<script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
+<script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
 @endsection
