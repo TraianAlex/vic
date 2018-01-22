@@ -1,13 +1,6 @@
 <?php
 
 //dd($_SERVER['REMOTE_ADDR']);
-Route::namespace('Frontend')->group(function(){
-    Route::get('/links', 'PagesController@link');
-    Route::get('/links/{id}', 'PagesController@countLink');
-    Route::get('/tags/all', 'PagesController@all');
-    Route::get('/tags/{category}', 'PagesController@result');
-    Route::get('/{page?}', 'PagesController');
-});
 
 // Route::get('/see-email', function(){
 //     $admin = App\Admin::first();
@@ -15,7 +8,6 @@ Route::namespace('Frontend')->group(function(){
 // });
 
 Auth::routes();
-Route::name('home')->get('/home', 'Frontend\HomeController@index');
 
 Route::prefix('adm')->namespace('Admin')->middleware('auth')->group(function(){
     Route::name('login.admin')->get('/login', 'AuthController@index');
@@ -67,4 +59,13 @@ Route::namespace('Admin')->middleware('admin')->group(function(){
     Route::post('notification/{id}/update','NotificationController@update');
     Route::get('notification/{id}/delete','NotificationController@destroy');
     Route::get('notification/{id}/deleteMsg','NotificationController@DeleteMsg');
+});
+
+Route::namespace('Frontend')->group(function(){
+    Route::name('home')->get('/home', 'HomeController@index');
+    Route::get('/links', 'PagesController@link');
+    Route::get('/links/{id}', 'PagesController@countLink');
+    Route::get('/tags/all', 'PagesController@all');
+    Route::get('/tags/{category}', 'PagesController@result');
+    Route::get('/{page?}', 'PagesController');
 });
