@@ -44,22 +44,21 @@
                             Email: info@vic.com.ro</p>
                     </div>
                 </div>
-                <div>
-                    @include('flash::message')
-                    <form class="block mbr-form" action="{{url('send')}}" method="post">
-                        {{ csrf_field() }}
+                <div data-form-type="formoid">
+                    <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
+                    <form class="block mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" data-form-email="true" value="5OyYpzygxXQxw+Sk7xLECO3t8ho62iKxjic2R7FZ2sjliiAl1iOlPazKqYkIQUBXEbQ6NY0AwmO+gzIxrXOsUxw/6HMyvfqvZu1eqb2RoiHkqSFU0MOso2K42Rt2idvl">
                         <div class="row">
-                            <div class="col-md-6 multi-horizontal">
-                                <input type="text" class="form-control input" name="name" placeholder="Your Name" required="">
+                            <div class="col-md-6 multi-horizontal" data-for="name">
+                                <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required="" id="name-form4-o">
                             </div>
                             <div class="col-md-12" data-for="email">
-                                <input type="email" class="form-control input" name="email" placeholder="Email" required="">
+                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-o">
                             </div>
-                            <div class="col-md-12">
-                                <textarea class="form-control input" name="message" rows="3" placeholder="Message" style="resize:none"></textarea>
+                            <div class="col-md-12" data-for="message">
+                                <textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Message" style="resize:none" id="message-form4-o"></textarea>
                             </div>
                             <div class="input-group-btn col-md-12" style="margin-top: 10px;">
-                                <button type="submit" class="btn btn-form btn-warning display-4">SEND MESSAGE</button>
+                                <button href="" type="submit" class="btn btn-form btn-warning display-4">SEND MESSAGE</button>
                             </div>
                         </div>
                     </form>
@@ -68,4 +67,7 @@
         </div>
     </div>
 </section>
+@endsection
+@section('script')
+<script src="{{asset('assets/formoid/formoid.min.js')}}"  defer data-turbolinks-track="reload"></script>
 @endsection

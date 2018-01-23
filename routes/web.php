@@ -63,6 +63,7 @@ Route::namespace('Admin')->middleware('admin')->group(function(){
 
 Route::namespace('Frontend')->group(function(){
     Route::name('home')->get('/home', 'HomeController@index');
+    Route::post('/send', 'PagesController@sendEmail');
     Route::get('/links', 'PagesController@link');
     Route::get('/links/{id}', 'PagesController@countLink');
     Route::get('/tags/all', 'PagesController@all');

@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Link;
 use App\Category;
+use App\Jobs\Tracker;
+use App\Mail\ContactForm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Jobs\Tracker;
+use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
@@ -48,5 +50,13 @@ class PagesController extends Controller
     {
         $links = Link::paginate(2000);
         return view('pages.resources', compact('links'));
+    }
+
+    public function sendEmail(Request $request)
+    {
+        Mail::to('victor_traian@yahoo.com')
+            ->send(new ContactForm($request->name, $request->email, $request->message));
+        flash('Thanks for filling out the form!');
+        return back();
     }
 }
