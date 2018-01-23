@@ -375,7 +375,7 @@
 @endsection
 @section('script')
 <script src="http://w.sharethis.com/button/sharethis.js#publisher=1bd5e691-454c-4f90-8a6b-12d6923db08e&type=website&post_services=twitter%2Cfacebook%2Cemail%2Cgbuzz%2Cmyspace&button=false"></script>
-<script>
+<script data-turbolinks-eval="false">
     var shared_object = SHARETHIS.addEntry({
         title: document.title,
         url: document.location.href
@@ -385,7 +385,7 @@
     shared_object.attachChicklet("twitter", document.getElementById("ck_twitter"));
     shared_object.attachChick;
 </script>
-<script src="{{asset('assets/facebook-plugin/facebook-script.js')}}"></script>
+<script src="{{asset('assets/facebook-plugin/facebook-script.js')}}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
 <script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
 <script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
 @endsection

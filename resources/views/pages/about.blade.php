@@ -12,7 +12,7 @@
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-2"><br><span style="font-weight: normal;">PHP Developer</span></h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Web Design</h3>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Web Designer</h3>
                 <p class="mbr-text align-center mbr-white pb-3 mbr-fonts-style display-7">Laravel / Codeigniter / custom framework<br>Bootstrap / jQuery / AngularJS<br>MySQL / SQLite / GIT / AWS S3&nbsp;<br></p>
             </div>
         </div>
@@ -27,8 +27,6 @@
 </section>
 <section class="progress-bars3 cid-qwshY2hf5v" id="progress-bars3-11" data-rv-view="117">
     <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-            My Skills</h2>
         <div class="media-container-row pt-5 mt-2">
             <div class="card p-3 align-center">
                 <div class="wrap">
