@@ -69,5 +69,5 @@
 </section>
 @endsection
 @section('script')
-<script src="{{asset('assets/formoid/formoid.min.js')}}"></script>
+<script src="{{asset('assets/formoid/formoid.min.js')}}"  defer data-turbolinks-track="reload"></script>
 @endsection

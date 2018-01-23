@@ -110,5 +110,5 @@
 </section>
 @endsection
 @section('script')
-<script src="assets/countdown/jquery.countdown.min.js"></script>
+<script src="assets/countdown/jquery.countdown.min.js" defer data-turbolinks-track="reload"></script>
 @endsection

@@ -77,6 +77,6 @@
 </section>
 @endsection
 @section('script')
-<script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}"></script>
+<script src="{{asset('assets/datatables/jquery.data-tables.min.js')}}" defer data-turbolinks-track="reload"></script>
 <script src="{{asset('assets/datatables/data-tables.bootstrap4.min.js')}}"></script>
 @endsection
