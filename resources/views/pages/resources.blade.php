@@ -33,16 +33,7 @@
             </thead>
             <tbody>
               @foreach($links as $link)
-              <tr>
-                <td class="body-item mbr-fonts-style display-7"><a href="{{url('/links/'.$link->id)}}" target="_blank" class="text-black">{{$link->address}}</a> <span style="font-size:14px">(v:{{$link->visits}})</td>
-                <td class="body-item mbr-fonts-style display-7">{{$link->description}}</td>
-                <td class="body-item mbr-fonts-style display-7">
-                    @foreach($link->categories as $cat)
-                        <a href="{{url('/tags/'.$cat->name)}}" class="text-black">{{$cat->name}}</a>
-                       {{$loop->remaining ? ' / ' : ''}}
-                    @endforeach
-                </td>
-              </tr>
+                @include('pages.partials.link')
             @endforeach
            </tbody>
           </table>

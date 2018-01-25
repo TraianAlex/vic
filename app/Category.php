@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\Cacheable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -13,8 +14,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Category extends Model
 {
+    use Cacheable;
 
     protected $table = 'categories';
+
+    protected $touches = ['links'];
 	/**
      * link.
      *

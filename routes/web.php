@@ -6,6 +6,9 @@
 //     $admin = App\Admin::first();
 //     return new App\Mail\LinkCreated($admin);
 // });
+// DB::listen(function($query){
+//     Log::info($query->sql);
+// });
 
 Auth::routes();
 

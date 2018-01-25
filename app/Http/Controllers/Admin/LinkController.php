@@ -9,10 +9,10 @@ use App\Events\LinkCreated;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use App\Notifications\LinkUpdated;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use App\Notifications\LinkPublished;
-use App\Notifications\LinkUpdated;
 use App\Http\Requests\CreateLinkRequest;
 
 class LinkController extends Controller

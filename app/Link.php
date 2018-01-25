@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\Cacheable;
 use App\Events\LinkCreated;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -14,6 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Link extends Model
 {
+    use Cacheable;
 
     protected $table = 'links';
     //event(new LinkCreated(admins()->user()));//now direct from model 'created'

@@ -9,6 +9,7 @@ use App\Mail\ContactForm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Cache;
 
 class PagesController extends Controller
 {
@@ -26,9 +27,11 @@ class PagesController extends Controller
 
     public function link()
     {
-        $links = Link::paginate(20);
-        $categories = Category::all();
-        return view('pages.links', compact( 'links', 'categories'));//compact('links')
+        $links = Link::with('categories')->paginate(20);
+        $categories = Cache::remember('categories', 60*24*7, function(){
+            return Category::all();
+        });
+        return view('pages.links', compact( 'links', 'categories'));
     }
 
     public function countLink(Request $request, $id)
@@ -48,7 +51,7 @@ class PagesController extends Controller
 
     public function all()
     {
-        $links = Link::paginate(2000);
+        $links = Link::with('categories')->paginate(2000);
         return view('pages.resources', compact('links'));
     }
 

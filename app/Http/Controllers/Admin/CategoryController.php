@@ -9,6 +9,7 @@ use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cache;
 use App\Notifications\CategoryUpdated;
 use App\Http\Requests\CreateCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
@@ -56,6 +57,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
         flash('Your category has been created!');
+        Cache::forget('categories');
         //$pusher = App::make('pusher');
         $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
         $pusher->trigger('test-channel', 'App\Events\LinkCreated',
@@ -111,6 +113,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
         flash('Your category has been updated!');
+        Cache::forget('categories');
         admins()->user()->notify(new CategoryUpdated($category));
         return redirect('category');
     }
@@ -142,6 +145,7 @@ class CategoryController extends Controller
      	$category = Category::findOrfail($id);
      	$category->delete();
         flash('Your category has been deleted!');
+        Cache::forget('categories');
         return URL::to('category');
     }
 }
