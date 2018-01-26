@@ -29,4 +29,11 @@ class HomeController extends Controller
     {
         return view('pages.home');
     }
+
+    public function createDraw()
+    {
+        //put a (user_id).x file in storage/draw folder or use db
+        //permit access only for this user for that file
+        //create the get and save methods
+    }
 }

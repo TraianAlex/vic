@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
 {
@@ -62,4 +63,18 @@ class PagesController extends Controller
         flash('Thanks for filling out the form!');
         return back();
     }
+
+    public function loadGrid()
+    {
+        $url = Storage::url('image.x');
+        if (file_exists(getcwd().$url)) {
+            return file_get_contents(getcwd().$url);
+        }
+    }
+
+    // public function saveDraw(Request $request)
+    // {
+    //     $url = Storage::url('image.x');
+    //     file_put_contents($url, json_encode($_POST));
+    // }
 }

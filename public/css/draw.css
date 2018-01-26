@@ -1,0 +1,29 @@
+#grid, #palette{
+    padding: 0px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+}
+#palette td, #grid td{
+    width: 20px;
+    height: 20px;
+}
+#palette td, #grid td{
+    border: 1px solid #cccccc;
+}
+#debug_palette_color {
+    width: 500px;
+    float: left;
+    margin-left: 70px;
+}
+button {
+    float: right;
+}
+#clear {
+    margin-right: 20px;
+}
+#save {
+    margin-right: 50px;
+}
+#debug_message {
+    margin-left: 200px;
+}
