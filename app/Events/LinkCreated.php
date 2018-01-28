@@ -33,7 +33,7 @@ class LinkCreated implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('test-channel');
-        //return ['test-channel'];
+        return new Channel('test-channel');
+        //return new PrivateChannel('test-channel');
     }
 }

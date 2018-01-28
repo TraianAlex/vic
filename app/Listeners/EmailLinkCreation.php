@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Mail\LinkCreated;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use App\Events\LinkCreated as LnkCreated;
 use Illuminate\Contracts\Queue\ShouldQueue;

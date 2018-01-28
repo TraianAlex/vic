@@ -7,9 +7,10 @@
     width: 20px;
     height: 20px;
 }
-#palette td, #grid td{
+/*#palette td, #grid td{
     border: 1px solid #cccccc;
-}
+    border-radius: 100%;
+}*/
 #debug_palette_color {
     width: 500px;
     float: left;
