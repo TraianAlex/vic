@@ -76,5 +76,9 @@ class PagesController extends Controller
     // {
     //     $url = Storage::url('image.x');
     //     file_put_contents($url, json_encode($_POST));
+    //
+    //     file_exist(storage_path('app/public'));
+    //     \File::put(storage_path('app/public/storage/image.x'), json_encode($_POST));
+    //     \File::delete(storage_path('app/public/storage/image.x'));
     // }
 }

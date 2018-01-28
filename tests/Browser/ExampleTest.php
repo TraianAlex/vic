@@ -2,10 +2,12 @@
 
 namespace Tests\Browser;
 
+use App\User;
 use App\Admin;
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
 use App\Events\AdminLoggedin;
+use Tests\Browser\Pages\HomePage;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
@@ -19,23 +21,46 @@ class ExampleTest extends DuskTestCase
     public function testBasicExample()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
+            $name = $browser->visit('/')
+                    //->text('.mbr-section-title');
                     ->assertSee('Happiness');
+                    //dd($name);
         });
     }
     /** @test */
-    function it_fakes_events()
+    function it_visit_welcome_page()
     {
-        Event::fake();
-        //auth()->loginUsingId(11);
-        // $user = Admin::find(3);
-        // $this->browse(function ($browser) use ($user) {
-        //     $browser->visit('/adm/login')
-        //             ->type('name', $user->name)
-        //             ->type('password', 'secret')
-        //             ->press('Login')
-        //             ->assertPathIs('/admin');
-        // });
-        Event::assertNotDispatched(AdminLoggedin::class);
+        $this->browse(function (Browser $browser) {
+                $browser->visit(new HomePage)
+                    ->assert();
+        });
     }
+    /** @test */
+    function it_login_user()
+    {
+        $user = User::find(11);
+        $this->browse(function (Browser $browser) use ($user) {
+            $browser->visit('/auth/login')
+                    ->type('email', $user->email)
+                    ->type('password', 'Naiart92')
+                    ->press('Login')
+                    ->assertSee('Under Construction')
+                    ->assertPathIs('/home');
+        });
+    }
+
+    /** @test */
+    // function it_fakes_events()
+    // {
+    //     Event::fake();
+    //     $admin = Admin::find(3);
+    //     $this->browse(function ($browser) use ($admin) {
+    //         $browser->visit('/adm/login')
+    //                 ->type('name', $admin->name)
+    //                 ->type('password', 'Naiart92')
+    //                 ->press('Login')
+    //                 ->assertPathIs('/admin');
+    //     });
+    //     //Event::assertDispatched(AdminLoggedin::class);
+    // }
 }

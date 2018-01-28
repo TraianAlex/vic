@@ -47,15 +47,15 @@ class LoginTest extends DuskTestCase
         });
     }
     /** @test */
-    public function test_auth_to_admin()
-    {
-        $user = Admin::find(4);
-        $this->browse(function ($browser) use ($user) {
-            $browser->visit('/adm/login')
-                    ->type('name', $user->name)
-                    ->type('password', 'secret')
-                    ->press('Login')
-                    ->assertPathIs('/admin');
-        });
-    }
+    // public function test_auth_to_admin()
+    // {
+    //     $user = Admin::find(4);
+    //     $this->browse(function ($browser) use ($user) {
+    //         $browser->visit('/adm/login')
+    //                 ->type('name', $user->name)
+    //                 ->type('password', 'secret')
+    //                 ->press('Login')
+    //                 ->assertPathIs('/admin');
+    //     });
+    // }
 }
