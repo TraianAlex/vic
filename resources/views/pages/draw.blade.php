@@ -32,6 +32,10 @@ $(document).ready(function() {
          });
     });
 
+    $("#clear").click(function(){
+        $("#grid td").css("background-color", "transparent");
+    });
+
     $("#grid td").each(function( index ){
         //bind the onClick event
         $( this ).bind ("click", function(){

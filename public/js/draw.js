@@ -1,7 +1,3 @@
-$("#clear").click(function(){
-    $("#grid td").css("background-color", "transparent");
-});
-
 $("#save").click(function(){
     var colorsAsJson = new Object();
     var i=0;
