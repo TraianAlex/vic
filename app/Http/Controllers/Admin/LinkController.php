@@ -57,12 +57,13 @@ class LinkController extends Controller
         flash('Your link has been created!');
 
         admins()->user()->notify(new LinkPublished($link));
+        event(new LinkCreated(admins()->user(), $link));
 
-        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);//$pusher = App::make('pusher');
-        $pusher->trigger('test-channel', 'App\Events\LinkCreated',
-                        ['message' => "A new link has been created at<br>
-                            <a href=".url('/links/'. $link->id)." target='_blank'>"
-                            .url('/links/'. $link->id)."</a>"]);
+        // $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);//$pusher = App::make('pusher');
+        // $pusher->trigger('test-channel', 'App\Events\LinkCreated',
+        //                 ['message' => "A new link has been created at<br>
+        //                     <a href=".url('/links/'. $link->id)." target='_blank'>"
+        //                     .url('/links/'. $link->id)."</a>"]);
         return redirect('link');
     }
 

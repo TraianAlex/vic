@@ -151,14 +151,15 @@
 		var pusher = new Pusher("{{env('PUSHER_APP_KEY')}}", {
 			encrypted: true
 		});
-		var channel = pusher.subscribe('test-channel');
-		channel.bind('App\\Events\\LinkCreated', function(data) {
+		var channel = pusher.subscribe('traian');
+		channel.bind('App\\Events\\CategoryCreated', function(data) {
+			data.message = 'A new category has been created !!';
 			$('.notification-label').addClass('label-warning');
 			$('.notification-menu').append(
 				'<li>\
 					<a href="#">\
-						<i class="fa fa-users text-aqua"></i> '+data.message+'\
-					</a>\
+						<i class="fa fa-users text-aqua"></i> ' + data.message + '\
+					<br>' + data.category.name + '</a>\
 				</li>'
 			);
 		});

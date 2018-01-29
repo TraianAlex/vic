@@ -5,9 +5,9 @@ let mix = require('laravel-mix');
  |--------------------------------------------------------------------------
  */
 
-// mix.js('resources/assets/js/app.js', 'public/js')
-//    .sass('resources/assets/sass/app.scss', 'public/css');
-//mix.js('resources/assets/js/app.js', 'public/js')
+mix.js('resources/assets-orig/js/app.js', 'public/js')
+   .sass('resources/assets-orig/sass/app.scss', 'public/css');
+
 mix.styles([
     'resources/assets/icon54-v2/style.css',
     'resources/assets/web/assets/mobirise-icons/mobirise-icons.css',

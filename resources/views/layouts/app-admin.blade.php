@@ -51,11 +51,24 @@
     });
     var channel = pusher.subscribe('test-channel');
     channel.bind('App\\Events\\LinkCreated', function(data) {
+      data.message = 'A new link has been created ';
       $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
       $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
       $('.notification-menu').append(
         '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
-          <i class="fa fa-users text-aqua"></i> '+data.message+'\
+        <i class="fa fa-users text-aqua"></i> '+ data.message + 'at \
+        <br><a href="/links/"'+ data.link.id + '" target="_blank">' + data.link.address + '\
+        </a></a>'
+      );
+    });
+    var channel2 = pusher.subscribe('traian');
+    channel2.bind('App\\Events\\CategoryCreated', function(data) {
+      data.message = 'A new category has been created !!';
+      $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
+      $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+      $('.notification-menu').append(
+        '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
+          <i class="fa fa-users text-aqua"></i> '+ data.message + '<br>' + e.category.name + '\
         </a>'
       );
     });

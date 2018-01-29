@@ -2,8 +2,8 @@
 
 namespace App\Events;
 
-use App\Link;
 use App\Admin;
+use App\Category;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -12,22 +12,22 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class LinkCreated implements ShouldBroadcast
+class CategoryCreated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $admin;
 
-    public $link;
+    public $category;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Admin $admin, Link $link)//Admin $admin
+    public function __construct(Admin $admin, Category $category)
     {
         $this->admin = $admin;
-        $this->link = $link;
+        $this->category = $category;
     }
 
     /**
@@ -37,7 +37,6 @@ class LinkCreated implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('test-channel');
-        //return new PrivateChannel('test-channel');
+        return new Channel('traian');
     }
 }

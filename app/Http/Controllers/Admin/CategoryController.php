@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use URL;
 use App\Category;
 use Pusher\Pusher;
+use App\Events\CategoryCreated;
 use Amranidev\Ajaxis\Ajaxis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -58,10 +59,11 @@ class CategoryController extends Controller
         $category->save();
         flash('Your category has been created!');
         Cache::forget('categories');
+        event(new CategoryCreated(admins()->user(), $category));
         //$pusher = App::make('pusher');
-        $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
-        $pusher->trigger('test-channel', 'App\Events\LinkCreated',
-                        ['message' => 'A new category has been created !!']);
+        // $pusher = new Pusher(env('PUSHER_APP_KEY'), env('PUSHER_APP_SECRET'), env('PUSHER_APP_ID'),[]);
+        // $pusher->trigger('test-channel', 'App\Events\LinkCreated',
+        //                 ['message' => 'A new category has been created !!']);
         return redirect('category');
     }
 
