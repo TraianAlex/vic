@@ -5,17 +5,7 @@
 <title>Develop a Website | Traian Alexandru Contact</title>
 @endsection
 @section('content')
-<section class="mbr-section content5 cid-qwaD1gSQlv mbr-parallax-background" id="content5-d" data-rv-view="1057">
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(35, 35, 35);">
-    </div>
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Request a quote</h3>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.headers.contact')
 <section class="mbr-section form4 cid-qwnf41fpS8" id="form4-o" data-rv-view="508">
     <div class="container">
         <div class="row">
@@ -23,9 +13,7 @@
                 <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJZ8w4EAjT1IkRzEbs7Ojy3ng" allowfullscreen=""></iframe></div>
             </div>
             <div class="col-md-6">
-                <h2 class="pb-3 align-left mbr-fonts-style display-2">
-                    Drop a Line
-                </h2>
+                <h2 class="pb-3 align-left mbr-fonts-style display-2">Drop a Line</h2>
                 <div>
                     <div class="icon-block pb-3">
                         <span class="icon-block__icon">

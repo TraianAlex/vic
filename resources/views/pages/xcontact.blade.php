@@ -5,17 +5,7 @@
 <title>Develop a Website | Traian Alexandru Contact</title>
 @endsection
 @section('content')
-<section class="mbr-section content5 cid-qwaD1gSQlv mbr-parallax-background" id="content5-d" data-rv-view="1057">
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(35, 35, 35);">
-    </div>
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">Request a quote</h3>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.headers.contact')
 <section class="mbr-section form4 cid-qwnf41fpS8" id="form4-o" data-rv-view="508">
     <div class="container">
         <div class="row">

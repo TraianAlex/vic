@@ -8,16 +8,16 @@
 <section style="margin:150px 0 0 0;">
 <div class="container">
     <div class="row">
-        @if(isset($links))
-        <table>
-            @foreach($links as $link)
-                <tr><td><a href="{{url('/tags/'.$cat->name)}}">{{$cat->name}}</a></td>
-                    <td>{{$link->description}}</td>
-                    <td>@can('edit') <a href="#">Edit</a> @endcan </td>
-                </tr>
-            @endforeach
-        </table>
-        @endif
+        @isset($links))
+            <table>
+                @foreach($links as $link)
+                    <tr><td><a href="{{url('/tags/'.$cat->name)}}">{{$cat->name}}</a></td>
+                        <td>{{$link->description}}</td>
+                        <td>@can('edit') <a href="#">Edit</a> @endcan </td>
+                    </tr>
+                @endforeach
+            </table>
+        @endisset
     </div>
 </div>
 </section>

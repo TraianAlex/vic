@@ -28,7 +28,7 @@ class PagesController extends Controller
 
     public function link()
     {
-        $links = Link::with('categories')->paginate(20);
+        $links = Link::with('categories')->latest()->paginate(20);
         $categories = Cache::remember('categories', 60*24*7, function(){
             return Category::all();
         });
@@ -52,7 +52,7 @@ class PagesController extends Controller
 
     public function all()
     {
-        $links = Link::with('categories')->paginate(2000);
+        $links = Link::with('categories')->latest()->paginate(2000);
         return view('pages.resources', compact('links'));
     }
 
@@ -76,9 +76,9 @@ class PagesController extends Controller
     // {
     //     $url = Storage::url('image.x');
     //     file_put_contents($url, json_encode($_POST));
-    //
-    //     file_exist(storage_path('app/public'));
-    //     \File::put(storage_path('app/public/storage/image.x'), json_encode($_POST));
-    //     \File::delete(storage_path('app/public/storage/image.x'));
+    //     return back();
+    //     //file_exist(storage_path('app/public'));
+    //     //\File::put(storage_path('app/public/storage/image.x'), json_encode($_POST));
+    //     //\File::delete(storage_path('app/public/storage/image.x'));
     // }
 }

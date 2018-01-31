@@ -5,25 +5,7 @@
 <title>Web Development Traian Alexandru{{-- config('app.name', 'Vic') --}}</title>
 @endsection
 @section('content')
-<section class="header5 cid-qBPIQBdLjY mbr-fullscreen mbr-parallax-background" id="header5-1n" data-rv-view="845">
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);">
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="mbr-white col-md-10">
-                <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style">
-                   Happiness is not something ready made. It comes from your own actions.
-                </p>
-
-            </div>
-        </div>
-    </div>
-    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-        <a href="#next">
-            <i class="mbri-down mbr-iconfont"></i>
-        </a>
-    </div>
-</section>
+@include('pages.headers.index')
 <section class="features15 cid-qBPIRQcRcF" id="features15-1o" data-rv-view="848">
     <div class="container">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Website Development</h2>
@@ -80,53 +62,5 @@
         </div>
         </div>
 </section>
-<section class="features1 cid-qBUbpxEYWf" id="features1-1u" data-rv-view="853">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont icon54-v1-html-5" media-simple="true"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        HTML</h4>
-                    <p class="mbr-text mbr-fonts-style display-7"></p>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont icon54-v1-css-3" media-simple="true"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        CSS</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Bootstrap</p>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont icon54-v1-elephant" media-simple="true"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        PHP</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Laravel</p>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-img pb-3">
-                    <span class="mbr-iconfont icon54-v2-java-script" media-simple="true"></span>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title py-3 mbr-fonts-style display-5">
-                        JS</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                       JQuery/Angular</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.partials.dev-icons')
 @endsection

@@ -22,9 +22,9 @@
             <tr>
                 <td>{!!$link->address!!}</td>
                 <td>{!!$link->description!!}</td>
-                <td><?php $i = 0;?>
+                <td>@php $i = 0; @endphp
                     @foreach($link->categories as $cat)
-                        <?php $i++ ?>
+                        @php $i++ @endphp
                         {!!$cat->name!!} @if(count($link->categories) > 1 && count($link->categories) > $i) / @endif
 
                     @endforeach

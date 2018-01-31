@@ -20,7 +20,7 @@
             <tr>
                 @include('notification.'.snake_case(class_basename($notification->type)))
                 <td>
-                    @if($notification->read_at == null))
+                    @if($notification->read_at == null)
                         <form method="POST" action="/admin/notifications/{{ $admin->id }}">{{ method_field('DELETE') }} {{ csrf_field() }}
                             <button class = 'delete btn btn-danger btn-xs' type="submit">Mark As Read</button>
                         </form>

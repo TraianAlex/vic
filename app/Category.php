@@ -26,7 +26,7 @@ class Category extends Model
      */
     public function links()
     {
-        return $this->belongsToMany('App\Link');
+        return $this->belongsToMany('App\Link')->latest();
     }
 
     /**

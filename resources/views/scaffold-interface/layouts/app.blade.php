@@ -155,13 +155,13 @@
 		channel.bind('App\\Events\\CategoryCreated', function(data) {
 			data.message = 'A new category has been created !!';
 			$('.notification-label').addClass('label-warning');
-			$('.notification-menu').append(
-				'<li>\
-					<a href="#">\
-						<i class="fa fa-users text-aqua"></i> ' + data.message + '\
-					<br>' + data.category.name + '</a>\
-				</li>'
-			);
+			$('.notification-menu').append(`
+				<li>
+					<a href="#">
+						<i class="fa fa-users text-aqua"></i> ${data.message}
+						<br>${data.category.name}</a>
+				</li>
+			`);
 		});
 		</script>
 		@yield('js')

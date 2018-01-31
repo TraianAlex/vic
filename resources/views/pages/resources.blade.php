@@ -32,9 +32,12 @@
               <th class="head-item mbr-fonts-style display-7">Address</th><th class="head-item mbr-fonts-style display-7">Description</th><th class="head-item mbr-fonts-style display-7">Tag</th></tr>
             </thead>
             <tbody>
-              @foreach($links as $link)
-                @include('pages.partials.link')
-            @endforeach
+              @isset($links)
+                @each('pages.partials.link', $links, 'link')
+              @endisset
+              @unless(count($links))
+                <tr><td colspan='3' class="body-item mbr-fonts-style display-7"><a href="#" class="text-black">Temporary there are no links here</a></td></tr>
+              @endunless
            </tbody>
           </table>
           {!! $links->render() !!}

@@ -77,9 +77,9 @@
           var data = { message: 'test notification' };
           $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
           $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
-          $('.notification-menu').append(
-          '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
-            <i class="fa fa-users text-aqua"></i> '+data.message+'</a>');
+          $('.notification-menu').append(`
+            <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">
+            <i class="fa fa-users text-aqua"></i> ${data.message}</a>`);
           }, 60000);
     </script>
   	@yield('script')

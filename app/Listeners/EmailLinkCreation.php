@@ -8,7 +8,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use App\Events\LinkCreated as LnkCreated;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class EmailLinkCreation
+class EmailLinkCreation implements ShouldQueue
 {
     /**
      * Create the event listener.
