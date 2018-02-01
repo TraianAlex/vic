@@ -59,9 +59,8 @@ class PagesController extends Controller
     public function sendEmail(Request $request)
     {
         Mail::to('victor_traian@yahoo.com')
-            ->send(new ContactForm($request->name, $request->email, $request->message));
-        flash('Thanks for filling out the form!');
-        return back();
+            ->queue(new ContactForm($request->name, $request->email, $request->message));
+        echo "Thanks for filling out form!";//flash('Thanks for filling out the form!');//return back();
     }
 
     public function loadGrid()

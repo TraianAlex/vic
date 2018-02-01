@@ -40,5 +40,28 @@
   <script src="{{ mix('js/all.js') }}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
   @yield('script')
   <script src="{{ mix('js/app.js') }}" data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
+  <script defer data-turbolinks-eval="false" data-turbolinks-track="reload">
+  (function(){
+      var submitAjaxRequest = function(e){
+          $('.temp').show();
+          var form = $(this);
+          var method = form.find('input[name="_method"]').val() || 'POST';
+          $.ajax({
+              type: method,
+              url: form.prop('action'),
+              data: form.serialize(),
+              success: function(response){
+                  $('.temp').hide();
+                  $('.flash').text(response).fadeIn(500).delay(5000).fadeOut(500);
+                  $("input[name=name]").val('');
+                  $("input[name=email]").val('');
+                  $("textarea[name=message]").val('');
+              }
+          });
+          e.preventDefault();
+      }
+      $('form[data-email]').on('submit', submitAjaxRequest);
+  })();
+</script>
 </body>
 </html>

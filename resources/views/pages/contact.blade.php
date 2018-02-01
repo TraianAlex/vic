@@ -4,6 +4,9 @@
 <meta name="keywords" content="website, design, webdesign, web, mobile web design, develop a website, traian alexandru">
 <title>Develop a Website | Traian Alexandru Contact</title>
 @endsection
+@section('css')
+<style type="text/css">.flash{background:#f6624a;color:white;width:260px;position:absolute;right:20px;bottom:20px;padding:1em;display:none;} .temp{position:absolute;right:20px;bottom:-90px;display:none;z-index:50;}</style>
+@endsection
 @section('content')
 @include('pages.headers.contact')
 <section class="mbr-section form4 cid-qwnf41fpS8" id="form4-o" data-rv-view="508">
@@ -33,8 +36,7 @@
                     </div>
                 </div>
                 <div>
-                    @include('flash::message')
-                    <form class="block mbr-form" action="{{url('send')}}" method="post">
+                    <form data-email class="block mbr-form" action="{{url('send')}}" method="post">
                         {{ csrf_field() }}
                         <div class="row">
                             <div class="col-md-6 multi-horizontal">
@@ -52,8 +54,10 @@
                         </div>
                     </form>
                 </div>
+                <img class="temp" src="{{asset('storage/rotating-ring-loader.gif')}}">
             </div>
         </div>
     </div>
+    <div class="flash"></div>
 </section>
 @endsection

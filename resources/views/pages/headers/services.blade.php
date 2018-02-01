@@ -1,4 +1,4 @@
-<section class="mbr-section content5 cid-qwnVh1qRcn mbr-parallax-background" id="content5-v" data-rv-view="994">
+<section class="mbr-section content5 cid-qwnVh1qRcn mbr-parallax-background" id="content5-v">
     <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(35, 35, 35);">
     </div>
     <div class="container">
