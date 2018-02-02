@@ -10,35 +10,8 @@
 <link rel="stylesheet" href="{{asset('assets/datatables/data-tables.bootstrap4.min.css')}}">
 @endsection
 @section('content')
-@include('pages.headers.links')
-<section class="mbr-section content4 cid-qCYC1i7rk7" id="content4-2x" data-rv-view="203">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">Tags</h2>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section content8 cid-qCYBxwqvnB" id="content8-2w" data-rv-view="205">
-    <div class="container">
-        <div class="media-container-row title">
-            <div class="col-12 col-md-12">
-                <div class="mbr-section-btn align-center">
-                  @isset($categories)
-                    @foreach($categories as $category)
-                        <a class="btn btn-info-outline display-4" href="/tags/{{$category->name}}">{{$category->name}}</a>
-                    @endforeach
-                  @endisset
-                  @unless(count($categories))
-                    <a class="btn btn-info-outline display-4" href="#">No tags</a>
-                  @endunless
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@includeWhen(request()->segment(1) == 'links', 'pages.headers.links')
+@includeWhen(request()->segment(1) == 'links', 'pages.headers.categories')
 <section class="section-table cid-qCYF3quygR" id="table1-34" data-rv-view="236">
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">Links</h2>
@@ -89,8 +62,9 @@
       </div>
     </div>
 </section>
-@include('pages.partials.disqus')
-@include('pages.partials.share')
+@includeWhen(request()->segment(1) != 'links', 'pages.partials.back-links')
+@includeWhen(request()->segment(1) == 'links', 'pages.partials.disqus')
+@includeWhen(request()->segment(1) == 'links', 'pages.partials.share')
 @endsection
 @section('script')
 <script src="http://w.sharethis.com/button/sharethis.js#publisher=1bd5e691-454c-4f90-8a6b-12d6923db08e&type=website&post_services=twitter%2Cfacebook%2Cemail%2Cgbuzz%2Cmyspace&button=false" data-turbolinks-eval="false" data-turbolinks-track="reload"></script>

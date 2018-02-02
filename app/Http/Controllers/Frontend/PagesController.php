@@ -20,11 +20,10 @@ class PagesController extends Controller
         dispatch(new Tracker);
     }
 
-    public function __invoke(Request $request)
+    public function __invoke()
     {
-        $array = ['about', 'contact', 'demos', 'draw', 'home', 'index', 'links', 'services', 'todo'];
-        $page = in_array($request->segment(1),$array) ? $request->segment(1) : 'index';
-        return view("pages/$page");
+        $page = request()->segment(1) ?? 'index';
+        return view()->exists("pages/$page") ? view("pages/$page") : view("pages/index");
     }
 
     public function link()
@@ -48,13 +47,13 @@ class PagesController extends Controller
     public function result(Category $category)
     {
         $links = $category->links()->paginate(15);
-        return view('pages.resources', compact('links'));
+        return view('pages.links', compact('links'));
     }
 
     public function all()
     {
         $links = Link::with('categories')->latest()->paginate(2000);
-        return view('pages.resources', compact('links'));
+        return view('pages.links', compact('links'));
     }
 
     public function sendEmail(Request $request)

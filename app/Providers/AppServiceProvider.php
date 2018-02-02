@@ -21,9 +21,9 @@ class AppServiceProvider extends ServiceProvider
             return admins()->check();
         });
 
-        if ($this->app->isLocal()) {
-            $kernel->pushMiddleware('\\App\\Http\\Middleware\\FlashViewCache');
-        }
+        // if ($this->app->isLocal()) {
+        //     $kernel->pushMiddleware('\\App\\Http\\Middleware\\FlashViewCache');
+        // }
 
         \Blade::directive('cache', function($exp) {
             return "<?php if(! \\App\\Resources\\RussianCaching::setUp($exp)) : ?>";
