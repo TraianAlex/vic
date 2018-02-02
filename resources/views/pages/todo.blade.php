@@ -22,12 +22,6 @@
 <section class="mbr-section form1 cid-qIrxolxeaL" id="form1-4s">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title col-12 col-lg-8">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
             <div class="media-container-column col-lg-8">
                 <form class="mbr-form" id="task-form">
                     <div class="row row-sm-offset">
@@ -50,8 +44,6 @@
                 <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Tasks</h2>
             </div>
         </div>
-    </div>
-    <div class="container">
         <div class="row justify-content-center">
             <div class="media-container-column col-lg-8">
                 <div class="row row-sm-offset">
@@ -94,67 +86,48 @@ const taskList = document.querySelector('.collection');
 const filter = document.querySelector('#filter');
 const clearBtn = document.querySelector('.clear-tasks');
 const addBtn = document.querySelector('#add');
+const title = document.querySelector('.mbr-section-title');
 
 addBtn.style.visibility='hidden';
 loadEventListeners();
 
 function loadEventListeners() {
-  taskInput.addEventListener('focus', function(){addBtn.style.visibility='visible';});
   document.addEventListener('DOMContentLoaded', getTasks);
   form.addEventListener('submit', addTask);
   taskList.addEventListener('click', removeTask);
   clearBtn.addEventListener('click', clearTasks);
   filter.addEventListener('keyup', filterTasks);
+  taskInput.addEventListener('focus', function(){addBtn.style.visibility='visible';});
 }
 
 function getTasks() {
   tasks = extractTasksFromLS();
-
   tasks.forEach(function(task){
     createItem(task);
   });
 }
 
 function addTask(e) {
-  if(taskInput.value === '') {
-    alert('Add a task');
-    return false;
-  }
+    if(taskInput.value === '') {
+        alert('Add a task');
+        return false;
+    }
 
-  createItem(taskInput.value);
+    createItem(taskInput.value);
+    storeTaskInLocalStorage(taskInput.value);
 
-  storeTaskInLocalStorage(taskInput.value);
+    taskInput.value = '';
+    addBtn.style.visibility = 'hidden';
+    clearBtn.style.visibility = 'visible';
+    filter.style.visibility = 'visible';
+    title.style.visibility = 'visible';
 
-  taskInput.value = '';
-  addBtn.style.visibility='hidden';
-
-  e.preventDefault();
-}
-
-function createItem(task){
-    // Create li element
-    const li = document.createElement('li');
-    // Add class
-    li.className = 'collection-item';
-    // Create text node and append to li
-    li.appendChild(document.createTextNode(task));
-    // Create new link element
-    const link = document.createElement('a');
-    // Add class
-    link.className = 'text-primary float-right delete-item';
-    // Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>';
-    // Append the link to li
-    li.appendChild(link);
-    // Append li to ul
-    taskList.appendChild(li);
+    e.preventDefault();
 }
 
 function storeTaskInLocalStorage(task) {
   tasks = extractTasksFromLS();
-
   tasks.push(task);
-
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
@@ -162,10 +135,10 @@ function extractTasksFromLS(){
     let tasks;
     if(localStorage.getItem('tasks') === null){
         tasks = [];
-        clearBtn.style.visibility = 'hidden';
     } else {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
+    clearDash(tasks);
     return tasks;
 }
 
@@ -173,15 +146,23 @@ function removeTask(e) {
   if(e.target.parentElement.classList.contains('delete-item')) {
     if(confirm('Are You Sure?')) {
       e.target.parentElement.parentElement.remove();
-
       removeTaskFromLocalStorage(e.target.parentElement.parentElement);
     }
   }
+  taskListarray = Array.from(taskList.children);
+  clearDash(taskListarray);
+}
+
+function clearDash(tasks) {
+    if(tasks.length === 0) {
+        title.style.visibility = 'hidden';
+        filter.style.visibility = 'hidden';
+        clearBtn.style.visibility = 'hidden'
+      }
 }
 
 function removeTaskFromLocalStorage(taskItem) {
   tasks = extractTasksFromLS();
-
   tasks.forEach(function(task, index){
     if(taskItem.textContent === task){
       tasks.splice(index, 1);
@@ -204,7 +185,6 @@ function clearTasksFromLocalStorage() {
 
 function filterTasks(e) {
   const text = e.target.value.toLowerCase();
-
   document.querySelectorAll('.collection-item').forEach(function(task){
     const item = task.firstChild.textContent;
     if(item.toLowerCase().indexOf(text) != -1){
@@ -213,6 +193,25 @@ function filterTasks(e) {
       task.style.display = 'none';
     }
   });
+}
+
+function createItem(task){
+    // Create li element
+    const li = document.createElement('li');
+    // Add class
+    li.className = 'collection-item';
+    // Create text node and append to li
+    li.appendChild(document.createTextNode(task));
+    // Create new link element
+    const link = document.createElement('a');
+    // Add class
+    link.className = 'text-primary float-right delete-item';
+    // Add icon html
+    link.innerHTML = '<i class="fa fa-remove"></i>';
+    // Append the link to li
+    li.appendChild(link);
+    // Append li to ul
+    taskList.appendChild(li);
 }
 </script>
 @endsection
