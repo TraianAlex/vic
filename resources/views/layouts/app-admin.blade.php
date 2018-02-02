@@ -76,7 +76,7 @@
 
       setTimeout(function(){
           var data = { message: 'test notification' };
-          $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
+          $('.notify-hide').removeClass('notify-hide').addClass('notifications-menu');
           $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
           $('.notification-menu').append(`
             <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">

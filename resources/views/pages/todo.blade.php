@@ -6,30 +6,7 @@
 <title>Todo</title>
 @endsection
 @section('content')
-<div id="custom-html-4o" custom-code="true" data-rv-view="503"><nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top:120px">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Loan Calculator</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Next</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Disabled</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Disabled</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav></div>
+@include('pages.headers.js')
 <section class="mbr-section content4 cid-qIr5xvTYnx" id="content4-4p">
     <div class="container">
         <div class="media-container-row">
@@ -56,12 +33,11 @@
                     <div class="row row-sm-offset">
                         <div class="col-md-4 multi-horizontal">
                             <div class="form-group">
-                                <label class="form-control-label mbr-fonts-style display-7" for="name-form1-4s">New Task</label>
-                                <input type="text" class="form-control" name="task" id="task" required>
+                                <input type="text" class="form-control" name="task" id="task" placeholder="New Task" required>
                             </div>
                         </div>
                     </div>
-                    <span class="input-group-btn"><button type="submit" class="btn btn-primary btn-form display-4">ADD TASK</button></span>
+                    <span class="input-group-btn"><button type="submit" class="btn btn-primary btn-form display-4" id="add">ADD TASK</button></span>
                 </form>
             </div>
         </div>
@@ -81,8 +57,7 @@
                 <div class="row row-sm-offset">
                     <div class="col-md-4 multi-horizontal">
                         <div class="form-group">
-                            <label class="form-control-label mbr-fonts-style display-7" for="name-form1-4t">Filter Tasks</label>
-                            <input type="text" class="form-control" name="filter" id="filter" required="">
+                            <input type="text" class="form-control" name="filter" id="filter" placeholder="Filter Tasks" required="">
                         </div>
                     </div>
                 </div>
@@ -118,10 +93,13 @@ const taskInput = document.querySelector('#task');
 const taskList = document.querySelector('.collection');
 const filter = document.querySelector('#filter');
 const clearBtn = document.querySelector('.clear-tasks');
+const addBtn = document.querySelector('#add');
 
+addBtn.style.visibility='hidden';
 loadEventListeners();
 
 function loadEventListeners() {
+  taskInput.addEventListener('focus', function(){addBtn.style.visibility='visible';});
   document.addEventListener('DOMContentLoaded', getTasks);
   form.addEventListener('submit', addTask);
   taskList.addEventListener('click', removeTask);
@@ -148,6 +126,7 @@ function addTask(e) {
   storeTaskInLocalStorage(taskInput.value);
 
   taskInput.value = '';
+  addBtn.style.visibility='hidden';
 
   e.preventDefault();
 }
@@ -183,6 +162,7 @@ function extractTasksFromLS(){
     let tasks;
     if(localStorage.getItem('tasks') === null){
         tasks = [];
+        clearBtn.style.visibility = 'hidden';
     } else {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
@@ -207,7 +187,6 @@ function removeTaskFromLocalStorage(taskItem) {
       tasks.splice(index, 1);
     }
   });
-
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
@@ -216,7 +195,6 @@ function clearTasks() {
   while(taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
-
   clearTasksFromLocalStorage();
 }
 
