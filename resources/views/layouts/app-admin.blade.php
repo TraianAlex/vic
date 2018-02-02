@@ -12,6 +12,7 @@
     <link href="{{ mix('css/all.css') }}" rel="stylesheet" data-turbolinks-track="reload">
     @yield('css')
     <style type="text/css">
+    .turbolinks-progress-bar {visibility: hidden;}
     .notify-hide{display: none;}
       @media (min-width: 991px) {.notifications-menu{display: none;}}
     </style>
@@ -26,7 +27,7 @@
 </script>
 </head>
 <body>
-	<div id="app">
+	<div> {{-- id="app" --}}
 		@include('partials.vicnav')
 
 		@yield('content')
@@ -53,7 +54,7 @@
     channel.bind('App\\Events\\LinkCreated', function(data) {
       data.message = 'A new link has been created ';
       $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-      $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+      $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
       $('.notification-menu').append(
         '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
         <i class="fa fa-users text-aqua"></i> '+ data.message + 'at \
@@ -65,7 +66,7 @@
     channel2.bind('App\\Events\\CategoryCreated', function(data) {
       data.message = 'A new category has been created !!';
       $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-      $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+      $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
       $('.notification-menu').append(
         '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
           <i class="fa fa-users text-aqua"></i> '+ data.message + '<br>' + e.category.name + '\
@@ -76,7 +77,7 @@
       setTimeout(function(){
           var data = { message: 'test notification' };
           $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-          $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+          $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
           $('.notification-menu').append(`
             <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">
             <i class="fa fa-users text-aqua"></i> ${data.message}</a>`);

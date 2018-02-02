@@ -120,11 +120,11 @@
             <div class="card p-3 col-12 col-md-6 col-lg-2">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <a href="https://vic.com.ro"><img src="assets/images/04.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                        <a href="/todo"><img src="assets/images/04.jpg" alt="Traian" title="Traian" media-simple="true"></a>
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Lorem</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">lorem</p>
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7">Javascript</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">todo list using local storage</p>
                     </div>
                 </div>
             </div>

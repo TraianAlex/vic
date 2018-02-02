@@ -22,7 +22,7 @@
             <ul class="navbar-nav nav-dropdown nav-right">
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link link text-black" data-toggle="dropdown-submenu" aria-expanded="false">
-                        <span class="label"><i class="fa fa-bell-o"></i></span>
+                        <span class="label"><i class="fa fa-bell-o blink"></i></span>
                     </a>
                     <div class="dropdown-menu notification-menu">
                         <a class="text-black dropdown-item display-4"  aria-expanded="false">Your notifications</a>
@@ -42,7 +42,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light notify-hide" style="margin-top:64px;">
     <ul class="nav nav-pills" style="margin: auto;">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i></a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o blink"></i></a>
         <div class="dropdown-menu notification-menu">
           <a class="dropdown-item" href="#!">Your notifications</a>
         </div>

@@ -22,7 +22,8 @@ class PagesController extends Controller
 
     public function __invoke(Request $request)
     {
-        $page = $request->segment(1) ?? 'index';
+        $array = ['about', 'contact', 'demos', 'draw', 'home', 'index', 'links', 'services', 'todo'];
+        $page = in_array($request->segment(1),$array) ? $request->segment(1) : 'index';
         return view("pages/$page");
     }
 

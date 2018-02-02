@@ -63,7 +63,7 @@ setInterval(blinker, 1000);
 window.Echo.channel('test-channel').listen('LinkCreated', e => {
     e.message = 'A new link has been created ';
     $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-      $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+      $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
       $('.notification-menu').append(
         '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
          <i class="fa fa-users text-aqua"></i> ' + e.message + 'at \
@@ -75,7 +75,7 @@ window.Echo.channel('test-channel').listen('LinkCreated', e => {
 window.Echo.channel('traian').listen('CategoryCreated', e => {
     e.message = 'A new category has been created !!';
     $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-      $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+      $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
       $('.notification-menu').append(
         '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
           <i class="fa fa-users text-aqua"></i> ' + e.message + '<br>' + e.category.name + '\
@@ -86,7 +86,7 @@ window.Echo.channel('traian').listen('CategoryCreated', e => {
 setTimeout(function(){
    var data = { message: 'test notification' };
    $('.navbar-expand-lg').removeClass('notify-hide').addClass('notifications-menu');
-   $('.fa').removeClass('fa-bell-o').addClass('fa-bell blinking');
+   $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
    $('.notification-menu').append(
   '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
     <i class="fa fa-users text-aqua"></i> '+data.message+'</a>');
