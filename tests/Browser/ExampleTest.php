@@ -38,11 +38,11 @@ class ExampleTest extends DuskTestCase
     /** @test */
     function it_login_user()
     {
-        $user = User::find(11);
+        $user = User::find(12);
         $this->browse(function (Browser $browser) use ($user) {
             $browser->visit('/auth/login')
                     ->type('email', $user->email)
-                    ->type('password', 'Naiart92')
+                    ->type('password', 'secret')
                     ->press('Login')
                     ->assertSee('Under Construction')
                     ->assertPathIs('/home');
@@ -57,7 +57,7 @@ class ExampleTest extends DuskTestCase
     //     $this->browse(function ($browser) use ($admin) {
     //         $browser->visit('/adm/login')
     //                 ->type('name', $admin->name)
-    //                 ->type('password', 'Naiart92')
+    //                 ->type('password', 'xxxxxx')
     //                 ->press('Login')
     //                 ->assertPathIs('/admin');
     //     });
