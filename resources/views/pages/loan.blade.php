@@ -2,6 +2,7 @@
 @section('meta')
 <meta name="description" content="Traian Alexandru Web Developer Toronto. Build responsive mobile websites. Webdesign and implementation. Javascript samples.">
 <meta name="keywords" content="website design, web page design, webdesign, web development, mobile, traian alexandru">
+<meta name="turbolinks-visit-control" content="reload">
 <title>Loan Calculator</title>
 @endsection
 @section('css')
