@@ -10,7 +10,8 @@
 @endsection
 @section('content')
 @include('pages.headers.js')
-<div id="custom-html-52" custom-code="true" data-rv-view="48" class="bg-white">      <div class="row">
+<div id="custom-html-52" custom-code="true" data-rv-view="48" class="bg-white">
+    <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body text-center mt-5">
             <h1 class="heading display-5 pb-3">Loan Calculator</h1>
