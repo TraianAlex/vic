@@ -2,6 +2,7 @@
 @section('meta')
 <meta name="description" content="Website Development Quote. Responsive mobile websites. Webdesign and implementation.">
 <meta name="keywords" content="website, design, webdesign, web, mobile web design, develop a website, traian alexandru">
+<meta name="turbolinks-visit-control" content="reload">
 <title>Develop a Website | Traian Alexandru Contact</title>
 @endsection
 @section('css')
