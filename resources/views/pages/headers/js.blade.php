@@ -17,7 +17,7 @@
         <a class="nav-link" href="book-list">Book List</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Disabled</a>
+        <a class="nav-link" href="jokes">Jokes</a>
       </li>
     </ul>
   </div>
