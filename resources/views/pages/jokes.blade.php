@@ -23,7 +23,7 @@
 </div>
 @endsection
 @section('script')
-<script data-turbolinks-track="reload">
+<script data-turbolinks-eval="false" data-turbolinks-track="reload">
 document.querySelector('.get-jokes').addEventListener('click', getJokes);
 
 function getJokes(e) {
