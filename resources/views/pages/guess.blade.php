@@ -8,16 +8,35 @@
 @section('content')
 @include('pages.headers.js')
 <div id="custom-html-52" custom-code="true" data-rv-view="48" style="margin: 50px 0 160px 0;">
-  <div class="container">
-      <h2>Number Guesser</h2>
-      <div id="game">
-        <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
-        <input type="number" id="guess-input" placeholder="Enter your guess...">
-        <input type="submit" value="Submit" id="guess-btn">
-        <p class="message"></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-2">
+        <div class="media">
+          <div class="media-body">
+            <h5 class="mt-0">Number Guesser</h5>
+            <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+          </div>
+        </div>
+        <div id="game">
+          <div class="form-group">
+            <input type="number" id="guess-input" class="form-control" placeholder="Enter your guess..." required>
+          </div>
+          <input type="submit" class="btn btn-primary btn-md active" role="button" aria-pressed="true" value="Submit" id="guess-btn">
+          <p class="message"></p>
+        </div>
       </div>
+    </div>
   </div>
 </div>
+<section class="mbr-section content8 cid-qwPzbpLJTt" id="content8-19" data-rv-view="74">
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/guess.blade.php" target="_blank">Get Code</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">

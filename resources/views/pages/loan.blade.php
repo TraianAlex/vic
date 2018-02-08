@@ -19,17 +19,17 @@
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon">$</span>
-                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount" required>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-addon">%</span>
-                  <input type="number" class="form-control" id="interest" placeholder="Interest">
+                  <input type="number" class="form-control" id="interest" placeholder="Interest" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="years" placeholder="Years To Repay">
+                <input type="number" class="form-control" id="years" placeholder="Years To Repay" required>
               </div>
               <div class="forn-group">
                 <input type="submit" value="Calculate" class="btn btn-dark btn-block">
@@ -67,6 +67,15 @@
         </div>
       </div>
  </div>
+ <section class="mbr-section content8 cid-qwPzbpLJTt" id="content8-19" data-rv-view="74">
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/loan.blade.php" target="_blank">Get Code</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">

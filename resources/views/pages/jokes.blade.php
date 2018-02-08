@@ -12,7 +12,7 @@
     <h4>Chuck Norris Joke Generator</h4>
     <form>
       <div class="form-group">
-        <input type="number" id="number" class="form-control" placeholder="Number of jokes">
+        <input type="number" id="number" class="form-control" placeholder="Number of jokes" required>
       </div>
       <div>
         <button class="get-jokes btn btn-primary">Get Jokes</button>
@@ -21,6 +21,15 @@
     <ul class="jokes list-group"></ul>
   </div>
 </div>
+<section class="mbr-section content8 cid-qwPzbpLJTt" id="content8-19" data-rv-view="74">
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/jokes.blade.php" target="_blank">Get Code</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">

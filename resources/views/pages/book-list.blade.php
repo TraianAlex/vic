@@ -22,13 +22,13 @@
     </div>
     <form id="book-form">
       <div class="form-group">
-        <input type="text" class="form-control" id="title" placeholder="Title">
+        <input type="text" class="form-control" id="title" placeholder="Title" required>
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" id="author" placeholder="Author">
+        <input type="text" class="form-control" id="author" placeholder="Author" required>
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" id="isbn" placeholder="ISBN#">
+        <input type="text" class="form-control" id="isbn" placeholder="ISBN#" required>
       </div>
       <div class="form-group" style="margin: 0 0 20px -15px;">
         <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
@@ -47,6 +47,15 @@
     </table>
   </div>
 </div>
+<section class="mbr-section content8 cid-qwPzbpLJTt" id="content8-19" data-rv-view="74">
+    <div class="container">
+        <div class="media-container-row title">
+            <div class="col-12 col-md-8">
+                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/book-list.blade.php" target="_blank">Get Code</a></div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">
