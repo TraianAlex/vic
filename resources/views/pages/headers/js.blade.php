@@ -10,6 +10,7 @@
       <li class="nav-item"><a class="nav-link text-white" href="book-list">Book List</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="jokes">Jokes</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="github-finder">Github Search</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="weather">Weather</a></li>
     </ul>
   </div>
 </nav></div>
