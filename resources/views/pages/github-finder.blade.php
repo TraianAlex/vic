@@ -8,33 +8,16 @@
 @section('content')
 @include('pages.headers.js')
 <div id="custom-html-52" custom-code="true" data-rv-view="48" style="margin: 40px 0 100px 0;">
-  <nav class="navbar navbar-dark bg-primary mb-3">
-    <div class="container">
-      <a href="#" class="navbar-brand">GitHub Finder</a>
-    </div>
-  </nav>
   <div class="container searchContainer">
     <div class="search card card-body">
-      <h2>Search GitHub Users</h2>
       <p class="lead">Enter a username to fetch a user profile and repos</p>
       <input type="text" id="searchUser" class="form-control" placeholder="GitHub Username...">
     </div>
     <br>
     <div id="profile"></div>
   </div>
-  <footer class="mt-5 p-3 text-center bg-light">
-    GitHub Finder &copy;
-  </footer>
 </div>
-<section class="mbr-section content8 cid-qwPzbpLJTt" id="content8-19" data-rv-view="74">
-    <div class="container">
-        <div class="media-container-row title">
-            <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-warning display-4" href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/github-finder.blade.php" target="_blank">Get Code</a></div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.partials.get-code-btn', ['segment' => request()->segment(1)])
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">
@@ -66,7 +49,6 @@ class UI {
         this.profile = document.getElementById('profile');
     }
 
-    // Display profile in UI
     showProfile(user) {
         this.profile.innerHTML = `
           <div class="card card-body mb-3">
@@ -95,7 +77,6 @@ class UI {
         `;
     }
 
-    // Show user repos
     showRepos(repos) {
         let output = '';
 
@@ -116,11 +97,9 @@ class UI {
             `;
         });
 
-        // Output repos
         document.getElementById('repos').innerHTML = output;
     }
 
-    // Show alert message
     showAlert(message, className) {
         // Clear any remaining alerts
         this.clearAlert();
@@ -136,58 +115,44 @@ class UI {
         const search = document.querySelector('.search');
         // Insert alert
         container.insertBefore(div, search);
-
         // Timeout after 3 sec
         setTimeout(() => {
           this.clearAlert();
         }, 3000);
     }
 
-    // Clear alert message
     clearAlert() {
         const currentAlert = document.querySelector('.alert');
-
         if(currentAlert){
             currentAlert.remove();
         }
     }
 
-    // Clear profile
     clearProfile() {
         this.profile.innerHTML = '';
     }
 }
 
-// Init Github
 const github = new Github;
-// Init UI
 const ui = new UI;
-
-// Search input
 const searchUser = document.getElementById('searchUser');
 
-// Search input event listener
 searchUser.addEventListener('keyup', (e) => {
-    // Get input text
     const userText = e.target.value;
 
     if(userText !== ''){
-       // Make http call
-       github.getUser(userText)
-        .then(data => {
-          if(data.profile.message === 'Not Found') {
-            // Show alert
-            ui.showAlert('User not found', 'alert alert-danger');
-          } else {
-            // Show profile
-            ui.showProfile(data.profile);
-            ui.showRepos(data.repos);
-          }
-        })
-    } else {
-        // Clear profile
-        ui.clearProfile();
-    }
+        github.getUser(userText)
+              .then(data => {
+                  if(data.profile.message === 'Not Found') {
+                      ui.showAlert('User not found', 'alert alert-danger');
+                  } else {
+                      ui.showProfile(data.profile);
+                      ui.showRepos(data.repos);
+                  }
+               });
+     } else {
+          ui.clearProfile();
+     }
 });
 </script>
 @endsection
