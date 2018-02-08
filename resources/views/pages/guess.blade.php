@@ -56,7 +56,7 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 game.addEventListener('mousedown', function(e){
-  if(e.target.className === 'play-again'){
+  if(e.target.className === 'btn btn-primary btn-md active play-again'){
     window.location.reload();
   }
 });
@@ -94,8 +94,9 @@ function gameOver(won, msg){
     // Set message
     setMessage(msg);
     // PLay Again?
+    guessInput.value = '';
     guessBtn.value = 'Play Again';
-    guessBtn.className += 'play-again';
+    guessBtn.className += ' play-again';
 }
 
 function getRandomNum(min, max){
