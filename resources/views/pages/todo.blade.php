@@ -120,9 +120,7 @@ function addTask(e) {
     taskInput.value = '';
     addBtn.style.visibility = 'hidden';
 
-    clearBtn.style.visibility = 'visible';
-    filter.style.visibility = 'visible';
-    title.style.visibility = 'visible';
+    toggleList();
 
     e.preventDefault();
 }
@@ -140,7 +138,7 @@ function extractTasksFromLS(){
     } else {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
-    hideEmptyList(tasks);
+    toggleList(tasks);
     return tasks;
 }
 
@@ -152,15 +150,14 @@ function removeTask(e) {
     }
   }
   taskListarray = Array.from(taskList.children);
-  hideEmptyList(taskListarray);
+  toggleList(taskListarray);
 }
 
-function hideEmptyList(tasks) {
-    if(tasks.length === 0) {
-        title.style.visibility = 'hidden';
-        filter.style.visibility = 'hidden';
-        clearBtn.style.visibility = 'hidden'
-      }
+function toggleList(tasks = [1]) {
+    visibility = tasks.length === 0 ? 'hidden' : 'visible';
+    title.style.visibility = visibility;
+    filter.style.visibility = visibility;
+    clearBtn.style.visibility = visibility;
 }
 
 function removeTaskFromLocalStorage(taskItem) {
