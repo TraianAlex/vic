@@ -23,12 +23,15 @@
     <form id="book-form">
       <div class="form-group">
         <input type="text" class="form-control" id="title" placeholder="Title" required>
+        <div class="invalid-feedback">Enter a valid title</div>
       </div>
       <div class="form-group">
         <input type="text" class="form-control" id="author" placeholder="Author" required>
+        <div class="invalid-feedback">Enter a valid name</div>
       </div>
       <div class="form-group">
         <input type="text" class="form-control" id="isbn" placeholder="ISBN#" required>
+        <div class="invalid-feedback">Enter a valid isbn</div>
       </div>
       <div class="form-group" style="margin: 0 0 20px -15px;">
         <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
@@ -151,12 +154,37 @@ class Store {
     }
 }
 
+function validateTitle() {
+  const title = document.getElementById('title');
+  const re = /^[a-zA-Z0-9\-\s]{2,100}$/;
+  !re.test(title.value) ? title.classList.add('is-invalid') : title.classList.remove('is-invalid');
+  return re.test(title.value);
+}
+
+function validateAuthor() {
+  const author = document.getElementById('author');
+  const re = /^[a-zA-Z\-\s]{2,50}$/;
+  !re.test(author.value) ? author.classList.add('is-invalid') : author.classList.remove('is-invalid');
+  return re.test(author.value);
+}
+
+function validateIsbn() {
+    isbn = document.getElementById('isbn');
+    const re = /^[\d+\-]+?$/;
+    !re.test(isbn.value) ? isbn.classList.add('is-invalid') : isbn.classList.remove('is-invalid');
+    return re.test(isbn.value);
+}
+
 document.addEventListener('DOMContentLoaded', Store.displayBooks);
 
 document.getElementById('showForm').addEventListener('click', function(e){
     document.getElementById('showForm').style.display = 'none';
     document.getElementById('book-form').style.display = 'block';
 });
+
+document.getElementById('title').addEventListener('blur', validateTitle);
+document.getElementById('author').addEventListener('blur', validateAuthor);
+document.getElementById('isbn').addEventListener('blur', validateIsbn);
 
 document.getElementById('book-form').addEventListener('submit', function(e){
     // Get form values
@@ -168,6 +196,8 @@ document.getElementById('book-form').addEventListener('submit', function(e){
     const ui = new UI();
     if(title === '' || author === '' || isbn === '') {
         ui.showAlert('Please fill in all fields', 'error');
+    } else if(validateTitle() === false || validateAuthor() === false || validateIsbn() === false) {
+        ui.showAlert('Please fill all fields correctly!', 'error');
     } else {
       ui.addBookToList(book);
       Store.addBook(book);

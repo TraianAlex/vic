@@ -43,10 +43,12 @@
             <div class="form-group">
               <label for="city">City</label>
               <input type="text" id="city" class="form-control">
+              <div class="invalid-feedback">Enter a valid city</div>
             </div>
             <div class="form-group">
                 <label for="state">State</label>
                 <input type="text" id="state" class="form-control">
+                <div class="invalid-feedback">Enter a valid state</div>
               </div>
           </form>
         </div>
@@ -141,6 +143,20 @@ class UI {
     }
 }
 
+function validateCity() {
+  const city = document.getElementById('city');
+  const re = /^[a-zA-Z\-\s]{2,50}$/;
+  !re.test(city.value) ? city.classList.add('is-invalid') : city.classList.remove('is-invalid');
+  return re.test(city.value);
+}
+
+function validateState() {
+  const state = document.getElementById('state');
+  const re = /^[a-zA-Z\-\s]{2,50}$/;
+  !re.test(state.value) ? state.classList.add('is-invalid') : state.classList.remove('is-invalid');
+  return re.test(state.value);
+}
+
 const storage = new Storage();
 const weatherLocation = storage.getLocationData();
 const weather = new Weather(weatherLocation.city, weatherLocation.state);
@@ -148,10 +164,15 @@ const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getWeather);
 
+document.getElementById('city').addEventListener('blur', validateCity);
+document.getElementById('state').addEventListener('blur', validateState);
 
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
     const city = document.getElementById('city').value;
     const state = document.getElementById('state').value;
+    if(validateCity() === false || validateState() === false){
+      return false;
+    }
     weather.changeLocation(city, state);
     storage.setLocationData(city, state);
     getWeather();
