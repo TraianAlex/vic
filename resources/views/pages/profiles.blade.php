@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 mx-auto text-center">
-          <h2 class="mb-3">Profile Scroller</h2>
+          <h3 class="mb-3">Profile Scroller</h3>
           <div id="imageDisplay"></div>
           <br>
           <div id="profileDisplay"></div>
