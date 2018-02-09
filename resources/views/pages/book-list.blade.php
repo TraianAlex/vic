@@ -15,9 +15,9 @@
 @endsection
 @section('content')
 @include('pages.headers.js')
-<div id="custom-html-52" custom-code="true" data-rv-view="48" style="margin: 40px 0 100px 0;">
+<div id="custom-html-52" custom-code="true" data-rv-view="48" class="mt-5 mb-5">
   <div class="container">
-    <div class="form-group" style="margin: 0 0 20px -15px;">
+    <div class="form-group">
       <button type="button" id="showForm" class="btn btn-primary btn-lg btn-block">Add Book</button>
     </div>
     <form id="book-form">

@@ -7,10 +7,10 @@
 @endsection
 @section('content')
 @include('pages.headers.js')
-<div id="custom-html-52" custom-code="true" data-rv-view="48" style="margin: 50px 0 160px 0;">
+<div id="custom-html-52" custom-code="true" data-rv-view="48" class="mt-5 mb-5" ">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8 offset-2">
+      <div class="col-md-8 mx-auto">
         <div class="media">
           <div class="media-body">
             <h5 class="mt-0">Number Guesser</h5>

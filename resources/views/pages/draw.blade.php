@@ -46,7 +46,7 @@ $(document).ready(function() {
 </script>
 @endsection
 @section('content')
-<section class="mbr-section article content9 cid-qCbNPo4W1h" id="content9-2b" data-rv-view="784" style="margin: 100px 0 100px 0">
+<section class="mbr-section article content9 cid-qCbNPo4W1h mb-5" id="content9-2b" data-rv-view="784" style="margin-top: 100px;">
     <div class="container">
         <nav class="navbar fixed-top" style="margin-top: 100px; z-index: 1;">
             <table id="palette">

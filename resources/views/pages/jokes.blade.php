@@ -7,7 +7,7 @@
 @endsection
 @section('content')
 @include('pages.headers.js')
-<div id="custom-html-52" custom-code="true" data-rv-view="48" style="margin: 40px 0 100px 0;">
+<div id="custom-html-52" custom-code="true" data-rv-view="48" class="mt-5 mb-5">
   <div class="container">
     <h4>Chuck Norris Joke Generator</h4>
     <form>
