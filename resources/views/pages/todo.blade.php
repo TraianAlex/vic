@@ -89,7 +89,7 @@ const clearBtn = document.querySelector('.clear-tasks');
 const addBtn = document.querySelector('#add');
 const title = document.querySelector('.mbr-section-title');
 
-addBtn.style.visibility='hidden';
+addBtn.style.visibility = 'hidden';
 loadEventListeners();
 
 function loadEventListeners() {
@@ -98,7 +98,7 @@ function loadEventListeners() {
   taskList.addEventListener('click', removeTask);
   clearBtn.addEventListener('click', clearTasks);
   filter.addEventListener('keyup', filterTasks);
-  taskInput.addEventListener('focus', function(){addBtn.style.visibility='visible';});
+  taskInput.addEventListener('focus', () => addBtn.style.visibility = 'visible');
 }
 
 function getTasks() {
@@ -158,6 +158,7 @@ function toggleList(tasks = [1]) {
     title.style.visibility = visibility;
     filter.style.visibility = visibility;
     clearBtn.style.visibility = visibility;
+    filter.value = '';
 }
 
 function removeTaskFromLocalStorage(taskItem) {
