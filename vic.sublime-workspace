@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"next",
+				"nextProfile"
+			],
+			[
 				"valida",
 				"validateState"
 			],
@@ -471,6 +475,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "resources/views/pages/profiles.blade.php",
+			"settings":
+			{
+				"buffer_size": 2538,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -612,17 +625,18 @@
 	],
 	"file_history":
 	[
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/github-finder.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/weather.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/profiles.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todo.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/guess.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/jokes.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/draw.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/github-finder.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/loan.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/get-code-btn.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/routes/web.php",
 		"/Users/victor/MEGA/www/laravel/vic/.env",
@@ -738,8 +752,7 @@
 		"/Users/victor/MEGA/www/laravel/vic/app/Resources/Pagination.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/helpers.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/PaginationServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/NotificationController.php",
-		"/Users/victor/MEGA/www/laravel/vic/tests/Unit/ExampleTest.php"
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/NotificationController.php"
 	],
 	"find":
 	{
@@ -905,8 +918,43 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resources/views/pages/profiles.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								692,
+								692
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 38.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1164,9 +1212,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "lar",
+		"last_filter": "lar54",
 		"selected_items":
 		[
+			[
+				"lar54",
+				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
+			],
 			[
 				"lar",
 				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
