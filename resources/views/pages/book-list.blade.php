@@ -54,6 +54,7 @@
 @endsection
 @section('script')
 <script data-turbolinks-eval="false" data-turbolinks-track="reload">
+var addEL = getAddEventListener();
 class Book {
     constructor(title, author, isbn) {
         this.title = title;
@@ -156,6 +157,21 @@ class Store {
       localStorage.setItem('books', JSON.stringify(books));
     }
 }
+// sync browser
+function getAddEventListener() {
+    try {
+        if( !! window.addEventListener ) return window.addEventListener;
+    } catch(e) {
+        return undefined;
+    }
+}
+
+function initDisp() {
+    if(addEL) {
+        addEL('storage', displayBooks, false);
+    }
+    displayBooks();
+}
 
 function validateTitle() {
     const title = document.getElementById('title');
@@ -178,16 +194,22 @@ function validateIsbn() {
     return re.test(isbn.value);
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-      const books = Store.getBooks();
-      const ui  = new UI;
-      books.forEach(function(book){
-          ui.addBookToList(book);
-      });
-      if(books.length === 0){
-        ui.hideTable();
-      }
-});
+function displayBooks() {
+    const books = Store.getBooks();
+    const ui  = new UI;
+    const selectors = ui.getSelectors();
+    const bookArr = Array.from(selectors.bookList.children);
+    bookArr.forEach(function(book){
+        book.remove();
+    });
+    books.forEach(function(book){
+        ui.addBookToList(book);
+    });
+    if(books.length === 0){
+      ui.hideTable();
+    }
+}
+document.addEventListener('DOMContentLoaded', initDisp);
 
 document.getElementById('showForm').addEventListener('click', function(e){
     document.getElementById('showForm').style.display = 'none';

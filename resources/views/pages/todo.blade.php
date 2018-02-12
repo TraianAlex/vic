@@ -91,9 +91,10 @@ const title = document.querySelector('.mbr-section-title');
 
 addBtn.style.visibility = 'hidden';
 loadEventListeners();
+var addEL = getAddEventListener();
 
 function loadEventListeners() {
-  document.addEventListener('DOMContentLoaded', getTasks);
+  document.addEventListener('DOMContentLoaded', initDisp);
   form.addEventListener('submit', addTask);
   taskList.addEventListener('click', removeTask);
   clearBtn.addEventListener('click', clearTasks);
@@ -106,7 +107,6 @@ function addTask(e) {
         alert('Add a task');
         return false;
     }
-
     createItem(taskInput.value);
     storeTaskInLocalStorage(taskInput.value);
 
@@ -114,19 +114,17 @@ function addTask(e) {
     addBtn.style.visibility = 'hidden';
 
     toggleList();
-
     e.preventDefault();
 }
 
-function extractTasksFromLS(){
-    let tasks;
-    if(localStorage.getItem('tasks') === null){
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'));
-    }
-    toggleList(tasks);
-    return tasks;
+function getTasks() {
+  while(taskList.firstChild) {
+    taskList.removeChild(taskList.firstChild);
+  }
+  tasks = extractTasksFromLS();
+  tasks.forEach(function(task){
+    createItem(task);
+  });
 }
 
 function removeTask(e) {
@@ -159,12 +157,31 @@ function filterTasks(e) {
     }
   });
 }
+// sync browser
+function getAddEventListener() {
+    try {
+        if( !! window.addEventListener ) return window.addEventListener;
+    } catch(e) {
+        return undefined;
+    }
+}
+
+function initDisp() {
+    if(addEL) {
+        addEL('storage', getTasks, false);
+    }
+    getTasks();
+}
 // local storage
-function getTasks() {
-  tasks = extractTasksFromLS();
-  tasks.forEach(function(task){
-    createItem(task);
-  });
+function extractTasksFromLS(){
+    let tasks;
+    if(localStorage.getItem('tasks') === null){
+        tasks = [];
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+    toggleList(tasks);
+    return tasks;
 }
 
 function storeTaskInLocalStorage(task) {
