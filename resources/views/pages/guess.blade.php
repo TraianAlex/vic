@@ -48,9 +48,9 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 game.addEventListener('mousedown', function(e){
-  if(e.target.className === 'btn btn-primary btn-md active play-again'){
-    window.location.reload();
-  }
+    if(e.target.className === 'btn btn-primary btn-md active play-again'){
+        window.location.reload();
+    }
 });
 
 guessBtn.addEventListener('click', function(){

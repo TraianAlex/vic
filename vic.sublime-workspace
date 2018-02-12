@@ -476,11 +476,10 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/pages/profiles.blade.php",
+			"file": "resources/views/pages/book-list.blade.php",
 			"settings":
 			{
-				"buffer_size": 2538,
-				"encoding": "UTF-8",
+				"buffer_size": 7295,
 				"line_ending": "Unix"
 			}
 		}
@@ -625,9 +624,16 @@
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/assets/templates/flash-ajax.html",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/link/index.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/link.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/categories.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Frontend/PagesController.php",
+		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/LinkController.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/profiles.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/github-finder.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/weather.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/profiles.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
@@ -650,8 +656,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/.env.dusk.local",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/ExampleTest.php",
 		"/Users/victor/Dropbox/setup/laravel",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Frontend/PagesController.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/resources.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/back-links.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/AppServiceProvider.php",
@@ -665,7 +669,6 @@
 		"/Users/victor/MEGA/www/vic1/demo.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/home.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/app.js",
-		"/Users/victor/MEGA/www/assets/templates/flash-ajax.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/admin/notifications.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/EmailLinkCreation.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/test.blade.php",
@@ -680,8 +683,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/index.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/under-construction.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/auth.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/link/index.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/link.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/about.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/about.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Category.php",
@@ -692,7 +693,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig/js/app.js",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/CategoryController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryCreated.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/LinkController.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/LinkCreated.php",
 		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
 		"/Users/victor/MEGA/www/laravel/vic/app/Admin.php",
@@ -720,7 +720,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/EventServiceProvider.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryEvent.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/CategoryCreatedUpdatedDeleted.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/categories.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Resources/RussianCaching.php",
 		"/Users/victor/MEGA/www/laravel/vic/storage/logs/laravel.log",
 		"/Users/victor/MEGA/www/laravel/vic/app/Resources/BladeDirective.php",
@@ -770,6 +769,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Book",
 			"clearDash",
 			"dusk",
 			"input-field",
@@ -896,8 +896,7 @@
 			"https://developer.mozilla.org/en-US/docs/Web",
 			"https://devdojo.com/browse",
 			"https://www.packtpub.com/packt/offers/free-learnin",
-			"https://www.packtpub.com/packt/offers/free-learning",
-			"talkerscode.com"
+			"https://www.packtpub.com/packt/offers/free-learning"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -923,19 +922,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/pages/profiles.blade.php",
-					"semi_transient": false,
+					"file": "resources/views/pages/book-list.blade.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2538,
+						"buffer_size": 7295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								6242,
+								6242
 							]
 						],
 						"settings":
@@ -949,7 +948,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 38.0,
+						"translation.y": 6104.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1212,9 +1211,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "lar54",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/MEGA/whttp/js/js.sublime-project"
+			],
 			[
 				"lar54",
 				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
@@ -1230,10 +1233,6 @@
 			[
 				"w",
 				"~/MEGA/www/www.sublime-project"
-			],
-			[
-				"",
-				"~/MEGA/www/laravel/packages/laracache/cache-package.sublime-project"
 			],
 			[
 				"me",

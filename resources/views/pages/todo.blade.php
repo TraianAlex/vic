@@ -100,14 +100,7 @@ function loadEventListeners() {
   filter.addEventListener('keyup', filterTasks);
   taskInput.addEventListener('focus', () => addBtn.style.visibility = 'visible');
 }
-
-function getTasks() {
-  tasks = extractTasksFromLS();
-  tasks.forEach(function(task){
-    createItem(task);
-  });
-}
-
+// app
 function addTask(e) {
     if(taskInput.value === '') {
         alert('Add a task');
@@ -123,12 +116,6 @@ function addTask(e) {
     toggleList();
 
     e.preventDefault();
-}
-
-function storeTaskInLocalStorage(task) {
-  tasks = extractTasksFromLS();
-  tasks.push(task);
-  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 function extractTasksFromLS(){
@@ -153,34 +140,12 @@ function removeTask(e) {
   toggleList(taskListarray);
 }
 
-function toggleList(tasks = [1]) {
-    visibility = tasks.length === 0 ? 'hidden' : 'visible';
-    title.style.visibility = visibility;
-    filter.style.visibility = visibility;
-    clearBtn.style.visibility = visibility;
-    filter.value = '';
-}
-
-function removeTaskFromLocalStorage(taskItem) {
-  tasks = extractTasksFromLS();
-  tasks.forEach(function(task, index){
-    if(taskItem.textContent === task){
-      tasks.splice(index, 1);
-    }
-  });
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
 function clearTasks() {
   // taskList.innerHTML = '';
   while(taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
   clearTasksFromLocalStorage();
-}
-
-function clearTasksFromLocalStorage() {
-  localStorage.clear();
 }
 
 function filterTasks(e) {
@@ -193,6 +158,41 @@ function filterTasks(e) {
       task.style.display = 'none';
     }
   });
+}
+// local storage
+function getTasks() {
+  tasks = extractTasksFromLS();
+  tasks.forEach(function(task){
+    createItem(task);
+  });
+}
+
+function storeTaskInLocalStorage(task) {
+  tasks = extractTasksFromLS();
+  tasks.push(task);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function removeTaskFromLocalStorage(taskItem) {
+  tasks = extractTasksFromLS();
+  tasks.forEach(function(task, index){
+    if(taskItem.textContent === task){
+      tasks.splice(index, 1);
+    }
+  });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function clearTasksFromLocalStorage() {
+  localStorage.clear();
+}
+// ui
+function toggleList(tasks = [1]) {
+    visibility = tasks.length === 0 ? 'hidden' : 'visible';
+    title.style.visibility = visibility;
+    filter.style.visibility = visibility;
+    clearBtn.style.visibility = visibility;
+    filter.value = '';
 }
 
 function createItem(task){

@@ -144,17 +144,17 @@ class UI {
 }
 
 function validateCity() {
-  const city = document.getElementById('city');
-  const re = /^[a-zA-Z\-\s]{2,50}$/;
-  !re.test(city.value) ? city.classList.add('is-invalid') : city.classList.remove('is-invalid');
-  return re.test(city.value);
+    const city = document.getElementById('city');
+    const re = /^[a-zA-Z\-\s]{2,50}$/;
+    !re.test(city.value) ? city.classList.add('is-invalid') : city.classList.remove('is-invalid');
+    return re.test(city.value);
 }
 
 function validateState() {
-  const state = document.getElementById('state');
-  const re = /^[a-zA-Z\-\s]{2,50}$/;
-  !re.test(state.value) ? state.classList.add('is-invalid') : state.classList.remove('is-invalid');
-  return re.test(state.value);
+    const state = document.getElementById('state');
+    const re = /^[a-zA-Z\-\s]{2,50}$/;
+    !re.test(state.value) ? state.classList.add('is-invalid') : state.classList.remove('is-invalid');
+    return re.test(state.value);
 }
 
 const storage = new Storage();

@@ -96,7 +96,6 @@ class UI {
               </div>
             `;
         });
-
         document.getElementById('repos').innerHTML = output;
     }
 

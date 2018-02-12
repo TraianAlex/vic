@@ -90,4 +90,4 @@ setTimeout(function(){
    $('.notification-menu').append(
   '<a class="text-black dropdown-item display-4" href="#" aria-expanded="false">\
     <i class="fa fa-users text-aqua"></i> '+data.message+'</a>');
-}, 60000);
+}, 120000);
