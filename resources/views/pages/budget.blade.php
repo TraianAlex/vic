@@ -11,8 +11,8 @@
 <div class="container-fluid">
     <div class="row tabcont">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item mbr-fonts-style"><a class="nav-link active display-7" role="tab" data-toggle="tab" href="#tabs3-2u_tab0" aria-expanded="true">Expenses</a></li>
-            <li class="nav-item mbr-fonts-style"><a class="nav-link  active display-7" role="tab" data-toggle="tab" href="#tabs3-2u_tab1" aria-expanded="true">Income</a></li>
+            <li class="nav-item mbr-fonts-style"><a class="nav-link active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab0" aria-expanded="true">Expenses</a></li>
+            <li class="nav-item mbr-fonts-style"><a class="nav-link  active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab1" aria-expanded="true">Income</a></li>
         </ul>
     </div>
 </div>
