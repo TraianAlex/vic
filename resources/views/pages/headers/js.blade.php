@@ -1,4 +1,4 @@
-<div id="custom-html-4o" custom-code="true" data-rv-view="503"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5 pt-5">
+<div id="custom-html-4o" custom-code="true" data-rv-view="503"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5 pt-5" style="z-index: 1;">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,6 +12,7 @@
       <li class="nav-item"><a class="nav-link text-white" href="github-finder">Github Search</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="weather">Weather</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="profiles">Profiles</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="budget">Budget</a></li>
     </ul>
   </div>
 </nav></div>

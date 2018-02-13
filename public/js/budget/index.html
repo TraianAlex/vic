@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Income | Expenses</title>
+  <style type="text/css">
+    .left li a.active {background-color: #ccc;}
+    .tabcontent {display: none;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <ul class="left">
+          <li class="mdl-menu__item"><a href="#" class="tablinks" onclick="openPage(event, 'expenses')">Expenses</a></li>
+          <li class="mdl-menu__item"><a href="#" class="tablinks" onclick="openPage(event, 'income')">Income</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="center-align"><span class="btn blue">Income - <span class="total-cad-inc">0</span></span> <span class="btn red">Expenses - <span class="total-cad">0</span></span> <span class="btn purple">Left over - <span class="total-cad-diff">0</span></span></div>
+<div id="expenses" class="tabcontent">
+  <div class="container">
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Expense</span>
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" placeholder="Add Item" id="item-name">
+              <label for="item-name">Expense</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="number" placeholder="Add Cad" id="item-cad">
+                <label for="item-cad">Amount</label>
+            </div>
+            <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Expense</button>
+            <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update Expense</button>
+            <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Expense</button>
+            <button class="clear-btn btn red"><i class="fa fa-remove"></i> Clear All</button>
+            <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <ul id="item-list" class="collection">
+    </ul>
+  </div>
+</div>
+<div id="income" class="tabcontent">
+  <div class="container">
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Income</span>
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" placeholder="Add Item" id="item-name-inc">
+              <label for="item-name-inc">Income</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="number" placeholder="Add Income" id="item-cad-inc">
+                <label for="item-cad-inc">Amount</label>
+            </div>
+            <button class="add-btn-inc btn blue darken-3"><i class="fa fa-plus"></i> Add Income</button>
+            <button class="update-btn-inc btn orange"><i class="fa fa-pencil-square-o"></i> Update Income</button>
+            <button class="delete-btn-inc btn red"><i class="fa fa-remove"></i> Delete Income</button>
+            <button class="clear-btn-inc btn red"><i class="fa fa-remove"></i> Clear All</button>
+            <button class="back-btn-inc btn grey pull-right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <ul id="item-list-inc" class="collection">
+    </ul>
+  </div>
+</div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="routes.js"></script>
+  <script src="storage.js"></script>
+  <script src="item.js"></script>
+  <script src="item-inc.js"></script>
+  <script src="ui.js"></script>
+  <script src="ui-inc.js"></script>
+  <script src="inc.js"></script>
+  <script src="exp.js"></script>
+</body>
+</html>
