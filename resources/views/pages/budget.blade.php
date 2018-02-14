@@ -8,18 +8,10 @@
 @section('content')
 @include('pages.headers.js')
 <section class="tabs3 cid-qChX6HeGZH" id="tabs3-2u" data-rv-view="200" style="background-color: transparent;margin-top: -70px;">
-<div class="container-fluid">
-    <div class="row tabcont">
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item mbr-fonts-style"><a class="nav-link active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab0" aria-expanded="true">Expenses</a></li>
-            <li class="nav-item mbr-fonts-style"><a class="nav-link  active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab1" aria-expanded="true">Income</a></li>
-        </ul>
-    </div>
-</div>
-<div class="container">
-    <div class="mbr-section-btn align-center">
-      <span class="btn btn-info-outline display-4" style="border-radius: 50px;">Income&nbsp;<span class="total-cad-inc">0</span></span>
-      <span class="btn btn-info-outline display-4" style="border-radius: 50px;">Expenses&nbsp;<span class="total-cad">0</span></span>
+<div class="container tabcont">
+    <div class="nav nav-tabs">
+      <span class="nav-item mbr-fonts-style" style="border-radius: 50px;"><a class="nav-link active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab0" aria-expanded="true">Expenses&nbsp;<span class="total-cad">0</span></a></span>
+      <span class="nav-item mbr-fonts-style" style="border-radius: 50px;"><a class="nav-link active display-9" role="tab" data-toggle="tab" href="#tabs3-2u_tab1" aria-expanded="true">Income&nbsp;<span class="total-cad-inc">0</span></a></span>
       <span class="btn btn-info-outline display-4" style="border-radius: 50px;">Left over&nbsp;<span class="total-cad-diff">0</span></span>
     </div>
 </div>
