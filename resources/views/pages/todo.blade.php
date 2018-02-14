@@ -32,6 +32,7 @@
                         </div>
                     </div>
                     <span class="input-group-btn"><button type="submit" class="btn btn-primary btn-form display-4" id="add">ADD TASK</button></span>
+                    <span class="input-group-btn"><button type="submit" class="btn btn-primary btn-form display-4" id="edit">Update TASK</button></span>
                 </form>
             </div>
         </div>
@@ -87,21 +88,33 @@ const taskList = document.querySelector('.collection');
 const filter = document.querySelector('#filter');
 const clearBtn = document.querySelector('.clear-tasks');
 const addBtn = document.querySelector('#add');
+const editBtn = document.querySelector('#edit');
 const title = document.querySelector('.mbr-section-title');
 
-addBtn.style.visibility = 'hidden';
 loadEventListeners();
 var addEL = getAddEventListener();
 
 function loadEventListeners() {
   document.addEventListener('DOMContentLoaded', initDisp);
-  form.addEventListener('submit', addTask);
+  addBtn.addEventListener('click', addTask);
+  editBtn.addEventListener('click', updateTask);
   taskList.addEventListener('click', removeTask);
   clearBtn.addEventListener('click', clearTasks);
   filter.addEventListener('keyup', filterTasks);
-  taskInput.addEventListener('focus', () => addBtn.style.visibility = 'visible');
 }
 // app
+function getTasks() {
+  while(taskList.firstChild) {
+    taskList.removeChild(taskList.firstChild);
+  }
+  tasks = extractTasksFromLS();
+  tasks.forEach(function(task){
+    createItem(task);
+  });
+  editBtn.style.visibility = 'hidden';
+  taskInput.value = '';
+}
+
 function addTask(e) {
     if(taskInput.value === '') {
         alert('Add a task');
@@ -111,35 +124,41 @@ function addTask(e) {
     storeTaskInLocalStorage(taskInput.value);
 
     taskInput.value = '';
-    addBtn.style.visibility = 'hidden';
-
     toggleList();
     e.preventDefault();
 }
 
-function getTasks() {
-  while(taskList.firstChild) {
-    taskList.removeChild(taskList.firstChild);
+function editTask(e) {
+  toEdit = e.target.parentElement.parentElement.textContent;
+  taskInput.value = toEdit;
+  addBtn.style.visibility = 'hidden';
+  editBtn.style.visibility = 'visible';
+}
+
+function updateTask(e) {
+  if(taskInput.value === '') {
+    alert('Add a task');
+    return false;
   }
-  tasks = extractTasksFromLS();
-  tasks.forEach(function(task){
-    createItem(task);
-  });
+  editTaskLS(toEdit, taskInput.value);
+  addBtn.style.visibility = 'visible';
+  editBtn.style.visibility = 'hidden';
 }
 
 function removeTask(e) {
-  if(e.target.parentElement.classList.contains('delete-item')) {
-    if(confirm('Are You Sure?')) {
-      e.target.parentElement.parentElement.remove();
-      removeTaskFromLocalStorage(e.target.parentElement.parentElement);
+    if(e.target.parentElement.classList.contains('delete-item')) {
+        if(confirm('Are You Sure?')) {
+            e.target.parentElement.parentElement.remove();
+            removeTaskFromLocalStorage(e.target.parentElement.parentElement.textContent);
+        }
+    }else if(e.target.parentElement.classList.contains('edit-item')){
+        editTask(e);
     }
-  }
-  taskListarray = Array.from(taskList.children);
-  toggleList(taskListarray);
+    taskListarray = Array.from(taskList.children);
+    toggleList(taskListarray);
 }
 
 function clearTasks() {
-  // taskList.innerHTML = '';
   while(taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
@@ -156,21 +175,6 @@ function filterTasks(e) {
       task.style.display = 'none';
     }
   });
-}
-// sync browser
-function getAddEventListener() {
-    try {
-        if( !! window.addEventListener ) return window.addEventListener;
-    } catch(e) {
-        return undefined;
-    }
-}
-
-function initDisp() {
-    if(addEL) {
-        addEL('storage', getTasks, false);
-    }
-    getTasks();
 }
 // local storage
 function extractTasksFromLS(){
@@ -190,14 +194,24 @@ function storeTaskInLocalStorage(task) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function removeTaskFromLocalStorage(taskItem) {
-  tasks = extractTasksFromLS();
+function editTaskLS(toEdit, taskItem) {
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
   tasks.forEach(function(task, index){
-    if(taskItem.textContent === task){
-      tasks.splice(index, 1);
+    if(toEdit === task){
+      tasks.splice(index, 1, taskItem);
     }
   });
   localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function removeTaskFromLocalStorage(taskItem) {
+    tasks = extractTasksFromLS();
+    tasks.forEach(function(task, index){
+        if(taskItem === task){
+            tasks.splice(index, 1);
+        }
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 function clearTasksFromLocalStorage() {
@@ -213,22 +227,33 @@ function toggleList(tasks = [1]) {
 }
 
 function createItem(task){
-    // Create li element
     const li = document.createElement('li');
-    // Add class
     li.className = 'collection-item';
-    // Create text node and append to li
     li.appendChild(document.createTextNode(task));
-    // Create new link element
     const link = document.createElement('a');
-    // Add class
     link.className = 'text-primary float-right delete-item';
-    // Add icon html
     link.innerHTML = '<i class="fa fa-remove"></i>';
-    // Append the link to li
+    const linkEdit = document.createElement('a');
+    linkEdit.className = 'text-primary float-right edit-item';
+    linkEdit.innerHTML = '<i class="fa fa-pencil mr-1"></i>';
     li.appendChild(link);
-    // Append li to ul
+    li.appendChild(linkEdit);
     taskList.appendChild(li);
+}
+// sync browser
+function getAddEventListener() {
+    try {
+        if( !! window.addEventListener ) return window.addEventListener;
+    } catch(e) {
+        return undefined;
+    }
+}
+
+function initDisp() {
+    if(addEL) {
+        addEL('storage', getTasks, false);
+    }
+    getTasks();
 }
 </script>
 @endsection
