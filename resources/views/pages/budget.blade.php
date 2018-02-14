@@ -64,8 +64,8 @@
                               </div>
                             </div>
                             <span class="input-group-btn mr-2"><button class="add-btn-inc btn btn-primary mb-2"><i class="fa fa-plus"></i> Add Income</button></span>
-                            <span class="input-group-btn mr-2"><button class="update-btn-inc btn btn-secondary"><i class="fa fa-pencil-square-o"></i> Update Income</button></span>
-                            <span class="input-group-btn mr-2"><button class="delete-btn-inc btn btn-warning"><i class="fa fa-remove"></i> Delete Income</button></span>
+                            <span class="input-group-btn mr-2"><button class="update-btn-inc btn btn-secondary"><i class="fa fa-pencil-square-o"></i> Update</button></span>
+                            <span class="input-group-btn mr-2"><button class="delete-btn-inc btn btn-warning"><i class="fa fa-remove"></i> Delete</button></span>
                             <span class="input-group-btn mr-2"><button class="clear-btn-inc btn btn-danger"><i class="fa fa-remove"></i> Clear All</button></span>
                             <span class="input-group-btn mr-2"><button class="back-btn-inc btn btn-info"><i class="fa fa-chevron-circle-left"></i> Back</button></span>
                           </div>
