@@ -8,10 +8,8 @@ const StorageCtrl = (function(){
         },
 
         getItemsFromStorage: function(name){
-            let items;
-            if(localStorage.getItem(name) === null){
-                items = [];
-            } else {
+            let items = [];
+            if(localStorage.getItem(name) !== null){
                 items = JSON.parse(localStorage.getItem(name));
             }
             return items;

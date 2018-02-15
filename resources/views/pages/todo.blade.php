@@ -111,6 +111,7 @@ function getTasks() {
   tasks.forEach(function(task){
     createItem(task);
   });
+  toggleList(tasks);
   editBtn.style.visibility = 'hidden';
   taskInput.value = '';
 }
@@ -178,13 +179,10 @@ function filterTasks(e) {
 }
 // local storage
 function extractTasksFromLS(){
-    let tasks;
-    if(localStorage.getItem('tasks') === null){
-        tasks = [];
-    } else {
+    let tasks = [];
+    if(localStorage.getItem('tasks') !== null){
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
-    toggleList(tasks);
     return tasks;
 }
 

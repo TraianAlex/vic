@@ -166,10 +166,8 @@ class UI {
 
 class Store {
     static getBooks() {
-        let books;
-        if(localStorage.getItem('books') === null) {
-            books = [];
-        } else {
+        let books = [];
+        if(localStorage.getItem('books') !== null) {
             books = JSON.parse(localStorage.getItem('books'));
         }
         return books;
