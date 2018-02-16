@@ -515,14 +515,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "public/js/AjaxisMaterialize.js",
-			"settings":
-			{
-				"buffer_size": 1922,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -658,12 +650,6 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
-		"/Users/victor/MEGA/www/laravel/vic/public",
-		"/Users/victor/MEGA/www/laravel/vic/resources",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig/js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages",
 		"/Users/victor/MEGA/whttp/js/js1",
 		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api",
 		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_15_easyhttp3",
@@ -671,6 +657,12 @@
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/board.html",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/solitaire.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/board.js",
+		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/game.css",
+		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/cards/card.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todo.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/storage.js",
@@ -740,7 +732,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/vicnav.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/services.blade.php",
 		"/Users/victor/MEGA/www/vic1/services.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
 		"/Users/victor/MEGA/www/vic1/demo.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/home.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/app.js",
@@ -793,12 +784,7 @@
 		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Http/Kernel.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/EventServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryEvent.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/CategoryCreatedUpdatedDeleted.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Resources/RussianCaching.php",
-		"/Users/victor/MEGA/www/laravel/vic/storage/logs/laravel.log",
-		"/Users/victor/MEGA/www/laravel/vic/app/Resources/BladeDirective.php",
-		"/Users/victor/MEGA/www/laravel/vic/composer.json"
+		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryEvent.php"
 	],
 	"find":
 	{
@@ -969,43 +955,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "public/js/AjaxisMaterialize.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1922,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1848.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

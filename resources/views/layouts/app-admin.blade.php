@@ -40,12 +40,6 @@
 	<script src="{{ mix('js/all.js') }}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
   <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
     <script data-turbolinks-eval="false">
-      function blinker() {
-        $('.blinking').fadeOut(500);
-        $('.blinking').fadeIn(500);
-      }
-      setInterval(blinker, 1000);
-
     Pusher.logToConsole = true;
     var pusher = new Pusher("{{env('PUSHER_APP_KEY')}}", {
       encrypted: true
@@ -73,18 +67,9 @@
         </a>'
       );
     });
-
-      setTimeout(function(){
-          var data = { message: 'test notification' };
-          $('.notify-hide').removeClass('notify-hide').addClass('notifications-menu');
-          $('.blink').removeClass('fa-bell-o').addClass('fa-bell blinking');
-          $('.notification-menu').append(`
-            <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">
-            <i class="fa fa-users text-aqua"></i> ${data.message}</a>`);
-          }, 120000);
     </script>
   	@yield('script')
-    <!--script src="{{-- asset('js/app.js') --}}"></script-->
+    <script src="{{ mix('js/app.js') }}" data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
     <script type="text/javascript">
       $('#flash-overlay-modal').modal();
     </script>
