@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"ti",
+				"title"
+			],
+			[
+				"book",
+				"bookForm"
+			],
+			[
+				"get",
+				"getSelectors"
+			],
+			[
+				"Get",
+				"getSelectors"
+			],
+			[
+				"update",
+				"updateBook"
+			],
+			[
+				"hide",
+				"hideAddBtn"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"edit",
+				"editBtn"
+			],
+			[
+				"upda",
+				"updateTask"
+			],
+			[
+				"up",
+				"updateTask"
+			],
+			[
+				"task",
+				"taskEdit"
+			],
+			[
 				"marg",
 				"margin-top"
 			],
@@ -26,10 +70,6 @@
 			[
 				"total",
 				"total-cad-inc"
-			],
-			[
-				"get",
-				"getElementById"
 			],
 			[
 				"clear",
@@ -72,10 +112,6 @@
 				"mt-2"
 			],
 			[
-				"book",
-				"book-form"
-			],
-			[
 				"show",
 				"showForm"
 			],
@@ -84,16 +120,8 @@
 				"function"
 			],
 			[
-				"add",
-				"addEventListener"
-			],
-			[
 				"class",
 				"classList"
-			],
-			[
-				"task",
-				"taskList"
 			],
 			[
 				"creat",
@@ -487,6 +515,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/js/AjaxisMaterialize.js",
+			"settings":
+			{
+				"buffer_size": 1922,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -622,20 +658,34 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
+		"/Users/victor/MEGA/www/laravel/vic/public",
 		"/Users/victor/MEGA/www/laravel/vic/resources",
+		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig",
+		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig/js",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/whttp/js/div"
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages",
+		"/Users/victor/MEGA/whttp/js/js1",
+		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api",
+		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_15_easyhttp3",
+		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_15_easyhttp3/easyhttp3"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todo.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/storage.js",
+		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/index.html",
+		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui.js",
+		"/Users/victor/MEGA/whttp/js/js1/p4_dom_projects/4_3_persist_local_storage/todo/app.js",
+		"/Users/victor/MEGA/whttp/js/js1/p4_dom_projects/4_3_persist_local_storage/todo/index.html",
+		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/exp.js",
+		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/index.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/budget.blade.php",
 		"/Users/victor/MEGA/www/assets/temp/budget.blade.php",
 		"/Users/victor/MEGA/whttp/js/div/snake.html",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/index.html",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui-inc.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui.js",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui-inc.js",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/routes.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/routes.js",
@@ -643,15 +693,12 @@
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/views/expenses.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/views/income.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/inc.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/exp.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/storage.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/item-inc.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/item.js",
 		"/Users/victor/MEGA/whttp/js/div/autotyper.html",
 		"/Users/victor/MEGA/whttp/js/div/image-slider.html",
 		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 05/02-done.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todo.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
 		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 04/06-done.html",
 		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 03/06-done.html",
 		"/Users/victor/MEGA/whttp/js/local-storage/Javascript/bwH5LS.js",
@@ -751,11 +798,7 @@
 		"/Users/victor/MEGA/www/laravel/vic/app/Resources/RussianCaching.php",
 		"/Users/victor/MEGA/www/laravel/vic/storage/logs/laravel.log",
 		"/Users/victor/MEGA/www/laravel/vic/app/Resources/BladeDirective.php",
-		"/Users/victor/MEGA/www/laravel/vic/composer.json",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Middleware/FlashViewCache.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Traits/Cacheable.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Link.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php"
+		"/Users/victor/MEGA/www/laravel/vic/composer.json"
 	],
 	"find":
 	{
@@ -773,6 +816,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hideTable",
+			"edit",
+			"table",
+			"book-form",
+			"showForm",
+			"book-list",
+			"container",
+			"isbn",
+			"clearAddState",
+			"taskEdit",
 			"collection-item",
 			"collection",
 			"content",
@@ -890,17 +943,7 @@
 			"https://www.npmjs.com/",
 			"http://www.jqueryrain.com/",
 			"http://jsonplaceholder.typicode.com/",
-			"http://indrimuska.github.io/angular-moment-picker/",
-			"https://intellipaat.com/tutorial/angularjs-tutorial/",
-			"https://egghead.io/courses/using-angular-2-patterns-in-angular-1",
-			"https://egghead.io/courses/angular-1-x-apps-with-redux",
-			"https://johnpapa.net/",
-			"https://angularjs.org/",
-			"https://appdividend.com/",
-			"http://www.tutorials.kode-blog.com/",
-			"https://laravel-news.com/category/laravel-tutorials",
-			"https://github.com/jrmadsen67/MahanaGeneratorScaffolding",
-			"https://github.com/laracasts/Laravel-5-Generators-Extended"
+			"http://indrimuska.github.io/angular-moment-picker/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -926,8 +969,43 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/js/AjaxisMaterialize.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1848.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
