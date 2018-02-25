@@ -16,7 +16,7 @@
           <br>
           <div id="profileDisplay"></div>
           <br>
-          <button id="next" class="btn btn-dark btn-block">Next</button>
+          <button id="next" class="btn btn-dark btn-block ml-0">Next</button>
         </div>
     </div>
   </div>

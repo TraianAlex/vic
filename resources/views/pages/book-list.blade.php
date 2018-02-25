@@ -17,7 +17,7 @@
 @include('pages.headers.js')
 <div id="custom-html-52" custom-code="true" data-rv-view="48" class="mt-5 mb-5">
   <div class="container">
-    <div class="form-group">
+    <div class="form-group" style="margin: 0 10px 0 -15px;">
       <button type="button" id="showForm" class="btn btn-primary btn-lg btn-block">Add Book</button>
     </div>
     <form id="book-form">
@@ -33,7 +33,7 @@
         <input type="text" class="form-control" id="isbn" placeholder="ISBN#" required>
         <div class="invalid-feedback">Enter a valid isbn</div>
       </div>
-      <div class="form-group" style="margin: 0 0 20px -15px;">
+      <div class="form-group" style="margin: 0 10px 20px -15px;">
         <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block" id="add">
         <input type="submit" value="Update" class="btn btn-primary btn-lg btn-block" id="edit">
       </div>

@@ -31,8 +31,8 @@
               <div class="form-group">
                 <input type="number" class="form-control" id="years" placeholder="Years To Repay" required>
               </div>
-              <div class="forn-group">
-                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block ml-0">
               </div>
             </form>
             <!-- LOADER -->
