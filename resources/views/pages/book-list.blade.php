@@ -64,18 +64,16 @@ class Book {
 }
 
 class UI {
-  getSelectors() {
-    return {
-        title: document.getElementById('title'),
-        author: document.getElementById('author'),
-        isbn: document.getElementById('isbn'),
-        bookList: document.getElementById('book-list'),
-        showForm: document.getElementById('showForm'),
-        bookForm: document.getElementById('book-form'),
-        table: document.querySelector('.table'),
-        addBtn: document.getElementById('add'),
-        edit: document.getElementById('edit')
-      };
+  constructor() {
+        this.title = document.getElementById('title');
+        this.author = document.getElementById('author');
+        this.isbn = document.getElementById('isbn');
+        this.bookList = document.getElementById('book-list');
+        this.showFormBtn = document.getElementById('showForm');
+        this.bookForm = document.getElementById('book-form');
+        this.table = document.querySelector('.table');
+        this.addBtn = document.getElementById('add');
+        this.edit = document.getElementById('edit');
     }
 
   addBookToList(book) {
@@ -89,7 +87,7 @@ class UI {
           <a href="#" class="edit float-right"><i class="fa fa-pencil mr-1"></i><a>
         </td>
       `;
-      this.getSelectors().bookList.appendChild(row);
+      this.bookList.appendChild(row);
   }
 
   updateBookUI(isbn, book) {
@@ -118,7 +116,7 @@ class UI {
       // Get parent
       const container = document.querySelector('.container');
       // Insert alert
-      container.insertBefore(div, this.getSelectors().bookForm);
+      container.insertBefore(div, this.bookForm);
       setTimeout(function(){
           document.querySelector('.alert').remove();
       }, 3000);
@@ -131,36 +129,40 @@ class UI {
   }
 
   clearFields() {
-      this.getSelectors().title.value = '';
-      this.getSelectors().author.value = '';
-      this.getSelectors().isbn.value = '';
+      this.title.value = '';
+      this.author.value = '';
+      this.isbn.value = '';
   }
 
   clearAddState() {
-      this.getSelectors().showForm.style.display = 'block';
-      this.getSelectors().bookForm.style.display = 'none';
-      this.getSelectors().table.style.visibility = 'visible';
+      this.showFormBtn.style.display = 'block';
+      this.bookForm.style.display = 'none';
+      this.table.style.visibility = 'visible';
   }
 
   hideTable() {
-      this.getSelectors().table.style.visibility = 'hidden';
+      this.table.style.visibility = 'hidden';
   }
 
   hideEditBtn() {
-      this.getSelectors().edit.style.visibility = 'hidden';
+      this.edit.style.visibility = 'hidden';
   }
 
   showEditBtn() {
-      this.getSelectors().edit.style.visibility = 'visible';
+      this.edit.style.visibility = 'visible';
   }
 
   hideAddBtn() {
-      this.getSelectors().addBtn.style.visibility = 'hidden';
+      this.addBtn.style.visibility = 'hidden';
+  }
+
+  showAddBtn() {
+    this.addBtn.style.visibility = 'visible';
   }
 
   showForm() {
-      this.getSelectors().showForm.style.display = 'none';
-      this.getSelectors().bookForm.style.display = 'block';
+      this.showFormBtn.style.display = 'none';
+      this.bookForm.style.display = 'block';
   }
 }
 
@@ -240,8 +242,7 @@ function validateIsbn() {
 function displayBooks() {
     const books = Store.getBooks();
     const ui  = new UI;
-    const selectors = ui.getSelectors();
-    const bookArr = Array.from(selectors.bookList.children);
+    const bookArr = Array.from(ui.bookList.children);
     bookArr.forEach(function(book){
         book.remove();
     });
@@ -257,18 +258,19 @@ function displayBooks() {
 var addEL = getAddEventListener();
 document.addEventListener('DOMContentLoaded', initDisp);
 const ui = new UI();
-const selectors = ui.getSelectors();
-selectors.showForm.addEventListener('click', function(e){
-    ui.showForm()
+ui.showFormBtn.addEventListener('click', function(e){
+    ui.showForm();
+    ui.hideEditBtn();
+    ui.showAddBtn();
 });
-selectors.title.addEventListener('blur', validateTitle);
-selectors.author.addEventListener('blur', validateAuthor);
-selectors.isbn.addEventListener('blur', validateIsbn);
+ui.title.addEventListener('blur', validateTitle);
+ui.author.addEventListener('blur', validateAuthor);
+ui.isbn.addEventListener('blur', validateIsbn);
 
-selectors.addBtn.addEventListener('click', function(e){
-    const book = new Book(selectors.title.value, selectors.author.value, selectors.isbn.value);
+ui.addBtn.addEventListener('click', function(e){
+    const book = new Book(ui.title.value, ui.author.value, ui.isbn.value);
 
-    if(selectors.title.value === '' || selectors.author.value === '' || selectors.isbn.value === '') {
+    if(ui.title.value === '' || ui.author.value === '' || ui.isbn.value === '') {
         ui.showAlert('Please fill in all fields', 'error');
     } else if(validateTitle() === false || validateAuthor() === false || validateIsbn() === false) {
         ui.showAlert('Please fill all fields correctly!', 'error');
@@ -282,29 +284,29 @@ selectors.addBtn.addEventListener('click', function(e){
     e.preventDefault();
 });
 
-selectors.bookList.addEventListener('click', function(e){
+ui.bookList.addEventListener('click', function(e){
     if(e.target.parentElement.className === 'edit float-right') {
         ui.showForm();
         const path = e.target.parentElement.parentElement;
-        selectors.title.value = path.parentElement.children[0].textContent;
-        selectors.author.value = path.parentElement.children[1].textContent;
-        isbn = selectors.isbn.value = path.previousElementSibling.textContent;
+        ui.title.value = path.parentElement.children[0].textContent;
+        ui.author.value = path.parentElement.children[1].textContent;
+        isbn = ui.isbn.value = path.previousElementSibling.textContent;
         ui.showEditBtn();
         ui.hideAddBtn();
     }else if(e.target.parentElement.className === 'delete float-right'){
         ui.deleteBook(e.target);
         Store.removeBook(e.target.parentElement.parentElement.previousElementSibling.textContent);
-        bookListArray = Array.from(selectors.bookList.children);
+        bookListArray = Array.from(ui.bookList.children);
         if(bookListArray.length === 0) ui.hideTable();
         ui.showAlert('Book Removed!', 'success');
     }
     e.preventDefault();
 });
 
-selectors.edit.addEventListener('click', function(e) {
-    const book = new Book(selectors.title.value, selectors.author.value, selectors.isbn.value);
+ui.edit.addEventListener('click', function(e) {
+    const book = new Book(ui.title.value, ui.author.value, ui.isbn.value);
 
-    if(selectors.title.value === '' || selectors.author.value === '' || selectors.isbn.value === '') {
+    if(ui.title.value === '' || ui.author.value === '' || ui.isbn.value === '') {
           ui.showAlert('Please fill in all fields', 'error');
     } else if(validateTitle() === false || validateAuthor() === false || validateIsbn() === false) {
           ui.showAlert('Please fill all fields correctly!', 'error');
