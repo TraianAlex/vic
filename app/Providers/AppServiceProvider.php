@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Http\Kernel;//
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Support\Facades\Redis;//
+use Illuminate\Support\ServiceProvider;//
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,9 @@ class AppServiceProvider extends ServiceProvider
         });
 
         // custom directive
+        \Blade::directive('visits', function(){
+            return "<?php echo Redis::get('visits'); ?>";
+        });
         \Blade::directive('hello', function($exp){
             return "<?= 'hello ' . $exp; ?>";
         });

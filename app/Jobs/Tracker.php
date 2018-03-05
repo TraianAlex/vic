@@ -6,6 +6,7 @@ use App\Ip;
 use App\Page;
 use App\Stat;
 use Illuminate\Bus\Queueable;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -32,6 +33,12 @@ class Tracker implements ShouldQueue
      */
     public function handle()
     {
+        Redis::incr('visits');
+        if (!preg_match('/^162.158.126.(66|84)$/', $_SERVER['REMOTE_ADDR'])) {
+            $ip = Ip::firstOrCreate(['ip' => $_SERVER['REMOTE_ADDR']]);
+            $page = Page::firstOrCreate(['page' => $_SERVER['REQUEST_URI']]);
+            $ip->pages()->save($page);
+        }
         //$_SERVER['REMOTE_ADDR'] = '1.1.1.1';$_SERVER['REQUEST_URI'] = '/';//before route:list
         // if (!preg_match('/^127.0.0.(1|2)$/', $_SERVER['REMOTE_ADDR'])) {
         //     $ip = Ip::firstOrCreate(['ip' => $_SERVER['REMOTE_ADDR']]);

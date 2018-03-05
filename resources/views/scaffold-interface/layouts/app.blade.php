@@ -43,6 +43,7 @@
 					</a>
 					<div class="navbar-custom-menu">
 						<ul class="nav navbar-nav">
+							<li><a href="#"><i class="glyphicon glyphicon-globe"></i> <span>Visits @visits</span></a></li>
 							<li><a href="{{url('/')}}"><i class="glyphicon glyphicon-globe"></i> <span>View Site</span></a></li>
 							<li><a href="{{url('/admin')}}"><i class="fa fa-lock"></i> <span>Admin</span></a></li>
 							<!-- Notification Navbar List-->
