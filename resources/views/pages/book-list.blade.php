@@ -94,7 +94,7 @@ class UI {
       let list = document.querySelectorAll('#book-list tr');
       console.log(list);
       list = Array.from(list);
-      list.forEach(function(item, index){
+      list.forEach((item, index) => {
           if(item.children[2].textContent === isbn){
               document.getElementById('book-list').children[index].innerHTML = `
                   <td>${book.title}</td>
@@ -117,9 +117,7 @@ class UI {
       const container = document.querySelector('.container');
       // Insert alert
       container.insertBefore(div, this.bookForm);
-      setTimeout(function(){
-          document.querySelector('.alert').remove();
-      }, 3000);
+      setTimeout(() => document.querySelector('.alert').remove(), 3000);
   }
 
   deleteBook(target) {
@@ -183,7 +181,7 @@ class Store {
 
     static updateBook(isbn, obj) {
         const books = JSON.parse(localStorage.getItem('books'));
-        books.forEach(function(book, index){
+        books.forEach((book, index) => {
            if(book.isbn === isbn) {
               books.splice(index, 1, obj);
            }
@@ -194,7 +192,7 @@ class Store {
     static removeBook(isbn) {
         const books = Store.getBooks();
 
-        books.forEach(function(book, index){
+        books.forEach((book, index) => {
            if(book.isbn === isbn) {
               books.splice(index, 1);
            }
@@ -243,12 +241,8 @@ function displayBooks() {
     const books = Store.getBooks();
     const ui  = new UI;
     const bookArr = Array.from(ui.bookList.children);
-    bookArr.forEach(function(book){
-        book.remove();
-    });
-    books.forEach(function(book){
-        ui.addBookToList(book);
-    });
+    bookArr.forEach(book => book.remove());
+    books.forEach(book => ui.addBookToList(book));
     if(books.length === 0){
       ui.hideTable();
     }
@@ -267,7 +261,7 @@ ui.title.addEventListener('blur', validateTitle);
 ui.author.addEventListener('blur', validateAuthor);
 ui.isbn.addEventListener('blur', validateIsbn);
 
-ui.addBtn.addEventListener('click', function(e){
+ui.addBtn.addEventListener('click', (e) => {
     const book = new Book(ui.title.value, ui.author.value, ui.isbn.value);
 
     if(ui.title.value === '' || ui.author.value === '' || ui.isbn.value === '') {
@@ -284,7 +278,7 @@ ui.addBtn.addEventListener('click', function(e){
     e.preventDefault();
 });
 
-ui.bookList.addEventListener('click', function(e){
+ui.bookList.addEventListener('click', (e) => {
     if(e.target.parentElement.className === 'edit float-right') {
         ui.showForm();
         const path = e.target.parentElement.parentElement;
@@ -303,7 +297,7 @@ ui.bookList.addEventListener('click', function(e){
     e.preventDefault();
 });
 
-ui.edit.addEventListener('click', function(e) {
+ui.edit.addEventListener('click', (e) => {
     const book = new Book(ui.title.value, ui.author.value, ui.isbn.value);
 
     if(ui.title.value === '' || ui.author.value === '' || ui.isbn.value === '') {
