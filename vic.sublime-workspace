@@ -527,6 +527,14 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "resources/views/pages/todo.blade.php",
+			"settings":
+			{
+				"buffer_size": 8802,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -663,17 +671,9 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
-		"/Users/victor/MEGA/www/laravel/vic/app",
-		"/Users/victor/MEGA/www/laravel/vic/app/Console",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Frontend",
-		"/Users/victor/MEGA/www/laravel/vic/app/Jobs",
-		"/Users/victor/MEGA/www/laravel/vic/app/Providers",
 		"/Users/victor/MEGA/www/laravel/vic/resources",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts"
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages"
 	],
 	"file_history":
 	[
@@ -975,7 +975,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1007,6 +1007,40 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 242.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/pages/todo.blade.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1277,16 +1311,16 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "www",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"www",
-				"~/MEGA/www/www.sublime-project"
+				"",
+				"~/MEGA/whttp/js/js.sublime-project"
 			],
 			[
-				"",
-				"~/MEGA/www/laravel/laravel1/laravel1.sublime-project"
+				"www",
+				"~/MEGA/www/www.sublime-project"
 			],
 			[
 				"lar54",

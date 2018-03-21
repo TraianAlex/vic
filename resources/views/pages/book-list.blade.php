@@ -252,7 +252,7 @@ function displayBooks() {
 var addEL = getAddEventListener();
 document.addEventListener('DOMContentLoaded', initDisp);
 const ui = new UI();
-ui.showFormBtn.addEventListener('click', function(e){
+ui.showFormBtn.addEventListener('click', (e) => {
     ui.showForm();
     ui.hideEditBtn();
     ui.showAddBtn();

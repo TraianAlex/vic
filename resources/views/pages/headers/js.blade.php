@@ -13,6 +13,7 @@
       <li class="nav-item"><a class="nav-link text-white" href="weather">Weather</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="profiles">Profiles</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="budget">Budget</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="todomobile">MobileToDo</a></li>
     </ul>
   </div>
 </nav></div>
