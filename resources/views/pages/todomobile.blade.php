@@ -15,6 +15,7 @@ li.done { background: #CCFF99;}
 @section('content')
 <div data-role="page" id="home">
     <header data-role="header">
+        <a href="budget" rel="external">Back</a>
         <h1><i class="fa fa-calendar"></i></h1>
     </header>
     <div data-role="content" id="content">
