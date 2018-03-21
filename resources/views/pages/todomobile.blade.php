@@ -17,6 +17,7 @@ li.done { background: #CCFF99;}
     <header data-role="header">
         <a href="budget" rel="external">Back</a>
         <h1><i class="fa fa-calendar"></i></h1>
+        <a href="https://github.com/TraianAlex/vic/blob/master/resources/views/pages/todomobile.blade.php" target="_blank" rel="external">Get Code</a>
     </header>
     <div data-role="content" id="content">
         <p><a href="#add" data-role="button" data-icon="plus" data-theme="b">Add task</a></p>
