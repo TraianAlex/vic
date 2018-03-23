@@ -520,19 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "resources/assets/js/bootstrap.js",
+			"file": "resources/views/layouts/app.blade.php",
 			"settings":
 			{
-				"buffer_size": 3314,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/pages/todo.blade.php",
-			"settings":
-			{
-				"buffer_size": 8802,
+				"buffer_size": 2740,
 				"line_ending": "Unix"
 			}
 		}
@@ -673,10 +664,16 @@
 		"/Users/victor/MEGA/www/laravel/vic",
 		"/Users/victor/MEGA/www/laravel/vic/resources",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages"
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages",
+		"/Users/victor/MEGA/whttp/js"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todomobile.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
+		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/bootstrap.js",
+		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-js.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Providers/AppServiceProvider.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Jobs/Tracker.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
@@ -718,7 +715,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/budget.blade.php",
 		"/Users/victor/MEGA/www/assets/temp/budget.blade.php",
 		"/Users/victor/MEGA/whttp/js/div/snake.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui.js",
 		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui-inc.js",
 		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui-inc.js",
@@ -792,7 +788,6 @@
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryCreated.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Events/LinkCreated.php",
 		"/Users/victor/MEGA/www/laravel/vic/app/Admin.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/bootstrap.js",
 		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/app.js",
 		"/Users/victor/MEGA/www/laravel/vic/public/css/draw.css",
 		"/Users/victor/MEGA/www/laravel/vic/config/app.php",
@@ -802,9 +797,7 @@
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/ips.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/pages.blade.php",
 		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/LoginTest.php",
-		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/Pages/HomePage.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php"
+		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/Pages/HomePage.php"
 	],
 	"find":
 	{
@@ -975,50 +968,16 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/assets/js/bootstrap.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								384,
-								384
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 242.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/pages/todo.blade.php",
+					"file": "resources/views/layouts/app.blade.php",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8802,
+						"buffer_size": 2740,
 						"regions":
 						{
 						},
@@ -1040,7 +999,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1472.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

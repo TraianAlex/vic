@@ -7,7 +7,8 @@ MobileToDo
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
 <style type="text/css">
-fa.fa-calendar { padding-right: 15px;}
+.fa.fa-calendar { padding-right: 15px;}
+.fa.fa-times { margin-left: 50px; }
 li.done { background: #CCFF99;}
 #tasks span { color: #ccc; float: right; font-size: 90%;}
 </style>
