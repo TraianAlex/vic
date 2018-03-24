@@ -69,27 +69,23 @@ li.done { background: #CCFF99;}
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 <script type="text/javascript">
-var main = () => {
-    var today = new Date().toDateString();
+const main = () => {
+    let today = new Date().toDateString();
     $('h1').append(` My tasks for today, ${today}`);
-    var myTasks = Store.getItems('tasks');
+    const myTasks = Store.getItems('tasks');
     $.each(myTasks, function(key, task){
-        let classAdd = task.isCompleted === true ? "done item-"+ task.id : "item-"+ task.id;
-        $('#tasks').prepend(`<li data-role="list-divider"><i class="fa fa-check"></i> <i class="fa fa-times"></i><span>${task.entryDate}</span></li><li class="${classAdd}"><a href="#edit" id="todo_link" data-todo_id="${task.id}" data-todo_description="${task.description}" data-todo_entryDate="${task.entryDate}"> ${task.description}</a></li>`);
+        UI.insertList(task);
         $('#tasks').listview('refresh');
     });
 
     // Add tasks to the list
     $('#add_form').submit((event) => {
-        var description = $('#todo_name').val();
-        var todo_date = $('#todo_date').val();
+        let description = $('#todo_name').val();
+        let todo_date = $('#todo_date').val();
         if (description != "" && todo_date != ""){
-            currentTaskCount = myTasks.length > 0 ? myTasks[myTasks.length - 1].id : 0;
-            task = new Task(currentTaskCount + 1, description, todo_date, false);
+            let currentTaskCount = myTasks.length > 0 ? myTasks[myTasks.length - 1].id : 0;
+            let task = new Task(currentTaskCount + 1, description, todo_date, false);
             myTasks.push(task);
-            //$('#tasks').prepend(`<li class="item-${task.id}"><i class="fa fa-check"></i> <i class="fa fa-times"></i><a href="#edit" id="todo_link" data-todo_id="${task.id}" data-todo_description="${task.description}" data-todo_entryDate="${task.entryDate}"> ${task.description} <span>${task.entryDate}</span></a></li>`);
-            $('#tasks').prepend(`<li data-role="list-divider"><i class="fa fa-check"></i> <i class="fa fa-times"></i><span>${task.entryDate}</span></li><li class="item-${task.id}"><a href="#edit" id="todo_link"> ${task.description}</a></li>`);
-            $('#todo_link').data(task);
             $('form[data-todo]')[0].reset();
             Store.addItem(task, 'tasks');
         }
@@ -98,48 +94,32 @@ var main = () => {
 
     // remove task direct from home page
     $('#tasks').on('click', '.fa.fa-times', function(event) {
-        var li = $(this).closest("li");
-        var selectedTask = li.next().index();
-        myTasks.splice(selectedTask, 1);
-
-        const listId = li.next().attr('class');
-        const listIdArr = listId.split('-');
-        const id = parseInt(listIdArr[1]);
-        Store.removeItem(id, 'tasks');
-
+        let li = $(this).closest("li");
+        let id = UI.getIdByElementToUpdate(li.next());
         li.next().remove();
         li.remove();
+
+        let selectedTask = Task.getItemById(myTasks, id);
+        Task.deleteItem(myTasks, selectedTask);
+        Store.removeItem(id, 'tasks');
     });
 
     // update complete
     $('#tasks').on('click', '.fa.fa-check', function(event) {
-        $(this).closest("li").next().toggleClass('done');
+        let li = $(this).closest("li");
+        let id = UI.getIdByElementToUpdate(li.next());
+        li.next().toggleClass('done');
 
-        const listId = $(this).closest("li").next().attr('class');
-        const listIdArr = listId.split('-');
-        const id = parseInt(listIdArr[1]);
-
-        myTasks.forEach(function(item){
-            if(item.id === id){
-                  currentTask = item;
-              }
-        });
-        currentTask.isCompleted = $(this).closest("li").next().hasClass('done') ? true : false;
+        let currentTask = Task.getItemById(myTasks, id);
+        currentTask.isCompleted = li.next().hasClass('done') ? true : false;
         Store.updateItem(currentTask, 'tasks');
     });
 
     // get data for edit
     $('#tasks').on('click', '#todo_link', function(event) {
-        const listId = $(this).closest("li").attr('class');
-        const listIdArr = listId.split('-');
-        const id = parseInt(listIdArr[1]);
-        //$(this).closest("li").remove();
-
-        myTasks.forEach(function(item){
-            if(item.id === id){
-                currentTask = item;
-            }
-        });
+        let li = $(this).closest("li");
+        let id = UI.getIdByElementToUpdate(li);
+        currentTask = Task.getItemById(myTasks, id);
 
         $(document).on('pageshow', '#edit', function(){
             $('#edit_form input[name=todo_name]', this).val(currentTask.description);
@@ -149,13 +129,10 @@ var main = () => {
 
     // update data
     $('#edit_form').on('submit', function(event) {
-        var description = $('#edit_form input[name=todo_name]').val();
-        var todo_date = $('#edit_form input[name=todo_date]').val();
-        const updatedTask = new Task(currentTask.id, description, todo_date, false);
+        let description = $('#edit_form input[name=todo_name]').val();
+        let todo_date = $('#edit_form input[name=todo_date]').val();
+        let updatedTask = new Task(currentTask.id, description, todo_date, false);
         if (description != "" && todo_date != ""){
-            //$('#tasks').prepend(`<li class="item-${updatedTask.id}"><i class="fa fa-check"></i> <i class="fa fa-times"></i><a href="#edit" id="todo_link" data-todo_id="${updatedTask.id}" data-todo_description="${updatedTask.description}" data-todo_entryDate="${updatedTask.entryDate}"> ${updatedTask.description} <span>${updatedTask.entryDate}</span></a></li>`);
-            $('#tasks').prepend(`<li data-role="list-divider"><i class="fa fa-check"></i> <i class="fa fa-times"></i><span>${updatedTask.entryDate}</span></li><li class="item-${updatedTask.id}"><a href="#edit" id="todo_link"> ${updatedTask.description}</a></li>`);
-            $('#todo_link').data(updatedTask);
             Store.updateItem(updatedTask, 'tasks');
           }
         return false;
@@ -185,6 +162,43 @@ class Task {
         this.description = description;
         this.entryDate = entryDate;
         this.isCompleted = isCompleted;
+    }
+
+    static getItemById(items, id){
+        let found = null;
+        items.forEach(function(item){
+            if(item.id === id){
+                found = item;
+            }
+        });
+        return found;
+    }
+
+    static deleteItem(items, selectedTask){
+        let index = items.indexOf(selectedTask);
+        items.splice(index, 1);
+    }
+}
+
+class UI {
+    static getIdByElementToUpdate(li){
+        let listId = li.attr('class');
+        let listIdArr = listId.split('-');
+        return parseInt(listIdArr[1]);
+    }
+
+    static insertList(task){
+        let classAdd = task.isCompleted === true ? "done item-"+ task.id : "item-"+ task.id;
+        //$('#tasks').prepend(`<li class="item-${task.id}"><i class="fa fa-check"></i> <i class="fa fa-times"></i><a href="#edit" id="todo_link" data-todo_id="${task.id}" data-todo_description="${task.description}" data-todo_entryDate="${task.entryDate}"> ${task.description} <span>${task.entryDate}</span></a></li>`);
+        $('#tasks').prepend(`<li data-role="list-divider">
+                                <i class="fa fa-check"></i>
+                                <i class="fa fa-times"></i>
+                                <span>${task.entryDate}</span>
+                             </li>
+                             <li class="${classAdd}">
+                                <a href="#edit" id="todo_link"> ${task.description}</a>
+                             </li>`);
+        $('#todo_link').data({'todo_id': task.id, 'todo_description': task.description});
     }
 }
 
