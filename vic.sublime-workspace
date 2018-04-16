@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "routes/channels.php",
+			"settings":
+			{
+				"buffer_size": 508,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -654,6 +662,7 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/www/laravel/vic",
+		"/Users/victor/MEGA/www/laravel/vic/routes",
 		"/Users/victor/MEGA/whttp/js"
 	],
 	"file_history":
@@ -789,7 +798,7 @@
 	],
 	"find":
 	{
-		"height": 77.0
+		"height": 78.0
 	},
 	"find_in_files":
 	{
@@ -956,8 +965,44 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "routes/channels.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.104.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -992,6 +1037,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.doc":
 	{
 		"height": 0.0
@@ -1228,7 +1277,27 @@
 		[
 			[
 				"",
+				"~/MEGA/www/laravel/laravel.sublime-project"
+			],
+			[
+				"whtt\t",
+				"~/MEGA/whttp/whttp.sublime-project"
+			],
+			[
+				"js",
 				"~/MEGA/whttp/js/js.sublime-project"
+			],
+			[
+				"whh",
+				"~/MEGA/whttp/whttp.sublime-project"
+			],
+			[
+				"whtt",
+				"~/MEGA/whttp/whttp.sublime-project"
+			],
+			[
+				"petra",
+				"~/MEGA/www/petra/petra.sublime-project"
 			],
 			[
 				"www",

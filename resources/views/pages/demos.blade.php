@@ -96,7 +96,7 @@
             <div class="card p-3 col-12 col-md-6 col-lg-2">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <a href="https://chatty.vic.com.ro" target="_blank"><img src="assets/images/mbr-1626x1080.jpg" alt="Traian" title="Traian" media-simple="true"></a>
+                        <a href="https://social.vic.com.ro" target="_blank"><img src="assets/images/mbr-1626x1080.jpg" alt="Traian" title="Traian" media-simple="true"></a>
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7">Social</h4>
