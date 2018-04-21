@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 /*
  |--------------------------------------------------------------------------
- | Mix Asset Management
+ | Mix Asset Management // pass an array and the files will be merged
  |--------------------------------------------------------------------------
  */
 

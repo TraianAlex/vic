@@ -41,7 +41,7 @@
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
                         JS</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
-                       JQuery/Angular</p>
+                       JQuery/Vue/Angular</p>
                 </div>
             </div>
         </div>

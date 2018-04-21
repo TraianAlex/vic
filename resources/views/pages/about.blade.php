@@ -38,12 +38,12 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="60">
-                        <p class="pie_progress__number mbr-fonts-style display-5">60%</p>
+                    <div class="pie_progress progress3" role="progressbar" data-goal="70">
+                        <p class="pie_progress__number mbr-fonts-style display-5">70%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">JS</h4>
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">JS/Vue</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
