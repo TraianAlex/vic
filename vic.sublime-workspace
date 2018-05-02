@@ -4,196 +4,392 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"margin-left"
+				"res",
+				"response"
 			],
 			[
-				"hide",
-				"hideEditBtn"
+				"cu",
+				"currentStatus"
 			],
 			[
-				"doc",
-				"document"
+				"fil",
+				"fileList"
 			],
 			[
-				"ti",
-				"title"
+				"test",
+				"testFile"
 			],
 			[
-				"book",
-				"bookForm"
+				"form",
+				"formData"
+			],
+			[
+				"di",
+				"display"
 			],
 			[
 				"get",
-				"getSelectors"
+				"getProducts"
 			],
 			[
-				"Get",
-				"getSelectors"
-			],
-			[
-				"update",
-				"updateBook"
-			],
-			[
-				"add",
-				"addEventListener"
-			],
-			[
-				"edit",
-				"editBtn"
-			],
-			[
-				"upda",
-				"updateTask"
-			],
-			[
-				"up",
-				"updateTask"
-			],
-			[
-				"task",
-				"taskEdit"
-			],
-			[
-				"marg",
-				"margin-top"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"padd",
-				"padding-top"
-			],
-			[
-				"border",
-				"border-radius"
-			],
-			[
-				"c",
-				"color"
-			],
-			[
-				"total",
-				"total-cad-inc"
-			],
-			[
-				"clear",
-				"clearAddState"
-			],
-			[
-				"next",
-				"nextProfile"
-			],
-			[
-				"valida",
-				"validateState"
-			],
-			[
-				"validate",
-				"validateCity"
-			],
-			[
-				"val",
-				"value"
-			],
-			[
-				"vali",
-				"validateIsbn"
-			],
-			[
-				"text",
-				"textContent"
-			],
-			[
-				"vi",
-				"visible"
-			],
-			[
-				"mt",
-				"mt-5"
-			],
-			[
-				"m",
-				"mt-2"
-			],
-			[
-				"show",
-				"showForm"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"class",
-				"classList"
-			],
-			[
-				"creat",
-				"createItem"
-			],
-			[
-				"sub",
-				"submitAjaxRequest"
-			],
-			[
-				"s",
-				"submited"
-			],
-			[
-				"color",
-				"colorsAsJson"
-			],
-			[
-				"save",
-				"savedraw"
-			],
-			[
-				"ob_",
-				"ob_start"
-			],
-			[
-				"noti",
-				"notifications"
-			],
-			[
-				"con",
-				"contents"
-			],
-			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"Permision",
-				"Permission"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"page",
-				"pagesByIP"
-			],
-			[
-				"ip",
-				"ip_unique"
-			],
-			[
-				"to",
-				"total_page"
+				"vue",
+				"vue-toastr"
 			],
 			[
 				"v",
-				"videos"
+				"views"
+			],
+			[
+				"active",
+				"activeClass"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"Download",
+				"DownloadButton"
+			],
+			[
+				"Dow",
+				"DownloadButton"
+			],
+			[
+				"Pro",
+				"ProductList"
+			],
+			[
+				"pro",
+				"product-list-item"
+			],
+			[
+				"remove",
+				"removeMethod"
+			],
+			[
+				"product",
+				"product-list"
+			],
+			[
+				"the",
+				"theProducts"
+			],
+			[
+				"f",
+				"frameworks"
+			],
+			[
+				"sq",
+				"squareClass"
+			],
+			[
+				"dash",
+				"dashed-border"
+			],
+			[
+				"select",
+				"selectedInterests"
+			],
+			[
+				"intere",
+				"Interests"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"total",
+				"totalCells"
+			],
+			[
+				"perce",
+				"percentageReport2"
+			],
+			[
+				"all",
+				"allR"
+			],
+			[
+				"tota",
+				"totalC"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"add",
+				"addRock"
+			],
+			[
+				"All",
+				"allRocks"
+			],
+			[
+				"GR",
+				"grid"
+			],
+			[
+				"lef",
+				"leftUp"
+			],
+			[
+				"left",
+				"leftUp"
+			],
+			[
+				"new",
+				"newCell"
+			],
+			[
+				"righ",
+				"rightUp"
+			],
+			[
+				"right",
+				"rightDown"
 			],
 			[
 				"col",
-				"col-md-6"
+				"colT"
+			],
+			[
+				"newC",
+				"newCol"
+			],
+			[
+				"is",
+				"isDangerous"
+			],
+			[
+				"row",
+				"rowT"
+			],
+			[
+				"cc",
+				"cc"
+			],
+			[
+				"al",
+				"allSymbols"
+			],
+			[
+				"wi",
+				"widthTarget"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"cou",
+				"onCouponApplied"
+			],
+			[
+				"edit",
+				"editIndex"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tas",
+				"tasks"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"set",
+				"setCookie"
+			],
+			[
+				"ligh",
+				"lightColumn"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"table",
+				"table3"
+			],
+			[
+				"light",
+				"lightRow"
+			],
+			[
+				"create",
+				"createSQL"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"db",
+				"dbName"
+			],
+			[
+				"Web",
+				"Websql"
+			],
+			[
+				"dis",
+				"dispResults"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"in",
+				"insertList"
+			],
+			[
+				"heigh",
+				"heightT"
+			],
+			[
+				"cell",
+				"cellArr"
+			],
+			[
+				"todo",
+				"todo_descr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"Auth",
+				"Auth::user\tGet the currently authenticated user."
+			],
+			[
+				"qu",
+				"quality"
+			],
+			[
+				"q",
+				"quality"
+			],
+			[
+				"attach",
+				"attachObservers"
+			],
+			[
+				"obser",
+				"observable"
+			],
+			[
+				"obse",
+				"observer"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"setUp",
+				"setUpDatabase"
+			],
+			[
+				"Cu",
+				"Customer"
+			],
+			[
+				"Cus",
+				"CustomerIsGold"
+			],
+			[
+				"gold",
+				"goldCustomer"
+			],
+			[
+				"Customer",
+				"CustomerIsGold"
+			],
+			[
+				"Custome",
+				"CustomerIsGold"
+			],
+			[
+				"succ",
+				"succeedWith"
+			],
+			[
+				"Home",
+				"HomeChecker"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"Loog",
+				"LogToFile"
+			],
+			[
+				"Kindle",
+				"KindleAdapter"
+			],
+			[
+				"Book",
+				"BookInterface"
+			],
+			[
+				"Basic",
+				"BasicInspection"
+			],
+			[
+				"car",
+				"carsService"
+			],
+			[
+				"c",
+				"con\tfunction __construct"
+			],
+			[
+				"Test",
+				"TestMiddleware"
+			],
+			[
+				"unset",
+				"session_unset"
+			],
+			[
+				"var",
+				"var_dump"
 			],
 			[
 				"sort",
@@ -264,10 +460,6 @@
 				"password_confirmation"
 			],
 			[
-				"res",
-				"resource"
-			],
-			[
 				"font-s",
 				"font-size"
 			],
@@ -320,214 +512,13 @@
 				"_c\tConstructor"
 			],
 			[
-				"cl",
-				"class\tclass …"
-			],
-			[
 				"cur",
 				"cursor"
-			],
-			[
-				"p",
-				"pmet\tProtected method"
-			],
-			[
-				"wi",
-				"writeln〔function〕"
-			],
-			[
-				"sho",
-				"showTasks"
-			],
-			[
-				"Client",
-				"ClientInterface〔interface〕"
-			],
-			[
-				"writ",
-				"writeln〔function〕"
-			],
-			[
-				"Pro",
-				"Provider2"
-			],
-			[
-				"Can",
-				"CanBeFiltered〔interface〕"
-			],
-			[
-				"fucn",
-				"function"
-			],
-			[
-				"contr",
-				"$controller〔variable〕"
-			],
-			[
-				"LogTo",
-				"LogToFile"
-			],
-			[
-				"thi",
-				"$this〔variable〕"
-			],
-			[
-				"Auth",
-				"AuthController"
-			],
-			[
-				"com",
-				"compact〔function〕"
-			],
-			[
-				"method",
-				"method_exists〔function〕"
-			],
-			[
-				"array_ke",
-				"array_key_exists〔function〕"
-			],
-			[
-				"fu",
-				"function"
-			],
-			[
-				"st",
-				"static"
-			],
-			[
-				"array_k",
-				"array_keys〔function〕"
-			],
-			[
-				"parse",
-				"parse_url"
-			],
-			[
-				"bs3",
-				"bs3-cdn\tbs3-cdn"
-			],
-			[
-				"form",
-				"form:grid\tgrid"
-			],
-			[
-				"var",
-				"var_dump"
-			],
-			[
-				"php",
-				"php"
-			],
-			[
-				"htmls",
-				"htmlentities"
-			],
-			[
-				"shorten",
-				"shorten_text"
-			],
-			[
-				"font",
-				"font-weight"
-			],
-			[
-				"index",
-				"z-index: 〔property〕"
-			],
-			[
-				"url",
-				"urlencode"
-			],
-			[
-				"set",
-				"set_dots_right〔function〕"
-			],
-			[
-				"se",
-				"setThisPage〔function〕"
-			],
-			[
-				"base",
-				"base_url"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"json",
-				"json_decode〔function〕"
-			],
-			[
-				"for",
-				"foreach\tforeach …"
-			],
-			[
-				"handle",
-				"handle_error2〔function〕"
-			],
-			[
-				"sent",
-				"send_from_newsletter〔function〕"
-			],
-			[
-				"stripe",
-				"stripe_token"
-			],
-			[
-				"comm",
-				"comment"
-			],
-			[
-				"Bla",
-				"Blade::foreach\tBlade @foreach"
-			],
-			[
-				"Upda",
-				"UpdateCommentRequest〔namespace〕"
-			],
-			[
-				"has",
-				"hasMany〔function〕"
-			],
-			[
-				"bs3-l",
-				"bs3-link-button:success\tbs3-link-button-success"
-			],
-			[
-				"bs3-li",
-				"bs3-link-button:danger\tbs3-link-button-danger"
-			],
-			[
-				"user",
-				"user_id"
-			],
-			[
-				"post_by",
-				"post_by_user"
-			],
-			[
-				"in",
-				"input\tTag"
-			],
-			[
-				"butt",
-				"bs3-button:primary\tbs3-button-primary"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "resources/views/pages/demos.blade.php",
-			"settings":
-			{
-				"buffer_size": 7095,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -536,17 +527,33 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 253.0,
-		"last_filter": "",
+		"height": 354.0,
+		"last_filter": "in",
 		"selected_items":
 		[
 			[
-				"Package Control: ins",
+				"in",
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: list",
+				"list",
 				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"artisan ",
+				"Laravel Artisan 5: List"
+			],
+			[
+				"copy",
+				"ANF: Copy Current File"
 			],
 			[
 				"new",
@@ -570,10 +577,6 @@
 			],
 			[
 				"ne",
-				"ANF: New File"
-			],
-			[
-				"",
 				"ANF: New File"
 			],
 			[
@@ -648,6 +651,7 @@
 		"height": 174.0,
 		"history":
 		[
+			"phpunit",
 			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -662,146 +666,142 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/MEGA/www/laravel/vic",
-		"/Users/victor/MEGA/www/laravel/vic/resources",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages",
-		"/Users/victor/MEGA/whttp/js"
+		"/Users/victor/Box Sync/laravel/vic"
 	],
 	"file_history":
 	[
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todomobile.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/js.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/bootstrap.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-js.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Providers/AppServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Jobs/Tracker.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/book-list.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/layouts/app-admin.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/package.json",
-		"/Users/victor/MEGA/www/laravel/vic/webpack.mix.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/under-construction.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/loan.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets/sass/_variables.scss",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets/sass/app.scss",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig/js/bootstrap.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/profiles.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/guess.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Frontend/PagesController.php",
-		"/Users/victor/MEGA/www/laravel/vic/node_modules/jquery/dist/jquery.js",
-		"/Users/victor/MEGA/www/laravel/vic/node_modules/axios/dist/axios.js",
-		"/Users/victor/MEGA/whttp/js/js1/p13_microposts/13_8_project_files/microposts/src/app.js",
-		"/Users/victor/MEGA/www/laravel/vic/node_modules/laravel-mix/setup/webpack.config.js",
-		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_15_easyhttp3/easyhttp3/easyhttp3.js",
-		"/Users/victor/MEGA/whttp/js/js1/p13_microposts/13_8_project_files/microposts/src/http.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/contact.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/app.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/board.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/demos.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/solitaire.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/board.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/klondike/game.css",
-		"/Users/victor/MEGA/www/laravel/vic/public/assets/solitaire/cards/card.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/todo.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/storage.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/index.html",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui.js",
-		"/Users/victor/MEGA/whttp/js/js1/p4_dom_projects/4_3_persist_local_storage/todo/app.js",
-		"/Users/victor/MEGA/whttp/js/js1/p4_dom_projects/4_3_persist_local_storage/todo/index.html",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/exp.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/index.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/budget.blade.php",
-		"/Users/victor/MEGA/www/assets/temp/budget.blade.php",
-		"/Users/victor/MEGA/whttp/js/div/snake.html",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/ui-inc.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/ui-inc.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/budget/routes.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/routes.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/app.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/views/expenses.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/views/income.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/inc.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/storage.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/item-inc.js",
-		"/Users/victor/MEGA/whttp/js/js1/p12_tracalori/12_12_project_files/tracalorie_test/item.js",
-		"/Users/victor/MEGA/whttp/js/div/autotyper.html",
-		"/Users/victor/MEGA/whttp/js/div/image-slider.html",
-		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 05/02-done.html",
-		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 04/06-done.html",
-		"/Users/victor/MEGA/whttp/js/local-storage/Chapter 03/06-done.html",
-		"/Users/victor/MEGA/whttp/js/local-storage/Javascript/bwH5LS.js",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/weather.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/github-finder.blade.php",
-		"/Users/victor/MEGA/www/assets/templates/flash-ajax.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/links.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/link/index.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/link.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/categories.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/LinkController.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/jokes.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/draw.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/get-code-btn.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/routes/web.php",
-		"/Users/victor/MEGA/www/laravel/vic/.env",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Cache/MemcachedConnector.php",
-		"/Users/victor/MEGA/www/vic1/loan.html",
-		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/cloudways",
-		"/var/folders/lj/fwp6lhpx4jq_f85pjxkjhbcm0000gn/T/sublime-sftp-browse-1517778568/cloudways/applications/muzepuzbve/public_html/app/Admin.php",
-		"/Users/victor/MEGA/www/laravel/vic/.gitignore",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/dusk/src/DuskServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/.env.dusk.local",
-		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/ExampleTest.php",
-		"/Users/victor/Dropbox/setup/laravel",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/resources.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/back-links.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/categories.blade.php",
-		"/Users/victor/MEGA/www/vic1/todo.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/partials/vicnav.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/services.blade.php",
-		"/Users/victor/MEGA/www/vic1/services.html",
-		"/Users/victor/MEGA/www/vic1/demo.html",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/home.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/admin/notifications.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Listeners/EmailLinkCreation.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/test.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/share.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/disqus.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/index.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/partials/dev-icons.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/contact.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/xcontact.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/services.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/links.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/index.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/auth.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/about.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/pages/headers/about.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Category.php",
-		"/Users/victor/MEGA/www/laravel/vic/public/js/draw.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/storage/image.x",
-		"/Users/victor/MEGA/www/laravel/vic/public/save_drawing.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets-orig/js/app.js",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/CategoryController.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Events/CategoryCreated.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Events/LinkCreated.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Admin.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/assets/js/app.js",
-		"/Users/victor/MEGA/www/laravel/vic/public/css/draw.css",
-		"/Users/victor/MEGA/www/laravel/vic/config/app.php",
-		"/Users/victor/MEGA/www/laravel/vic/config/broadcasting.php",
-		"/Users/victor/MEGA/www/laravel/vic/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastServiceProvider.php",
-		"/Users/victor/MEGA/www/laravel/vic/app/Http/Controllers/Admin/StatController.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/ips.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/resources/views/stat/pages.blade.php",
-		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/LoginTest.php",
-		"/Users/victor/MEGA/www/laravel/vic/tests/Browser/Pages/HomePage.php"
+		"/Users/victor/Box Sync/whttp/vue/music/package.json",
+		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/index.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/src/layouts/base.vue",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.6/Code/frontend/src/pages/artists/index.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/app.styl",
+		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/variables.styl",
+		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/functions.styl",
+		"/Users/victor/Box Sync/whttp/vue/music/.postcssrc.js",
+		"/Users/victor/Box Sync/whttp/vue/music/config/index.js",
+		"/Users/victor/Box Sync/whttp/vue/music/.babelrc",
+		"/Users/victor/Box Sync/whttp/vue/music/src/bootstrap.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.5/Code/frontend/package.json",
+		"/Users/victor/Box Sync/whttp/vue/music/src/main.js",
+		"/Users/victor/Box Sync/whttp/vue/music/.eslintrc.js",
+		"/Users/victor/Box Sync/whttp/vue/music/src/routes/index.js",
+		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
+		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/music/src/store/index.js",
+		"/Users/victor/Box Sync/whttp/vue/music/src/app.vue",
+		"/Users/victor/Box Sync/whttp/js/div/wonders.html",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/Appointments.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AddAppointment.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/SearchAppointments.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentListItem.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentList.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/assets/style.css",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/assets/appointments.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/appointments.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/main.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/package.json",
+		"/Users/victor/Box Sync/whttp/vue/vueinterface/process/App.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/dist/js/appointments.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/style.css",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/appintments.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/router.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Navigation.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentsList.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/Upload.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/components/Home.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/components/ProductDetails.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/state.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/package.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/getters.js",
+		"/Users/victor/Box Sync/whttp/vue/vueinterface/package.json",
+		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Controllers/UploadController.php",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/file-upload.fake.service.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/file-upload.service.js",
+		"/Users/victor/Box Sync/laravel/laravel56vue/storage/logs/laravel.log",
+		"/Users/victor/Box Sync/laravel/laravel56vue/routes/api.php",
+		"/Users/victor/Box Sync/laravel/laravel56vue/routes/web.php",
+		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Middleware/VerifyCsrfToken.php",
+		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Kernel.php",
+		"/Users/victor/Box Sync/laravel/laravel56vue/app/Providers/RouteServiceProvider.php",
+		"/Users/victor/Box Sync/laravel/rest/lar55/app/Providers/RouteServiceProvider.php",
+		"/Users/victor/Box Sync/laravel/laravel56vue/config/cors.php",
+		"/Users/victor/Box Sync/laravel/rest/lar55/config/cors.php",
+		"/Users/victor/Box Sync/laravel/rest/lar55/-12-01-2017-Purchase-Sale-System.png",
+		"/Users/victor/Box Sync/laravel/laravel56vue/resources/views/pages/upload.blade.php",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/manifest.json",
+		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/src/App.vue",
+		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/package.json",
+		"/Users/victor/Box Sync/whttp/css/feel-native.html",
+		"/Users/victor/Box Sync/whttp/js/algorithms/factorialize.html",
+		"/Users/victor/Box Sync/whttp/css/dropdown-nav.html",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/index.html",
+		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/index.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/App.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductList.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/TopContext.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductListItem.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/store/state.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/src/main.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/package.json",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/ToDo.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/toastr.js",
+		"/Users/victor/Box Sync/laravel/laravel56vue/resources/assets/js/components/toDo.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Diverse.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/ProductListItem.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Rating.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Product.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/ProductList.vue",
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/node_modules/vue-awesome/icons/star-o.js",
+		"/Users/victor/Box Sync/whttp/vue/vue2lar/components.js",
+		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/src/static/index.html",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/views/Download.vue",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/components/DownloadButton.vue",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/App.vue",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/router.js",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/views/About.vue",
+		"/Users/victor/Box Sync/whttp/vue/indicator/src/http.js",
+		"/Users/victor/Box Sync/whttp/vue/indicator/public/index.html",
+		"/Users/victor/Box Sync/whttp/vue/vue-blog-demo/dist/static/api/feed.json",
+		"/Users/victor/Box Sync/whttp/vue/blog/src/router/index.js",
+		"/Users/victor/Box Sync/whttp/vue/blog/src/components/BlogFeed.vue",
+		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/resource.js",
+		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/BlogPost.js",
+		"/Users/victor/Box Sync/whttp/vue/blog/src/main.js",
+		"/Users/victor/Box Sync/whttp/whttp.sublime-project",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/ProductList.vue",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/ProductListItemxxxxx.vue",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/ProductListItem.vue",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/main.js",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/App.vue",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/Product.vue",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/ProductListItem.vue",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_04/start/products-events.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/Product.vue",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/App.vue",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_05/final/single-file-components/src/main.js",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_03/start/products-events.html",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/ProductListItem.vue",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/package.json",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_05/start/products-events.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_04/start/products-slots.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_02/start/products.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_01/start/components.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_04/start/lifecycle.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_03/start/virtual-agent.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_02/start/computed.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_01/start/reactive.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_08/start/class.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_07/start/style.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_06/start/login.html",
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_04/start/h_plus_sport/subscribe.html",
+		"/Users/victor/MEGA/whttp/js/div/lighthouselab/grid.html",
+		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/Message.vue"
 	],
 	"find":
 	{
-		"height": 78.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -815,134 +815,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"showForm",
-			":",
-			"getSelectors",
-			"sudmit",
-			"hideTable",
-			"edit",
-			"table",
-			"book-form",
-			"showForm",
-			"book-list",
-			"container",
-			"isbn",
-			"clearAddState",
-			"taskEdit",
-			"collection-item",
-			"collection",
-			"content",
-			"ItemCtrl",
-			"document",
-			"UICtrl",
-			"UI",
-			"Ctrl",
-			"App",
-			"calories",
-			"addEL",
-			"elements",
-			"bookList",
-			"getSelectors",
-			"Book",
-			"clearDash",
-			"dusk",
-			"input-field",
-			"mbr-section-title",
-			"each",
-			"pusher",
-			"import",
-			"pusher",
-			"jquery",
-			"pusher",
-			"jquery",
-			"pusher",
-			"echo",
-			"dusk",
-			"$categories",
-			"href",
-			"start",
-			"Adm",
-			"@media",
-			"icon54-v1-html5",
-			"icon54-v2-java-script",
-			"$request",
-			"laravel-echo",
-			"notification-label",
-			"38",
-			"example-component",
-			");\n",
-			"2",
-			"visit",
-			"Auth",
-			"https",
-			"https://www.surveymonkey.com/",
-			"file",
-			"https://www.udemy.com/courses",
-			"https://admin.typeform.com/login",
-			"https://admin.typeform.com/login/#/",
-			"https://www.codeply.com/go",
-			"https://varvy.com/",
-			"http://browsershots.org/",
-			"http://www.webdeveloper.com/",
-			"http://www.javascriptsource.com/",
-			"http://designify.me/",
-			"http://www.apache-ssl.org/",
-			"http://www.phparch.com/",
-			"http://code.google.com/",
-			"http://www.phpdoc.org/",
-			"http://www.scriptcase.net/",
-			"https://netbeans.org/",
-			"http://www.phptherightway.com/",
-			"https://developer.paypal.com/",
-			"http://brew.sh/",
-			"https://www.codeply.com/go",
-			"https://dashboard.stripe.com/login",
-			"https://moqups.com/",
-			"http://jsbin.com/",
-			"http://jsbin.com/?html,output",
-			"https://gitter.im/",
-			"https://github.com/TraianAlex/Mobiris",
-			"https://webflow.com/website-design-software",
-			"https://repl.it/C5Sd/0",
-			"https://codereview.stackexchange.com/",
-			"https://github.com/Respect/Validation",
-			"https://varvy.com/",
-			"https://varvy.com/pagespeed/leverage-browser-caching.html",
-			"http://www.lessoncup.com/2013/12/load-data-on-page-scroll.html",
-			"http://www.lessoncup.com/2013/12/load-data-on-page-scroll.html?s",
-			"http://www.justinaguilar.com/animations/index.html#",
-			"http://williamdurand.fr/2013/06/03/object-calisthenics/",
-			"https://packagist.org/packages/friendsofphp/php-cs-fixer",
-			"https://www.optimizely.com/",
-			"https://www.sitepoint.com/top-10-php-security-vulnerabilities/",
-			"http://omr-pinteresting.com/",
-			"https://teamtreehouse.com/",
-			"https://whydoesitsuck.com/public/why-does-php-suck/functions/",
-			"https://www.elegantthemes.com/blog/resources/php-tutorials-aspir",
-			"https://www.jaxon-php.org/",
-			"http://dev.mysql.com/doc/index-other.html",
-			"http://crudgenerator.in/#frameworks",
-			"https://shop.sitepoint.com/free",
-			"https://mobiriseicons.com/",
-			"https://pixabay.com/",
-			"http://docs.froont.com/",
-			"http://foundation.zurb.com/",
-			"https://tooling.github.io/book-of-modern-frontend-tooling/index.",
-			"https://component.io/projects/8PPP72/library",
-			"http://gun.js.org/#step1",
-			"https://github.com/johnpapa/pluralsight-gulp",
-			"https://rollupjs.org/#introduction",
-			"http://www.typescriptlang.org/",
-			"https://hackernoon.com/how-to-create-fancy-revealing-animations-",
-			"https://daneden.github.io/animate.css/",
-			"http://designopro.com/",
-			"https://codyhouse.co/library/",
-			"https://codyhouse.co/gem/3d-portfolio-template/",
-			"http://jsbooks.revolunet.com/",
-			"https://egghead.io/courses/how-to-write-an-open-source-javascrip",
-			"https://fullcalendar.io/",
-			"http://vuejs.org/",
-			"http://underscorejs.org/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -950,14 +822,6 @@
 		"regex": true,
 		"replace_history":
 		[
-			"ItemInc",
-			"UIInc",
-			"Inc",
-			"cad",
-			"calories",
-			"http",
-			"191",
-			"https"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -968,49 +832,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "resources/views/pages/demos.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7095,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2857,
-								2857
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3143.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 77.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -1043,6 +872,10 @@
 	{
 		"height": 0.0
 	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 222.0
+	},
 	"output.doc":
 	{
 		"height": 0.0
@@ -1063,15 +896,11 @@
 	{
 		"height": 210.0
 	},
-	"output.unsaved_changes":
-	{
-		"height": 222.0
-	},
 	"pinned_build_system": "Packages/User/builds/PSR2.sublime-build",
 	"project": "vic.sublime-project",
 	"replace":
 	{
-		"height": 128.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1080,90 +909,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"axios",
-				"vic/node_modules/axios/dist/axios.js"
-			],
-			[
-				"webpack.config",
-				"vic/node_modules/laravel-mix/setup/webpack.config.js"
-			],
-			[
-				"memca",
-				"vic/vendor/laravel/framework/src/Illuminate/Cache/MemcachedConnector.php"
-			],
-			[
-				"dus",
-				"vic/vendor/laravel/dusk/src/DuskServiceProvider.php"
-			],
-			[
-				"dusk",
-				"vic/vendor/laravel/dusk/src/DuskServiceProvider.php"
-			],
-			[
-				"appservice",
-				"vic/app/Providers/AppServiceProvider.php"
-			],
-			[
-				"configapp",
-				"vic/config/app.php"
-			],
-			[
-				"storagelog",
-				"vic/storage/logs/laravel.log"
-			],
-			[
-				"mailfake",
-				"vic/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php"
-			],
-			[
-				"eventfake",
-				"vic/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php"
-			],
-			[
-				"illuminateeventdis",
-				"vic/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
-			],
-			[
-				"illuminatesupportfacade",
-				"vic/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php"
-			],
-			[
-				"illuminate/auth/access",
-				"vic/vendor/laravel/framework/src/Illuminate/Auth/Access/Gate.php"
-			],
-			[
-				"routes/web",
-				"vic/routes/web.php"
-			],
-			[
-				"illuminate/console/appnamespace",
-				"vic/vendor/laravel/framework/src/Illuminate/Console/DetectsApplicationNamespace.php"
-			],
-			[
-				"database/users",
-				"vic/database/migrations/2014_10_12_000000_create_users_table.php"
-			],
-			[
-				"config/app",
-				"vic/config/app.php"
-			],
-			[
-				"app/servi",
-				"vic/app/Providers/AppServiceProvider.php"
-			],
-			[
-				"compo",
-				"vic/composer.json"
-			],
-			[
-				"aoicontr",
-				"app/Http/Controllers/ApiController.php"
-			],
-			[
-				"mail",
-				"config/mail.php"
-			],
 			[
 				"routingrouter",
 				"vendor/laravel/framework/src/Illuminate/Routing/Router.php"
@@ -1229,6 +974,10 @@
 				"app/Http/Controllers/PurchasesController.php"
 			],
 			[
+				"routes/web",
+				"routes/web.php"
+			],
+			[
 				"view/wl",
 				"resources/views/welcome.blade.php"
 			],
@@ -1274,115 +1023,87 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "canv",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"canv",
-				"~/MEGA/www/laravel/canvas/canvas/canvas.sublime-project"
-			],
-			[
 				"",
-				"~/MEGA/www/laravel/laravel.sublime-project"
+				"~/Box Sync/laravel/laravel.sublime-project"
 			],
 			[
-				"whtt\t",
-				"~/MEGA/whttp/whttp.sublime-project"
+				"lar",
+				"~/Box Sync/laravel/laravel.sublime-project"
 			],
 			[
-				"js",
-				"~/MEGA/whttp/js/js.sublime-project"
-			],
-			[
-				"whh",
-				"~/MEGA/whttp/whttp.sublime-project"
-			],
-			[
-				"whtt",
-				"~/MEGA/whttp/whttp.sublime-project"
-			],
-			[
-				"petra",
-				"~/MEGA/www/petra/petra.sublime-project"
+				"vic",
+				"~/MEGA/www/laravel/vic/vic.sublime-project"
 			],
 			[
 				"www",
 				"~/MEGA/www/www.sublime-project"
 			],
 			[
-				"lar54",
-				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
+				"vuv",
+				"~/MEGA/www/laravel/vic/vic.sublime-project"
 			],
 			[
-				"lar",
-				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
+				"js",
+				"~/MEGA/whttp/js/js.sublime-project"
 			],
 			[
-				"w",
-				"~/MEGA/www/www.sublime-project"
+				"lara",
+				"~/MEGA/www/laravel/laravel1/laravel1.sublime-project"
 			],
 			[
-				"me",
-				"~/MEGA/www/laravel/medium-login/medium-login.sublime-project"
-			],
-			[
-				"op",
+				"opt",
 				"~/MEGA/www/laravel/optimizer/optimizer.sublime-project"
 			],
 			[
-				"la",
-				"~/MEGA/www/laravel/lar54/lar54.sublime-project"
+				"vuc",
+				"~/MEGA/www/laravel/vic/vic.sublime-project"
 			],
 			[
-				"ca",
-				"~/MEGA/www/laravel/canvas/canvas/canvas.sublime-project"
-			],
-			[
-				"router",
+				"ro",
 				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"dan",
-				"~/MEGA/www/codeigniter/danceart/danceart.sublime-project"
-			],
-			[
-				"laravel",
-				"~/MEGA/www/laravel/laravel.sublime-project"
-			],
-			[
-				"larav",
-				"~/MEGA/www/laravel/laravel.sublime-project"
-			],
-			[
-				"canc",
-				"~/MEGA/www/laravel/canvas/canvas/canvas.sublime-project"
-			],
-			[
-				"petr",
-				"~/MEGA/www/petra/petra.sublime-project"
-			],
-			[
-				"quo",
-				"~/MEGA/www/laravel/quotes/quotes.sublime-project"
-			],
-			[
-				"can",
-				"~/MEGA/www/laravel/canvas/canvas/canvas.sublime-project"
 			],
 			[
 				"route",
 				"~/MEGA/www/router/router.sublime-project"
 			],
 			[
+				"rou",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"route\n",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"pe",
+				"~/MEGA/www/petra/petra.sublime-project"
+			],
+			[
+				"petr",
+				"~/MEGA/www/petra/petra.sublime-project"
+			],
+			[
+				"lar55",
+				"~/MEGA/www/laravel/rest/lar55/lar55.sublime-project"
+			],
+			[
 				"h",
 				"/Users/victor/Dropbox/whttp/whttp.sublime-project"
+			],
+			[
+				"la",
+				"/Users/victor/Dropbox/www/laravel/dropbox-laravel.sublime-project"
 			]
 		],
 		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 43.0,
+		"height": 354.0,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -1395,7 +1116,7 @@
 				"isAlias"
 			]
 		],
-		"width": 947.0
+		"width": 938.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1405,7 +1126,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 214.0,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
