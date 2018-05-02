@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Kernel $kernel)//Kernel $kernel
     {
-        Schema::defaultStringLength(191);
+        //Schema::defaultStringLength(191);
 
         \Blade::if('admin', function(){
             return auth()->user()->hasRole('admin');
