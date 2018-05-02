@@ -25,7 +25,7 @@ class CreateLinkRequest extends FormRequest
     {
         return [
             'address' => 'required|url|unique:links,address|max:255',
-            'description' => 'sometimes|max:255'
+            'description' => 'sometimes|max:191'
         ];
     }
 }
