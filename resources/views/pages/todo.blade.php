@@ -112,7 +112,7 @@ function getTasks() {
     createItem(task);
   });
   toggleList(tasks);
-  editBtn.style.visibility = 'hidden';
+  editBtn.style.display = 'none';
   taskInput.value = '';
 }
 
@@ -132,8 +132,8 @@ function addTask(e) {
 function editTask(e) {
   toEdit = e.target.parentElement.parentElement.textContent;
   taskInput.value = toEdit;
-  addBtn.style.visibility = 'hidden';
-  editBtn.style.visibility = 'visible';
+  addBtn.style.display = 'none';
+  editBtn.style.display = 'block';
 }
 
 function updateTask(e) {
@@ -142,8 +142,8 @@ function updateTask(e) {
     return false;
   }
   editTaskLS(toEdit, taskInput.value);
-  addBtn.style.visibility = 'visible';
-  editBtn.style.visibility = 'hidden';
+  addBtn.style.display = 'block';
+  editBtn.style.display = 'none';
 }
 
 function removeTask(e) {
@@ -217,10 +217,10 @@ function clearTasksFromLocalStorage() {
 }
 // ui
 function toggleList(tasks = [1]) {
-    visibility = tasks.length === 0 ? 'hidden' : 'visible';
-    title.style.visibility = visibility;
-    filter.style.visibility = visibility;
-    clearBtn.style.visibility = visibility;
+    display = tasks.length === 0 ? 'none' : 'block';
+    title.style.display = display;
+    filter.style.display = display;
+    clearBtn.style.display = display;
     filter.value = '';
 }
 

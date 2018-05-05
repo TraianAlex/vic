@@ -135,27 +135,27 @@ class UI {
   clearAddState() {
       this.showFormBtn.style.display = 'block';
       this.bookForm.style.display = 'none';
-      this.table.style.visibility = 'visible';
+      this.table.style.display = 'block';
   }
 
   hideTable() {
-      this.table.style.visibility = 'hidden';
+      this.table.style.display = 'none';
   }
 
   hideEditBtn() {
-      this.edit.style.visibility = 'hidden';
+      this.edit.style.display = 'none';
   }
 
   showEditBtn() {
-      this.edit.style.visibility = 'visible';
+      this.edit.style.display = 'block';
   }
 
   hideAddBtn() {
-      this.addBtn.style.visibility = 'hidden';
+      this.addBtn.style.display = 'none';
   }
 
   showAddBtn() {
-    this.addBtn.style.visibility = 'visible';
+    this.addBtn.style.display = 'block';
   }
 
   showForm() {

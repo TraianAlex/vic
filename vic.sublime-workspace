@@ -520,19 +520,20 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Requests/CreateLinkRequest.php",
+			"file": "app/Providers/AppServiceProvider.php",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 1670,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/view.php",
+			"file": "resources/views/pages/headers/contact.blade.php",
 			"settings":
 			{
-				"buffer_size": 1004,
+				"buffer_size": 525,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -688,11 +689,15 @@
 		"/Users/victor/Box Sync/laravel/vic/app/Http",
 		"/Users/victor/Box Sync/laravel/vic/app/Http/Controllers",
 		"/Users/victor/Box Sync/laravel/vic/app/Http/Controllers/Admin",
-		"/Users/victor/Box Sync/laravel/vic/app/Http/Requests",
-		"/Users/victor/Box Sync/laravel/vic/config"
+		"/Users/victor/Box Sync/laravel/vic/app/Providers",
+		"/Users/victor/Box Sync/laravel/vic/resources",
+		"/Users/victor/Box Sync/laravel/vic/resources/views",
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages",
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/headers"
 	],
 	"file_history":
 	[
+		"/Users/victor/Box Sync/laravel/vic/app/Http/Requests/CreateLinkRequest.php",
 		"/Users/victor/Box Sync/whttp/vue/music/package.json",
 		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
 		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/index.vue",
@@ -819,8 +824,7 @@
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_07/start/style.html",
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_06/start/login.html",
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_04/start/h_plus_sport/subscribe.html",
-		"/Users/victor/MEGA/whttp/js/div/lighthouselab/grid.html",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/Message.vue"
+		"/Users/victor/MEGA/whttp/js/div/lighthouselab/grid.html"
 	],
 	"find":
 	{
@@ -860,24 +864,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Requests/CreateLinkRequest.php",
+					"file": "app/Providers/AppServiceProvider.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 1670,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								573,
-								573
+								363,
+								363
 							]
 						],
 						"settings":
 						{
-							"SL.97.region_keys":
+							"SL.144.region_keys":
 							[
 							],
 							"git_gutter_is_enabled": true,
@@ -889,7 +893,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 636.0,
+						"translation.y": 405.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -897,36 +901,31 @@
 				},
 				{
 					"buffer": 1,
-					"file": "config/view.php",
-					"semi_transient": true,
+					"file": "resources/views/pages/headers/contact.blade.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1004,
+						"buffer_size": 525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								459,
+								459
 							]
 						],
 						"settings":
 						{
-							"SL.122.region_keys":
-							[
-							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
