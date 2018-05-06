@@ -519,24 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/Providers/AppServiceProvider.php",
-			"settings":
-			{
-				"buffer_size": 1670,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/pages/headers/contact.blade.php",
-			"settings":
-			{
-				"buffer_size": 525,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -685,18 +667,17 @@
 	"expanded_folders":
 	[
 		"/Users/victor/Box Sync/laravel/vic",
-		"/Users/victor/Box Sync/laravel/vic/app",
-		"/Users/victor/Box Sync/laravel/vic/app/Http",
-		"/Users/victor/Box Sync/laravel/vic/app/Http/Controllers",
-		"/Users/victor/Box Sync/laravel/vic/app/Http/Controllers/Admin",
-		"/Users/victor/Box Sync/laravel/vic/app/Providers",
 		"/Users/victor/Box Sync/laravel/vic/resources",
 		"/Users/victor/Box Sync/laravel/vic/resources/views",
 		"/Users/victor/Box Sync/laravel/vic/resources/views/pages",
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/headers"
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/partials"
 	],
 	"file_history":
 	[
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/todo.blade.php",
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/book-list.blade.php",
+		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/headers/contact.blade.php",
+		"/Users/victor/Box Sync/laravel/vic/app/Providers/AppServiceProvider.php",
 		"/Users/victor/Box Sync/laravel/vic/app/Http/Requests/CreateLinkRequest.php",
 		"/Users/victor/Box Sync/whttp/vue/music/package.json",
 		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
@@ -820,11 +801,7 @@
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_03/start/virtual-agent.html",
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_02/start/computed.html",
 		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_01/start/reactive.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_08/start/class.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_07/start/style.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_06/start/login.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_04/start/h_plus_sport/subscribe.html",
-		"/Users/victor/MEGA/whttp/js/div/lighthouselab/grid.html"
+		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_08/start/class.html"
 	],
 	"find":
 	{
@@ -859,78 +836,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/Providers/AppServiceProvider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1670,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								363,
-								363
-							]
-						],
-						"settings":
-						{
-							"SL.144.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/pages/headers/contact.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								459,
-								459
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1125,7 +1032,7 @@
 		[
 			[
 				"",
-				"~/Box Sync/laravel/laravel.sublime-project"
+				"~/Box Sync/whttp/whttp.sublime-project"
 			],
 			[
 				"lar",
