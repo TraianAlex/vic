@@ -118,7 +118,7 @@ class LinkController extends Controller
                 'required',
                 Rule::unique('links')->ignore($link->id),
             ],
-            'description' => 'sometimes|max:191'
+            'description' => 'sometimes|max:255'
         ]);
         $link->address = $request->address;
         $link->description = $request->description;
