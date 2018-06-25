@@ -33,7 +33,7 @@
                     <div class="card_back card_cont">
                         <h4 class="card-title py-2 mbr-fonts-style display-5">
                             <a href="http://petraesthetics.com" target="_blank">Petraesthetics.com</a></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Holistic europen beauty services and holistic retreat<br>Using elements of: Point-pressure, aromatherapy, reflexology, and transfer of positive energy flow.&nbsp;</p>
+                        <p class="mbr-text mbr-fonts-style display-7">Holistic European beauty services and holistic retreat<br>Using elements of: Point-pressure, aromatherapy, reflexology, and transfer of positive energy flow.&nbsp;</p>
                     </div>
                 </div>
             </div>

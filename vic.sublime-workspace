@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"is",
+				"isNumber"
+			],
+			[
+				"sa",
+				"safe"
+			],
+			[
+				"safe",
+				"safeNum"
+			],
+			[
+				"co",
+				"const"
+			],
+			[
 				"res",
 				"response"
 			],
@@ -162,10 +178,6 @@
 			[
 				"newC",
 				"newCol"
-			],
-			[
-				"is",
-				"isDangerous"
 			],
 			[
 				"row",
@@ -502,23 +514,19 @@
 			[
 				"file",
 				"fileinf"
-			],
-			[
-				"th",
-				"ncurses_typeahead"
-			],
-			[
-				"_",
-				"_c\tConstructor"
-			],
-			[
-				"cur",
-				"cursor"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "resources/views/pages/headers/about.blade.php",
+			"settings":
+			{
+				"buffer_size": 891,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -528,12 +536,28 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "in",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"in",
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"te",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"term",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"Package Control: ins",
 				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Snippet: #!/usr/bin/env"
 			],
 			[
 				"list",
@@ -542,10 +566,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"",
-				"ANF: Rename File"
 			],
 			[
 				"artisan ",
@@ -666,37 +686,66 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/Box Sync/laravel/vic",
-		"/Users/victor/Box Sync/laravel/vic/resources",
-		"/Users/victor/Box Sync/laravel/vic/resources/views",
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages",
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/partials"
+		"/Users/victor/MEGA/laravel/vic",
+		"/Users/victor/MEGA/laravel/vic/resources",
+		"/Users/victor/MEGA/laravel/vic/resources/assets",
+		"/Users/victor/MEGA/laravel/vic/resources/views",
+		"/Users/victor/MEGA/laravel/vic/resources/views/layouts",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/headers"
 	],
 	"file_history":
 	[
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/todo.blade.php",
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/book-list.blade.php",
-		"/Users/victor/Box Sync/laravel/vic/resources/views/pages/headers/contact.blade.php",
-		"/Users/victor/Box Sync/laravel/vic/app/Providers/AppServiceProvider.php",
-		"/Users/victor/Box Sync/laravel/vic/app/Http/Requests/CreateLinkRequest.php",
-		"/Users/victor/Box Sync/whttp/vue/music/package.json",
-		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/index.vue",
+		"/Users/victor/MEGA/laravel/vic/config/mail.php",
+		"/Users/victor/MEGA/laravel/vic/.env",
+		"/Users/victor/MEGA/laravel/vic/tests/Unit/PagesTest.php",
+		"/Users/victor/MEGA/www/cheat-sheet-subl",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/Movie.php",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/MovieCollection.php",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/spec/MovieCollectionSpec.php",
+		"/Users/victor/MEGA/www/laracast/git/index.txt",
+		"/Users/victor/MEGA/www/laracast/git/new-feature.txt",
+		"/Users/victor/MEGA/www/www.sublime-project",
+		"/Users/victor/MEGA/whttp/js/maybe/utils.js",
+		"/Users/victor/MEGA/whttp/js/maybe/less1/index.js",
+		"/Users/victor/MEGA/whttp/js/maybe/less2/index.js",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/TerminalView/README.md",
+		"/Users/victor/Box Sync/whttp/css/drop-nav2.html",
+		"/Users/victor/Box Sync/whttp/css/dropdown-nav.html",
+		"/Users/victor/Box Sync/whttp/framework7/package.json",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.8/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 5/Video 5.6/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/composer.json",
+		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/src/bootstrap.js",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env",
+		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/prod.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.9/Code/frontend/src/pages/artists/edit.vue",
 		"/Users/victor/Box Sync/whttp/vue/music/src/layouts/base.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/index.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/create.vue",
+		"/Users/victor/Box Sync/whttp/vue/music/package.json",
+		"/Users/victor/Box Sync/whttp/vue/music/build/webpack.dev.conf.js",
+		"/Users/victor/Box Sync/whttp/vue/music/config/index.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.8/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
 		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.6/Code/frontend/src/pages/artists/index.vue",
 		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/app.styl",
 		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/variables.styl",
 		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/functions.styl",
 		"/Users/victor/Box Sync/whttp/vue/music/.postcssrc.js",
-		"/Users/victor/Box Sync/whttp/vue/music/config/index.js",
 		"/Users/victor/Box Sync/whttp/vue/music/.babelrc",
 		"/Users/victor/Box Sync/whttp/vue/music/src/bootstrap.js",
 		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.5/Code/frontend/package.json",
 		"/Users/victor/Box Sync/whttp/vue/music/src/main.js",
 		"/Users/victor/Box Sync/whttp/vue/music/.eslintrc.js",
 		"/Users/victor/Box Sync/whttp/vue/music/src/routes/index.js",
-		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
-		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
 		"/Users/victor/Box Sync/whttp/vue/music/src/store/index.js",
 		"/Users/victor/Box Sync/whttp/vue/music/src/app.vue",
 		"/Users/victor/Box Sync/whttp/js/div/wonders.html",
@@ -743,7 +792,6 @@
 		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/package.json",
 		"/Users/victor/Box Sync/whttp/css/feel-native.html",
 		"/Users/victor/Box Sync/whttp/js/algorithms/factorialize.html",
-		"/Users/victor/Box Sync/whttp/css/dropdown-nav.html",
 		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue",
 		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/index.html",
 		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/index.js",
@@ -775,37 +823,11 @@
 		"/Users/victor/Box Sync/whttp/vue/vue-blog-demo/dist/static/api/feed.json",
 		"/Users/victor/Box Sync/whttp/vue/blog/src/router/index.js",
 		"/Users/victor/Box Sync/whttp/vue/blog/src/components/BlogFeed.vue",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/resource.js",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/BlogPost.js",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/main.js",
-		"/Users/victor/Box Sync/whttp/whttp.sublime-project",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/ProductList.vue",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/ProductListItemxxxxx.vue",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/ProductListItem.vue",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/main.js",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/App.vue",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/Product.vue",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/ProductListItem.vue",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_04/start/products-events.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/Product.vue",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_06/final/single-file-components/src/App.vue",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_05/final/single-file-components/src/main.js",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch4/04_03/start/products-events.html",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/src/components/ProductListItem.vue",
-		"/Users/victor/MEGA/whttp/vue/vue-cli/package.json",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_05/start/products-events.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_04/start/products-slots.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_02/start/products.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch3/03_01/start/components.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_04/start/lifecycle.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_03/start/virtual-agent.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_02/start/computed.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch2/02_01/start/reactive.html",
-		"/Users/victor/MEGA/whttp/vue/vitamin/Ch1/01_08/start/class.html"
+		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/resource.js"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -836,18 +858,53 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resources/views/pages/headers/about.blade.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"input":
 	{
-		"height": 78.0
+		"height": 79.0
 	},
 	"layout":
 	{
@@ -904,7 +961,7 @@
 	"project": "vic.sublime-project",
 	"replace":
 	{
-		"height": 76.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1032,15 +1089,15 @@
 		[
 			[
 				"",
-				"~/Box Sync/whttp/whttp.sublime-project"
+				"~/MEGA/symfony/MaestroWeb/maestroweb.sublime-project"
+			],
+			[
+				"vic",
+				"~/Box Sync/laravel/vic/vic.sublime-project"
 			],
 			[
 				"lar",
 				"~/Box Sync/laravel/laravel.sublime-project"
-			],
-			[
-				"vic",
-				"~/MEGA/www/laravel/vic/vic.sublime-project"
 			],
 			[
 				"www",
@@ -1107,7 +1164,7 @@
 	},
 	"select_symbol":
 	{
-		"height": 354.0,
+		"height": 170.0,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -1120,7 +1177,7 @@
 				"isAlias"
 			]
 		],
-		"width": 938.0
+		"width": 574.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1130,7 +1187,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 258.0,
+	"side_bar_width": 297.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
