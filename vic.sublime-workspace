@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ob",
+				"ob_clean"
+			],
+			[
 				"is",
 				"isNumber"
 			],
@@ -480,10 +484,6 @@
 				"bootstrap"
 			],
 			[
-				"ob",
-				"ob_start"
-			],
-			[
 				"array_s",
 				"array_sum"
 			],
@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "resources/views/pages/headers/about.blade.php",
-			"settings":
-			{
-				"buffer_size": 891,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -688,17 +680,42 @@
 	[
 		"/Users/victor/MEGA/laravel/vic",
 		"/Users/victor/MEGA/laravel/vic/resources",
-		"/Users/victor/MEGA/laravel/vic/resources/assets",
 		"/Users/victor/MEGA/laravel/vic/resources/views",
 		"/Users/victor/MEGA/laravel/vic/resources/views/layouts",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages/headers"
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages"
 	],
 	"file_history":
 	[
-		"/Users/victor/MEGA/laravel/vic/config/mail.php",
-		"/Users/victor/MEGA/laravel/vic/.env",
-		"/Users/victor/MEGA/laravel/vic/tests/Unit/PagesTest.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/.env.dist",
+		"/Users/victor/MEGA/symfony/MaestroWeb/.env",
+		"/Users/victor/MEGA/www/minimvc/router.php",
+		"/Users/victor/MEGA/www/minimvc/core/Route.php",
+		"/Users/victor/MEGA/www/minimvc/core/bootstrap.php",
+		"/Users/victor/MEGA/www/minimvc/tests/ExampleTest.php",
+		"/Users/victor/MEGA/www/minimvc/composer.json",
+		"/Users/victor/MEGA/www/router/composer.json",
+		"/Users/victor/MEGA/www/minimvc/phpunit.xml",
+		"/Users/victor/MEGA/www/minimvc/public/index.php",
+		"/Users/victor/MEGA/www/minimvc/core/helpers.php",
+		"/Users/victor/MEGA/www/minimvc/.env",
+		"/Users/victor/MEGA/www/minimvc/views/tpl/layouts/app.tpl.php",
+		"/Users/victor/MEGA/www/minimvc/views/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/minimvc/views/html/header.html",
+		"/Users/victor/MEGA/www/minimvc/Homestead.yaml",
+		"/Users/victor/MEGA/www/router/router.sublime-project",
+		"/Users/victor/MEGA/www/router/views/partials/pagination.blade.php",
+		"/Users/victor/MEGA/www/minimvc/controllers/Home.php",
+		"/Users/victor/MEGA/www/minimvc/views/pages/category.blade.php",
+		"/Users/victor/MEGA/www/router/controllers/Home.php",
+		"/Users/victor/MEGA/www/router/views/pages/category.blade.php",
+		"/Users/victor/MEGA/www/router/core/bootstrap.php",
+		"/Users/victor/MEGA/www/minimvc/core/Request.php",
+		"/Users/victor/MEGA/www/minimvc/public/.htaccess",
+		"/Users/victor/MEGA/www/router/core/helpers.php",
+		"/Users/victor/MEGA/www/router/public/.htaccess",
+		"/Users/victor/MEGA/www/minimvc/core/URI_Cache.php",
+		"/Users/victor/MEGA/www/router/core/Request.php",
 		"/Users/victor/MEGA/www/cheat-sheet-subl",
 		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/Movie.php",
 		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/MovieCollection.php",
@@ -796,34 +813,7 @@
 		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/index.html",
 		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/index.js",
 		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductList.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/TopContext.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductListItem.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/store/state.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/src/main.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/package.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/ToDo.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/toastr.js",
-		"/Users/victor/Box Sync/laravel/laravel56vue/resources/assets/js/components/toDo.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Diverse.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/ProductListItem.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Rating.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Product.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/ProductList.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/node_modules/vue-awesome/icons/star-o.js",
-		"/Users/victor/Box Sync/whttp/vue/vue2lar/components.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-prerender-snipcart/src/static/index.html",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/views/Download.vue",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/components/DownloadButton.vue",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/router.js",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/views/About.vue",
-		"/Users/victor/Box Sync/whttp/vue/indicator/src/http.js",
-		"/Users/victor/Box Sync/whttp/vue/indicator/public/index.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-blog-demo/dist/static/api/feed.json",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/router/index.js",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/components/BlogFeed.vue",
-		"/Users/victor/Box Sync/whttp/vue/blog/src/resources/resource.js"
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductList.vue"
 	],
 	"find":
 	{
@@ -855,46 +845,17 @@
 		"whole_word": false,
 		"wrap": false
 	},
+	"folders":
+	[
+		{
+			"path": "/Users/victor/MEGA/laravel/vic"
+		}
+	],
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "resources/views/pages/headers/about.blade.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -958,7 +919,7 @@
 		"height": 210.0
 	},
 	"pinned_build_system": "Packages/User/builds/PSR2.sublime-build",
-	"project": "vic.sublime-project",
+	"project": "",
 	"replace":
 	{
 		"height": 78.0
@@ -1089,7 +1050,7 @@
 		[
 			[
 				"",
-				"~/MEGA/symfony/MaestroWeb/maestroweb.sublime-project"
+				"~/MEGA/symfony/MaestroWeb/untitled.sublime-workspace"
 			],
 			[
 				"vic",

@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 @include('pages.headers.services')
-<section class="cid-qwsz03Q8gE" id="pricing-tables2-13" data-rv-view="804">
+<section class="cid-qwsz03Q8gE" id="pricing-tables2-13">
     <div class="container">
         <div class="media-container-row">
             <div class="plan col-12 mx-2 my-2 justify-content-center col-lg-4">
@@ -23,7 +23,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package contains static website, which includes non-manageable pages, mobile webdesign basic SEO.</li>
+                            <li class="list-group-item">Package contains static website, which includes non-manageable pages, mobile webdesign basic SEO.</li><br><li class="list-group-item">~ $500</li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package includes pages where you can manage a part of them, mobile webdesign, database, basic SEO.</li>
+                            <li class="list-group-item">Package includes pages where you can manage a part of them, mobile webdesign, database, basic SEO.</li><br><li class="list-group-item">~ $900</li>
                         </ul>
                     </div>
                 </div>
@@ -61,9 +61,10 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, SEO.</li>
+                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, SEO.</li><br><li class="list-group-item"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
