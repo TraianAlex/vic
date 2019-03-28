@@ -681,11 +681,15 @@
 		"/Users/victor/MEGA/laravel/vic",
 		"/Users/victor/MEGA/laravel/vic/resources",
 		"/Users/victor/MEGA/laravel/vic/resources/views",
-		"/Users/victor/MEGA/laravel/vic/resources/views/layouts",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages"
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages",
+		"/Users/victor/MEGA/www/vic1"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
+		"/Users/victor/MEGA/www/vic1/services.html",
+		"/Users/victor/MEGA/laravel/vic/.env",
+		"/Users/victor/MEGA/laravel/vic/.env.example",
 		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
 		"/Users/victor/MEGA/symfony/MaestroWeb/.env.dist",
 		"/Users/victor/MEGA/symfony/MaestroWeb/.env",
@@ -809,11 +813,7 @@
 		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/package.json",
 		"/Users/victor/Box Sync/whttp/css/feel-native.html",
 		"/Users/victor/Box Sync/whttp/js/algorithms/factorialize.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/index.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/index.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/ProductList.vue"
+		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue"
 	],
 	"find":
 	{
@@ -849,6 +849,9 @@
 	[
 		{
 			"path": "/Users/victor/MEGA/laravel/vic"
+		},
+		{
+			"path": "/Users/victor/MEGA/www/vic1"
 		}
 	],
 	"groups":
