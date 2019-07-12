@@ -71,50 +71,50 @@
     });
 
     $('.content').on('click', '.js-delete-page', function (e) {
-            e.preventDefault();
-            const $table = $(this).parents('.content').find('table');
-            const ids = [];
-            $table.find('tbody input[type=checkbox]:checked').each(function () {
-                ids.push($(this).data('id'));
-            });
-            if (ids.length > 0) {
-                if (confirm('Are you sure you want to delete this?')) {
-                    let counter = 0;
-                    const promises = [];
-                    ids.every(function (id) {
-                        let request = $.ajax({
-                            url: '/page/' + id + '/delete',
-                            method: 'GET',
-                            dataType: "json",
-                            success: function () {
-                                // const $row = $table.find(id).parents('tr');
-                                // $row.remove();
-                                console.log('Success');
-                            },
-                            error: function () {
-                                counter++;
-                            }
-                        });
-                        $('#'+id).remove();
-                        promises.push(request);
-                        return true;
-                    });
-                    $.when.apply(null, promises)
-                        .done(function () {
-                            $table.parents('.content').find('.js-delete-page').stop().fadeOut(400);
-                            if (counter === 0) {
-                                console.log('Successful!', 'Your pages has been successfully deleted.', 'success');
-                            } else {
-                                console.log('Error!', `${counter} couldn't be deleted, please try again later`, 'error');
-                            }
-                        })
-                        .fail(function () {
-                            console.log('Error!', `Your records couldn't be deleted, please try again later`, 'error');
-                        });
-                }
-            } else {
-                console.log('Error!', 'Please select an item before clicking on the delete button' , 'error');
-            }//if ids where actually selected
+        e.preventDefault();
+        const $table = $(this).parents('.content').find('table');
+        const ids = [];
+        $table.find('tbody input[type=checkbox]:checked').each(function () {
+            ids.push($(this).data('id'));
         });
+        if (ids.length > 0) {
+            if (confirm('Are you sure you want to delete this?')) {
+                let counter = 0;
+                const promises = [];
+                ids.every(function (id) {
+                    let request = $.ajax({
+                        url: '/page/' + id + '/delete',
+                        method: 'GET',
+                        dataType: "json",
+                        success: function () {
+                            // const $row = $table.find(id).parents('tr');
+                            // $row.remove();
+                            console.log('Success');
+                        },
+                        error: function () {
+                            counter++;
+                        }
+                    });
+                    $('#'+id).remove();
+                    promises.push(request);
+                    return true;
+                });
+                $.when.apply(null, promises)
+                    .done(function () {
+                        $table.parents('.content').find('.js-delete-page').stop().fadeOut(400);
+                        if (counter === 0) {
+                            console.log('Successful!', 'Your pages has been successfully deleted.', 'success');
+                        } else {
+                            console.log('Error!', `${counter} couldn't be deleted, please try again later`, 'error');
+                        }
+                    })
+                    .fail(function () {
+                        console.log('Error!', `Your records couldn't be deleted, please try again later`, 'error');
+                    });
+            }
+        } else {
+            console.log('Error!', 'Please select an item before clicking on the delete button' , 'error');
+        }//if ids where actually selected
+    });
 </script>
 @endsection
