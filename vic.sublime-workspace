@@ -519,6 +519,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Http/Controllers/Admin/PageController.php",
+			"settings":
+			{
+				"buffer_size": 3808,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -678,6 +687,11 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/victor/MEGA/laravel/vic",
+		"/Users/victor/MEGA/laravel/vic/app",
+		"/Users/victor/MEGA/laravel/vic/app/Http",
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers",
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Admin"
 	],
 	"file_history":
 	[
@@ -852,8 +866,46 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Http/Controllers/Admin/PageController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"SL.160.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 524.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1048,7 +1100,7 @@
 		[
 			[
 				"",
-				"~/MEGA/whttp/vue/vue.sublime-project"
+				"~/MEGA/www/www.sublime-project"
 			],
 			[
 				"vic",

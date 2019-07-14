@@ -116,5 +116,25 @@
             console.log('Error!', 'Please select an item before clicking on the delete button' , 'error');
         }//if ids where actually selected
     });
+
+function showMessage(message) {
+  if (!("Notification" in window)) {
+    // Code to run if notifications are not
+    // supported by the visitor's browser
+  } else {
+    if (Notification.permission === "granted") {
+      var notification = new Notification(message);
+    } else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(function (permission) {
+        if (permission === "granted") {
+          var notification = new Notification(message);
+        }
+  });
+    }
+  }
+}
+
+showMessage("This is an test message.");
+
 </script>
 @endsection
