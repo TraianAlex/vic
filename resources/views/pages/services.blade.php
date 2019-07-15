@@ -80,3 +80,8 @@
     </div>
 </section>
 @endsection
+@section('script')
+<script>
+    showMessage("Browser notification: This is a test massage in services page");
+</script>
+@endsection

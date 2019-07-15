@@ -39,8 +39,26 @@
     <input name="animation" type="hidden">
   <script src="{{ asset('js/turbolinks.js') }}" defer></script>
   <script src="{{ mix('js/all.js') }}" defer data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
-  @yield('script')
   <script src="{{ mix('js/app.js') }}" data-turbolinks-eval="false" data-turbolinks-track="reload"></script>
+  <script defer data-turbolinks-eval="false" data-turbolinks-track="reload">
+    function showMessage(message) {
+      if (!("Notification" in window)) {
+        // Code to run if notifications are not
+        // supported by the visitor's browser
+      } else {
+        if (Notification.permission === "granted") {
+          var notification = new Notification(message);
+        } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(function (permission) {
+            if (permission === "granted") {
+              var notification = new Notification(message);
+            }
+      });
+        }
+      }
+    }
+  </script>
+  @yield('script')
   <script defer data-turbolinks-eval="false" data-turbolinks-track="reload">
   (function(){
       var submitAjaxRequest = function(e){
