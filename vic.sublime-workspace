@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Admin/PageController.php",
+			"file": "resources/views/pages/services.blade.php",
 			"settings":
 			{
-				"buffer_size": 3808,
+				"buffer_size": 4475,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -687,14 +687,21 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/MEGA/laravel/vic",
-		"/Users/victor/MEGA/laravel/vic/app",
-		"/Users/victor/MEGA/laravel/vic/app/Http",
-		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers",
-		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Admin"
+		"/Users/victor/MEGA/laravel/vic"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app.blade.php",
+		"/Users/victor/MEGA/laravel/vic/resources/assets/js/bootstrap.js",
+		"/Users/victor/MEGA/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/page/index.blade.php",
+		"/Users/victor/MEGA/laravel/vic/public/js/app.js",
+		"/Users/victor/MEGA/laravel/vic/resources/views/scaffold-interface/layouts/defaultMaterialize.blade.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app-js.blade.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app-admin.blade.php",
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Admin/PageController.php",
+		"/Users/victor/MEGA/laravel/vic/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/Users/victor/MEGA/laravel/vic/app/Resources/Pagination.php",
 		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
 		"/Users/victor/MEGA/www/vic1/services.html",
 		"/Users/victor/MEGA/laravel/vic/.env",
@@ -811,22 +818,11 @@
 		"/Users/victor/Box Sync/laravel/laravel56vue/routes/web.php",
 		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Middleware/VerifyCsrfToken.php",
 		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Kernel.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Providers/RouteServiceProvider.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/app/Providers/RouteServiceProvider.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/config/cors.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/config/cors.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/-12-01-2017-Purchase-Sale-System.png",
-		"/Users/victor/Box Sync/laravel/laravel56vue/resources/views/pages/upload.blade.php",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/manifest.json",
-		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/src/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/package.json",
-		"/Users/victor/Box Sync/whttp/css/feel-native.html",
-		"/Users/victor/Box Sync/whttp/js/algorithms/factorialize.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue"
+		"/Users/victor/Box Sync/laravel/laravel56vue/app/Providers/RouteServiceProvider.php"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
@@ -840,6 +836,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"granted",
+			"blinking"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -861,6 +859,9 @@
 		},
 		{
 			"path": "/Users/victor/MEGA/www/vic1"
+		},
+		{
+			"path": "/Users/victor/pCloud Drive/setup"
 		}
 	],
 	"groups":
@@ -871,36 +872,36 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Admin/PageController.php",
+					"file": "resources/views/pages/services.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3808,
+						"buffer_size": 4475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								4375,
+								4452
 							]
 						],
 						"settings":
 						{
-							"SL.160.region_keys":
+							"SL.220.region_keys":
 							[
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 524.0,
+						"translation.y": 2273.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1100,7 +1101,7 @@
 		[
 			[
 				"",
-				"~/MEGA/www/www.sublime-project"
+				"~/pCloud Drive/htbase/htbase/htbase.sublime-project"
 			],
 			[
 				"vic",
