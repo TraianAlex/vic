@@ -9,12 +9,12 @@
 <section class="features15 cid-qBPIRQcRcF" id="features15-1o" data-rv-view="848">
     <div class="container">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Website Development</h2>
-        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style">Hey I'm Traian, accountant turned web developer. My passion for coding and my attention to detail gives me the ability to pay attention to every inch to ensure that any web app I develop is amazing.<div>I'm self-taught and always growing my skills, learning something new every day. The back end for this website is Laravel 55, css framework is Bootstrap4, and all pages are making ajax calls. I am using for admin area Bootstrap3 and AdminLTE. Also I am using pusher for notifications. It is built for test and practice.</div><br><div><br></div></h3>
+        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style">Hey I'm Traian, accountant turned web developer. My passion for coding and my attention to detail gives me the ability to pay attention to every inch to ensure that any web app I develop is amazing.<div>I'm self-taught and always growing my skills, learning something new every day. The back end for this website is Laravel, CSS framework is Bootstrap4. I am using for admin area AdminLTE. It is built for test and practice.</div><br><div><br></div></h3>
         <div class="media-container-row container pt-5 mt-2">
-            <div class="col-12 col-md-6 mb-4 col-lg-4">
+            <div class="col-12 col-md-6 mb-4 col-lg-3">
                 <div class="card flip-card p-5 align-center">
                     <div class="card-front card_cont">
-                        <a href="http://danceart.ca"><img src="assets/images/danceart-s-640x388.jpg" alt="Traian Alexandru" title="Traian Alexandru" media-simple="true"></a>
+                        <a href="http://danceart.ca"><img src="assets/images/danceart-s-640x388.jpg" alt="Traian Alexandru" title="Traian Alexandru"></a>
                     </div>
                     <div class="card_back card_cont">
                         <h4 class="card-title display-5 py-2 mbr-fonts-style">
@@ -25,22 +25,25 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-4 col-lg-4">
+
+            <div class="col-12 col-md-6 mb-4 col-lg-3">
+
                 <div class="card flip-card p-5 align-center">
                     <div class="card-front card_cont">
-                        <a href="http://petraesthetics.com"><img src="assets/images/petraesthetics-s-640x362.jpg" alt="Traian Alexandru" title="Traian Alexandru" media-simple="true"></a>
+                        <a href="http://petraesthetics.com"><img src="assets/images/petraesthetics-s-640x362.jpg" alt="Traian Alexandru" title="Traian Alexandru"></a>
                     </div>
                     <div class="card_back card_cont">
                         <h4 class="card-title py-2 mbr-fonts-style display-5">
                             <a href="http://petraesthetics.com" target="_blank">Petraesthetics.com</a></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Holistic European beauty services and holistic retreat<br>Using elements of: Point-pressure, aromatherapy, reflexology, and transfer of positive energy flow.&nbsp;</p>
+                        <p class="mbr-text mbr-fonts-style display-7">Holistic europen beauty services and holistic retreat<br>Using elements of: Point-pressure, aromatherapy, reflexology, and transfer of positive energy flow.&nbsp;</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-4 col-lg-4">
+
+            <div class="col-12 col-md-6 mb-4 col-lg-3">
                 <div class="card flip-card p-5 align-center">
                     <div class="card-front card_cont">
-                        <a href="https://prolive.vic.com.ro"><img src="assets/images/prolive-s-640x522.jpg" alt="Traian Alexandru" title="Traian Alexandru" media-simple="true"></a>
+                        <a href="https://prolive.vic.com.ro"><img src="assets/images/prolive-s-640x522.jpg" alt="Traian Alexandru" title="Traian Alexandru"></a>
                     </div>
                     <div class="card_back card_cont">
                         <h4 class="card-title py-2 mbr-fonts-style display-5">
@@ -48,6 +51,18 @@
                         <p class="mbr-text mbr-fonts-style display-7">
                             he products range PROLIVE, which is based on organic olive oil and organic aloe vera oil.<br>Demo site
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4 col-lg-3">
+                <div class="card flip-card p-5 align-center">
+                    <div class="card-front card_cont">
+                        <a href="http://truereiki.com"><img src="assets/images/screenshot-300x151.png" alt="Traian Alexandru" title="Traian Alexandru"></a>
+                    </div>
+                    <div class="card_back card_cont">
+                        <h4 class="card-title py-2 mbr-fonts-style display-5"><a href="http://truereiki.com" target="_blank">True Reiki</a></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">The Canadian Institute for Energy Science</p>
                     </div>
                 </div>
             </div>
