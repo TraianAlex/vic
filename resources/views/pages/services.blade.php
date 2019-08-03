@@ -23,7 +23,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package contains static website, which includes non-manageable pages, mobile webdesign basic SEO.</li><br><li class="list-group-item">~ $500</li>
+                            <li class="list-group-item">Package contains static website, which includes non-manageable pages, mobile webdesign, sitemap, progressive web app.</li><br><li class="list-group-item">~ $500</li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package includes pages where you can manage a part of them, mobile webdesign, database, basic SEO.</li><br><li class="list-group-item">~ $900</li>
+                            <li class="list-group-item">Package includes pages where you can manage a part of them, mobile webdesign, database, sitemap, progressive webb app.</li><br><li class="list-group-item">~ $900</li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, SEO.</li><br><li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, sitemap, progressive web app./li><br><li class="list-group-item"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
 

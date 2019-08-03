@@ -520,10 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/pages/services.blade.php",
+			"file": "/Users/victor/MEGA/www/vic1/index.html",
 			"settings":
 			{
-				"buffer_size": 4475,
+				"buffer_size": 16968,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/pages/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 5388,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -687,10 +696,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/MEGA/laravel/vic"
+		"/Users/victor/MEGA/laravel/vic",
+		"/Users/victor/MEGA/laravel/vic/resources",
+		"/Users/victor/MEGA/laravel/vic/resources/views",
+		"/Users/victor/MEGA/www/vic1"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
 		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app.blade.php",
 		"/Users/victor/MEGA/laravel/vic/resources/assets/js/bootstrap.js",
 		"/Users/victor/MEGA/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
@@ -702,7 +715,6 @@
 		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Admin/PageController.php",
 		"/Users/victor/MEGA/laravel/vic/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
 		"/Users/victor/MEGA/laravel/vic/app/Resources/Pagination.php",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
 		"/Users/victor/MEGA/www/vic1/services.html",
 		"/Users/victor/MEGA/laravel/vic/.env",
 		"/Users/victor/MEGA/laravel/vic/.env.example",
@@ -822,7 +834,7 @@
 	],
 	"find":
 	{
-		"height": 76.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -867,29 +879,66 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/pages/services.blade.php",
+					"file": "/Users/victor/MEGA/www/vic1/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4475,
+						"buffer_size": 16968,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4375,
-								4452
+								6333,
+								6757
 							]
 						],
 						"settings":
 						{
-							"SL.220.region_keys":
+							"SL.23.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4075.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/pages/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1160,
+								1160
+							]
+						],
+						"settings":
+						{
+							"SL.24.region_keys":
 							[
 							],
 							"git_gutter_is_enabled": true,
@@ -901,7 +950,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2273.0,
+						"translation.y": 307.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -912,7 +961,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -973,7 +1022,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 78.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
