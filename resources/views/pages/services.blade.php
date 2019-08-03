@@ -61,7 +61,7 @@
                 <div class="plan-body">
                     <div class="plan-list align-center">
                         <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, sitemap, progressive web app./li><br><li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                            <li class="list-group-item">Package includes manageable pages and eCommerce features, mobile webdesign, database, sitemap, progressive web app.</li><br><li class="list-group-item"><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
 
