@@ -49,6 +49,9 @@
                             <div class="col-md-12">
                                 <textarea class="form-control input" name="message" rows="3" placeholder="Message" style="resize:none"></textarea>
                             </div>
+                            <div class="col-md-12">
+                                {!! $captcha !!}
+                            </div>
                             <div class="input-group-btn col-md-12" style="margin-top: 10px;">
                                 <button type="submit" class="btn btn-form btn-warning display-4">SEND MESSAGE</button>
                             </div>

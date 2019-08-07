@@ -520,20 +520,18 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/victor/MEGA/www/vic1/index.html",
+			"file": "app/Mail/ContactForm.php",
 			"settings":
 			{
-				"buffer_size": 16968,
-				"encoding": "UTF-8",
+				"buffer_size": 718,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/pages/index.blade.php",
+			"file": "app/Http/Controllers/Frontend/PagesController.php",
 			"settings":
 			{
-				"buffer_size": 5388,
-				"encoding": "UTF-8",
+				"buffer_size": 2399,
 				"line_ending": "Unix"
 			}
 		}
@@ -697,13 +695,20 @@
 	"expanded_folders":
 	[
 		"/Users/victor/MEGA/laravel/vic",
-		"/Users/victor/MEGA/laravel/vic/resources",
-		"/Users/victor/MEGA/laravel/vic/resources/views",
-		"/Users/victor/MEGA/www/vic1"
+		"/Users/victor/MEGA/laravel/vic/app",
+		"/Users/victor/MEGA/laravel/vic/app/Http",
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers",
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Frontend",
+		"/Users/victor/MEGA/laravel/vic/app/Mail"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Frontend/HomeController.php",
+		"/Users/victor/MEGA/laravel/vic/app/Resources/RussianCaching.php",
+		"/Users/victor/MEGA/laravel/vic/app/Resources/Pagination.php",
 		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
+		"/Users/victor/MEGA/www/vic1/index.html",
 		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app.blade.php",
 		"/Users/victor/MEGA/laravel/vic/resources/assets/js/bootstrap.js",
 		"/Users/victor/MEGA/laravel/vic/resources/views/scaffold-interface/layouts/app.blade.php",
@@ -714,11 +719,9 @@
 		"/Users/victor/MEGA/laravel/vic/resources/views/layouts/app-admin.blade.php",
 		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Admin/PageController.php",
 		"/Users/victor/MEGA/laravel/vic/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
-		"/Users/victor/MEGA/laravel/vic/app/Resources/Pagination.php",
 		"/Users/victor/MEGA/www/vic1/services.html",
 		"/Users/victor/MEGA/laravel/vic/.env",
 		"/Users/victor/MEGA/laravel/vic/.env.example",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
 		"/Users/victor/MEGA/symfony/MaestroWeb/.env.dist",
 		"/Users/victor/MEGA/symfony/MaestroWeb/.env",
 		"/Users/victor/MEGA/www/minimvc/router.php",
@@ -827,10 +830,7 @@
 		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/file-upload.service.js",
 		"/Users/victor/Box Sync/laravel/laravel56vue/storage/logs/laravel.log",
 		"/Users/victor/Box Sync/laravel/laravel56vue/routes/api.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/routes/web.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Middleware/VerifyCsrfToken.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Kernel.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Providers/RouteServiceProvider.php"
+		"/Users/victor/Box Sync/laravel/laravel56vue/routes/web.php"
 	],
 	"find":
 	{
@@ -884,36 +884,36 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/victor/MEGA/www/vic1/index.html",
+					"file": "app/Mail/ContactForm.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16968,
+						"buffer_size": 718,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6333,
-								6757
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"SL.23.region_keys":
+							"SL.26.region_keys":
 							[
 							],
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4075.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -921,36 +921,36 @@
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/pages/index.blade.php",
+					"file": "app/Http/Controllers/Frontend/PagesController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5388,
+						"buffer_size": 2399,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1160,
-								1160
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"SL.24.region_keys":
+							"SL.31.region_keys":
 							[
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 307.0,
+						"translation.y": 1634.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
