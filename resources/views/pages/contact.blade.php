@@ -33,7 +33,7 @@
                         </h5>
                         <p class="mbr-text align-left mbr-fonts-style display-7">
                             Phone: +1 (647) 716 1744&nbsp;<br>
-                            Email: info@vic.com.ro</p>
+                            Email: <script>let part1 = "info";let part2 = Math.pow(2,6);let part3 = String.fromCharCode(part2);let part4 = "vic.com.ro";let part5 = part1 + String.fromCharCode(part2) + part4;document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");</script></p>
                     </div>
                 </div>
                 <div>
