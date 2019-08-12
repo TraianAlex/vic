@@ -531,7 +531,16 @@
 			"file": "app/Http/Controllers/Frontend/PagesController.php",
 			"settings":
 			{
-				"buffer_size": 2399,
+				"buffer_size": 3290,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/victor/MEGA/www/vic1/contact.html",
+			"settings":
+			{
+				"buffer_size": 12694,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -694,12 +703,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/MEGA/laravel/vic",
-		"/Users/victor/MEGA/laravel/vic/app",
-		"/Users/victor/MEGA/laravel/vic/app/Http",
-		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers",
-		"/Users/victor/MEGA/laravel/vic/app/Http/Controllers/Frontend",
-		"/Users/victor/MEGA/laravel/vic/app/Mail"
+		"/Users/victor/MEGA/www/vic1"
 	],
 	"file_history":
 	[
@@ -879,7 +883,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -916,7 +920,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -925,7 +929,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2399,
+						"buffer_size": 3290,
 						"regions":
 						{
 						},
@@ -951,6 +955,39 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1634.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/victor/MEGA/www/vic1/contact.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 12694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5895,
+								6024
+							]
+						],
+						"settings":
+						{
+							"SL.17.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3900.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
