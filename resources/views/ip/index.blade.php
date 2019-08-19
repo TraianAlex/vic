@@ -52,7 +52,7 @@
     <a class="btn btn-success js-delete-page"><i class="fa fa-trash font-size-20"></i> Delete</a>
     <br>
     <br>
-    <table class = "table table-striped table-bordered table-hover" style = 'background:#fff'>
+    <table class = "table table-striped table-bordered table-hover data-table" style = 'background:#fff'>
         <thead>
             <th>
                 <input id="checkbox-all" type="checkbox">
@@ -62,7 +62,7 @@
         </thead>
         <tbody>
             @foreach($ips as $ip)
-            <tr id="{!!$ip->id!!}>
+            <tr id="{!!$ip->id!!}">
                 <td>
                     <input id="{!!$ip->id!!}" name="{!!$ip->page!!}" type="checkbox" data-id="{!!$ip->id!!}">
                 </td>
