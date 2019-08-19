@@ -95,7 +95,8 @@
 			"file": "resources/views/pages/contact.blade.php",
 			"settings":
 			{
-				"buffer_size": 3761,
+				"buffer_size": 4023,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -132,10 +133,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/talexandru/pCloud Drive/mega/laravel/vic",
-		"/Users/talexandru/pCloud Drive/mega/laravel/vic/resources",
-		"/Users/talexandru/pCloud Drive/mega/laravel/vic/resources/views",
-		"/Users/talexandru/pCloud Drive/mega/laravel/vic/resources/views/pages"
+		"/Users/talexandru/pCloud Drive/mega/laravel/vic"
 	],
 	"file_history":
 	[
@@ -214,7 +212,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -251,29 +249,38 @@
 				{
 					"buffer": 0,
 					"file": "resources/views/pages/contact.blade.php",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3761,
+						"buffer_size": 4023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1757,
+								1757
 							]
 						],
 						"settings":
 						{
+							"SL.188.region_keys":
+							[
+							],
+							"SL.60.region_keys":
+							[
+							],
 							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 951.0,
+						"translation.y": 816.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -284,7 +291,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -329,7 +336,7 @@
 	"project": "vic.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":

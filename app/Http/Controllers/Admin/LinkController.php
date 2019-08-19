@@ -25,7 +25,7 @@ class LinkController extends Controller
     public function index()
     {
         $title = 'Index - link';
-        $links = Link::latest()->paginate(15);
+        $links = Link::latest()->paginate(50);
         return view('link.index',compact('links','title'));
     }
 

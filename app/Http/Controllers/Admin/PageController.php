@@ -25,7 +25,7 @@ class PageController extends Controller
     public function index()
     {
         $title = 'Index - page';
-        $pages = Page::orderBy('page')->paginate(50);
+        $pages = Page::orderBy('page')->paginate(100);
         return view('page.index', compact('pages', 'title'));
     }
 
@@ -51,10 +51,7 @@ class PageController extends Controller
     {
         $page = new Page();
 
-
         $page->page = $request->page;
-
-
 
         $page->save();
 
@@ -105,7 +102,6 @@ class PageController extends Controller
             return URL::to('page/'. $id . '/edit');
         }
 
-
         $page = Page::findOrfail($id);
         return view('page.edit', compact('title', 'page'));
     }
@@ -122,7 +118,6 @@ class PageController extends Controller
         $page = Page::findOrfail($id);
 
         $page->page = $request->page;
-
 
         $page->save();
 

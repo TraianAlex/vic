@@ -49,7 +49,7 @@
                         <h4 class="card-title py-2 mbr-fonts-style display-5">
                             <a href="https://prolive.vic.com.ro" target="_blank">Prolive Cosmetics</a></h4>
                         <p class="mbr-text mbr-fonts-style display-7">
-                            he products range PROLIVE, which is based on organic olive oil and organic aloe vera oil.<br>Demo site
+                            The products range PROLIVE, which is based on organic olive oil and organic aloe vera oil.<br>Demo site
                         </p>
                     </div>
                 </div>
