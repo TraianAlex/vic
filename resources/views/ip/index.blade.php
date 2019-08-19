@@ -123,7 +123,7 @@
                     const promises = [];
                     ids.every(function (id) {
                         let request = $.ajax({
-                            url: '/ip/' + id + '/deleteMsg',
+                            url: '/ip/' + id + '/delete',
                             method: 'GET',
                             dataType: "json",
                             success: function () {
