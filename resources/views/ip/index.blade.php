@@ -156,8 +156,6 @@
                 console.log('Error!', 'Please select an item before clicking on the delete button' , 'error');
             }//if ids where actually selected
         });
-
-        showMessage("This is an test message in admin page.");
     </script>
 @endsection
 
