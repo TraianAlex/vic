@@ -30,7 +30,7 @@
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
                         PHP</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
-                        Laravel</p>
+                        Laravel/Symfony</p>
                 </div>
             </div>
             <div class="card p-3 col-12 col-md-6 col-lg-3">
@@ -41,7 +41,7 @@
                     <h4 class="card-title py-3 mbr-fonts-style display-5">
                         JS</h4>
                     <p class="mbr-text mbr-fonts-style display-7">
-                       JQuery/Vue/Angular</p>
+                       JQuery/React</p>
                 </div>
             </div>
         </div>

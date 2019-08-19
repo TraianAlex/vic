@@ -4,521 +4,102 @@
 		"selected_items":
 		[
 			[
-				"ob",
-				"ob_clean"
+				"con",
+				"contents2"
 			],
 			[
-				"is",
-				"isNumber"
+				"de",
+				"deserialized"
 			],
 			[
-				"sa",
-				"safe"
+				"arra",
+				"array3"
 			],
 			[
-				"safe",
-				"safeNum"
-			],
-			[
-				"co",
-				"const"
-			],
-			[
-				"res",
-				"response"
-			],
-			[
-				"cu",
-				"currentStatus"
-			],
-			[
-				"fil",
-				"fileList"
-			],
-			[
-				"test",
-				"testFile"
-			],
-			[
-				"form",
-				"formData"
+				"dif",
+				"diff21"
 			],
 			[
 				"di",
-				"display"
+				"diff13"
 			],
 			[
-				"get",
-				"getProducts"
+				"find",
+				"findSix2"
 			],
 			[
-				"vue",
-				"vue-toastr"
+				"diff",
+				"diff4"
 			],
 			[
-				"v",
-				"views"
+				"result",
+				"resultFromNode"
 			],
 			[
-				"active",
-				"activeClass"
+				"re",
+				"result1"
 			],
 			[
-				"nav",
-				"nav-link"
+				"nodeList",
+				"nodesListToDetach"
 			],
 			[
-				"com",
-				"components"
+				"count",
+				"countNodeRoles"
 			],
 			[
-				"Download",
-				"DownloadButton"
+				"node",
+				"nodeList"
 			],
 			[
-				"Dow",
-				"DownloadButton"
+				"resu",
+				"resultFromNode"
 			],
 			[
-				"Pro",
-				"ProductList"
+				"resultFr",
+				"resultFromCluster"
 			],
 			[
-				"pro",
-				"product-list-item"
+				"kube",
+				"kube-master"
 			],
 			[
-				"remove",
-				"removeMethod"
+				"res",
+				"resultFromNode"
 			],
 			[
-				"product",
-				"product-list"
+				"order",
+				"order_func"
 			],
 			[
-				"the",
-				"theProducts"
+				"print",
+				"print_r"
 			],
 			[
-				"f",
-				"frameworks"
+				"for",
+				"foreach\tforeach …"
 			],
 			[
-				"sq",
-				"squareClass"
+				"getPro",
+				"getProperty1"
 			],
 			[
-				"dash",
-				"dashed-border"
-			],
-			[
-				"select",
-				"selectedInterests"
-			],
-			[
-				"intere",
-				"Interests"
-			],
-			[
-				"to",
-				"toFixed"
-			],
-			[
-				"total",
-				"totalCells"
-			],
-			[
-				"perce",
-				"percentageReport2"
-			],
-			[
-				"all",
-				"allR"
-			],
-			[
-				"tota",
-				"totalC"
-			],
-			[
-				"cons",
-				"console"
-			],
-			[
-				"add",
-				"addRock"
-			],
-			[
-				"All",
-				"allRocks"
-			],
-			[
-				"GR",
-				"grid"
-			],
-			[
-				"lef",
-				"leftUp"
-			],
-			[
-				"left",
-				"leftUp"
-			],
-			[
-				"new",
-				"newCell"
-			],
-			[
-				"righ",
-				"rightUp"
-			],
-			[
-				"right",
-				"rightDown"
-			],
-			[
-				"col",
-				"colT"
-			],
-			[
-				"newC",
-				"newCol"
-			],
-			[
-				"row",
-				"rowT"
-			],
-			[
-				"cc",
-				"cc"
-			],
-			[
-				"al",
-				"allSymbols"
-			],
-			[
-				"wi",
-				"widthTarget"
-			],
-			[
-				"marg",
-				"margin-bottom"
-			],
-			[
-				"cou",
-				"onCouponApplied"
-			],
-			[
-				"edit",
-				"editIndex"
-			],
-			[
-				"hei",
-				"height"
-			],
-			[
-				"tas",
-				"tasks"
-			],
-			[
-				"do",
-				"document"
-			],
-			[
-				"set",
-				"setCookie"
-			],
-			[
-				"ligh",
-				"lightColumn"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"w",
-				"width"
-			],
-			[
-				"table",
-				"table3"
-			],
-			[
-				"light",
-				"lightRow"
-			],
-			[
-				"create",
-				"createSQL"
-			],
-			[
-				"con",
-				"console"
-			],
-			[
-				"db",
-				"dbName"
-			],
-			[
-				"Web",
-				"Websql"
-			],
-			[
-				"dis",
-				"dispResults"
-			],
-			[
-				"loca",
-				"localStorage"
-			],
-			[
-				"lo",
-				"localStorage"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"in",
-				"insertList"
-			],
-			[
-				"heigh",
-				"heightT"
-			],
-			[
-				"cell",
-				"cellArr"
-			],
-			[
-				"todo",
-				"todo_descr"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"margin",
-				"margin-left"
-			],
-			[
-				"cl",
-				"clear"
-			],
-			[
-				"Auth",
-				"Auth::user\tGet the currently authenticated user."
-			],
-			[
-				"qu",
-				"quality"
-			],
-			[
-				"q",
-				"quality"
-			],
-			[
-				"attach",
-				"attachObservers"
-			],
-			[
-				"obser",
-				"observable"
-			],
-			[
-				"obse",
-				"observer"
-			],
-			[
-				"is_a",
-				"is_array"
-			],
-			[
-				"setUp",
-				"setUpDatabase"
-			],
-			[
-				"Cu",
-				"Customer"
-			],
-			[
-				"Cus",
-				"CustomerIsGold"
-			],
-			[
-				"gold",
-				"goldCustomer"
-			],
-			[
-				"Customer",
-				"CustomerIsGold"
-			],
-			[
-				"Custome",
-				"CustomerIsGold"
-			],
-			[
-				"succ",
-				"succeedWith"
-			],
-			[
-				"Home",
-				"HomeChecker"
-			],
-			[
-				"che",
-				"check"
-			],
-			[
-				"Loog",
-				"LogToFile"
-			],
-			[
-				"Kindle",
-				"KindleAdapter"
-			],
-			[
-				"Book",
-				"BookInterface"
-			],
-			[
-				"Basic",
-				"BasicInspection"
-			],
-			[
-				"car",
-				"carsService"
-			],
-			[
-				"c",
-				"con\tfunction __construct"
-			],
-			[
-				"Test",
-				"TestMiddleware"
-			],
-			[
-				"unset",
-				"session_unset"
-			],
-			[
-				"var",
-				"var_dump"
-			],
-			[
-				"sort",
-				"sortData"
-			],
-			[
-				"str_re",
-				"str_replace"
-			],
-			[
-				"tra",
-				"transformation"
-			],
-			[
-				"ca",
-				"category"
-			],
-			[
-				"req",
-				"request"
-			],
-			[
-				"bu",
-				"buyers"
-			],
-			[
-				"convert",
-				"convertValidationExceptionToResponse"
-			],
-			[
-				"Va",
-				"ValidationException"
-			],
-			[
-				"strto",
-				"strtolower"
-			],
-			[
-				"genera",
-				"generateVerificationCode"
-			],
-			[
-				"fore",
-				"foreign"
-			],
-			[
-				"stri",
-				"string"
-			],
-			[
-				"veri",
-				"verification_token"
-			],
-			[
-				"Route",
-				"Route::resource\tRoute to a RESTful Controller"
-			],
-			[
-				"rou",
-				"Route"
-			],
-			[
-				"Data",
-				"DatabaseMigrations"
-			],
-			[
-				"passwo",
-				"password_confirmation"
-			],
-			[
-				"font-s",
-				"font-size"
-			],
-			[
-				"boo",
-				"bootstrap"
-			],
-			[
-				"array_s",
-				"array_sum"
-			],
-			[
-				"json_",
-				"json_encode"
-			],
-			[
-				"end",
-				"endDate"
-			],
-			[
-				"pa",
-				"params"
-			],
-			[
-				"pass",
-				"password"
-			],
-			[
-				"array_m",
-				"array_merge"
-			],
-			[
-				"preg",
-				"preg_match"
-			],
-			[
-				"file",
-				"fileinf"
+				"itera",
+				"iterator_to_array"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "resources/views/pages/contact.blade.php",
+			"settings":
+			{
+				"buffer_size": 4023,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -527,144 +108,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"",
-				"ANF: Rename File"
-			],
-			[
-				"te",
-				"Terminal View: Open Bash Terminal"
-			],
-			[
-				"term",
-				"Terminal View: Open Bash Terminal"
-			],
-			[
-				"Package Control: ins",
-				"Package Control: Install Package"
-			],
-			[
-				"in",
-				"Snippet: #!/usr/bin/env"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"artisan ",
-				"Laravel Artisan 5: List"
-			],
-			[
-				"copy",
-				"ANF: Copy Current File"
-			],
-			[
-				"new",
-				"ANF: New File"
-			],
-			[
-				"php",
-				"PHPUnit: Run"
-			],
-			[
-				"Package Control: insta",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: lis",
-				"Package Control: List Packages"
-			],
-			[
-				"del",
-				"ANF: Delete Current File"
-			],
-			[
-				"ne",
-				"ANF: New File"
-			],
-			[
-				"art",
-				"Laravel Artisan 5: Make:Test"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"re",
-				"ANF: Rename File"
-			],
-			[
-				"renam",
-				"ANF: Rename File"
-			],
-			[
-				"Snippet:",
-				"Snippet: Comment"
-			],
-			[
-				"Snippet: ",
-				"Snippet: PHP Method"
-			],
-			[
-				" file",
-				"ANF: New File"
-			],
-			[
-				"add",
-				"Project: Add Folder"
-			],
-			[
-				"Snippet: fun",
-				"Snippet: Function"
-			],
-			[
-				"tabs",
-				"View: Toggle Tabs"
-			],
-			[
-				"tab",
-				"View: Toggle Tabs"
-			],
-			[
-				"rename",
-				"ANF: Rename File"
-			],
-			[
-				"dele",
-				"ANF: Delete Current File"
-			],
-			[
-				"delete",
-				"ANF: Delete Current File"
-			],
-			[
-				"list pa",
-				"Package Control: List Packages"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
-			]
 		],
-		"width": 480.0
+		"width": 0.0
 	},
 	"console":
 	{
-		"height": 174.0,
+		"height": 0.0,
 		"history":
 		[
-			"phpunit",
-			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -678,145 +133,90 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/talexandru/pCloud Drive/mega/laravel/vic"
 	],
 	"file_history":
 	[
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
-		"/Users/victor/MEGA/www/vic1/services.html",
-		"/Users/victor/MEGA/laravel/vic/.env",
-		"/Users/victor/MEGA/laravel/vic/.env.example",
-		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
-		"/Users/victor/MEGA/symfony/MaestroWeb/.env.dist",
-		"/Users/victor/MEGA/symfony/MaestroWeb/.env",
-		"/Users/victor/MEGA/www/minimvc/router.php",
-		"/Users/victor/MEGA/www/minimvc/core/Route.php",
-		"/Users/victor/MEGA/www/minimvc/core/bootstrap.php",
-		"/Users/victor/MEGA/www/minimvc/tests/ExampleTest.php",
-		"/Users/victor/MEGA/www/minimvc/composer.json",
-		"/Users/victor/MEGA/www/router/composer.json",
-		"/Users/victor/MEGA/www/minimvc/phpunit.xml",
-		"/Users/victor/MEGA/www/minimvc/public/index.php",
-		"/Users/victor/MEGA/www/minimvc/core/helpers.php",
-		"/Users/victor/MEGA/www/minimvc/.env",
-		"/Users/victor/MEGA/www/minimvc/views/tpl/layouts/app.tpl.php",
-		"/Users/victor/MEGA/www/minimvc/views/layouts/app.blade.php",
-		"/Users/victor/MEGA/www/minimvc/views/html/header.html",
-		"/Users/victor/MEGA/www/minimvc/Homestead.yaml",
-		"/Users/victor/MEGA/www/router/router.sublime-project",
-		"/Users/victor/MEGA/www/router/views/partials/pagination.blade.php",
-		"/Users/victor/MEGA/www/minimvc/controllers/Home.php",
-		"/Users/victor/MEGA/www/minimvc/views/pages/category.blade.php",
-		"/Users/victor/MEGA/www/router/controllers/Home.php",
-		"/Users/victor/MEGA/www/router/views/pages/category.blade.php",
-		"/Users/victor/MEGA/www/router/core/bootstrap.php",
-		"/Users/victor/MEGA/www/minimvc/core/Request.php",
-		"/Users/victor/MEGA/www/minimvc/public/.htaccess",
-		"/Users/victor/MEGA/www/router/core/helpers.php",
-		"/Users/victor/MEGA/www/router/public/.htaccess",
-		"/Users/victor/MEGA/www/minimvc/core/URI_Cache.php",
-		"/Users/victor/MEGA/www/router/core/Request.php",
-		"/Users/victor/MEGA/www/cheat-sheet-subl",
-		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/Movie.php",
-		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/MovieCollection.php",
-		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/spec/MovieCollectionSpec.php",
-		"/Users/victor/MEGA/www/laracast/git/index.txt",
-		"/Users/victor/MEGA/www/laracast/git/new-feature.txt",
-		"/Users/victor/MEGA/www/www.sublime-project",
-		"/Users/victor/MEGA/whttp/js/maybe/utils.js",
-		"/Users/victor/MEGA/whttp/js/maybe/less1/index.js",
-		"/Users/victor/MEGA/whttp/js/maybe/less2/index.js",
-		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
-		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
-		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/TerminalView/README.md",
-		"/Users/victor/Box Sync/whttp/css/drop-nav2.html",
-		"/Users/victor/Box Sync/whttp/css/dropdown-nav.html",
-		"/Users/victor/Box Sync/whttp/framework7/package.json",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.8/Code/frontend/config/dev.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 5/Video 5.6/Code/frontend/config/dev.env.js",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/composer.json",
-		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/src/bootstrap.js",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env",
-		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/prod.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/dev.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.9/Code/frontend/src/pages/artists/edit.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/src/layouts/base.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/index.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/src/pages/artists/create.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/package.json",
-		"/Users/victor/Box Sync/whttp/vue/music/build/webpack.dev.conf.js",
-		"/Users/victor/Box Sync/whttp/vue/music/config/index.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.8/Code/frontend/config/dev.env.js",
-		"/Users/victor/Box Sync/whttp/vue/music/src/pages/albums/index.vue",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.6/Code/frontend/src/pages/artists/index.vue",
-		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/app.styl",
-		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/variables.styl",
-		"/Users/victor/Box Sync/whttp/vue/music/src/assets/stylus/config/functions.styl",
-		"/Users/victor/Box Sync/whttp/vue/music/.postcssrc.js",
-		"/Users/victor/Box Sync/whttp/vue/music/.babelrc",
-		"/Users/victor/Box Sync/whttp/vue/music/src/bootstrap.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 2/Video 2.5/Code/frontend/package.json",
-		"/Users/victor/Box Sync/whttp/vue/music/src/main.js",
-		"/Users/victor/Box Sync/whttp/vue/music/.eslintrc.js",
-		"/Users/victor/Box Sync/whttp/vue/music/src/routes/index.js",
-		"/Users/victor/Box Sync/whttp/vue/music/src/store/index.js",
-		"/Users/victor/Box Sync/whttp/vue/music/src/app.vue",
-		"/Users/victor/Box Sync/whttp/js/div/wonders.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/Appointments.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AddAppointment.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/SearchAppointments.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentListItem.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentList.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/assets/style.css",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/public/assets/appointments.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/appointments.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/main.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/package.json",
-		"/Users/victor/Box Sync/whttp/vue/vueinterface/process/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/dist/js/appointments.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/style.css",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/assets/appintments.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/router.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/Navigation.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/appointments/AppointmentsList.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/views/Upload.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/components/Home.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/components/ProductDetails.vue",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/state.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/package.json",
-		"/Users/victor/Box Sync/whttp/vue/vue-snipcart/src/store/getters.js",
-		"/Users/victor/Box Sync/whttp/vue/vueinterface/package.json",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Controllers/UploadController.php",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/file-upload.fake.service.js",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/lib/file-upload.service.js",
-		"/Users/victor/Box Sync/laravel/laravel56vue/storage/logs/laravel.log",
-		"/Users/victor/Box Sync/laravel/laravel56vue/routes/api.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/routes/web.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Middleware/VerifyCsrfToken.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Http/Kernel.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/app/Providers/RouteServiceProvider.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/app/Providers/RouteServiceProvider.php",
-		"/Users/victor/Box Sync/laravel/laravel56vue/config/cors.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/config/cors.php",
-		"/Users/victor/Box Sync/laravel/rest/lar55/-12-01-2017-Purchase-Sale-System.png",
-		"/Users/victor/Box Sync/laravel/laravel56vue/resources/views/pages/upload.blade.php",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/manifest.json",
-		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/src/App.vue",
-		"/Users/victor/Box Sync/whttp/vue/file-upload-vue/package.json",
-		"/Users/victor/Box Sync/whttp/css/feel-native.html",
-		"/Users/victor/Box Sync/whttp/js/algorithms/factorialize.html",
-		"/Users/victor/Box Sync/whttp/vue/vue-cli/src/components/products/Product.vue"
+		"/Users/talexandru/pCloud Drive/mega/laravel/vic/.gitignore",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/browser-notification.php",
+		"/Users/talexandru/Documents/htbase/js/flat-array.html",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/interactions.js",
+		"/Users/talexandru/pCloud Drive/web/div/petra/cPanel Petra",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/test-parsing-response.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/index.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/vendor/laudirbispo/filefolder/src/FileAndFolder/TraitFileAndFolder.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/vendor/laudirbispo/filefolder/src/FileAndFolder/File.php",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/deployment-rules.html.twig",
+		"/Users/talexandru/Documents/htbase/test/serialize/src/Test.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/src/Car.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/composer.json",
+		"/Users/talexandru/Documents/htbase/test/serialize/vendor/autoload.php",
+		"/Users/talexandru/Documents/htbase/test/serialize/Car.php",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/old-cloud-credential.php",
+		"/Users/talexandru/Documents/htbase/js/test/algorithms.html",
+		"/Users/talexandru/Documents/htbase/js/react/slider-scrimba/package.json",
+		"/Users/talexandru/Documents/htbase/js/react/slider-scrimba/index.html",
+		"/Users/talexandru/Documents/htbase/js/react/slider-scrimba/defaultSlides.js",
+		"/Users/talexandru/Documents/htbase/js/react/slider-scrimba/index.js",
+		"/Users/talexandru/Documents/htbase/js/react/slider-scrimba/style.css",
+		"/Users/talexandru/Documents/htbase/test/test/algorithms.php",
+		"/Users/talexandru/Documents/htbase/test/test/counting-item-from-array.php",
+		"/Users/talexandru/Documents/htbase/symfony2/temp.php",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/kubernetes-task.php",
+		"/Users/talexandru/Documents/htbase/test/test/counting-item-from array.php",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/compute-kubernetes.html.twig",
+		"/Users/talexandru/Downloads/use-css-variables-to-change-several-elements-at-once.json",
+		"/Users/talexandru/Documents/htbase/js/test/circle.html",
+		"/Users/talexandru/Documents/htbase/test/test/php.php",
+		"/Users/talexandru/Documents/htbase/test/test/iterator-to-array.php",
+		"/Users/talexandru/Documents/htbase/test/test/generator.php",
+		"/Users/talexandru/Documents/htbase/js/generators.html",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/WorkLoadController.php",
+		"/Users/talexandru/Documents/htbase/symfony2/js/workloads.js",
+		"/Users/talexandru/Documents/htbase/symfony2/temp/UserResources.php",
+		"/Users/talexandru/Documents/htbase/test/test/add-new-array-value.php",
+		"/Users/talexandru/Documents/htbase/symfony2/my-credentials",
+		"/Users/talexandru/Documents/htbase/js/anymod/formx.html",
+		"/Users/talexandru/Documents/htbase/js/jquery/table.html",
+		"/Users/talexandru/Documents/htbase/js/test/js-var.html",
+		"/Users/talexandru/Documents/htbase/js/jquery/traversable.html",
+		"/Users/talexandru/Documents/htbase/js/jquery/jquery-3.3.1.min.js",
+		"/Users/talexandru/Documents/htbase/js/test/test-connection.html",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/tests/AppBundle/Controller/DefaultControllerTest.php",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/src/AppBundle/DataFixtures/ORM/LoadSecurityData.php",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/app/AppKernel.php",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/src/AppBundle/Controller/DefaultController.php",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/app/Resources/views/default/index.html.twig",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/app/Resources/views/base.html.twig",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/app/Resources/views/_partials/_newDinoForm.html.twig",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/web/css/main.css",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/web/css/milligram.min.css",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/web/css/normalize.css",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/composer.json",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/phpunit.xml.dist",
+		"/Users/talexandru/Documents/htbase/knp/testing/phpunit/code-phpunit/finish/tests/AppBundle/Service/EnclosureBuilderServiceProphecyTest.php",
+		"/Users/talexandru/Documents/htbase/symfony2/test",
+		"/Users/talexandru/Documents/htbase/juke_gateway/.env",
+		"/Users/talexandru/Documents/htbase/MaestroWeb/.env",
+		"/Users/talexandru/Downloads/-.php",
+		"/Users/talexandru/Downloads/maestroweb_2018-12-19.sql",
+		"/Users/talexandru/Downloads/cloud-credentials",
+		"/Users/talexandru/Downloads/test.txt",
+		"/Users/talexandru/pCloud Drive/docs",
+		"/Users/talexandru/pCloud Drive/docs/db/maestroweb-api_2018-12-17.sql",
+		"/Users/talexandru/Downloads/php-zmq/zmq.c",
+		"/Users/talexandru/Downloads/mamp",
+		"/Users/talexandru/Downloads/mac",
+		"/Users/talexandru/.bash_profile",
+		"/Users/talexandru/.aliases"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 176.0,
+		"height": 164.0,
 		"where_history":
 		[
 		]
@@ -830,7 +230,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 		],
@@ -838,32 +238,64 @@
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": false
+		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "/Users/victor/MEGA/laravel/vic"
-		},
-		{
-			"path": "/Users/victor/MEGA/www/vic1"
-		}
-	],
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resources/views/pages/contact.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1757,
+								1757
+							]
+						],
+						"settings":
+						{
+							"SL.188.region_keys":
+							[
+							],
+							"SL.60.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 38.0
 	},
 	"input":
 	{
-		"height": 79.0
+		"height": 72.0
 	},
 	"layout":
 	{
@@ -892,23 +324,7 @@
 	{
 		"height": 0.0
 	},
-	"output.SublimeLinter Messages":
-	{
-		"height": 222.0
-	},
-	"output.doc":
-	{
-		"height": 0.0
-	},
-	"output.exec":
-	{
-		"height": 148.0
-	},
 	"output.find_results":
-	{
-		"height": 0.0
-	},
-	"output.mdpopups":
 	{
 		"height": 0.0
 	},
@@ -916,11 +332,11 @@
 	{
 		"height": 210.0
 	},
-	"pinned_build_system": "Packages/User/builds/PSR2.sublime-build",
-	"project": "",
+	"pinned_build_system": "",
+	"project": "vic.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -929,114 +345,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"routingrouter",
-				"vendor/laravel/framework/src/Illuminate/Routing/Router.php"
-			],
-			[
-				"fractal",
-				"vendor/spatie/laravel-fractal/config/fractal.php"
-			],
-			[
-				"fact",
-				"vendor/phpunit/php-file-iterator/src/Factory.php"
-			],
-			[
-				"create_users",
-				"database/migrations/2014_10_12_000000_create_users_table.php"
-			],
-			[
-				"appser",
-				"app/Providers/AppServiceProvider.php"
-			],
-			[
-				"database",
-				"config/database.php"
-			],
-			[
-				"appserv",
-				"app/Providers/AppServiceProvider.php"
-			],
-			[
-				"authser",
-				"app/Providers/AuthServiceProvider.php"
-			],
-			[
-				"appservicepro",
-				"app/Providers/AppServiceProvider.php"
-			],
-			[
-				"routes/",
-				"routes/web.php"
-			],
-			[
-				"app/app",
-				"app/Providers/AppServiceProvider.php"
-			],
-			[
-				"connection",
-				"vendor/laravel/framework/src/Illuminate/Database/Connection.php"
-			],
-			[
-				"json",
-				"node_modules/.bin/json5"
-			],
-			[
-				"user",
-				"app/User.php"
-			],
-			[
-				"users",
-				"app/Http/Controllers/UsersController.php"
-			],
-			[
-				"purchase",
-				"app/Http/Controllers/PurchasesController.php"
-			],
-			[
-				"routes/web",
-				"routes/web.php"
-			],
-			[
-				"view/wl",
-				"resources/views/welcome.blade.php"
-			],
-			[
-				"traian",
-				"www/laravel/laravel4/app/Http/Controllers/TraianController.php"
-			],
-			[
-				"traian4/library/",
-				"www/traian4/library/Controller.php"
-			],
-			[
-				"traian4/library/cle",
-				"www/traian4/library/CleverString.php"
-			],
-			[
-				"laravel/",
-				"www/laravel/danceart/.gitattributes"
-			],
-			[
-				"laravel",
-				"setup/laravel2"
-			],
-			[
-				"",
-				"www/test/foo-bar.php"
-			],
-			[
-				"packagecontr",
-				"www/wp/wp1/wp-includes/customize/class-wp-customize-background-image-control.php"
-			],
-			[
-				"faker",
-				"vendor/fzaninotto/faker/readme.md"
-			],
-			[
-				"routeservi",
-				"dev/app/Providers/RouteServiceProvider.php"
-			]
 		],
 		"width": 0.0
 	},
@@ -1048,95 +356,19 @@
 		[
 			[
 				"",
-				"~/MEGA/whttp/vue/vue.sublime-project"
-			],
-			[
-				"vic",
-				"~/Box Sync/laravel/vic/vic.sublime-project"
-			],
-			[
-				"lar",
-				"~/Box Sync/laravel/laravel.sublime-project"
-			],
-			[
-				"www",
-				"~/MEGA/www/www.sublime-project"
-			],
-			[
-				"vuv",
-				"~/MEGA/www/laravel/vic/vic.sublime-project"
-			],
-			[
-				"js",
-				"~/MEGA/whttp/js/js.sublime-project"
-			],
-			[
-				"lara",
-				"~/MEGA/www/laravel/laravel1/laravel1.sublime-project"
-			],
-			[
-				"opt",
-				"~/MEGA/www/laravel/optimizer/optimizer.sublime-project"
-			],
-			[
-				"vuc",
-				"~/MEGA/www/laravel/vic/vic.sublime-project"
-			],
-			[
-				"ro",
-				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"route",
-				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"rou",
-				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"route\n",
-				"~/MEGA/www/router/router.sublime-project"
-			],
-			[
-				"pe",
-				"~/MEGA/www/petra/petra.sublime-project"
-			],
-			[
-				"petr",
-				"~/MEGA/www/petra/petra.sublime-project"
-			],
-			[
-				"lar55",
-				"~/MEGA/www/laravel/rest/lar55/lar55.sublime-project"
-			],
-			[
-				"h",
-				"/Users/victor/Dropbox/whttp/whttp.sublime-project"
-			],
-			[
-				"la",
-				"/Users/victor/Dropbox/www/laravel/dropbox-laravel.sublime-project"
+				"~/Documents/htbase/htbase.sublime-project"
 			]
 		],
 		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 170.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"register",
-				"register"
-			],
-			[
-				"isAl",
-				"isAlias"
-			]
 		],
-		"width": 574.0
+		"width": 0.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1146,7 +378,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 297.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

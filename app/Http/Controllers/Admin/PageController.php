@@ -25,8 +25,8 @@ class PageController extends Controller
     public function index()
     {
         $title = 'Index - page';
-        $pages = Page::orderBy('page')->paginate(12);
-        return view('page.index',compact('pages','title'));
+        $pages = Page::orderBy('page')->paginate(100);
+        return view('page.index', compact('pages', 'title'));
     }
 
     /**
@@ -51,10 +51,7 @@ class PageController extends Controller
     {
         $page = new Page();
 
-
         $page->page = $request->page;
-
-
 
         $page->save();
 
@@ -64,9 +61,11 @@ class PageController extends Controller
         //by default channel=test-channel,event=test-event
         //Here is a pusher notification example when you create a new resource in storage.
         //you can modify anything you want or use it wherever.
-        $pusher->trigger('test-channel',
+        $pusher->trigger(
+            'test-channel',
                          'test-event',
-                        ['message' => 'A new page has been created !!']);
+                        ['message' => 'A new page has been created !!']
+        );
 
         return redirect('page');
     }
@@ -78,17 +77,16 @@ class PageController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function show($id,Request $request)
+    public function show($id, Request $request)
     {
         $title = 'Show - page';
 
-        if($request->ajax())
-        {
+        if ($request->ajax()) {
             return URL::to('page/'.$id);
         }
 
         $page = Page::findOrfail($id);
-        return view('page.show',compact('title','page'));
+        return view('page.show', compact('title', 'page'));
     }
 
     /**
@@ -97,17 +95,15 @@ class PageController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function edit($id,Request $request)
+    public function edit($id, Request $request)
     {
         $title = 'Edit - page';
-        if($request->ajax())
-        {
+        if ($request->ajax()) {
             return URL::to('page/'. $id . '/edit');
         }
 
-
         $page = Page::findOrfail($id);
-        return view('page.edit',compact('title','page'  ));
+        return view('page.edit', compact('title', 'page'));
     }
 
     /**
@@ -117,12 +113,11 @@ class PageController extends Controller
      * @param    int  $id
      * @return  \Illuminate\Http\Response
      */
-    public function update($id,Request $request)
+    public function update($id, Request $request)
     {
         $page = Page::findOrfail($id);
 
         $page->page = $request->page;
-
 
         $page->save();
 
@@ -136,12 +131,11 @@ class PageController extends Controller
      * @param    \Illuminate\Http\Request  $request
      * @return  String
      */
-    public function DeleteMsg($id,Request $request)
+    public function DeleteMsg($id, Request $request)
     {
-        $msg = Ajaxis::BtDeleting('Warning!!','Would you like to remove This?','/page/'. $id . '/delete');
+        $msg = Ajaxis::BtDeleting('Warning!!', 'Would you like to remove This?', '/page/'. $id . '/delete');
 
-        if($request->ajax())
-        {
+        if ($request->ajax()) {
             return $msg;
         }
     }
@@ -154,8 +148,8 @@ class PageController extends Controller
      */
     public function destroy($id)
     {
-     	$page = Page::findOrfail($id);
-     	$page->delete();
+        $page = Page::findOrfail($id);
+        $page->delete();
         return URL::to('page');
     }
 }
