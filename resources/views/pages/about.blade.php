@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">JS/Vue</h4>
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">jQuery / React</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">Laravel</h4>
+                    <h4 class="card-title py-2 mbr-fonts-style display-5">Laravel / Symfony</h4>
                 </div>
             </div>
             <div class="card p-3 align-center">

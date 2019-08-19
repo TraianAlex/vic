@@ -164,6 +164,23 @@
 				</li>
 			`);
 		});
+
+		function showMessage(message) {
+		  if (!("Notification" in window)) {
+		    // Code to run if notifications are not
+		    // supported by the visitor's browser
+		  } else {
+		    if (Notification.permission === "granted") {
+		      var notification = new Notification(message);
+		    } else if (Notification.permission !== "denied") {
+		      Notification.requestPermission().then(function (permission) {
+		        if (permission === "granted") {
+		          var notification = new Notification(message);
+		        }
+		  });
+		    }
+		  }
+		}
 		</script>
 		@yield('js')
 		<script type="text/javascript">
