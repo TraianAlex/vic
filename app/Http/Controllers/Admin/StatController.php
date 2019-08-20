@@ -61,7 +61,7 @@ class StatController extends Controller
         $stat = $stat->where('ip', $ip);
         $stat->delete();
         flash('Your data has been deleted!');
-        return redirect('stat/ips');//redirect()->back();
+        return redirect()->back();//redirect('stat/ips');
     }
 
     protected function extract($collection, $page)
