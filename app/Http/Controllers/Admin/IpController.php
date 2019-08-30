@@ -61,7 +61,10 @@ class IpController extends Controller
     {
         $ip = new Ip();
 
+
         $ip->ip = $request->ip;
+
+
 
         $ip->save();
 
@@ -112,6 +115,7 @@ class IpController extends Controller
             return URL::to('ip/'. $id . '/edit');
         }
 
+
         $ip = Ip::findOrfail($id);
         return view('ip.edit',compact('title','ip'  ));
     }
@@ -128,6 +132,7 @@ class IpController extends Controller
         $ip = Ip::findOrfail($id);
 
         $ip->ip = $request->ip;
+
 
         $ip->save();
 
