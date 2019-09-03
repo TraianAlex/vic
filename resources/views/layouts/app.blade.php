@@ -19,8 +19,8 @@
     </style>
     <!-- Google Analytics -->
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63781170-2"  data-turbolinks-track="reload"></script>
-<script data-turbolinks-track="reload">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63781170-2"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
