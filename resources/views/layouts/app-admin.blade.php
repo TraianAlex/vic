@@ -20,13 +20,13 @@
     <!-- Google Analytics -->
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63781170-2"  data-turbolinks-track="reload"></script>
-<script  data-turbolinks-track="reload">
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
   gtag('config', 'UA-63781170-2');
 </script>
-<script  data-turbolinks-track="reload">
+<script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1461897,hjsv:6};
