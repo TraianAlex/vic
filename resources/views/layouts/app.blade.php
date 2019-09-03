@@ -26,7 +26,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-63781170-2');
 </script>
-<script data-turbolinks-track="reload">
+<script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1461897,hjsv:6};
