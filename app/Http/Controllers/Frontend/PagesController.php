@@ -71,7 +71,7 @@ class PagesController extends Controller
     {
         $val = (int)session('challenge');
         session(['challenge' => null]);
-        if ($resp != $val) {
+        if ($resp !== $val) {
             return false;
         }
         return true;
