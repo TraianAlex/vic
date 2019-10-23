@@ -51,7 +51,7 @@ class PagesController extends Controller
     }
     public function sendEmail(Request $request)
     {
-        $captcha = $request->get('s_q');
+        $captcha = (int)$request->get('s_q');
         if ($this->validate_email($captcha)) {
             Mail::to('victor_traian@yahoo.com')
                 ->queue(new ContactForm($request->name, $request->email, $request->message));
@@ -71,7 +71,7 @@ class PagesController extends Controller
     {
         $val = (int)session('challenge');
         session(['challenge' => null]);
-        if ($resp != $val) {
+        if ($resp !== $val) {
             return false;
         }
         return true;
