@@ -52,7 +52,11 @@ export abstract class Connector {
             return window['Laravel'].csrfToken;
         } else if (this.options.csrfToken) {
             return this.options.csrfToken;
-        } else if (typeof document !== 'undefined' && (selector = document.querySelector('meta[name="csrf-token"]'))) {
+        } else if (
+            typeof document !== 'undefined' &&
+            typeof document.querySelector === 'function' &&
+            (selector = document.querySelector('meta[name="csrf-token"]'))
+        ) {
             return selector.getAttribute('content');
         }
 

@@ -21,7 +21,10 @@ export default class Echo {
     constructor(options: any) {
         this.options = options;
         this.connect();
-        this.registerInterceptors();
+
+        if (!this.options.withoutInterceptors) {
+            this.registerInterceptors();
+        }
     }
 
     /**
@@ -41,6 +44,8 @@ export default class Echo {
             this.connector = new SocketIoConnector(this.options);
         } else if (this.options.broadcaster == 'null') {
             this.connector = new NullConnector(this.options);
+        } else if (typeof this.options.broadcaster == 'function') {
+            this.connector = new this.options.broadcaster(this.options);
         }
     }
 
@@ -138,16 +143,14 @@ export default class Echo {
     }
 
     /**
-     * Register jQuery AjaxSetup to add the X-Socket-ID header.
+     * Register jQuery AjaxPrefilter to add the X-Socket-ID header.
      */
     registerjQueryAjaxSetup(): void {
         if (typeof jQuery.ajax != 'undefined') {
-            jQuery.ajaxSetup({
-                beforeSend: xhr => {
-                    if (this.socketId()) {
-                        xhr.setRequestHeader('X-Socket-Id', this.socketId());
-                    }
-                },
+            jQuery.ajaxPrefilter((options, originalOptions, xhr) => {
+                if (this.socketId()) {
+                    xhr.setRequestHeader('X-Socket-Id', this.socketId());
+                }
             });
         }
     }
