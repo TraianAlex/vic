@@ -1,0 +1,1159 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"email",
+				"email-for"
+			],
+			[
+				"ob",
+				"ob_clean"
+			],
+			[
+				"is",
+				"isNumber"
+			],
+			[
+				"sa",
+				"safe"
+			],
+			[
+				"safe",
+				"safeNum"
+			],
+			[
+				"co",
+				"const"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"cu",
+				"currentStatus"
+			],
+			[
+				"fil",
+				"fileList"
+			],
+			[
+				"test",
+				"testFile"
+			],
+			[
+				"form",
+				"formData"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"get",
+				"getProducts"
+			],
+			[
+				"vue",
+				"vue-toastr"
+			],
+			[
+				"v",
+				"views"
+			],
+			[
+				"active",
+				"activeClass"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"Download",
+				"DownloadButton"
+			],
+			[
+				"Dow",
+				"DownloadButton"
+			],
+			[
+				"Pro",
+				"ProductList"
+			],
+			[
+				"pro",
+				"product-list-item"
+			],
+			[
+				"remove",
+				"removeMethod"
+			],
+			[
+				"product",
+				"product-list"
+			],
+			[
+				"the",
+				"theProducts"
+			],
+			[
+				"f",
+				"frameworks"
+			],
+			[
+				"sq",
+				"squareClass"
+			],
+			[
+				"dash",
+				"dashed-border"
+			],
+			[
+				"select",
+				"selectedInterests"
+			],
+			[
+				"intere",
+				"Interests"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"total",
+				"totalCells"
+			],
+			[
+				"perce",
+				"percentageReport2"
+			],
+			[
+				"all",
+				"allR"
+			],
+			[
+				"tota",
+				"totalC"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"add",
+				"addRock"
+			],
+			[
+				"All",
+				"allRocks"
+			],
+			[
+				"GR",
+				"grid"
+			],
+			[
+				"lef",
+				"leftUp"
+			],
+			[
+				"left",
+				"leftUp"
+			],
+			[
+				"new",
+				"newCell"
+			],
+			[
+				"righ",
+				"rightUp"
+			],
+			[
+				"right",
+				"rightDown"
+			],
+			[
+				"col",
+				"colT"
+			],
+			[
+				"newC",
+				"newCol"
+			],
+			[
+				"row",
+				"rowT"
+			],
+			[
+				"cc",
+				"cc"
+			],
+			[
+				"al",
+				"allSymbols"
+			],
+			[
+				"wi",
+				"widthTarget"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"cou",
+				"onCouponApplied"
+			],
+			[
+				"edit",
+				"editIndex"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tas",
+				"tasks"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"set",
+				"setCookie"
+			],
+			[
+				"ligh",
+				"lightColumn"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"table",
+				"table3"
+			],
+			[
+				"light",
+				"lightRow"
+			],
+			[
+				"create",
+				"createSQL"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"db",
+				"dbName"
+			],
+			[
+				"Web",
+				"Websql"
+			],
+			[
+				"dis",
+				"dispResults"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"in",
+				"insertList"
+			],
+			[
+				"heigh",
+				"heightT"
+			],
+			[
+				"cell",
+				"cellArr"
+			],
+			[
+				"todo",
+				"todo_descr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"Auth",
+				"Auth::user\tGet the currently authenticated user."
+			],
+			[
+				"qu",
+				"quality"
+			],
+			[
+				"q",
+				"quality"
+			],
+			[
+				"attach",
+				"attachObservers"
+			],
+			[
+				"obser",
+				"observable"
+			],
+			[
+				"obse",
+				"observer"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"setUp",
+				"setUpDatabase"
+			],
+			[
+				"Cu",
+				"Customer"
+			],
+			[
+				"Cus",
+				"CustomerIsGold"
+			],
+			[
+				"gold",
+				"goldCustomer"
+			],
+			[
+				"Customer",
+				"CustomerIsGold"
+			],
+			[
+				"Custome",
+				"CustomerIsGold"
+			],
+			[
+				"succ",
+				"succeedWith"
+			],
+			[
+				"Home",
+				"HomeChecker"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"Loog",
+				"LogToFile"
+			],
+			[
+				"Kindle",
+				"KindleAdapter"
+			],
+			[
+				"Book",
+				"BookInterface"
+			],
+			[
+				"Basic",
+				"BasicInspection"
+			],
+			[
+				"car",
+				"carsService"
+			],
+			[
+				"c",
+				"con\tfunction __construct"
+			],
+			[
+				"Test",
+				"TestMiddleware"
+			],
+			[
+				"unset",
+				"session_unset"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"sort",
+				"sortData"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"tra",
+				"transformation"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"bu",
+				"buyers"
+			],
+			[
+				"convert",
+				"convertValidationExceptionToResponse"
+			],
+			[
+				"Va",
+				"ValidationException"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"genera",
+				"generateVerificationCode"
+			],
+			[
+				"fore",
+				"foreign"
+			],
+			[
+				"stri",
+				"string"
+			],
+			[
+				"veri",
+				"verification_token"
+			],
+			[
+				"Route",
+				"Route::resource\tRoute to a RESTful Controller"
+			],
+			[
+				"rou",
+				"Route"
+			],
+			[
+				"Data",
+				"DatabaseMigrations"
+			],
+			[
+				"passwo",
+				"password_confirmation"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"boo",
+				"bootstrap"
+			],
+			[
+				"array_s",
+				"array_sum"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"preg",
+				"preg_match"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"te",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"term",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"artisan ",
+				"Laravel Artisan 5: List"
+			],
+			[
+				"copy",
+				"ANF: Copy Current File"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"php",
+				"PHPUnit: Run"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: List Packages"
+			],
+			[
+				"del",
+				"ANF: Delete Current File"
+			],
+			[
+				"ne",
+				"ANF: New File"
+			],
+			[
+				"art",
+				"Laravel Artisan 5: Make:Test"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"ANF: Rename File"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"Snippet:",
+				"Snippet: Comment"
+			],
+			[
+				"Snippet: ",
+				"Snippet: PHP Method"
+			],
+			[
+				" file",
+				"ANF: New File"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"Snippet: fun",
+				"Snippet: Function"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"dele",
+				"ANF: Delete Current File"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"phpunit",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/victor/MEGA/laravel/vic",
+		"/Users/victor/MEGA/www/vic1"
+	],
+	"file_history":
+	[
+		"/Users/victor/MEGA/whttp/express/chat-app/client/app.js",
+		"/Users/victor/pCloud Drive/setup/linux",
+		"/Users/victor/pCloud Drive/web/cloud-comp/devOps/ansible/Vagrantfile",
+		"/Users/victor/pCloud Drive/setup/untitled",
+		"/Users/victor/pCloud Drive/setup/git",
+		"/Users/victor/pCloud Drive/setup/xdebug",
+		"/Users/victor/MEGA/knp/javascript/symfony-react/assets/js/rep_log_react.js",
+		"/Users/victor/MEGA/www/minimvc/.gitignore",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/controllers/Email.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/config/form_validation.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/helpers/captcha_helper.php",
+		"/Users/victor/MEGA/whttp/angular1/solitaire-systemjs-course/node_modules/bower/lib/node_modules/redeyed/test/redeyed-mixed.js",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/controllers/Pages.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/views/templates/footer.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/views/templates/header.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/views/pages/index.php",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/views/pages/contact.php",
+		"/Users/victor/MEGA/www/minimvc/core/Route.php",
+		"/Users/victor/MEGA/www/router/core/Route.php",
+		"/Users/victor/MEGA/www/minimvc/core/Request.php",
+		"/Users/victor/MEGA/www/router/core/Request.php",
+		"/Users/victor/MEGA/www/minimvc/core/helpers.php",
+		"/Users/victor/MEGA/www/router/core/helpers.php",
+		"/Users/victor/MEGA/www/minimvc/core/bootstrap.php",
+		"/Users/victor/MEGA/www/router/core/bootstrap.php",
+		"/Users/victor/MEGA/www/minimvc/composer.json",
+		"/Users/victor/MEGA/www/mix/webpack.mix.js",
+		"/Users/victor/MEGA/www/mix/webpack.config.js",
+		"/Users/victor/MEGA/www/mix/package.json",
+		"/Users/victor/MEGA/www/mix/dist/app.js",
+		"/Users/victor/MEGA/www/minimvc/views/pages/category.blade.php",
+		"/Users/victor/MEGA/www/router/controllers/About.php",
+		"/Users/victor/MEGA/www/router/controllers/Contact.php",
+		"/Users/victor/MEGA/www/router/controllers/Home.php",
+		"/Users/victor/MEGA/www/router/model/Category.php",
+		"/Users/victor/MEGA/www/router/model/Users.php",
+		"/Users/victor/MEGA/www/router/public/index.php",
+		"/Users/victor/MEGA/www/amalia/gift-certificate/index.html",
+		"/Users/victor/Dropbox/setup/mac",
+		"/Users/victor/Dropbox/setup/brew-upgrade",
+		"/Users/victor/pCloud Drive/web/vue/LearningVuejs2_Code/Appendix/chapter3/vue-shopping-list-simple-components/index.html",
+		"/Users/victor/pCloud Drive/web/vue/LearningVuejs2_Code/Appendix/chapter3/vue-shopping-list-simple-components/script.js",
+		"/Users/victor/MEGA/whttp/vue/vueinterface/package.json",
+		"/Users/victor/MEGA/www/codeigniter/ci21/README.md",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/src/temp/.gitignore",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/src/PHPProjectGen.php",
+		"/Users/victor/MEGA/www/2018/NewProject2/composer.json",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/tests/testTest.php",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/src/ProjectTemplate.php.raw",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/src/testProjectTemplate.php.raw",
+		"/Users/victor/MEGA/www/2018/phpprojectgen/config.json",
+		"/Users/victor/MEGA/www/2018/NewProject/tests/NewProjectTest.php",
+		"/Users/victor/MEGA/www/2018/NewProject/src/NewProject.php",
+		"/Users/victor/Dropbox/www/test/search-by-key/tests/Repository/PlatformRepositoryTest.php",
+		"/Users/victor/MEGA/www/2018/NewProject/phpunit.xml",
+		"/Users/victor/MEGA/www/traian1/view/gallery/gallery_form.php",
+		"/Users/victor/MEGA/www/traian1/controller/Gallery_C.php",
+		"/Users/victor/MEGA/www/traian1/view/gallery/displaybyid_view.php",
+		"/Users/victor/MEGA/www/2017/mobirise-email-form/js-res/contact_me.js",
+		"/Users/victor/MEGA/www/2017/mobirise-email-form/index.html",
+		"/Users/victor/MEGA/www/2017/mobirise-email-form/mail-res/contact_me.php",
+		"/Users/victor/MEGA/www/amalia/test1/info",
+		"/Users/victor/MEGA/symfony/symfony-demo/templates/base.html.twig",
+		"/Users/victor/MEGA/www/amalia/gift-certificate/index copy.html",
+		"/Users/victor/MEGA/www/2017/mobirise-email-form/js-res/richosoft.min.js",
+		"/Users/victor/MEGA/www/2018/jqueryform/form.html",
+		"/Users/victor/MEGA/www/2018/jqueryform/jqueryform.com.min.js",
+		"/Users/victor/MEGA/symfony/MaestroWeb/src/Controller/InstallationController.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/src/Services/SystemParameterHelper.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/.env.testing",
+		"/Users/victor/MEGA/symfony/MaestroWeb/.env",
+		"/Users/victor/MEGA/symfony/MaestroWeb/src/Controller/AppController.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/src/DataFixtures/Load20MicroServices.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/tests/unit/Entity/DeploymentRulesTest.php",
+		"/Users/victor/MEGA/whttp/jquery/form-slide/index.html",
+		"/Users/victor/MEGA/symfony/MaestroWeb/src/Controller/SettingsController.php",
+		"/Users/victor/MEGA/symfony/MaestroWeb/tests/unit/Entity/UserTest.php",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/profiles.blade.php",
+		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_11_fetch_api/js_sandbox/app.js",
+		"/Users/victor/MEGA/whttp/js/js1/p7_anync_js_ajax_fetch_api/7_15_easyhttp3/easyhttp3/easyhttp3.js",
+		"/Users/victor/MEGA/www/codeigniter/danceart/application/views/pages/weddings.php",
+		"/Users/victor/MEGA/www/2018/video-audio/player_DONE.js",
+		"/Users/victor/MEGA/www/2018/video-audio/player_DONE.html",
+		"/Users/victor/MEGA/www/2018/video-html/eh5v.files/index.html",
+		"/Users/victor/MEGA/www/2018/video-audio/player_DONE.css",
+		"/Users/victor/MEGA/www/minimvc/router.php",
+		"/Users/victor/MEGA/www/minimvc/tests/ExampleTest.php",
+		"/Users/victor/MEGA/www/router/composer.json",
+		"/Users/victor/MEGA/www/minimvc/phpunit.xml",
+		"/Users/victor/MEGA/www/minimvc/public/index.php",
+		"/Users/victor/MEGA/www/minimvc/.env",
+		"/Users/victor/MEGA/www/minimvc/views/tpl/layouts/app.tpl.php",
+		"/Users/victor/MEGA/www/minimvc/views/layouts/app.blade.php",
+		"/Users/victor/MEGA/www/minimvc/views/html/header.html",
+		"/Users/victor/MEGA/www/minimvc/Homestead.yaml",
+		"/Users/victor/MEGA/www/router/router.sublime-project",
+		"/Users/victor/MEGA/www/router/views/partials/pagination.blade.php",
+		"/Users/victor/MEGA/www/minimvc/controllers/Home.php",
+		"/Users/victor/MEGA/www/router/views/pages/category.blade.php",
+		"/Users/victor/MEGA/www/minimvc/public/.htaccess",
+		"/Users/victor/MEGA/www/router/public/.htaccess",
+		"/Users/victor/MEGA/www/minimvc/core/URI_Cache.php",
+		"/Users/victor/MEGA/www/cheat-sheet-subl",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/Movie.php",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/src/MovieCollection.php",
+		"/Users/victor/MEGA/www/laracast/PHPSpec-Rocks/spec/MovieCollectionSpec.php",
+		"/Users/victor/MEGA/www/laracast/git/index.txt",
+		"/Users/victor/MEGA/www/laracast/git/new-feature.txt",
+		"/Users/victor/MEGA/www/www.sublime-project",
+		"/Users/victor/MEGA/whttp/js/maybe/utils.js",
+		"/Users/victor/MEGA/whttp/js/maybe/less1/index.js",
+		"/Users/victor/MEGA/whttp/js/maybe/less2/index.js",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/victor/Library/Application Support/Sublime Text 3/Packages/TerminalView/README.md",
+		"/Users/victor/Box Sync/whttp/css/drop-nav2.html",
+		"/Users/victor/Box Sync/whttp/css/dropdown-nav.html",
+		"/Users/victor/Box Sync/whttp/framework7/package.json",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.8/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 5/Video 5.6/Code/frontend/config/dev.env.js",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/composer.json",
+		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/src/bootstrap.js",
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env",
+		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
+		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/prod.env.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 176.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 79.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 222.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 210.0
+	},
+	"pinned_build_system": "Packages/User/builds/PSR2.sublime-build",
+	"project": "vic.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"routingrouter",
+				"vendor/laravel/framework/src/Illuminate/Routing/Router.php"
+			],
+			[
+				"fractal",
+				"vendor/spatie/laravel-fractal/config/fractal.php"
+			],
+			[
+				"fact",
+				"vendor/phpunit/php-file-iterator/src/Factory.php"
+			],
+			[
+				"create_users",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"appser",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"database",
+				"config/database.php"
+			],
+			[
+				"appserv",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"authser",
+				"app/Providers/AuthServiceProvider.php"
+			],
+			[
+				"appservicepro",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"routes/",
+				"routes/web.php"
+			],
+			[
+				"app/app",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"connection",
+				"vendor/laravel/framework/src/Illuminate/Database/Connection.php"
+			],
+			[
+				"json",
+				"node_modules/.bin/json5"
+			],
+			[
+				"user",
+				"app/User.php"
+			],
+			[
+				"users",
+				"app/Http/Controllers/UsersController.php"
+			],
+			[
+				"purchase",
+				"app/Http/Controllers/PurchasesController.php"
+			],
+			[
+				"routes/web",
+				"routes/web.php"
+			],
+			[
+				"view/wl",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"traian",
+				"www/laravel/laravel4/app/Http/Controllers/TraianController.php"
+			],
+			[
+				"traian4/library/",
+				"www/traian4/library/Controller.php"
+			],
+			[
+				"traian4/library/cle",
+				"www/traian4/library/CleverString.php"
+			],
+			[
+				"laravel/",
+				"www/laravel/danceart/.gitattributes"
+			],
+			[
+				"laravel",
+				"setup/laravel2"
+			],
+			[
+				"",
+				"www/test/foo-bar.php"
+			],
+			[
+				"packagecontr",
+				"www/wp/wp1/wp-includes/customize/class-wp-customize-background-image-control.php"
+			],
+			[
+				"faker",
+				"vendor/fzaninotto/faker/readme.md"
+			],
+			[
+				"routeservi",
+				"dev/app/Providers/RouteServiceProvider.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/MEGA/laravel/vic/vic.sublime-project"
+			],
+			[
+				"p",
+				"~/MEGA/www/petra/petra.sublime-project"
+			],
+			[
+				"vic",
+				"~/MEGA/laravel/vic/vic.sublime-project"
+			],
+			[
+				"vue",
+				"~/MEGA/laravel/vic/vic.sublime-project"
+			],
+			[
+				"lar",
+				"~/Box Sync/laravel/laravel.sublime-project"
+			],
+			[
+				"www",
+				"~/MEGA/www/www.sublime-project"
+			],
+			[
+				"vuv",
+				"~/MEGA/www/laravel/vic/vic.sublime-project"
+			],
+			[
+				"js",
+				"~/MEGA/whttp/js/js.sublime-project"
+			],
+			[
+				"lara",
+				"~/MEGA/www/laravel/laravel1/laravel1.sublime-project"
+			],
+			[
+				"opt",
+				"~/MEGA/www/laravel/optimizer/optimizer.sublime-project"
+			],
+			[
+				"vuc",
+				"~/MEGA/www/laravel/vic/vic.sublime-project"
+			],
+			[
+				"ro",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"route",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"rou",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"route\n",
+				"~/MEGA/www/router/router.sublime-project"
+			],
+			[
+				"pe",
+				"~/MEGA/www/petra/petra.sublime-project"
+			],
+			[
+				"petr",
+				"~/MEGA/www/petra/petra.sublime-project"
+			],
+			[
+				"lar55",
+				"~/MEGA/www/laravel/rest/lar55/lar55.sublime-project"
+			],
+			[
+				"h",
+				"/Users/victor/Dropbox/whttp/whttp.sublime-project"
+			],
+			[
+				"la",
+				"/Users/victor/Dropbox/www/laravel/dropbox-laravel.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 170.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"register",
+				"register"
+			],
+			[
+				"isAl",
+				"isAlias"
+			]
+		],
+		"width": 574.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
