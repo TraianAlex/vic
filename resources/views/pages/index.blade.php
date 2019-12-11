@@ -68,6 +68,58 @@
             </div>
         </div>
 </div></section>
+<section class="extVideo cid-rKnH0tC98p" id="extVideo2-59">
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-12 col-12 col-lg-6">
+                <div class="box1">
+                    <div class="mbr-media show-modal align-center py-2" data-modal=".w1">
+                        <div class="icon-wrap">
+                            <span class="mbr-iconfont mobi-mbri-play mobi-mbri"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-white col-md-12 col-12 col-lg-6">
+                <div class="box2">
+                    <div class="mbr-media show-modal align-center py-2" data-modal=".w2">
+                        <div class="icon-wrap">
+                            <span class="mbr-iconfont mobi-mbri-play mobi-mbri"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modalWindow w1" style="display: none;">
+            <div class="modalWindow-container">
+                <div class="modalWindow-video-container">
+                    <div class="modalWindow-video">
+                        <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://youtu.be/7I1Rl-lKksg"></iframe>
+                    </div>
+                    <a class="close" role="button" data-dismiss="modal">
+                        <span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span>
+                        <span class="sr-only">Close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modalWindow w2" style="display: none;">
+            <div class="modalWindow-container">
+                <div class="modalWindow-video-container">
+                    <div class="modalWindow-video">
+                        <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://youtu.be/UYknE4Qwszs"></iframe>
+                    </div>
+                    <a class="close" role="button" data-dismiss="modal">
+                        <span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span>
+                        <span class="sr-only">Close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="mbr-section article content9 cid-qBWLPU3XDt" id="content9-1z" data-rv-view="170">
     <div class="container">
         <div class="inner-container" style="width: 100%;">
