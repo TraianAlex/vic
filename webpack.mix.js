@@ -11,6 +11,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
 mix.styles([
     'resources/assets1/icon54-v2/style.css',
     'resources/assets1/web/assets/mobirise-icons/mobirise-icons.css',
+    'resources/assets1/web/assets/mobirise-icons2/mobirise2.css',
     'resources/assets1/icon54/style.css',
     'resources/assets1/tether/tether.min.css',
     'resources/assets1/bootstrap/css/bootstrap-grid.min.css',
