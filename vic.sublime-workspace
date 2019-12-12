@@ -682,11 +682,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/victor/MEGA/laravel/vic",
-		"/Users/victor/MEGA/www/vic1"
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
+		"/Users/victor/MEGA/www/vic1/index.html",
+		"/Users/victor/MEGA/laravel/vic/webpack.mix.js",
+		"/Users/victor/MEGA/laravel/vic/resources/views/pages/services.blade.php",
 		"/Users/victor/MEGA/whttp/express/chat-app/client/app.js",
 		"/Users/victor/pCloud Drive/setup/linux",
 		"/Users/victor/pCloud Drive/web/cloud-comp/devOps/ansible/Vagrantfile",
@@ -810,15 +812,11 @@
 		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 5/Video 5.6/Code/frontend/config/dev.env.js",
 		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example",
 		"/Users/victor/Box Sync/laravel/rest/music-db-api/composer.json",
-		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/src/bootstrap.js",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env",
-		"/Users/victor/Box Sync/whttp/vue/music/config/prod.env.js",
-		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.1/Code/frontend/config/prod.env.js"
+		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
@@ -832,6 +830,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mobi-mbri-play"
 		],
 		"highlight": true,
 		"in_selection": false,
