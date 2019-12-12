@@ -14,9 +14,9 @@ use Spatie\Snapshots\MatchesSnapshots;
 
 class OrderTest
 {
-    use MatchesSnapshot;
+    use MatchesSnapshots;
 
-    class test_it_casts_to_json()
+    public function test_it_casts_to_json()
     {
         $order = new Order(1);
 
@@ -73,7 +73,7 @@ Tests: 1, Assertions: 1, Failures: 1.
 You can install the package via composer:
 
 ```bash
-composer require spatie/phpunit-snapshot-assertions
+composer require --dev spatie/phpunit-snapshot-assertions
 ```
 
 ## Usage

@@ -26,6 +26,7 @@ Failed asserting that two arrays are equal.
  Array (
 -    0 => 1
 +    0 => 2
+ )
 
 %s:%i
 
@@ -44,6 +45,7 @@ Failed asserting that two objects are equal.
  stdClass Object (
 -    'foo' => 'bar'
 +    'bar' => 'foo'
+ )
 
 %s:%i
 
@@ -70,9 +72,10 @@ Failed asserting that two strings are equal.
 --- Expected
 +++ Actual
 @@ @@
- 'foo\n
--bar\n
-+baz\n
+ 'foo
+-bar
++baz
+ '
 
 %s:%i
 
@@ -99,8 +102,8 @@ Failed asserting that two strings are identical.
 --- Expected
 +++ Actual
 @@ @@
--'foo'
-+'bar'
+-foo
++bar
 
 %s:%i
 
@@ -128,6 +131,7 @@ Failed asserting that string matches format description.
 +++ Actual
 @@ @@
 -FOO
+-
 +...BAR...
 
 %s:%i

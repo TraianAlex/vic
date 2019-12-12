@@ -3,7 +3,9 @@
 namespace Laravel\Dusk\Concerns;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Collection;
 use PHPUnit\Framework\Assert as PHPUnit;
+use Facebook\WebDriver\Remote\RemoteWebElement;
 use Facebook\WebDriver\Exception\NoSuchElementException;
 
 trait MakesAssertions
@@ -32,6 +34,31 @@ trait MakesAssertions
         PHPUnit::assertTrue(
             Str::contains($this->driver->getTitle(), $title)
         );
+
+        return $this;
+    }
+
+    /**
+     * Assert that the current URL matches the given URL.
+     *
+     * @param  string  $url
+     * @return $this
+     */
+    public function assertUrlIs($url)
+    {
+        $pattern = str_replace('\*', '.*', preg_quote($url, '/'));
+
+        $segments = parse_url($this->driver->getCurrentURL());
+
+        $currentUrl = sprintf(
+            '%s://%s%s%s',
+            $segments['scheme'],
+            $segments['host'],
+            array_get($segments, 'port', '') ? ':'.$segments['port'] : '',
+            array_get($segments, 'path', '')
+        );
+
+        PHPUnit::assertRegExp('/^'.$pattern.'$/u', $currentUrl);
 
         return $this;
     }
@@ -196,7 +223,7 @@ trait MakesAssertions
      * Assert that the given query string parameter is present.
      *
      * @param  string  $name
-     * @return $this
+     * @return array
      */
     protected function assertHasQueryStringParameter($name)
     {
@@ -529,7 +556,7 @@ JS;
      * @param  string  $value
      * @return $this
      */
-    function assertRadioSelected($field, $value)
+    public function assertRadioSelected($field, $value)
     {
         $element = $this->resolver->resolveForRadioSelection($field, $value);
 
@@ -603,9 +630,14 @@ JS;
      */
     public function assertSelectHasOptions($field, array $values)
     {
+        $options = $this->resolver->resolveSelectOptions($field, $values);
+
+        $options = collect($options)->unique(function (RemoteWebElement $option) {
+            return $option->getAttribute('value');
+        })->all();
+
         PHPUnit::assertCount(
-            count($values),
-            $this->resolver->resolveSelectOptions($field, $values),
+            count($values), $options,
             "Expected options [".implode(',', $values)."] for selection field [{$field}] to be available."
         );
 

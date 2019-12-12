@@ -156,6 +156,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
+     * @todo Remove side-effects - not change ie. ChromeOptions::CAPABILITY from instance of ChromeOptions to an array
      * @return array
      */
     public function toArray()
@@ -178,7 +179,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function android()
     {
@@ -189,7 +190,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function chrome()
     {
@@ -200,7 +201,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function firefox()
     {
@@ -218,7 +219,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function htmlUnit()
     {
@@ -229,7 +230,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function htmlUnitWithJS()
     {
@@ -242,7 +243,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function internetExplorer()
     {
@@ -253,7 +254,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function microsoftEdge()
     {
@@ -264,7 +265,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function iphone()
     {
@@ -275,7 +276,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function ipad()
     {
@@ -286,7 +287,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function opera()
     {
@@ -297,7 +298,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function safari()
     {
@@ -308,7 +309,7 @@ class DesiredCapabilities implements WebDriverCapabilities
     }
 
     /**
-     * @return DesiredCapabilities
+     * @return static
      */
     public static function phantomjs()
     {
