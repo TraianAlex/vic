@@ -27,10 +27,14 @@ Failed asserting that two objects are equal.
  stdClass Object (
      0 => 1
      1 => 2
-     2 => 'Test\r\n'
+     2 => 'Test\n'
      3 => 4
 -    4 => 5
 +    4 => 1
+     5 => 6
+     6 => 7
+     7 => 8
+ )
 
 %s:%i
 

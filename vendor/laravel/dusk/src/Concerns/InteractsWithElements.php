@@ -14,7 +14,7 @@ trait InteractsWithElements
      * Get all of the elements matching the given selector.
      *
      * @param  string  $selector
-     * @return array
+     * @return \Facebook\WebDriver\Remote\RemoteWebElement[]
      */
     public function elements($selector)
     {
@@ -214,9 +214,7 @@ trait InteractsWithElements
 
         if (is_null($value)) {
             $options[array_rand($options)]->click();
-        }
-
-        else {
+        } else {
             foreach ($options as $option) {
                 if ((string) $option->getAttribute('value') === (string) $value) {
                     $option->click();
@@ -415,6 +413,19 @@ trait InteractsWithElements
     public function acceptDialog()
     {
         $this->driver->switchTo()->alert()->accept();
+
+        return $this;
+    }
+
+    /**
+     * Type the given value in an open JavaScript prompt dialog.
+     *
+     * @param  string  $value
+     * @return $this
+     */
+    public function typeInDialog($value)
+    {
+        $this->driver->switchTo()->alert()->sendKeys($value);
 
         return $this;
     }

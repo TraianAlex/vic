@@ -70,12 +70,8 @@ trait SendsPasswordResetEmails
      */
     protected function sendResetLinkFailedResponse(Request $request, $response)
     {
-        flash()->overlay('This email must be a valid email address.', 'Sorry!');
-        // return back()->withErrors(
-        //     ['email' => trans($response)]
-        // );
         return back()->withErrors(
-            []
+            ['email' => trans($response)]
         );
     }
 

@@ -14,15 +14,20 @@ class Svgo extends BaseOptimizer
             return false;
         }
 
-        return $image->mime() === 'text/html';
+        return in_array($image->mime(), [
+            'text/html',
+            'image/svg',
+            'image/svg+xml',
+            'text/plain',
+        ]);
     }
 
     public function getCommand(): string
     {
         $optionString = implode(' ', $this->options);
 
-        return "{$this->binaryName} {$optionString}"
-           .' --input='.escapeshellarg($this->imagePath)
-           .' --output='.escapeshellarg($this->imagePath);
+        return "\"{$this->binaryPath}{$this->binaryName}\" {$optionString}"
+            .' --input='.escapeshellarg($this->imagePath)
+            .' --output='.escapeshellarg($this->imagePath);
     }
 }

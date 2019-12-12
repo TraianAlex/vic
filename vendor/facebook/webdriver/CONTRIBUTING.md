@@ -5,6 +5,9 @@ We love to have your help to make php-webdriver better!
 Feel free to open an [issue](https://github.com/facebook/php-webdriver/issues) if you run into any problem, or
 send a pull request (see bellow) with your contribution.
 
+## Code of Conduct
+The code of conduct is described in [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+
 ## Workflow when contributing a patch
 
 1. Fork the project on GitHub
@@ -39,7 +42,7 @@ test suite:
     ./vendor/bin/phpunit --testsuite functional
     
 The functional tests will be started in HtmlUnit headless browser by default. If you want to run them in eg. Firefox,
-simply set the `BROWSER` environment variable:
+simply set the `BROWSER_NAME` environment variable:
 
     ...
     export BROWSER_NAME="firefox"

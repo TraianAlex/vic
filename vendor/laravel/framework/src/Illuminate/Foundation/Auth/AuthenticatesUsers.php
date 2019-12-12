@@ -127,12 +127,8 @@ trait AuthenticatesUsers
      */
     protected function sendFailedLoginResponse(Request $request)
     {
-        flash()->overlay('These credentials do not match our records!', 'Sorry!');
-        // throw ValidationException::withMessages([
-        //     $this->username() => [trans('auth.failed')],
-        // ]);
         throw ValidationException::withMessages([
-            $this->username() => [],
+            $this->username() => [trans('auth.failed')],
         ]);
     }
 
