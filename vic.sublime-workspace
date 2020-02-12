@@ -685,6 +685,8 @@
 	],
 	"file_history":
 	[
+		"/Users/victor/MEGA/laravel/vic/composer.json",
+		"/Users/victor/MEGA/laravel/vic/composer.lock",
 		"/Users/victor/MEGA/laravel/vic/webpack.mix.js",
 		"/Users/victor/MEGA/laravel/vic/resources/views/pages/index.blade.php",
 		"/Users/victor/MEGA/www/vic1/index.html",
@@ -810,9 +812,7 @@
 		"/Users/victor/Box Sync/whttp/framework7/package.json",
 		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 4/Video 4.8/Code/frontend/config/dev.env.js",
 		"/Users/victor/Box Sync/whttp/vue/Building your First Advanced CRUD Application with Vue 2/Section 5/Video 5.6/Code/frontend/config/dev.env.js",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example",
-		"/Users/victor/Box Sync/laravel/rest/music-db-api/composer.json",
-		"/Users/victor/Box Sync/whttp/vue/music/config/dev.env.js"
+		"/Users/victor/Box Sync/laravel/rest/music-db-api/.env.example"
 	],
 	"find":
 	{

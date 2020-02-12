@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: vic.com.ro
+Token: 01654e3f304c1b06d89b85c9187fa086ff397a7aa72fa93a14d9f7dc6e4112d0
