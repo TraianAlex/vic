@@ -43,16 +43,13 @@
             <div class="col-12 col-md-6 mb-4 col-lg-3">
                 <div class="card flip-card p-5 align-center">
                     <div class="card-front card_cont">
-                        <a href="https://prolive.vic.com.ro"><img src="assets/images/prolive-s-640x522.jpg" alt="Traian Alexandru" title="Traian Alexandru"></a>
+                        <a href="https://susannauss.com" target="_blank"><img src="assets/images/screen-shot-2020-09-04-at-12.04.34-pm-1200x595.png" alt="Traian Alexandru" title="Traian Alexandru"></a>
                     </div>
                     <div class="card_back card_cont">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">
-                            <a href="https://prolive.vic.com.ro" target="_blank">Prolive Cosmetics</a></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            The products range PROLIVE, which is based on organic olive oil and organic aloe vera oil.<br>Demo site
-                        </p>
+                        <h4 class="card-title py-2 mbr-fonts-style display-5"><a href="https://susannauss.com" target="_blank">Susan Nauss</a></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Commision Susan<br>to do an original pet portrait</p>
                     </div>
-                </div>
+                </div> 
             </div>
 
             <div class="col-12 col-md-6 mb-4 col-lg-3">
@@ -122,7 +119,7 @@
             <div class="modalWindow-container">
                 <div class="modalWindow-video-container">
                     <div class="modalWindow-video">
-                        <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://youtu.be/UYknE4Qwszs"></iframe>
+                        <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://www.youtube.com/watch?v=Xnsrx3IU0Fc"></iframe>
                     </div>
                     <a class="close" role="button" data-dismiss="modal">
                         <span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span>
