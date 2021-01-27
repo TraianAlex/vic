@@ -43,7 +43,10 @@
 @section('js')
 <script>
     $('.content').find('.js-delete-page').stop().fadeOut(400);
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     $('table thead').on('change', 'input[type=checkbox]', function () {
         const checked = $(this).prop('checked');
         const $table = $(this).parents('table');
@@ -57,7 +60,10 @@
             });
         }
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     $('.data-table').on('change', 'input[type=checkbox]', function () {
         let counter = 0;
         $(this).parents('.content').find('table tbody input[type=checkbox]:checked').each(function () {
@@ -69,7 +75,10 @@
             $(this).parents('.content').find('.js-delete-page').stop().fadeOut(400);
         }
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     $('.content').on('click', '.js-delete-page', function (e) {
         e.preventDefault();
         const $table = $(this).parents('.content').find('table');
@@ -116,7 +125,10 @@
             console.log('Error!', 'Please select an item before clicking on the delete button' , 'error');
         }//if ids where actually selected
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
 showMessage("This is an test message in admin page.");
 </script>
 @endsection

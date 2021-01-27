@@ -94,3 +94,4 @@ php artisan crud:view crud-name --fields="name:string, email:string, phone:integ
 
 <a href="http://www.sohelamin.com">Sohel Amin</a>
 
+git rebase origin/development

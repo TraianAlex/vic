@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
 namespace App\Http\Controllers\Frontend;
 
 use App\Link;
@@ -14,16 +17,23 @@ use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function __construct()
     {
         dispatch(new Tracker);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function __invoke()
     {
         $page = request()->segment(1) ?? 'index';
         $captcha = $this->generateChallenge();
+<<<<<<< HEAD
         return view()->exists("pages/$page") ? view("pages/$page", compact( 'captcha')) : view("pages/index");
     }
 
@@ -36,6 +46,18 @@ class PagesController extends Controller
         return view('pages.links', compact( 'links', 'categories'));
     }
 
+=======
+        return view()->exists("pages/$page") ? view("pages/$page", compact('captcha')) : view("pages/index");
+    }
+    public function link()
+    {
+        $links = Link::with('categories')->latest()->paginate(20);
+        $categories = Cache::remember('categories', 60*24*7, function () {
+            return Category::all();
+        });
+        return view('pages.links', compact('links', 'categories'));
+    }
+>>>>>>> development
     public function countLink(Request $request, $id)
     {
         $links = Link::findOrFail((int)$request->id);
@@ -44,19 +66,28 @@ class PagesController extends Controller
         $links->save();
         return redirect($links->address);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function result(Category $category)
     {
         $links = $category->links()->paginate(15);
         return view('pages.links', compact('links'));
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function all()
     {
         $links = Link::with('categories')->latest()->paginate(2000);
         return view('pages.links', compact('links'));
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function sendEmail(Request $request)
     {
         $captcha = $request->get('s_q');
@@ -68,7 +99,10 @@ class PagesController extends Controller
             echo "You must provide a correct answer!";
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     public function loadGrid()
     {
         $url = Storage::url('image.x');
@@ -76,27 +110,44 @@ class PagesController extends Controller
             return file_get_contents(getcwd().$url);
         }
     }
+<<<<<<< HEAD
 
     private function validate_email($resp)
     {
         $val = (int)session('challenge');
         session(['challenge' => null]);
         if($resp != $val){
+=======
+    private function validate_email($resp)
+    {
+        $val = session('challenge');
+        //session(['challenge' => null]);
+        if ($resp != $val) {
+>>>>>>> development
             return false;
         }
         return true;
     }
+<<<<<<< HEAD
 
     private function generateChallenge()
     {
         $numbers = [mt_rand(1,4), mt_rand(1,4)];
+=======
+    private function generateChallenge()
+    {
+        $numbers = [mt_rand(1, 4), mt_rand(1, 4)];
+>>>>>>> development
         session(['challenge' => $numbers[0] + $numbers[1]]);
         $converted = array_map('ord', $numbers);
         return "<input type=\"text\" name=\"s_q\" class=\"form-control input\"
       placeholder='&#87;&#104;&#97;&#116;&#32;&#105;&#115;&#32;
       &#$converted[0];&#32;&#43;&#32;&#$converted[1];&#63;'>";
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
     // public function saveDraw(Request $request)
     // {
     //     $url = Storage::url('image.x');

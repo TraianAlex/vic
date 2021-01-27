@@ -1,7 +1,11 @@
 <?php
+<<<<<<< HEAD
 
 return [
 
+=======
+return [
+>>>>>>> development
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
@@ -12,9 +16,13 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
+<<<<<<< HEAD
 
     'default' => env('DB_CONNECTION', 'mysql'),
 
+=======
+    'default' => env('DB_CONNECTION', 'mysql'),
+>>>>>>> development
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -30,15 +38,22 @@ return [
     | choice installed on your machine before you begin development.
     |
     */
+<<<<<<< HEAD
 
     'connections' => [
 
+=======
+    'connections' => [
+>>>>>>> development
         'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -53,7 +68,10 @@ return [
             'strict' => false,
             'engine' => null,
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
         'mysql_test' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -68,7 +86,10 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -81,7 +102,10 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'host' => env('DB_HOST', 'localhost'),
@@ -92,9 +116,13 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+<<<<<<< HEAD
 
     ],
 
+=======
+    ],
+>>>>>>> development
     /*
     |--------------------------------------------------------------------------
     | Migration Repository Table
@@ -105,9 +133,13 @@ return [
     | the migrations on disk haven't actually been run in the database.
     |
     */
+<<<<<<< HEAD
 
     'migrations' => 'migrations',
 
+=======
+    'migrations' => 'migrations',
+>>>>>>> development
     /*
     |--------------------------------------------------------------------------
     | Redis Databases
@@ -118,18 +150,27 @@ return [
     | such as APC or Memcached. Laravel makes it easy to dig right in.
     |
     */
+<<<<<<< HEAD
 
     'redis' => [
 
         'client' => 'predis',
 
+=======
+    'redis' => [
+        'client' => 'predis',
+>>>>>>> development
         'default' => [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', 6379),
             'database' => 0,
         ],
+<<<<<<< HEAD
 
     ],
 
+=======
+    ],
+>>>>>>> development
 ];
