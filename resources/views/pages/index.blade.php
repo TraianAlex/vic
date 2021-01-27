@@ -18,7 +18,7 @@
                     </div>
                     <div class="card_back card_cont">
                         <h4 class="card-title display-5 py-2 mbr-fonts-style">
-                            <a href="http://danceart.ca" target="_blank">Danceart.ca</a></h4>
+                            <a href="http://danceart.ca" target="_blank">Danceart</a></h4>
                         <p class="mbr-text mbr-fonts-style display-7">
                             We offer Ballroom, Latin, Salsa dance classes all year round for all ages, for social or competitive level.
                         </p>
@@ -34,8 +34,8 @@
                     </div>
                     <div class="card_back card_cont">
                         <h4 class="card-title py-2 mbr-fonts-style display-5">
-                            <a href="http://petraesthetics.com" target="_blank">Petraesthetics.com</a></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Holistic europen beauty services and holistic retreat<br>Using elements of: Point-pressure, aromatherapy, reflexology, and transfer of positive energy flow.&nbsp;</p>
+                            <a href="http://petraesthetics.com" target="_blank">Petraesthetics</a></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Holistic europen beauty services and holistic retreat<br>Using elements of: Point-pressure...</p>
                     </div>
                 </div>
             </div>
