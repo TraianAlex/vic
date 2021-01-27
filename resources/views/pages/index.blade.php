@@ -9,7 +9,7 @@
 <section class="features15 cid-qBPIRQcRcF" id="features15-1o" data-rv-view="848">
     <div class="container">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Website Development</h2>
-        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style">Hey I'm Traian, accountant turned web developer. My passion for coding and my attention to detail gives me the ability to pay attention to every inch to ensure that any web app I develop is amazing.<div>I'm self-taught and always growing my skills, learning something new every day. The back end for this website is Laravel, CSS framework is Bootstrap4. I am using for admin area AdminLTE. It is built for test and practice.</div><br><div><br></div></h3>
+        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style">Hey I'm Traian. My passion for coding and my attention to detail gives me the ability to pay attention to every inch to ensure that any web app I develop is working without bugs.<div>I'm self-taught and always growing my skills, learning something new every day. The back end for this website is Laravel, CSS framework is Bootstrap4. It is built for test and practice.</div><br><div><br></div></h3>
         <div class="media-container-row container pt-5 mt-2">
             <div class="col-12 col-md-6 mb-4 col-lg-3">
                 <div class="card flip-card p-5 align-center">
