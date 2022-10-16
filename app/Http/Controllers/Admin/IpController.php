@@ -26,7 +26,7 @@ class IpController extends Controller
     public function index(Request $request)
     {
         $title = 'Index - ip';
-        $ipss = Ip::with('pages')->paginate(250);//->sortByDesc('created_at');
+        $ipss = Ip::with('pages')->paginate(50);//->sortByDesc('created_at');
 
         if(isset($request->id)){
             $pagesByIP = Ip::with(['pages' => function($query){
@@ -35,7 +35,7 @@ class IpController extends Controller
             //->orderBy('page')->get();//->reverse()->unique('page');
         } else $pagesByIP = [];
 
-        $ips = Ip::paginate(50);
+        $ips = Ip::paginate(250);
         return view('ip.index',compact('ips','title', 'ipss', 'pagesByIP'));
     }
 
