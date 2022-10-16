@@ -41,7 +41,7 @@ class StatController extends Controller
 
         if(isset($request->ip)){
             $pagesByIP = $this->extract($item->where('ip', $request->ip), 'page');
-        }
+        } else $pagesByIP = null;
         return view('stat.ips',compact('title', 'total_unique_ips', 'ip_unique', 'pagesByIP', 'paginate_ip', 'request'));
     }
 
@@ -191,6 +191,6 @@ class StatController extends Controller
             return URL::to('stat/'. $id . '/edit');
         }
         $stat = Stat::findOrfail($id);
-        return view('stat.edit',compact('title','stat'  ));
+        return view('stat.edit',compact('title','stat'));
     }
 }
