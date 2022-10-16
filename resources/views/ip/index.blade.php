@@ -26,7 +26,7 @@
     </table>
     {!! $ipss->render() !!}
 
- @if(isset($pagesByIP))
+ @if(isset($pagesByIP) && !empty($pagesByIP)))
  <h2>Info results</h2>
     <table class = "table table-striped table-bordered table-hover" style = 'background:#fff'>
         <thead>
