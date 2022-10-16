@@ -25,7 +25,7 @@ class PageController extends Controller
     public function index()
     {
         $title = 'Index - page';
-        $pages = Page::orderBy('page')->paginate(300);
+        $pages = Page::orderBy('page')->paginate(250);
         return view('page.index', compact('pages', 'title'));
     }
 
