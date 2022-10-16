@@ -35,7 +35,7 @@ class IpController extends Controller
             //->orderBy('page')->get();//->reverse()->unique('page');
         } else $pagesByIP = null;
 
-        $ips = Ip::paginate(500);
+        $ips = Ip::paginate(400);
         return view('ip.index',compact('ips','title', 'ipss', 'pagesByIP'));
     }
 
