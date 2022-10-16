@@ -26,7 +26,7 @@ class IpController extends Controller
     public function index(Request $request)
     {
         $title = 'Index - ip';
-        $ipss = Ip::with('pages')->paginate(50);//->sortByDesc('created_at');
+        $ipss = Ip::with('pages')->paginate(250);//->sortByDesc('created_at');
 
         if(isset($request->id)){
             $pagesByIP = Ip::with(['pages' => function($query){
